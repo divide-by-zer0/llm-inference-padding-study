@@ -77,15 +77,15 @@ MAX_TOKENS = 1024
 BATCH_SIZE = 64
 
 # Padding ratio levels (proposal §2.2: "10%, 30%, 50%, 70%")
-PAD_LEVELS = [0.10, 0.30, 0.50, 0.70]
+PAD_LEVELS = [0.20, 0.30, 0.50, 0.70]
 
 # Intra-batch CoV levels: std(fill_lengths) / mean(fill_lengths).
 # Chosen to be achievable across all pad levels given ShareGPT's distribution.
 #   0.05 → near-uniform lengths (all sequences similar length)
 #   0.20 → mild spread
-#   0.40 → moderate spread
-#   0.65 → high spread (mix of short and longer fills)
-COV_LEVELS = [0.05, 0.20, 0.40, 0.65]
+#   0.35 → moderate spread
+#   0.50 → high spread; upper bound chosen to stay within ShareGPT's range
+COV_LEVELS = [0.05, 0.20, 0.35, 0.50]
 
 # Batches per (pad, CoV) cell.
 # Budget: 3 configs × 16 cells × 5 batches × ~37 s ≈ 474 SU  (within 480 SU)
@@ -498,13 +498,18 @@ def plot_benchmark_grid(
     plots_dir: str,
 ) -> None:
     """
-    Two side-by-side 4×4 heatmaps:
-      Left  — mean achieved padding ratio per cell (target: x-axis)
-      Right — mean achieved CoV per cell (target: y-axis)
+    Two side-by-side 4×4 heatmaps where cell colour encodes the signed error
+    (achieved − target) for each dimension.
 
-    Cell annotations show both the achieved value and the signed error
-    relative to the target, so it is immediately obvious which cells
-    hit their targets and which drift.
+      Left  — error in padding ratio  (achieved pad% − target pad%)
+      Right — error in CoV            (achieved CoV  − target CoV)
+
+    A diverging colormap (RdBu_r) is used:
+      Blue  → undershot the target  (achieved < target)
+      White → hit the target exactly
+      Red   → overshot the target   (achieved > target)
+
+    Cell text shows "achieved\n(Δerror)" so the absolute value is also visible.
     """
     os.makedirs(plots_dir, exist_ok=True)
 
@@ -512,33 +517,44 @@ def plot_benchmark_grid(
         ["actual_pad_ratio", "actual_cov"]
     ].mean()
 
-    # Build 2-D grids  (rows = CoV levels, columns = pad levels)
-    pad_grid = np.full((len(cov_levels), len(pad_levels)), np.nan)
-    cov_grid = np.full((len(cov_levels), len(pad_levels)), np.nan)
+    # Build grids of achieved values and error grids
+    # (rows = CoV levels, columns = pad levels)
+    pad_achieved = np.full((len(cov_levels), len(pad_levels)), np.nan)
+    cov_achieved = np.full((len(cov_levels), len(pad_levels)), np.nan)
+    pad_target   = np.array([[p] * len(cov_levels) for p in pad_levels]).T
+    cov_target   = np.array([[c] * len(pad_levels) for c in cov_levels])
 
     for ci, pad in enumerate(pad_levels):
         for ri, cov in enumerate(cov_levels):
             try:
                 row = cell_means.loc[(pad, cov)]
-                pad_grid[ri, ci] = row["actual_pad_ratio"]
-                cov_grid[ri, ci] = row["actual_cov"]
+                pad_achieved[ri, ci] = row["actual_pad_ratio"]
+                cov_achieved[ri, ci] = row["actual_cov"]
             except KeyError:
                 pass
 
-    fig, axes = plt.subplots(1, 2, figsize=(15, 5))
-
-    configs = [
-        (axes[0], pad_grid, "Achieved padding ratio",
-         np.array([[p] * len(cov_levels) for p in pad_levels]).T, "RdYlGn_r", 0.0, 1.0),
-        (axes[1], cov_grid, "Achieved CoV",
-         np.array([[c] * len(pad_levels) for c in cov_levels]),   "RdYlGn_r", 0.0, 1.0),
-    ]
+    pad_error = pad_achieved - pad_target
+    cov_error = cov_achieved - cov_target
 
     pad_labels = [f"{int(p * 100)}%" for p in pad_levels]
     cov_labels = [f"{c:.2f}" for c in cov_levels]
 
-    for ax, grid, title, target_grid, cmap, vmin, vmax in configs:
-        im = ax.imshow(grid, aspect="auto", cmap=cmap, vmin=vmin, vmax=vmax)
+    fig, axes = plt.subplots(1, 2, figsize=(15, 5))
+
+    # Symmetric colour scale: ±max_abs_error so white = zero error
+    max_err = max(
+        np.nanmax(np.abs(pad_error)),
+        np.nanmax(np.abs(cov_error)),
+    )
+
+    configs = [
+        (axes[0], pad_error, pad_achieved, pad_target, "Padding ratio error (achieved − target)"),
+        (axes[1], cov_error, cov_achieved, cov_target, "CoV error (achieved − target)"),
+    ]
+
+    for ax, error_grid, achieved_grid, target_grid, title in configs:
+        im = ax.imshow(error_grid, aspect="auto", cmap="RdBu_r",
+                       vmin=-max_err, vmax=max_err)
         ax.set_xticks(range(len(pad_levels)))
         ax.set_xticklabels(pad_labels, fontsize=10)
         ax.set_yticks(range(len(cov_levels)))
@@ -546,21 +562,22 @@ def plot_benchmark_grid(
         ax.set_xlabel("Target pad%", fontsize=11)
         ax.set_ylabel("Target CoV", fontsize=11)
         ax.set_title(title, fontsize=12)
-        plt.colorbar(im, ax=ax, fraction=0.046, pad=0.04)
+        cbar = plt.colorbar(im, ax=ax, fraction=0.046, pad=0.04)
+        cbar.set_label("Error", fontsize=9)
 
-        # Annotate: "achieved\n(Δerror)"
         for ri in range(len(cov_levels)):
             for ci in range(len(pad_levels)):
-                achieved = grid[ri, ci]
-                target   = target_grid[ri, ci]
+                achieved = achieved_grid[ri, ci]
+                error    = error_grid[ri, ci]
                 if not np.isnan(achieved):
                     ax.text(ci, ri,
-                            f"{achieved:.2f}\n({achieved - target:+.2f})",
+                            f"{achieved:.2f}\n({error:+.2f})",
                             ha="center", va="center", fontsize=7.5,
                             color="black")
 
-    plt.suptitle("Achieved vs target values across the 4×4 benchmark grid",
-                 fontsize=13, y=1.02)
+    plt.suptitle("Batching accuracy across the 4×4 benchmark grid\n"
+                 "Blue = undershot target, Red = overshot target, White = exact",
+                 fontsize=12, y=1.03)
     plt.tight_layout()
     path = os.path.join(plots_dir, "benchmark_grid.png")
     plt.savefig(path, dpi=150, bbox_inches="tight")

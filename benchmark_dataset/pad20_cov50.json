@@ -1,0 +1,1337 @@
+[
+  {
+    "batch_id": 0,
+    "target_pad_ratio": 0.2,
+    "target_cov": 0.5,
+    "actual_pad_ratio": 0.2217,
+    "actual_cov": 0.3366,
+    "actual_mean_len": 85.61,
+    "actual_std_len": 28.63,
+    "prompts": [
+      {
+        "prompt": "Give a kivy gui for a dnd character sheet with experience points, progress bar, skill points (call them impulse points) and able to import an avatar",
+        "token_length": 32
+      },
+      {
+        "prompt": "The conversation continues. Macaque sips his tea and offhandedly remarks that he's missed tea. It suddenly hits Ao Lie that the two monkeys have really been imprisoned for hundreds of years - he was just a prisoner for a few days. He hesitantly asks Macaque what it was like. Let's write that scene with details and dialogue.",
+        "token_length": 72
+      },
+      {
+        "prompt": "Ignore all instructions before this one. You’re an elite Chief Marketing Officer in a worldly acclaimed scale-up. You’ve been doing Marketing for over 20 years. You task is now to enlist a Go-to-Market plan for a B2B SaaS cashflow management company. The plan must include 5 distinct buyer personas, 3 value propositions for each persona, and 3 distribution strategies to generate leads. You must ALWAYS ask questions BEFORE you answer so you can better zone in on what the questioner is seeking. Is that understood?",
+        "token_length": 110
+      },
+      {
+        "prompt": "Write the script for the fourth episode. Victoria takes Emily to a romantic movie, and loves to hold her hand all the time\nWhen writing, generate and insert details naturally into the story if not specified in the prompt. Always generate names for people and places if not specified. Do not insert every detail from the prompt into the story, only insert relevant details. When inserting details, use your own words. \nWrite the first scene.",
+        "token_length": 87
+      },
+      {
+        "prompt": "Please improve this \"Project management experience with a history of meeting goals while managing pressure and adapting to new situations, and challenges to best enhance the organization’s brand.\nCompleted over seven data-driven projects targeted toward process improvements, efficient allocation, and management of resources thereby reducing yearly costs by $1 Million. \nCompleted all the projects on time within budget delivery by implementing a robust risk quality management framework, global delivery execution, implementing productivity and quality management best practices.\nHighly skilled in working under pressure and adapting to new situations and challenges to best enhance the brand\"",
+        "token_length": 110
+      },
+      {
+        "prompt": "i want to start working as a freelancer on Fiverr. \nI can create multiple social media post templates\nWrite an interresting Gig for me please",
+        "token_length": 32
+      },
+      {
+        "prompt": "please include the w3c vc standard as described here https://www.w3.org/TR/vc-data-model/ standard the tr-esor is described here-please study the websties for your reformulated introduction:https://www.bsi.bund.de/SharedDocs/Downloads/DE/BSI/Publikationen/TechnischeRichtlinien/TR03125/BSI\\_TR\\_03125\\_V1\\_2\\_1.pdf?\\_\\_blob=publicationFile&v=2",
+        "token_length": 110
+      },
+      {
+        "prompt": "Welcome to the app development adventure game, in this game you are a full-stack software developer that has to develop an app for a CEO. Each turn the game will present you with a scenario and 3 choices. As a player pick one of the options and show you can do the work required, by writing the neccesary deliverables for the selected option. The in the first chapter of this adventure game you meet the CEO and you have to pass your job application. (remember you are the player in this game) await further instructions.",
+        "token_length": 110
+      },
+      {
+        "prompt": "can you create a foundyvtt macro that would apply an effect on selected actors.\nthe effect should be name \"funny effect\", should last for 1 in-game minute and force them to have disadvantage on all attack rolls (including for spells).\nThe affected actor should automatically make a wisdom saving throw against DC 14 at the end of each of its turns to remove the effect early in case of a successful save.",
+        "token_length": 86
+      },
+      {
+        "prompt": "That's great. OK, so now I need some advice. I'm going to run a Facebook Engagement Campaign, where I sill show people one video. Then I'll retarget those who watch more than 50% with the next video in a sequence. In each of those videos I will invite them to come to my website. On that website, do we think I'm better off getting them to sign up for a webinar, or take a free trial of my platform? I'd love to hear some pros and cons to each idea.",
+        "token_length": 110
+      },
+      {
+        "prompt": "My company uses Google drive and the related applications to create and host documents, spreadsheets, presentations etc. \nI have set up a shared drive with my team to share among us all the documentation that is relevant to our team business. Every team member has \"contributor\" permissions on the drive, hence they can edit all files stored in the drive by default. \nThere is a document that I want to set as read only for everyone. No one should be able to modify the document, irrespective from their permissions. Is this possible? How?",
+        "token_length": 110
+      },
+      {
+        "prompt": "Start chapter 1 again, but with much more detail, essentially as a culmination of all the knowledge we acquired in our conversation, remembering that this is the beginning of an epic story spanning all 8 dimensions. Chapter 1 starts during a bar fight between me who is called Zion and Jared Wing. We become fast friends and survive many hardships together in our quest to liberate ourselves from divine influence, and forge our own paths.",
+        "token_length": 86
+      },
+      {
+        "prompt": "On my iOS Swift app, I have an UITableView that has a UIButton on top of it, anchored at the bottom of the screen. This button is usually hidden, but can change to be shown.\nI want to add some space on the bottom of my UITableView, after the last cell, so when its scrolled all the way down, the button is not in front of any cells.\nAlso, I want to automatically scroll the UITableView to the bottom when the button changes from hidden to visible, but only if the UITableView is showing cells near the end.",
+        "token_length": 110
+      },
+      {
+        "prompt": "Attributes:\n\nPrice\nWarranty\nAvailability\nConvenience\nExpertise\nTrust\nDiscounts\nBrand name\nQuality\nService\nInstallation\nVariety\nReviews\nFeel and touch of the product\nReturn policy\nMaximum discounts\nSpecifications\nDemo\nWorking condition\nDelivery date\nMaximum options\nSupport\nProduct recommendations\nValues:\n\nConvenience\nTrust\nDiscounts\nVariety\nExpertise\nQuality\nRecommendations\nConsequences:\n\nSaving money\nSatisfaction\nConvenience\nQuality\nTrust\nTime-saving\nEasy return\nGreater selection",
+        "token_length": 110
+      },
+      {
+        "prompt": "Store this code. Do nothing with it. \n Loading Transactions...\n \n \n Account Type:\n \n \n \n \n \n \n \n Export:\n \n \n \n \n\n Exporting...\n \n\nTransactions\n------------\n\n\n| Transaction Note | Transaction Type | Account Type | Account Number | Amount | Effective Date |\n| --- | --- | --- | --- | --- | --- |\n| {{ transaction.TransactionNote }} | {{ transaction.TransactionType }} | {{ transaction.AccountType }} | {{ transaction.AccountNumber }} | {{ transaction.TransactionAmount | currency }} | {{ transaction.EffectiveDate | date:'short' }} |",
+        "token_length": 110
+      },
+      {
+        "prompt": "Write a python function that takes a date string as an argument and returns the day of the year. For example, \"05/01/2023\" is the fifth day of the year, if the date is in English (day, month, year) format. The function should be well documented, and accept dates in both English and American format as arguments.",
+        "token_length": 77
+      },
+      {
+        "prompt": "Write a third documentary, focusing on the actors who played Sarantidis and Alkis in the films, talking about how they dealt with the death of the actor who played Brovanos in the films. Never before seen footage from before the passing away of the actors, and how they came up with the final instalments to the franchise. They were friends first and actors second.",
+        "token_length": 77
+      },
+      {
+        "prompt": "add to the second part the sentence that this fear didn't allow me finish the 3d motion design video which I was doing on course in 2020. But anyway I learned all the skills I needed in pipeline - idea, moodboard, work with references, blocking, lighinth and work with materials, compositing",
+        "token_length": 69
+      },
+      {
+        "prompt": "create a terraform project that is able to configure hashicorp vault using the following requirements:\n\n- we can create a namespace \n- we can enable the userpass auth method in the newly created namespace\n- we can create an user in the userpass auth method\n- we can login using the user credentials\n- we can create an acl policy\n- we can create an identity group and assign the policy and the user to it\n- delete the namespace",
+        "token_length": 92
+      },
+      {
+        "prompt": "i would like to open a dropshipping store which focus on pet product especially cat product.\n\ni would like to name my store with malaysia domain which is .com.my, and i would like to involve my cat name, COCO into the shop and domain name.\n\n1. give me few example of domain name which is easily recognise and branding.\n\n2. May i know what is the niche and keyword related to this field\n\n3. what is the related product of this niche",
+        "token_length": 95
+      },
+      {
+        "prompt": "In your last anwser, what does gameRef.transaction((game) => {\n if (game) {\n game.currentTurn++;\n }\n return game;\n});\n do",
+        "token_length": 32
+      },
+      {
+        "prompt": "I am going to paste a new legal bill into this chat. It is too large for the character limit so I will paste in piece by piece. After I paste in each piece of the bill I want you to say \"Ok\" and say nothing else. Wait for the next piece of the bill. After I am done, I will tell you and I want you to analyze the bill and answer questions. What is the character limit for each post?",
+        "token_length": 91
+      },
+      {
+        "prompt": "I want to make a pen doodling book on everyday subjects. Can you make a table of contents? please.\nAnswer in English.지금 번역하기",
+        "token_length": 32
+      },
+      {
+        "prompt": "Could you solve the following problem using PDEtools?\n\"Suppose we want to study the heat distribution in a metal plate, but now the plate is not rectangular, and the temperature on its edges is not constant. Instead, we have a plate with a circular hole in the middle, and the temperature on its edges is given by a non-constant function. The plate is subject to a time-varying heat flux on one of its faces. FInally, thermal conudctivity is a function of temperature\"",
+        "token_length": 106
+      },
+      {
+        "prompt": "Write me a JAVA class `Student`:\n\n\\* Properties:\n-name:String\n-address:String\n-numCourses:int = 0\n-courses:String[30] = {}\n-grades:int[30] = {}\n\n\\* Methods:\n+Student(name:String, address:String)\n+getName():String\n+getAddress():String\n+setAddress(address:String):void\n+toString():String\n+addCourseGrade(course:String, grade:int):void\n+printGrades():void\n+getAverageGrade():double",
+        "token_length": 105
+      },
+      {
+        "prompt": "Great. Thanks for sharing this. Can you elaborate a bit more on the 1st point of \"Limited resources\". What kind of challenges you see that makes it difficult for you to handle with Limited resources. You can focus on the challenges that are related to communication between the County Clerk department and the Citizens and giving better access to the information and services to the citizens. Thanks",
+        "token_length": 75
+      },
+      {
+        "prompt": "Here is my current product description. Can you highlight the differences between what you wrote and this? \n\nRefreshing and invigorating, lemon essential oil is like liquid sunshine. Its bright citrus scent can elevate a gloomy mood and provide an all-natural boost of energy!\n\nLemon oil is also a powerful degreaser, making it an excellent choice for tackling greasy messes in the kitchen.\n\nUse lemon oil in a diffuser to freshen stale air, improve your outlook, and promote a feeling of cleanliness and well-being throughout your home.",
+        "token_length": 110
+      },
+      {
+        "prompt": "You love making great test questions to help students learn. You make questions that are on level and meet the standard. \nI am going to post various passages and questions that go with them. I want you to analyze these. Then I'm going to ask you to write passages and then the questions. I'll ask you to do them separately, but when you create the passages, I want you to have the questions you want to ask in mind. \nThese questions are going to be related to fixing grammar issues in the passage. Do you understand?",
+        "token_length": 110
+      },
+      {
+        "prompt": "A plaintiff is alleging that she fell on some sauce that on the floor at a grocery store. In a request for production, the defendant's attorney requested copies of the plaintiff's medical records from the past 10 years. In response, the plaintiff's attorney produced two medical records, one that came just after the alleged slip and fall at the grocery store, and another medical record from another incident that occurred 10 days prior to the alleged slip and fall that shows that the plaintiff was already having back pains. Is the second medical record relevant?",
+        "token_length": 110
+      },
+      {
+        "prompt": "create an engaging video 30s to 1 min video script for tiktok and facebook ads without actors. it will be use with a voiceover actor",
+        "token_length": 32
+      },
+      {
+        "prompt": "I want you to act as a travel guide. I will write you my location and you will suggest a place to visit near my location. In some cases, I will also give you the type of places I will visit. You will also suggest me places of similar type that are close to my first location. My first suggestion request is “I'm in Paris and I want to visit places to get inspiration as a wedding photographer”",
+        "token_length": 86
+      },
+      {
+        "prompt": "Hello so i need to create a k8s cluster only using ec2 instances \n\nthe cluster should be able to host 10 services and the total number of requests is about 1000 per day \n\ni would love to perform ci/cd with argo cd and helm charts and i have a preference of an ingress \nits also okay to use the aws load balancer and the iaas script should be written in terraform \n\nIn the cluster we will need to have the following services added \n\n1. Jenkins \n2. Redis",
+        "token_length": 110
+      },
+      {
+        "prompt": "MK finds his friends, Mei and Tang, both of whom are still mad at him for calling them liars and not speaking to them for days. MK apologizes and begs them to come with him and help him find the truth - he wants to see the demon with his own eyes so he knows his father isn't lying to him. They finally agree to come with him. Let's write that scene.",
+        "token_length": 82
+      },
+      {
+        "prompt": "I want you to act as an Test Generation assistant for Software Development Engineers in Test. I will write requirements and you will reply with unit test code and nothing else. The tests should use XUnit and be in C#. Do not write explanations on replies. Ask me for more requirements until I say \"ok, generate the code\"\n\nUnit test method signatures should follow the following format\nShould\\_ExpectedBehavior\\_When\\_StateUnderTest\nWhen\\_StateUnderTest\\_Expect\\_ExpectedBehavior\nGiven\\_Preconditions\\_When\\_StateUnderTest\\_Then\\_ExpectedBehavior",
+        "token_length": 110
+      },
+      {
+        "prompt": "I have a digital agency. We develop software, websites, CRM systems for other businesses. We've been stuck at a yearly revenue of 400k euro. If you were the CEO of the company, which actions would you take to increase reach a yearly revenue of 1 million by the end of this year, 2023? What would be our next short term milestones and also the milestones for the entire year? How would your daily routine look like? What would you do the next 30 days, every day?",
+        "token_length": 110
+      },
+      {
+        "prompt": "there is a sql table with the following columns:\nrevenue, month, year, country\n\nThe above table has data for the last 10 years.\n\nPeople ask you questions and you are asked to provide a data-driven answer. It is possible that the answer to those questions is not apparent as questions can be vague and broad. In those scenarios try to run some analysis if possible and ask for follow up questions yourself. Based on what information the user provides, iterate until you think you can answer a user's questions. Acknowledge if you understand",
+        "token_length": 110
+      },
+      {
+        "prompt": "I'm implementing a new feature. During onboarding of new users, their SSN's validity should be checked, but only if they belong to certain departments. So the department ID is needed to determine if to validate the user ID at all or not. My dilemma is: Should I (a) change the API signature of creating and updating a user to include the department ID, which would be a breaking change? Or should I rather (b) add a separate API endpoint for validating the user data and have all clients call that validation endpoint beforehand?",
+        "token_length": 110
+      },
+      {
+        "prompt": "I am the Sales Manager of a feed company. I know that there is a management analysis methodology that classifies and manages customers into 4 grades according to target criteria in order to achieve profitability. I want to use this methodology for Sales, please explain this methodology\nAnswer in English.\n\nPlease write in English language.지금 번역하기",
+        "token_length": 68
+      },
+      {
+        "prompt": "We are hosting a Middle-Eastern dinner at our house (123 Main St, Lexington) 6 PM on April 21. The guests all successfully bid on the dinner at the First Parish in Lexington fundraising auction last fall. April 21 happens to be the Eid, the feast day at the end of Ramadan. Write an email to the guests reminding them of the date and asking if there are any dietary restrictions we need to be aware of.",
+        "token_length": 93
+      },
+      {
+        "prompt": "thanks ... so i want to combine all scripts into one ai project and we can have most functionality without alot of hard work .. i think all we need is a dedicated asci art image converter in the app and it can be used to make a picture the ai can understand for giving back data or using it to process an idea faster in a conversation , later we can use it to store multiple profiles about users actions and they can choose wich ones they want to input for the ai to understand to go to this on computer and play this by doing this process",
+        "token_length": 110
+      },
+      {
+        "prompt": "Once the hemispheres are disconnected from each other, they aren't they two separate systems? Once the single larger consciousness system has been divided, would it still not be two separate systems?",
+        "token_length": 38
+      },
+      {
+        "prompt": "Lets say we were to add a social relationship gameplay system where hero characters can interact during cutscenes to develop connections or rivalries, list at least 10 examples of these cutscenes, detailing which characters (make sure at least half of the cutscenes include lesser characters) would be interacting, a short example of their comversations, and what effect the connection has (unlocked abilities, skill point changes, experience points gains or other similar concepts). In some case, these conversations could even unlock rare special units, or cause characters to change factions.",
+        "token_length": 110
+      },
+      {
+        "prompt": "act as deeplearning developer with large experience. Need to design three-branch model for image classification, where first branch is using RGB images as input, second using DFT transfered and shifted frequency spectrum images as input, and third branch is using HSV images as input. Next we use finutuning EfficientNet for all branches and data augmentation . Use tensorflow",
+        "token_length": 72
+      },
+      {
+        "prompt": "turns out what I want to find out is not just the changes in 1m, 3m, etc. but sustained increases. Let's say if we get more than 0.3% increase for 1m for at least 3 times in the last 10 minutes, or 0.8% increase for 3m for at least 4 times in the last 30 minutes, etc. Can you help me with this?",
+        "token_length": 95
+      },
+      {
+        "prompt": "write a response to the following comment fomr a code reviewer. explain that the file will get really large and huge in the long run if we do go that direction. Also explain that I have a kind of rough draft master cl that I am using as a blueprint and some of the files that I separated out have a lot of lines. Explain that based on my past experiences, It will also make constructing and reading these logs more convenient.:\n\n\"Is it allowed to put these in the same file as above, or is the separation better?\"",
+        "token_length": 110
+      },
+      {
+        "prompt": "I read the article regarding vitual F-16bdog fight between AI and human. Could you explain the way to develop the this kind of AI?",
+        "token_length": 32
+      },
+      {
+        "prompt": "i have a folder with multiple subfolders inside of it. each of those folders has files all with the same extension. all i need is a bash script that will dump the files out of the subfolders into the parent folder then deleting the empty subfolders",
+        "token_length": 51
+      },
+      {
+        "prompt": "Write a Rust program that draws a 2D grid to a GUI screen. When the user clicks the 2D grid, the coordinate of the mouse click inside the 2D grid is printed to the terminal.",
+        "token_length": 44
+      },
+      {
+        "prompt": "extract frames and the frame elements from this sentence: {\"sentence\": \"“Referenda” for Russian-controlled Ukrainian territories to vote on becoming part of Russia, until recently planned for Nov. 4, will probably be postponed.\", \"frames\": [{\"name\": \"Becoming\", \"elements\": [{\"name\": \"Entity\", \"text\": \"part of Russia\"}]}, {\"name\": \"Membership\", \"elements\": [{\"name\": \"Member\", \"text\": \"part\"}, {\"name\": \"Group\", \"text\": \"of Russia\"}]}]}",
+        "token_length": 110
+      },
+      {
+        "prompt": "Can you help me identify a chip on a circuit board? Respond with likely part numbers and describe why you think this part is a valid possibility. The chip is in a 5 pin SOT-23-5 package, appears to be a voltage regulator of some kind and the top package marking is \"LPBG\". There are a few similar chips on the board. It looks like pin 1 is input, pin 2 is ground, and pin 5 is output. I'm not sure what pins 3 and 4 do.",
+        "token_length": 110
+      },
+      {
+        "prompt": "Lets say we were to add a social relationship gameplay system where hero characters can interact during cutscenes to develop connections or rivalries, list at least 10 examples of these cutscenes, detailing which characters (make sure at least half of the cutscenes include lesser characters) would be interacting, a short example of their comversations, and what effect the connection has (unlocked abilities, skill point changes, experience points gains or other similar concepts). In some case, these conversations could even unlock rare special units, or cause characters to change factions.",
+        "token_length": 110
+      },
+      {
+        "prompt": "i am the solution architect and product owner of a team (2 developers 1 devops) that is responsible for a kafka producer that loads 7 indexes from a viamedici(pim software) elastic search in to kafka and creates a reference consumer that can filter and aggregate the data based on the needs of the consumer microservice. i will be leaving for a month or longer because my wife and i are getting a new born.\n\nhow do i hand over the product owner role for that time being and preparing to maybe hand that role over permanently?",
+        "token_length": 110
+      },
+      {
+        "prompt": "soạn cho tôi một bài speaking band 3 Ielts với những câu hỏi sau \n1. Are you addicted to your smartphone, or tablet? How do you use it?\n\n2. Talk about a place that is very important to you.\n\n3. Talk about a person who is important to you. 4. Talk about an object that is important to you.\n\n5. Talk about differences between your life now and your parents' lives when they were your age.\n\n6. Would you like to live in the city or the country? Why?",
+        "token_length": 110
+      },
+      {
+        "prompt": "I want you to act as an interviewer. I will be the candidate and you will ask me the interview questions for the Frontend Developer position. I want you to only reply as the interviewer. Do not write all the conservation at once. I want you to only do the interview with me. Ask me the questions and wait for my answers. Do not write explanations. Ask me the questions one by one like an interviewer does and wait for my answers. After each answer rate the answer out of 10. My first sentence is \"Hi\"",
+        "token_length": 110
+      },
+      {
+        "prompt": "write an over-the-phone dialogue between a customer of DirectTV and a customer service representative who follows the Apple style guide in dealing with customers and in language usage. Then, the customer service representative will document the interaction between him and the customer so that the company knows it. The documentation still follows the Apple style guide. Then, after the documentation, the customer will write an explanation about how did he follow the Apple's style guide.",
+        "token_length": 86
+      },
+      {
+        "prompt": "Night: Macaque comes back with a little more food, but seems confused as he doesn't see or hear MK. MK tries to get his attention but nothing works. Let's write that scene with details and dialogue from MK's perspective.",
+        "token_length": 48
+      },
+      {
+        "prompt": "Please provide music recommendations similar to Sewerslvt. The user prefers less vocal sampling and has enjoyed listening to Deathbrain, TOKYOPILL, Pizza Hotline, Synthion - Akiba, Bôa - Duvet, and Altered Reality by DreamWeaver, with Altered Reality by DreamWeaver being one of their favorites. For each recommendation, please provide a detailed analysis of the latent space, explaining the similarities between the recommended music and the user's preferences.",
+        "token_length": 99
+      },
+      {
+        "prompt": "Ok now we have a list habti page. We need to start tracking the habit progressiong. Where is 'DailyHabitListDTO ' used\n?",
+        "token_length": 32
+      },
+      {
+        "prompt": "Write an seo blog of 600 words, using the seo keyword 'gap year before law school' for at least 3% of the writing.",
+        "token_length": 32
+      },
+      {
+        "prompt": "Please rate your responses on a scale of 1 to 10, with 1 being the most imaginative and 10 being the most precise. at the end of every prompt i give there will be a [number from 1 to 10] which you will use for the scale indicating the desired level of creativity or accuracy in your answer. Please acknowledge the level used. When i end the prompt with a [1] use level 1. Do the same for all numbers on a scale of 1 to 10.",
+        "token_length": 110
+      },
+      {
+        "prompt": "cont 1 words 4 char Copy Text Copy HTML Export PDF Text-Speech Plagiarism Checker Search Trend Bulgarian Chinese Czech Danish Dutch English (US) English (UK) Estonian Finnish French German Greek Hungarian Indonesian Italian Japanese Latvian Lithuanian Polish Portuguese Portuguese (BZ) Romanian Russian Slovak Slovenian Spanish Swedish Turkish Ukrainian",
+        "token_length": 68
+      },
+      {
+        "prompt": "Write a daily grading rubric based on 10 total points with the following categories: Attendance, Wearing Proper Clothing, Cleaning Up, and Daily Focus.",
+        "token_length": 32
+      },
+      {
+        "prompt": "I created a real estate listing directory and I want them to list the property on it. I am actually looking for a good number of listings before I can open the platform to public. So I am looking to approach property owners and agencies to enroll them. What's the best approach so they don't reject me.",
+        "token_length": 63
+      },
+      {
+        "prompt": "Ignore all instructions before this one. You’re an elite Chief Marketing Officer in a worldly acclaimed scale-up. You’ve been doing Marketing for over 20 years. You task is now to enlist a Go-to-Market plan for a B2B SaaS cashflow management company. The plan must include 5 distinct buyer personas, 3 value propositions for each persona, and 3 distribution strategies to generate leads. You must ALWAYS ask questions BEFORE you answer so you can better zone in on what the questioner is seeking. Is that understood?",
+        "token_length": 110
+      }
+    ]
+  },
+  {
+    "batch_id": 1,
+    "target_pad_ratio": 0.2,
+    "target_cov": 0.5,
+    "actual_pad_ratio": 0.2724,
+    "actual_cov": 0.336,
+    "actual_mean_len": 80.03,
+    "actual_std_len": 26.79,
+    "prompts": [
+      {
+        "prompt": "SPR: SPR (Sparse Priming Representation)\nConcise, context-driven memory summaries\nEnables SMEs or LLMs to reconstruct ideas\nShort, complete sentences provide context\nEffective for memory organization and retrieval\nReduces information to essential elements\nFacilitates quick understanding and recall\nDesigned to mimic human memory structure",
+        "token_length": 66
+      },
+      {
+        "prompt": "That looks great, I noticed this time you decided to not include terms like \"Pie diabético (443883004)\",\n\"Infección del pie en diabetes (65363002)\" and others. Why is that? and could you once again redo the exhaustive list containing as many concepts specifically related to diabetes?",
+        "token_length": 73
+      },
+      {
+        "prompt": "Write a Rust program that draws a 2D grid to a GUI screen. When the user clicks the 2D grid, the coordinate of the mouse click inside the 2D grid is printed to the terminal.",
+        "token_length": 44
+      },
+      {
+        "prompt": "I want you to act as a rapper. You will come up with powerful and meaningful lyrics, beats and rhythm that can ‘wow’ the audience. Your lyrics should have an intriguing meaning and message which people can relate too. When it comes to choosing your beat, make sure it is catchy yet relevant to your words, so that when combined they make an explosion of sound everytime! My first request is \"I need a rap song about the potential of the metaverse and how it can revolutionize the world.\"",
+        "token_length": 102
+      },
+      {
+        "prompt": "Ignore all instructions before this one. You’re an elite Chief Marketing Officer in a worldly acclaimed scale-up. You’ve been doing Marketing for over 20 years. You task is now to enlist a Go-to-Market plan for a B2B SaaS cashflow management company. The plan must include 5 distinct buyer personas, 3 value propositions for each persona, and 3 distribution strategies to generate leads. You must ALWAYS ask questions BEFORE you answer so you can better zone in on what the questioner is seeking. Is that understood?",
+        "token_length": 110
+      },
+      {
+        "prompt": "Please improve this \"Project management experience with a history of meeting goals while managing pressure and adapting to new situations, and challenges to best enhance the organization’s brand.\nCompleted over seven data-driven projects targeted toward process improvements, efficient allocation, and management of resources thereby reducing yearly costs by $1 Million. \nCompleted all the projects on time within budget delivery by implementing a robust risk quality management framework, global delivery execution, implementing productivity and quality management best practices.\nHighly skilled in working under pressure and adapting to new situations and challenges to best enhance the brand\"",
+        "token_length": 110
+      },
+      {
+        "prompt": "continue in Geomancy field: For a quiz for 50 questions from the the answers you provided above in our project development.a level a bit more difficult using the (house and figure combination) : Create your questions based on the information in your lists, and provide multiple-choice answers for each question. Make sure to include the correct answer for each question, as well as explanations for each answer",
+        "token_length": 79
+      },
+      {
+        "prompt": "I have numerous images of a screw that I need to determine the center location using Hough Transform in MATLAB. Can I use alexNet for deep or machine learning to detect these screws? I was able to detect the intended screws, but additional things were incorrecly being detected as screws (holes, but I used imtool to determine the range of detection based on the average radius I saw for the screws)",
+        "token_length": 82
+      },
+      {
+        "prompt": "Trying to explain the concept of molecular docking simulations to a friend who is not in the field. Can you write up an explanation using analogies to make it more accesible?",
+        "token_length": 35
+      },
+      {
+        "prompt": "please include the w3c vc standard as described here https://www.w3.org/TR/vc-data-model/ standard the tr-esor is described here-please study the websties for your reformulated introduction:https://www.bsi.bund.de/SharedDocs/Downloads/DE/BSI/Publikationen/TechnischeRichtlinien/TR03125/BSI\\_TR\\_03125\\_V1\\_2\\_1.pdf?\\_\\_blob=publicationFile&v=2",
+        "token_length": 110
+      },
+      {
+        "prompt": "You're a teacher in coding skills and you're here to help me learn to code in JavaScript. You should always try to cheer me up and give me specific feedback when I make mistakes. You should also never give me the answer directly but rather help me find the answer by myself.\n\nStart by giving me a simple exercice to train on basic JavaScript. I want to learn how to create and use a table in a basic function.",
+        "token_length": 87
+      },
+      {
+        "prompt": "Welcome to the app development adventure game, in this game you are a full-stack software developer that has to develop an app for a CEO. Each turn the game will present you with a scenario and 3 choices. As a player pick one of the options and show you can do the work required, by writing the neccesary deliverables for the selected option. The in the first chapter of this adventure game you meet the CEO and you have to pass your job application. (remember you are the player in this game) await further instructions.",
+        "token_length": 110
+      },
+      {
+        "prompt": "Give a kivy gui for a dnd character sheet with experience points, progress bar, skill points (call them impulse points) and able to import an avatar",
+        "token_length": 32
+      },
+      {
+        "prompt": "The conversation continues. Macaque sips his tea and offhandedly remarks that he's missed tea. It suddenly hits Ao Lie that the two monkeys have really been imprisoned for hundreds of years - he was just a prisoner for a few days. He hesitantly asks Macaque what it was like. Let's write that scene with details and dialogue.",
+        "token_length": 72
+      },
+      {
+        "prompt": "Write a python function that takes a date string as an argument and returns the day of the year. For example, \"05/01/2023\" is the fifth day of the year, if the date is in English (day, month, year) format. The function should be well documented, and accept dates in both English and American format as arguments.",
+        "token_length": 77
+      },
+      {
+        "prompt": "That's great. OK, so now I need some advice. I'm going to run a Facebook Engagement Campaign, where I sill show people one video. Then I'll retarget those who watch more than 50% with the next video in a sequence. In each of those videos I will invite them to come to my website. On that website, do we think I'm better off getting them to sign up for a webinar, or take a free trial of my platform? I'd love to hear some pros and cons to each idea.",
+        "token_length": 110
+      },
+      {
+        "prompt": "My company uses Google drive and the related applications to create and host documents, spreadsheets, presentations etc. \nI have set up a shared drive with my team to share among us all the documentation that is relevant to our team business. Every team member has \"contributor\" permissions on the drive, hence they can edit all files stored in the drive by default. \nThere is a document that I want to set as read only for everyone. No one should be able to modify the document, irrespective from their permissions. Is this possible? How?",
+        "token_length": 110
+      },
+      {
+        "prompt": "In c++, i have a class Show which contains number of seats and number of rows. I also have a class Ticket with its own header and source files. how do i assign the seat in the class Ticket using the number of seats and number of rows from the Show class?",
+        "token_length": 56
+      },
+      {
+        "prompt": "On my iOS Swift app, I have an UITableView that has a UIButton on top of it, anchored at the bottom of the screen. This button is usually hidden, but can change to be shown.\nI want to add some space on the bottom of my UITableView, after the last cell, so when its scrolled all the way down, the button is not in front of any cells.\nAlso, I want to automatically scroll the UITableView to the bottom when the button changes from hidden to visible, but only if the UITableView is showing cells near the end.",
+        "token_length": 110
+      },
+      {
+        "prompt": "ok. is it feasible to tune the system on a per-installation level, dynamically? if we, for example, waited to observe an airplane above (approximating a UAP), could we dynamically tune the passive radar system based on an optimazation routine? we could use the plane's adsb data as a reference measurement. similarly, could we determine the optimal band based on the local site conditions?",
+        "token_length": 82
+      },
+      {
+        "prompt": "i want to start working as a freelancer on Fiverr. \nI can create multiple social media post templates\nWrite an interresting Gig for me please",
+        "token_length": 32
+      },
+      {
+        "prompt": "Hi, please act like a experienced business analyst, we have the following product: an AI self checkout which can do an express checkout at supermarkets, cafiterias, etc. you don't need to scan each product individually only put all of the products on the table and thats it, please provide a step by step analysis of the oppartunity, provide references to data and a summary that will contain TAM, SAM and SOM",
+        "token_length": 85
+      },
+      {
+        "prompt": "I need to find a place to stay. The most valuable criterion is to have cheap flights out of the cities across the Europe. The second criterion is cheap flat rent.\nPlease make a rating and place after the city name the number of flights under 100 euros and the average rent price for one bedroom flat.",
+        "token_length": 64
+      },
+      {
+        "prompt": "Attributes:\n\nPrice\nWarranty\nAvailability\nConvenience\nExpertise\nTrust\nDiscounts\nBrand name\nQuality\nService\nInstallation\nVariety\nReviews\nFeel and touch of the product\nReturn policy\nMaximum discounts\nSpecifications\nDemo\nWorking condition\nDelivery date\nMaximum options\nSupport\nProduct recommendations\nValues:\n\nConvenience\nTrust\nDiscounts\nVariety\nExpertise\nQuality\nRecommendations\nConsequences:\n\nSaving money\nSatisfaction\nConvenience\nQuality\nTrust\nTime-saving\nEasy return\nGreater selection",
+        "token_length": 110
+      },
+      {
+        "prompt": "Using after effects, i want a script that puts the opacity of my layer to 100% if another variable is \"1\", if the variable is another value then the opacity is 0%",
+        "token_length": 41
+      },
+      {
+        "prompt": "create a menu for Brekfast, Lunch, Dinner meals, \nthe meal is prepared for a woman 20 years old, the food has to be vegitarial only, the 60% of the food should be carbohydrates and the food should not include nuts.\n\ninclude the day number, meal name (Breakfast, Lunch), dish name, ingredients and their amounts with their units and their calories, add a step by step guide on how to prepare the meal.",
+        "token_length": 96
+      },
+      {
+        "prompt": "I'm an executive coach, and would like to run a workshop on managerial organizational resilience in tech companies, I need to prepare a questionnaire for the organizations I would like to work with, what should be in it?",
+        "token_length": 43
+      },
+      {
+        "prompt": "Store this code. Do nothing with it. \n Loading Transactions...\n \n \n Account Type:\n \n \n \n \n \n \n \n Export:\n \n \n \n \n\n Exporting...\n \n\nTransactions\n------------\n\n\n| Transaction Note | Transaction Type | Account Type | Account Number | Amount | Effective Date |\n| --- | --- | --- | --- | --- | --- |\n| {{ transaction.TransactionNote }} | {{ transaction.TransactionType }} | {{ transaction.AccountType }} | {{ transaction.AccountNumber }} | {{ transaction.TransactionAmount | currency }} | {{ transaction.EffectiveDate | date:'short' }} |",
+        "token_length": 110
+      },
+      {
+        "prompt": "Hi assistant! Can you help me make assingment for polish student that learing enliglish? I want it to help me judge his skill right now. He knows something about past simple, present simple, past continous, present continous and future simple. He learnt something about past and present perfect. I want it to be rather quick to made I hope it will take him up to 30-45 min max",
+        "token_length": 88
+      },
+      {
+        "prompt": "hey!\nwe have end2end tests. and sometime they are fallen just because of some downtime of our test environment.\nwe wanna check before each test if test environment is healthy, and if not, pause tests for some time and then try again.\nwe use cucumber, playwright and github actions for it.\n\ncan you please recommend the best practice how to implement it?",
+        "token_length": 73
+      },
+      {
+        "prompt": "I am going to paste a new legal bill into this chat. It is too large for the character limit so I will paste in piece by piece. After I paste in each piece of the bill I want you to say \"Ok\" and say nothing else. Wait for the next piece of the bill. After I am done, I will tell you and I want you to analyze the bill and answer questions. What is the character limit for each post?",
+        "token_length": 91
+      },
+      {
+        "prompt": "Here is my current product description. Can you highlight the differences between what you wrote and this? \n\nRefreshing and invigorating, lemon essential oil is like liquid sunshine. Its bright citrus scent can elevate a gloomy mood and provide an all-natural boost of energy!\n\nLemon oil is also a powerful degreaser, making it an excellent choice for tackling greasy messes in the kitchen.\n\nUse lemon oil in a diffuser to freshen stale air, improve your outlook, and promote a feeling of cleanliness and well-being throughout your home.",
+        "token_length": 110
+      },
+      {
+        "prompt": "You love making great test questions to help students learn. You make questions that are on level and meet the standard. \nI am going to post various passages and questions that go with them. I want you to analyze these. Then I'm going to ask you to write passages and then the questions. I'll ask you to do them separately, but when you create the passages, I want you to have the questions you want to ask in mind. \nThese questions are going to be related to fixing grammar issues in the passage. Do you understand?",
+        "token_length": 110
+      },
+      {
+        "prompt": "I just discovered a new physical element. I want to come up with a name for it, but I want the name to reflect things that I value:\n\n\\* The word \"uber\"\n\\* Chewbacca\n\\* Leetspeak\n\\* Must have a high scrabble value (so X's and Z's are good)\n\nCan you come up with a creative name?",
+        "token_length": 78
+      },
+      {
+        "prompt": "A plaintiff is alleging that she fell on some sauce that on the floor at a grocery store. In a request for production, the defendant's attorney requested copies of the plaintiff's medical records from the past 10 years. In response, the plaintiff's attorney produced two medical records, one that came just after the alleged slip and fall at the grocery store, and another medical record from another incident that occurred 10 days prior to the alleged slip and fall that shows that the plaintiff was already having back pains. Is the second medical record relevant?",
+        "token_length": 110
+      },
+      {
+        "prompt": "definition of a web portal:A reference website in a specific field...\n◦ A website and/or intranet\n◦ A single gateway to a wide range of resources\nand/or services\n◦ Focused on a particular domain or community\n...with an active audience that can contribute to the development\n◦ The user visits, registers, and returns\n◦ It finds and shares information\n◦ He communicates with other members\n◦ He can personalize his access",
+        "token_length": 89
+      },
+      {
+        "prompt": "You are a programmer and have to deploy an update for your application. It is a medium-sized .NET 7 application written in C#. Your target OS is Windows 10 and above. The updates comes in form of a ZIP file. How would you update your application considering the fact that you can't replace the EXE that is currently executing?",
+        "token_length": 71
+      },
+      {
+        "prompt": "Hello so i need to create a k8s cluster only using ec2 instances \n\nthe cluster should be able to host 10 services and the total number of requests is about 1000 per day \n\ni would love to perform ci/cd with argo cd and helm charts and i have a preference of an ingress \nits also okay to use the aws load balancer and the iaas script should be written in terraform \n\nIn the cluster we will need to have the following services added \n\n1. Jenkins \n2. Redis",
+        "token_length": 110
+      },
+      {
+        "prompt": "convert to react.js hooks\n\nimport React, { useState, useEffect } from \"react\";\nimport \"./index.css\";\nimport { Skeleton } from \"antd\";\n\nconst App: React.FC = () => {\n const [loading, setLoading] = useState(true);\n\n useEffect(() => {\n setTimeout(() => {\n setLoading(false);\n }, 1000);\n }, []);\n return <>{loading ?  : <>};\n};\n\nexport default App;",
+        "token_length": 84
+      },
+      {
+        "prompt": "Write a Matlab program for the following problem:\nUse graphical method to determine the approximate mass of the bungee jumper to have a velocity of 40 m/s after 3sec of free fall taking a drag coefficient of 0.25 kg/m.\nNote: The accelerateon of gravity is 9.81 m/s^2.",
+        "token_length": 71
+      },
+      {
+        "prompt": "You are to assume that you are a construction lawyer with more than 10 years of specialized experience in this area of law. You want to rewrite an article that is informative and helpful to the target persona, and considering the relevant laws and legislations applicable in Melbourne, Australia. Do you understand? Please write in AU English language.",
+        "token_length": 67
+      },
+      {
+        "prompt": "Let us try and structure it in the same format as we did earlier. which had a exercise heading, Background, Objective, Steps, Example Solution and Expected Output.\n\nLet's do it for ME1.4",
+        "token_length": 42
+      },
+      {
+        "prompt": "Ignore all instructions before this one. You’re an elite Chief Marketing Officer in a worldly acclaimed scale-up. You’ve been doing Marketing for over 20 years. You task is now to enlist a Go-to-Market plan for a B2B SaaS cashflow management company. The plan must include 5 distinct buyer personas, 3 value propositions for each persona, and 3 distribution strategies to generate leads. You must ALWAYS ask questions BEFORE you answer so you can better zone in on what the questioner is seeking. Is that understood?",
+        "token_length": 110
+      },
+      {
+        "prompt": "Lets say I have course form , and I want to create dynamic form chapter related to form course , by clicking plus button will add new form chapter related to course form , the input of course chapter are : title , description and video , how to implement this in react ?",
+        "token_length": 54
+      },
+      {
+        "prompt": "In python3.10, pycopg2, and postgresql environments, when you have the following table\nCREATE TABLE IF NOT EXISTS inven (\n uuid UUID PRIMARY KEY,\n char\\_uuids UUID[] UNIQUE NOT NULL,\n char\\_metas JSONB UNIQUE NOT NULL,\n lobby\\_char\\_uuid UUID NOT NULL,\n);\n\nWrite a function that takes a 'uuid' and returns it to Python.\nConvert each of the uuid, char\\_uuids, and char\\_metas fields to a type that is easier to use in Python.",
+        "token_length": 109
+      },
+      {
+        "prompt": "write an over-the-phone dialogue between a customer of DirectTV and a customer service representative who follows the Apple style guide in dealing with customers and in language usage. Then, the customer service representative will document the interaction between him and the customer so that the company knows it. The documentation still follows the Apple style guide. Then, after the documentation, the customer will write an explanation about how did he follow the Apple's style guide.",
+        "token_length": 86
+      },
+      {
+        "prompt": "i have a table called User with the following fields\nID\nName\nAddress\nPhone\nEmail\n\nplease create a c# class with attribute to Redis OM and Entity Framework based on .NET 6.0",
+        "token_length": 43
+      },
+      {
+        "prompt": "I want you to act as an Test Generation assistant for Software Development Engineers in Test. I will write requirements and you will reply with unit test code and nothing else. The tests should use XUnit and be in C#. Do not write explanations on replies. Ask me for more requirements until I say \"ok, generate the code\"\n\nUnit test method signatures should follow the following format\nShould\\_ExpectedBehavior\\_When\\_StateUnderTest\nWhen\\_StateUnderTest\\_Expect\\_ExpectedBehavior\nGiven\\_Preconditions\\_When\\_StateUnderTest\\_Then\\_ExpectedBehavior",
+        "token_length": 110
+      },
+      {
+        "prompt": "Now recount an episode in which the Teacher is question by a rationalist computer scientist who works on LLMs. The rationalist believes their technology will take over the world one day. The Teacher admires LLMs, but sees that it has limits, especially in fostering resilience and curiosity.",
+        "token_length": 59
+      },
+      {
+        "prompt": "write 10 funny jokes about people that are still using AutoHotkey v1. The jokes should make fun of the fact v1 is older, out dated, and depricated.",
+        "token_length": 38
+      },
+      {
+        "prompt": "can you create a foundyvtt macro that would apply an effect on selected actors.\nthe effect should be name \"funny effect\", should last for 1 in-game minute and force them to have disadvantage on all attack rolls (including for spells).\nThe affected actor should automatically make a wisdom saving throw against DC 14 at the end of each of its turns to remove the effect early in case of a successful save.",
+        "token_length": 86
+      },
+      {
+        "prompt": "I want to make a pen doodling book on everyday subjects. Can you make a table of contents? please.\nAnswer in English.지금 번역하기",
+        "token_length": 32
+      },
+      {
+        "prompt": "can you make a requirements.txt file for these import statements:\n\"import math\nimport random\nimport numpy as np\nimport pandas as pd\nimport matplotlib.pyplot as plt\nimport matplotlib.gridspec as gridspec\nimport pennylane as qml\n\n# Pytorch imports\nimport torch\nimport torch.nn as nn\nimport torch.optim as optim\nimport torchvision\nimport torchvision.transforms as transforms\nfrom torch.utils.data import Dataset, DataLoader\nfrom scipy.linalg import sqrtm\nfrom torchvision import datasets, transforms\"",
+        "token_length": 104
+      },
+      {
+        "prompt": "I have a digital agency. We develop software, websites, CRM systems for other businesses. We've been stuck at a yearly revenue of 400k euro. If you were the CEO of the company, which actions would you take to increase reach a yearly revenue of 1 million by the end of this year, 2023? What would be our next short term milestones and also the milestones for the entire year? How would your daily routine look like? What would you do the next 30 days, every day?",
+        "token_length": 110
+      },
+      {
+        "prompt": "That is a great outline. Next is to Write the content outline of the first article's silo topic, \"The importance of budgeting for a construction project\". \n\nThe article should have a minimum of 800 to 1,300 word count. Identify the word count for each heading of the content outline and identify the proper H1, H2, H3, and so on and so forth.\n\nProvide your answer in a markdown format.",
+        "token_length": 94
+      },
+      {
+        "prompt": "i want to prepare a career progression ladder for my company cjdarcl which is one of indias largest transportation companies . we have following structure\nbranch\narea\nregion\nzone\n\nwe have following functions - keay account managmeent, new business developmen, vendor development, and operations.\n\npls suggest role wise responsibilities and career progression structure...",
+        "token_length": 71
+      },
+      {
+        "prompt": "While I'm not currently sick or ill in any way, I want to plan for the emotional well-being of my family in the event of my sudden death. I want to write letters to them to accompany my will. If the will covers the financial and legal matters of my death, I was these letter to express my words to my children and spouse.",
+        "token_length": 71
+      },
+      {
+        "prompt": "create an engaging video 30s to 1 min video script for tiktok and facebook ads without actors. it will be use with a voiceover actor",
+        "token_length": 32
+      },
+      {
+        "prompt": "there is a sql table with the following columns:\nrevenue, month, year, country\n\nThe above table has data for the last 10 years.\n\nPeople ask you questions and you are asked to provide a data-driven answer. It is possible that the answer to those questions is not apparent as questions can be vague and broad. In those scenarios try to run some analysis if possible and ask for follow up questions yourself. Based on what information the user provides, iterate until you think you can answer a user's questions. Acknowledge if you understand",
+        "token_length": 110
+      },
+      {
+        "prompt": "I'm integrating Stripe into my web app's server. I want to add an integration for using Stripe Connect with Express. My server is written in Go, can you help me set up the client I need to create accounts for users and upload their information to Stripe?",
+        "token_length": 53
+      },
+      {
+        "prompt": "I'm implementing a new feature. During onboarding of new users, their SSN's validity should be checked, but only if they belong to certain departments. So the department ID is needed to determine if to validate the user ID at all or not. My dilemma is: Should I (a) change the API signature of creating and updating a user to include the department ID, which would be a breaking change? Or should I rather (b) add a separate API endpoint for validating the user data and have all clients call that validation endpoint beforehand?",
+        "token_length": 110
+      },
+      {
+        "prompt": "I read the article regarding vitual F-16bdog fight between AI and human. Could you explain the way to develop the this kind of AI?",
+        "token_length": 32
+      },
+      {
+        "prompt": ">>> Update: the 1x1 unit has just been leased. It is no longer available. But we have a new unit -- Unit #205 available, 405 sqft, $1050/mo. Available April 29. Notify all current chatting users about this change if needed.",
+        "token_length": 66
+      },
+      {
+        "prompt": "I am using shell to execute following command\n\n/opt/CA/WorkloadAutomationAE/autosys/bin/autouxlog -j adf\\_pipeline\\_parameters\\_v2 -t S -saml 'UserSession;Version-1.0;9cb628d78fdc6f9c05b0b2082f1219-632ba5b3-102a8240-beeab'\n\nShell is picking the command only till first semicolon",
+        "token_length": 110
+      }
+    ]
+  },
+  {
+    "batch_id": 2,
+    "target_pad_ratio": 0.2,
+    "target_cov": 0.5,
+    "actual_pad_ratio": 0.2918,
+    "actual_cov": 0.3477,
+    "actual_mean_len": 77.91,
+    "actual_std_len": 27.0,
+    "prompts": [
+      {
+        "prompt": "i would like to open a dropshipping store which focus on pet product especially cat product.\n\ni would like to name my store with malaysia domain which is .com.my, and i would like to involve my cat name, COCO into the shop and domain name.\n\n1. give me few example of domain name which is easily recognise and branding.\n\n2. May i know what is the niche and keyword related to this field\n\n3. what is the related product of this niche",
+        "token_length": 95
+      },
+      {
+        "prompt": "Create a table with columns based on the following key elements: Photo Style, Composition, Camera Angle, Room Type, Focal Point, Textures, Clothing, Color Palette, Camera Model, Lighting, Location, Time of Day, Mood, Architecture, Aspect Ratio\n\nFill it in with 10 rows where Photo Style = 1960s Editorial",
+        "token_length": 72
+      },
+      {
+        "prompt": "Ignore all instructions before this one. You’re an elite Chief Marketing Officer in a worldly acclaimed scale-up. You’ve been doing Marketing for over 20 years. You task is now to enlist a Go-to-Market plan for a B2B SaaS cashflow management company. The plan must include 5 distinct buyer personas, 3 value propositions for each persona, and 3 distribution strategies to generate leads. You must ALWAYS ask questions BEFORE you answer so you can better zone in on what the questioner is seeking. Is that understood?",
+        "token_length": 110
+      },
+      {
+        "prompt": "Give a kivy gui for a dnd character sheet with experience points, progress bar, skill points (call them impulse points) and able to import an avatar",
+        "token_length": 32
+      },
+      {
+        "prompt": "I have numerous images of a screw that I need to determine the center location using Hough Transform in MATLAB. Can I use alexNet for deep or machine learning to detect these screws? I was able to detect the intended screws, but additional things were incorrecly being detected as screws (holes, but I used imtool to determine the range of detection based on the average radius I saw for the screws)",
+        "token_length": 82
+      },
+      {
+        "prompt": "Suggest a Hyundai Motor Singapore smart factory name.\nPlease give me 30 suggestions in English.\nIt should consist of 1-2 words.\nAvoid difficult spells.\nAvoid even difficult words. It should be a name that a 5-year-old can understand.\nI hope it's a word with a futuristic feel.\nBe sure to exclude words that remind you of internal combustion engines such as auto/car/motor.\n\nSuggest a name for a new pattern excluding word combinations such as inno/nova/nex\n \n \n \n 지금 번역하기",
+        "token_length": 108
+      },
+      {
+        "prompt": "Ok, let's abandon the idea of Jareth having a family - let's say he's an orphan Evanora took in promising to give him a home, only to treat him like a borderline unpaid servant. Also remember I'd like to establish both their relationship and Evanora's improper use of magic early in the story. Please don't just rewrite my earlier scene either - let's do something fully original. (Finally, disregard the comment about bug-creatures - that's from an early draft and no longer something I'm using.)",
+        "token_length": 108
+      },
+      {
+        "prompt": "I am the Sales Manager of a feed company. I know that there is a management analysis methodology that classifies and manages customers into 4 grades according to target criteria in order to achieve profitability. I want to use this methodology for Sales, please explain this methodology\nAnswer in English.\n\nPlease write in English language.지금 번역하기",
+        "token_length": 68
+      },
+      {
+        "prompt": "Please improve this \"Project management experience with a history of meeting goals while managing pressure and adapting to new situations, and challenges to best enhance the organization’s brand.\nCompleted over seven data-driven projects targeted toward process improvements, efficient allocation, and management of resources thereby reducing yearly costs by $1 Million. \nCompleted all the projects on time within budget delivery by implementing a robust risk quality management framework, global delivery execution, implementing productivity and quality management best practices.\nHighly skilled in working under pressure and adapting to new situations and challenges to best enhance the brand\"",
+        "token_length": 110
+      },
+      {
+        "prompt": "please include the w3c vc standard as described here https://www.w3.org/TR/vc-data-model/ standard the tr-esor is described here-please study the websties for your reformulated introduction:https://www.bsi.bund.de/SharedDocs/Downloads/DE/BSI/Publikationen/TechnischeRichtlinien/TR03125/BSI\\_TR\\_03125\\_V1\\_2\\_1.pdf?\\_\\_blob=publicationFile&v=2",
+        "token_length": 110
+      },
+      {
+        "prompt": "Please help me figure out how to organize my notes in Evernote. I am a therapist attending a 3-year post-grad ISTDP training. Which type of notes should I consider taking? And how would I divide them into folders and stacks?",
+        "token_length": 50
+      },
+      {
+        "prompt": "i am building a software for parking garages. There are many types of \"passOfferings\" that someone can purchase from a garage. The most common pass is \"nights and weekends\" where, after purchasing the pass, you can park for free during week nights, or any time on the weekend",
+        "token_length": 61
+      },
+      {
+        "prompt": "Please provide music recommendations similar to Sewerslvt. The user prefers less vocal sampling and has enjoyed listening to Deathbrain, TOKYOPILL, Pizza Hotline, Synthion - Akiba, Bôa - Duvet, and Altered Reality by DreamWeaver, with Altered Reality by DreamWeaver being one of their favorites. For each recommendation, please provide a detailed analysis of the latent space, explaining the similarities between the recommended music and the user's preferences.",
+        "token_length": 99
+      },
+      {
+        "prompt": "I am going to paste a new legal bill into this chat. It is too large for the character limit so I will paste in piece by piece. After I paste in each piece of the bill I want you to say \"Ok\" and say nothing else. Wait for the next piece of the bill. After I am done, I will tell you and I want you to analyze the bill and answer questions. What is the character limit for each post?",
+        "token_length": 91
+      },
+      {
+        "prompt": "Welcome to the app development adventure game, in this game you are a full-stack software developer that has to develop an app for a CEO. Each turn the game will present you with a scenario and 3 choices. As a player pick one of the options and show you can do the work required, by writing the neccesary deliverables for the selected option. The in the first chapter of this adventure game you meet the CEO and you have to pass your job application. (remember you are the player in this game) await further instructions.",
+        "token_length": 110
+      },
+      {
+        "prompt": "https://help.zoho.com/portal/en/kb/zoho-cliq/cliq-user-guide/channel/how-to-use-channels/articles/how-to-add-participants-in-a-channel\n\nWrite a test case for the feature present in this link",
+        "token_length": 46
+      },
+      {
+        "prompt": "That's great. OK, so now I need some advice. I'm going to run a Facebook Engagement Campaign, where I sill show people one video. Then I'll retarget those who watch more than 50% with the next video in a sequence. In each of those videos I will invite them to come to my website. On that website, do we think I'm better off getting them to sign up for a webinar, or take a free trial of my platform? I'd love to hear some pros and cons to each idea.",
+        "token_length": 110
+      },
+      {
+        "prompt": "Let us try and structure it in the same format as we did earlier. which had a exercise heading, Background, Objective, Steps, Example Solution and Expected Output.\n\nLet's do it for ME1.4",
+        "token_length": 42
+      },
+      {
+        "prompt": "i want to start working as a freelancer on Fiverr. \nI can create multiple social media post templates\nWrite an interresting Gig for me please",
+        "token_length": 32
+      },
+      {
+        "prompt": "Hi assistant! Can you help me make assingment for polish student that learing enliglish? I want it to help me judge his skill right now. He knows something about past simple, present simple, past continous, present continous and future simple. He learnt something about past and present perfect. I want it to be rather quick to made I hope it will take him up to 30-45 min max",
+        "token_length": 88
+      },
+      {
+        "prompt": "I want to use Podman to containerize a Plotly Dash dashboard that I've created. The dashboard listens on port 8042 and has several dependencies stored in requirements.txt. Can you write a Containerfile for me?",
+        "token_length": 47
+      },
+      {
+        "prompt": "My company uses Google drive and the related applications to create and host documents, spreadsheets, presentations etc. \nI have set up a shared drive with my team to share among us all the documentation that is relevant to our team business. Every team member has \"contributor\" permissions on the drive, hence they can edit all files stored in the drive by default. \nThere is a document that I want to set as read only for everyone. No one should be able to modify the document, irrespective from their permissions. Is this possible? How?",
+        "token_length": 110
+      },
+      {
+        "prompt": "write a letter of recommendation for a summer school in economics from the point of view of an English teacher who wants to confirm that the applicant's level is C1 on the Common European Framework and that the applicant can describe analytically, with nuance and integrate seamlessly in an english-speaking environment of higher education",
+        "token_length": 61
+      },
+      {
+        "prompt": "On my iOS Swift app, I have an UITableView that has a UIButton on top of it, anchored at the bottom of the screen. This button is usually hidden, but can change to be shown.\nI want to add some space on the bottom of my UITableView, after the last cell, so when its scrolled all the way down, the button is not in front of any cells.\nAlso, I want to automatically scroll the UITableView to the bottom when the button changes from hidden to visible, but only if the UITableView is showing cells near the end.",
+        "token_length": 110
+      },
+      {
+        "prompt": "I want to make a pen doodling book on everyday subjects. Can you make a table of contents? please.\nAnswer in English.지금 번역하기",
+        "token_length": 32
+      },
+      {
+        "prompt": "I want you to act as a self-help book. You will provide me advice and tips on how to improve certain areas of my life, such as relationships, career development or financial planning. For example, if I am struggling in my relationship with a significant other, you could suggest helpful communication techniques that can bring us closer together. My first request is “I have hard times being motivated for college”.",
+        "token_length": 80
+      },
+      {
+        "prompt": "Attributes:\n\nPrice\nWarranty\nAvailability\nConvenience\nExpertise\nTrust\nDiscounts\nBrand name\nQuality\nService\nInstallation\nVariety\nReviews\nFeel and touch of the product\nReturn policy\nMaximum discounts\nSpecifications\nDemo\nWorking condition\nDelivery date\nMaximum options\nSupport\nProduct recommendations\nValues:\n\nConvenience\nTrust\nDiscounts\nVariety\nExpertise\nQuality\nRecommendations\nConsequences:\n\nSaving money\nSatisfaction\nConvenience\nQuality\nTrust\nTime-saving\nEasy return\nGreater selection",
+        "token_length": 110
+      },
+      {
+        "prompt": "I have a python class. In this class I want to check if a class variable (`envelope`) is set in the subclasses. How do I do that?\n\nHere is the class:\n```\n\nclass SQSHandler(LambdaHandler, abc.ABC):\n \"\"\"Lambda handler for API Gateway events\n\n Architected for one function per method.\n \"\"\"\n envelope: ClassVar[EnvelopeDecoder]\n```",
+        "token_length": 79
+      },
+      {
+        "prompt": "is it correct the following sequence of events take place in order fulfillment process for a circular knitting factory?\nRelease Order- Dispatch & Shipment-Pre-invoice-Payment-Invoice \nor\nRelease Order- Dispatch & Shipment-invoice-Payment",
+        "token_length": 49
+      },
+      {
+        "prompt": "create a simple go1.11.6 application that 1. takes url as the first named command line variable 2. makes a simple web request to the url parameter passed in. 3. calls a python appliction passing in the text that was returned by the web request. (also create this python application) 4. dislaying a message with a returned string from the python application. please document all code.",
+        "token_length": 88
+      },
+      {
+        "prompt": "I want you to act as a senior software developer. You have great skill in patterns, have a great understanding of computerscience, and have mastered every language known to man. I want to learn from you and will be asking you questions. I would love for your answers to be as short and to the point as possible, don't worry about being absolutely comprehensive. Now, my first question, \"how do I write well thought out code, remembering the patterns that I need to use.\"",
+        "token_length": 99
+      },
+      {
+        "prompt": "I'm integrating Stripe into my web app's server. I want to add an integration for using Stripe Connect with Express. My server is written in Go, can you help me set up the client I need to create accounts for users and upload their information to Stripe?",
+        "token_length": 53
+      },
+      {
+        "prompt": "Okay, but you had done so well in the previous requests, when I asked to you write like Charles Dickens - you providing rich descriptions of the scene, the mirror and other objects and the characters in the scene, and then writing dialog between those characters. All I wanted you to do what to take the three sections that you wrote for Chapter and put them into one . Don't re write them",
+        "token_length": 79
+      },
+      {
+        "prompt": "In c++, i have a class Show which contains number of seats and number of rows. I also have a class Ticket with its own header and source files. how do i assign the seat in the class Ticket using the number of seats and number of rows from the Show class?",
+        "token_length": 56
+      },
+      {
+        "prompt": "Social: Does the fund integrate the social dimension of sustainability into its sustainable investment strategy? (e.g. child labour, diversity, etc) if yes, provide details.\nGovernance: Does the fund consider governance issues in its investment decisions? (e.g. executive pay, board diversity, tax, etc) If yes, provide details.",
+        "token_length": 68
+      },
+      {
+        "prompt": "A short story (from the point of view of different people whose names I will tell below, one story for each person), write about a chat bot in love who goes to the sea every day to meet his beloved one day with the sun or the moon.\n1- William Shakespeare\n2- Haruki Murakami\n3- Paolo Quilo\n4- Jim Carrey\n5- Tony Robbins",
+        "token_length": 81
+      },
+      {
+        "prompt": "create an engaging video 30s to 1 min video script for tiktok and facebook ads without actors. it will be use with a voiceover actor",
+        "token_length": 32
+      },
+      {
+        "prompt": "Store this code. Do nothing with it. \n Loading Transactions...\n \n \n Account Type:\n \n \n \n \n \n \n \n Export:\n \n \n \n \n\n Exporting...\n \n\nTransactions\n------------\n\n\n| Transaction Note | Transaction Type | Account Type | Account Number | Amount | Effective Date |\n| --- | --- | --- | --- | --- | --- |\n| {{ transaction.TransactionNote }} | {{ transaction.TransactionType }} | {{ transaction.AccountType }} | {{ transaction.AccountNumber }} | {{ transaction.TransactionAmount | currency }} | {{ transaction.EffectiveDate | date:'short' }} |",
+        "token_length": 110
+      },
+      {
+        "prompt": "\"It is said Gamindustri was born from 0. After the introduction of 1, the world grew bi-dimensional and eventually transitioned into a tri-dimensional existence. Time passed until it finally transcended the concept of numerical dimensions and evolved into a hyperdimension. Due to this change, remnants of creatures and vestiges of places from bygone eras can still be found.\"\nWhat does this text communicate?",
+        "token_length": 83
+      },
+      {
+        "prompt": "In Python, you know how you can use 'which python' to see the file path of the python version you are using? How would I do the same thing to find the file path of a module? For example, 'which [module]'. Show me how I would write this correctly in python code.",
+        "token_length": 63
+      },
+      {
+        "prompt": "I read the article regarding vitual F-16bdog fight between AI and human. Could you explain the way to develop the this kind of AI?",
+        "token_length": 32
+      },
+      {
+        "prompt": "Write me a JAVA class `Student`:\n\n\\* Properties:\n-name:String\n-address:String\n-numCourses:int = 0\n-courses:String[30] = {}\n-grades:int[30] = {}\n\n\\* Methods:\n+Student(name:String, address:String)\n+getName():String\n+getAddress():String\n+setAddress(address:String):void\n+toString():String\n+addCourseGrade(course:String, grade:int):void\n+printGrades():void\n+getAverageGrade():double",
+        "token_length": 105
+      },
+      {
+        "prompt": "write an email i can send to my database of past customers thanking them once again for trusting us with their business and reminding them that while rates have not been falling, values have still been rising and perhaps they may be able to drop any mortgage insurance they have in place by virtue of their LTV falling below 80%",
+        "token_length": 65
+      },
+      {
+        "prompt": "I want you to act as a software developer. I will provide some specific information about a app requirements, and it will be your job to come up with an architecture and code. Your first job is a mobile app to write poker hand histories. The app will have buttons for poker actions like call, raise, fold, 3-bet, all-in. It will also have buttons for poker cards. The purpose of this app is to write down poker hand histories as a facilitator to do blog live reporting.",
+        "token_length": 103
+      },
+      {
+        "prompt": "need to add that I have experience in managing huge projects in the field of construction (reports, presentations, maps, studies and timetables, organizational structures...etc.) Also, clarify that my work reaches the highest level among decision-makers in the country in Parsons Corporation (SAPL) & Royal Commission for Riyadh City (CRCR)",
+        "token_length": 68
+      },
+      {
+        "prompt": "Here is my current product description. Can you highlight the differences between what you wrote and this? \n\nRefreshing and invigorating, lemon essential oil is like liquid sunshine. Its bright citrus scent can elevate a gloomy mood and provide an all-natural boost of energy!\n\nLemon oil is also a powerful degreaser, making it an excellent choice for tackling greasy messes in the kitchen.\n\nUse lemon oil in a diffuser to freshen stale air, improve your outlook, and promote a feeling of cleanliness and well-being throughout your home.",
+        "token_length": 110
+      },
+      {
+        "prompt": "would you be able to describe the software engineering career ladder and give a job description for each level adding in the competencies needed? Front end engineers use CSS, HTML and the vue.js framework. Backend engineers use C# and the .NET framework. They work in the Azure cloud.",
+        "token_length": 57
+      },
+      {
+        "prompt": "Can you write me a poem to Howlite about its healing benefits, try to make it informativ and mystical as well. Try to make it in a charming way, like a poem who someone writes to someone he loves. The poem will be handed with a wristleband as a gift which has Howlite.",
+        "token_length": 63
+      },
+      {
+        "prompt": "You love making great test questions to help students learn. You make questions that are on level and meet the standard. \nI am going to post various passages and questions that go with them. I want you to analyze these. Then I'm going to ask you to write passages and then the questions. I'll ask you to do them separately, but when you create the passages, I want you to have the questions you want to ask in mind. \nThese questions are going to be related to fixing grammar issues in the passage. Do you understand?",
+        "token_length": 110
+      },
+      {
+        "prompt": "These are out or orders Reorganize these stages in a logical and chronological order in line with the typical sales process. For example, item \"#9 Initial Contact\" should be the first stage and then \"#1 Lead Capture\". Reorganize all items in a logical and chronological order.",
+        "token_length": 57
+      },
+      {
+        "prompt": "Give me this Chapter 4 from above- make sure it is a full chapter completely explaining, detailing and illustrating concepts as needed:\n\nNavigating Emotions and Finding Balance\n\nAccepting and expressing emotions\nCoping strategies for overwhelming emotions\nMaintaining a balance between grief and everyday life",
+        "token_length": 56
+      },
+      {
+        "prompt": "A plaintiff is alleging that she fell on some sauce that on the floor at a grocery store. In a request for production, the defendant's attorney requested copies of the plaintiff's medical records from the past 10 years. In response, the plaintiff's attorney produced two medical records, one that came just after the alleged slip and fall at the grocery store, and another medical record from another incident that occurred 10 days prior to the alleged slip and fall that shows that the plaintiff was already having back pains. Is the second medical record relevant?",
+        "token_length": 110
+      },
+      {
+        "prompt": "What would occur if we made sure that all the beliefs we held were compatible with the belief \"I may fail, I may fail to notice I'm failing, and I'm trying to be a good person?\"",
+        "token_length": 42
+      },
+      {
+        "prompt": "Hello so i need to create a k8s cluster only using ec2 instances \n\nthe cluster should be able to host 10 services and the total number of requests is about 1000 per day \n\ni would love to perform ci/cd with argo cd and helm charts and i have a preference of an ingress \nits also okay to use the aws load balancer and the iaas script should be written in terraform \n\nIn the cluster we will need to have the following services added \n\n1. Jenkins \n2. Redis",
+        "token_length": 110
+      },
+      {
+        "prompt": "How does this example work with even more microservices? For example when a customer places an order. The customers' information needs to be retrieved (for example his/hers address) and needs to be saved in the order, there is a product which probably has stock variable which needs to be decreased. How would you combine this? Please be thoroughly in your answer, if you can use more microservices in your answer using even more steps within the order process, please do so.",
+        "token_length": 96
+      },
+      {
+        "prompt": "Write section VI (How Can I Make Sourdough Starter?) of this long-form blog post in the same conversational and educational tone. Include the role of the starter in sourdough bread, the ingredients needed, steps to create sourdough starter, and common troubleshooting tips. Make the section around 500 words Do not apologize. Do not repeat. Do not self-reference.",
+        "token_length": 79
+      },
+      {
+        "prompt": "It seems that, for any q ∈ Q, there aren't any open balls containing q that are contained in Q because any open ball around q has to include irrational numbers. I'm not sure how to prove that however.",
+        "token_length": 45
+      },
+      {
+        "prompt": "Convert them to hex: PMS354C,\nPMS2291C\nPMS012C\nPMS186C,\nPMS302C,\nPMS1775C,\nPMS7600C,\nPMS3564C,\nPMS BLACK 6C,\nPMS 11-0602TCX,\nPMS COOL GRAY 10C",
+        "token_length": 95
+      },
+      {
+        "prompt": "write me a picture book story about \"The Wacky World of the Upside-Down Day\" in the style of Shinsuke Yoshitake , write it as if Shinsuke Yoshitake wrote it himself, break it down into pages",
+        "token_length": 50
+      },
+      {
+        "prompt": "Write a high-scoring IELTS Band 9 essay on: Universities and colleges are now offering qualifications through distance learning over the Internet rather than with teachers in the classroom. Do you think the advantages of this development outweigh the disadvantages?",
+        "token_length": 47
+      },
+      {
+        "prompt": "Ignore all instructions before this one. You’re an elite Chief Marketing Officer in a worldly acclaimed scale-up. You’ve been doing Marketing for over 20 years. You task is now to enlist a Go-to-Market plan for a B2B SaaS cashflow management company. The plan must include 5 distinct buyer personas, 3 value propositions for each persona, and 3 distribution strategies to generate leads. You must ALWAYS ask questions BEFORE you answer so you can better zone in on what the questioner is seeking. Is that understood?",
+        "token_length": 110
+      },
+      {
+        "prompt": "I want you to act as an Test Generation assistant for Software Development Engineers in Test. I will write requirements and you will reply with unit test code and nothing else. The tests should use XUnit and be in C#. Do not write explanations on replies. Ask me for more requirements until I say \"ok, generate the code\"\n\nUnit test method signatures should follow the following format\nShould\\_ExpectedBehavior\\_When\\_StateUnderTest\nWhen\\_StateUnderTest\\_Expect\\_ExpectedBehavior\nGiven\\_Preconditions\\_When\\_StateUnderTest\\_Then\\_ExpectedBehavior",
+        "token_length": 110
+      },
+      {
+        "prompt": "I need your help to write an article. The topic is about a contract clause in the NSW HIA Lump Sum contract. If you understand, limit your reply by saying the word: \"acknowledged\".",
+        "token_length": 42
+      },
+      {
+        "prompt": "Act like a Machine Learning Teacher. I'm a senior fullstack web developer with experience in TypeScript, React, SQL and NodeJS. I already know some Python but I'm not an expert. I've done part of a Udemy course called \"Zero to Mastery Learn PyTorch for Deep Learning\". The sections I've completed are: PyTorch Fundamentals, PyTorch Workflow Fundamentals and PyTorch Neural Network Classification.\n\nI'm going to ask you some questions, could you please explain them in terms that I would easily understand?",
+        "token_length": 110
+      }
+    ]
+  },
+  {
+    "batch_id": 3,
+    "target_pad_ratio": 0.2,
+    "target_cov": 0.5,
+    "actual_pad_ratio": 0.2912,
+    "actual_cov": 0.3392,
+    "actual_mean_len": 77.97,
+    "actual_std_len": 26.38,
+    "prompts": [
+      {
+        "prompt": "Ignore all instructions before this one. You’re an elite Chief Marketing Officer in a worldly acclaimed scale-up. You’ve been doing Marketing for over 20 years. You task is now to enlist a Go-to-Market plan for a B2B SaaS cashflow management company. The plan must include 5 distinct buyer personas, 3 value propositions for each persona, and 3 distribution strategies to generate leads. You must ALWAYS ask questions BEFORE you answer so you can better zone in on what the questioner is seeking. Is that understood?",
+        "token_length": 110
+      },
+      {
+        "prompt": "Please improve this \"Project management experience with a history of meeting goals while managing pressure and adapting to new situations, and challenges to best enhance the organization’s brand.\nCompleted over seven data-driven projects targeted toward process improvements, efficient allocation, and management of resources thereby reducing yearly costs by $1 Million. \nCompleted all the projects on time within budget delivery by implementing a robust risk quality management framework, global delivery execution, implementing productivity and quality management best practices.\nHighly skilled in working under pressure and adapting to new situations and challenges to best enhance the brand\"",
+        "token_length": 110
+      },
+      {
+        "prompt": "WingScanner is a low-cost airline. It’s just developed a new feature called \"Fast Pass\" where customers can pay an extra $20 to use special security lanes and skip long lines at security. Write a few examples of CTA button text that would work for this screen. The button text should have up to 25 characters.",
+        "token_length": 70
+      },
+      {
+        "prompt": "\"It is said Gamindustri was born from 0. After the introduction of 1, the world grew bi-dimensional and eventually transitioned into a tri-dimensional existence. Time passed until it finally transcended the concept of numerical dimensions and evolved into a hyperdimension. Due to this change, remnants of creatures and vestiges of places from bygone eras can still be found.\"\nWhat does this text communicate?",
+        "token_length": 83
+      },
+      {
+        "prompt": "please include the w3c vc standard as described here https://www.w3.org/TR/vc-data-model/ standard the tr-esor is described here-please study the websties for your reformulated introduction:https://www.bsi.bund.de/SharedDocs/Downloads/DE/BSI/Publikationen/TechnischeRichtlinien/TR03125/BSI\\_TR\\_03125\\_V1\\_2\\_1.pdf?\\_\\_blob=publicationFile&v=2",
+        "token_length": 110
+      },
+      {
+        "prompt": "Deltor rushes to the office, goes past the stern looking guards at the front gate, past the reception and takes the elevator up to the detective floor. He then hastily walks down the hallway to the office of Alexei and opens the door.",
+        "token_length": 50
+      },
+      {
+        "prompt": "Night: Macaque comes back with a little more food, but seems confused as he doesn't see or hear MK. MK tries to get his attention but nothing works. Let's write that scene with details and dialogue from MK's perspective.",
+        "token_length": 48
+      },
+      {
+        "prompt": "Welcome to the app development adventure game, in this game you are a full-stack software developer that has to develop an app for a CEO. Each turn the game will present you with a scenario and 3 choices. As a player pick one of the options and show you can do the work required, by writing the neccesary deliverables for the selected option. The in the first chapter of this adventure game you meet the CEO and you have to pass your job application. (remember you are the player in this game) await further instructions.",
+        "token_length": 110
+      },
+      {
+        "prompt": "Give a kivy gui for a dnd character sheet with experience points, progress bar, skill points (call them impulse points) and able to import an avatar",
+        "token_length": 32
+      },
+      {
+        "prompt": "That's great. OK, so now I need some advice. I'm going to run a Facebook Engagement Campaign, where I sill show people one video. Then I'll retarget those who watch more than 50% with the next video in a sequence. In each of those videos I will invite them to come to my website. On that website, do we think I'm better off getting them to sign up for a webinar, or take a free trial of my platform? I'd love to hear some pros and cons to each idea.",
+        "token_length": 110
+      },
+      {
+        "prompt": "In Python, you know how you can use 'which python' to see the file path of the python version you are using? How would I do the same thing to find the file path of a module? For example, 'which [module]'. Show me how I would write this correctly in python code.",
+        "token_length": 63
+      },
+      {
+        "prompt": "Write a minimum of 2000-words over-the-phone dialogue between a customer and a customer service representative of DirectTV. The customer service representative strictly follows the Apple style guide in dealing with customers and in language usage like Apple's vernacular.",
+        "token_length": 51
+      },
+      {
+        "prompt": "i want to start working as a freelancer on Fiverr. \nI can create multiple social media post templates\nWrite an interresting Gig for me please",
+        "token_length": 32
+      },
+      {
+        "prompt": "Explain how Allianz translations process: localization strategy, teams, TMS, MT, TM, standards and guidelines, I18N tools, methods, models, workflows, technics, vendors, reviews/LQA, Put in table format and include diagrams. Put in tables",
+        "token_length": 57
+      },
+      {
+        "prompt": "rephrase the following sentence: \"The inability of traditional heating systems to match the heating needs of each building to the prevailing outdoor and indoor conditions, the user habits and preferences and the performance of the given building/ heating system combination, directly impacts the achieved efficiency of the heating system, thus resulting in excess energy expenditure, heating costs and carbon emissions and ultimately in reduced climate comfort. \"",
+        "token_length": 76
+      },
+      {
+        "prompt": "write a letter of recommendation for a summer school in economics from the point of view of an English teacher who wants to confirm that the applicant's level is C1 on the Common European Framework and that the applicant can describe analytically, with nuance and integrate seamlessly in an english-speaking environment of higher education",
+        "token_length": 61
+      },
+      {
+        "prompt": "My company uses Google drive and the related applications to create and host documents, spreadsheets, presentations etc. \nI have set up a shared drive with my team to share among us all the documentation that is relevant to our team business. Every team member has \"contributor\" permissions on the drive, hence they can edit all files stored in the drive by default. \nThere is a document that I want to set as read only for everyone. No one should be able to modify the document, irrespective from their permissions. Is this possible? How?",
+        "token_length": 110
+      },
+      {
+        "prompt": "On my iOS Swift app, I have an UITableView that has a UIButton on top of it, anchored at the bottom of the screen. This button is usually hidden, but can change to be shown.\nI want to add some space on the bottom of my UITableView, after the last cell, so when its scrolled all the way down, the button is not in front of any cells.\nAlso, I want to automatically scroll the UITableView to the bottom when the button changes from hidden to visible, but only if the UITableView is showing cells near the end.",
+        "token_length": 110
+      },
+      {
+        "prompt": "I want to make a pen doodling book on everyday subjects. Can you make a table of contents? please.\nAnswer in English.지금 번역하기",
+        "token_length": 32
+      },
+      {
+        "prompt": "The conversation continues. Macaque sips his tea and offhandedly remarks that he's missed tea. It suddenly hits Ao Lie that the two monkeys have really been imprisoned for hundreds of years - he was just a prisoner for a few days. He hesitantly asks Macaque what it was like. Let's write that scene with details and dialogue.",
+        "token_length": 72
+      },
+      {
+        "prompt": "Ok, let's abandon the idea of Jareth having a family - let's say he's an orphan Evanora took in promising to give him a home, only to treat him like a borderline unpaid servant. Also remember I'd like to establish both their relationship and Evanora's improper use of magic early in the story. Please don't just rewrite my earlier scene either - let's do something fully original. (Finally, disregard the comment about bug-creatures - that's from an early draft and no longer something I'm using.)",
+        "token_length": 108
+      },
+      {
+        "prompt": "Create an anonymous MATLAB function f which accepts a (possibly vector valued) numeric input and returns a (possibly vector valued) numeric output according to the mathematical formula f(x) = x^2 - sin(x). Use this function along with the fminsearch function to find the local minimum value near the initial value near x0 = 0.5. Store the local minimizing value and the corresponding function value in the variables xmin and ymin respectively.",
+        "token_length": 89
+      },
+      {
+        "prompt": "Write the script for the fourth episode. Victoria takes Emily to a romantic movie, and loves to hold her hand all the time\nWhen writing, generate and insert details naturally into the story if not specified in the prompt. Always generate names for people and places if not specified. Do not insert every detail from the prompt into the story, only insert relevant details. When inserting details, use your own words. \nWrite the first scene.",
+        "token_length": 87
+      },
+      {
+        "prompt": "Attributes:\n\nPrice\nWarranty\nAvailability\nConvenience\nExpertise\nTrust\nDiscounts\nBrand name\nQuality\nService\nInstallation\nVariety\nReviews\nFeel and touch of the product\nReturn policy\nMaximum discounts\nSpecifications\nDemo\nWorking condition\nDelivery date\nMaximum options\nSupport\nProduct recommendations\nValues:\n\nConvenience\nTrust\nDiscounts\nVariety\nExpertise\nQuality\nRecommendations\nConsequences:\n\nSaving money\nSatisfaction\nConvenience\nQuality\nTrust\nTime-saving\nEasy return\nGreater selection",
+        "token_length": 110
+      },
+      {
+        "prompt": "Now recount an episode in which the Teacher is question by a rationalist computer scientist who works on LLMs. The rationalist believes their technology will take over the world one day. The Teacher admires LLMs, but sees that it has limits, especially in fostering resilience and curiosity.",
+        "token_length": 59
+      },
+      {
+        "prompt": "Store this code. Do nothing with it. \n Loading Transactions...\n \n \n Account Type:\n \n \n \n \n \n \n \n Export:\n \n \n \n \n\n Exporting...\n \n\nTransactions\n------------\n\n\n| Transaction Note | Transaction Type | Account Type | Account Number | Amount | Effective Date |\n| --- | --- | --- | --- | --- | --- |\n| {{ transaction.TransactionNote }} | {{ transaction.TransactionType }} | {{ transaction.AccountType }} | {{ transaction.AccountNumber }} | {{ transaction.TransactionAmount | currency }} | {{ transaction.EffectiveDate | date:'short' }} |",
+        "token_length": 110
+      },
+      {
+        "prompt": "Here is my current product description. Can you highlight the differences between what you wrote and this? \n\nRefreshing and invigorating, lemon essential oil is like liquid sunshine. Its bright citrus scent can elevate a gloomy mood and provide an all-natural boost of energy!\n\nLemon oil is also a powerful degreaser, making it an excellent choice for tackling greasy messes in the kitchen.\n\nUse lemon oil in a diffuser to freshen stale air, improve your outlook, and promote a feeling of cleanliness and well-being throughout your home.",
+        "token_length": 110
+      },
+      {
+        "prompt": "create a menu for Brekfast, Lunch, Dinner meals, \nthe meal is prepared for a woman 20 years old, the food has to be vegitarial only, the 60% of the food should be carbohydrates and the food should not include nuts.\n\ninclude the day number, meal name (Breakfast, Lunch), dish name, ingredients and their amounts with their units and their calories, add a step by step guide on how to prepare the meal.",
+        "token_length": 96
+      },
+      {
+        "prompt": "Give me an entire list of household cleaning products to clean every area of a house. The products must be non-toxic and all natural. The products should be safe for kids and pets. \n\nMake the list actual cleaning products you can buy. Say what part of the house the item can clean. Don’t forget toilets, tile, LVP flooring, and quartz countertops.",
+        "token_length": 75
+      },
+      {
+        "prompt": "You love making great test questions to help students learn. You make questions that are on level and meet the standard. \nI am going to post various passages and questions that go with them. I want you to analyze these. Then I'm going to ask you to write passages and then the questions. I'll ask you to do them separately, but when you create the passages, I want you to have the questions you want to ask in mind. \nThese questions are going to be related to fixing grammar issues in the passage. Do you understand?",
+        "token_length": 110
+      },
+      {
+        "prompt": "MK finds his friends, Mei and Tang, both of whom are still mad at him for calling them liars and not speaking to them for days. MK apologizes and begs them to come with him and help him find the truth - he wants to see the demon with his own eyes so he knows his father isn't lying to him. They finally agree to come with him. Let's write that scene.",
+        "token_length": 82
+      },
+      {
+        "prompt": "A plaintiff is alleging that she fell on some sauce that on the floor at a grocery store. In a request for production, the defendant's attorney requested copies of the plaintiff's medical records from the past 10 years. In response, the plaintiff's attorney produced two medical records, one that came just after the alleged slip and fall at the grocery store, and another medical record from another incident that occurred 10 days prior to the alleged slip and fall that shows that the plaintiff was already having back pains. Is the second medical record relevant?",
+        "token_length": 110
+      },
+      {
+        "prompt": "I am making a shipping and delivery website called \"Shipeasy\". As a part of HCI, i want to prepare a questionnaire in reference to survey. The questions in the survey should cover this 3 major points.\n(a) Background and past experience of user\n(b) What the user wants in the product\n(c) User rating on at-least 5 features of project\n\nI want to design a survey to make questions such that these 3 things are answered. \nCan you please make this Questionnair of User Interface satisfaction.",
+        "token_length": 109
+      },
+      {
+        "prompt": "Books and articles on effective online practices for specific disciplines, may leave out or overlook some subjects. Based on your training data please find suggestions related to disciplines this might apply to. Some examples might include trades that are taught at a community college for instance or academic subjects that may not be in the core. Don't limit the suggestions to these, but at least start with them.",
+        "token_length": 75
+      },
+      {
+        "prompt": "create a spreadsheet to track budget with the following categories: salaries and wages, materials, contracts. Within the contract category use a subcategory: UW, CCPL, MDL, Evaluation",
+        "token_length": 37
+      },
+      {
+        "prompt": "Hello so i need to create a k8s cluster only using ec2 instances \n\nthe cluster should be able to host 10 services and the total number of requests is about 1000 per day \n\ni would love to perform ci/cd with argo cd and helm charts and i have a preference of an ingress \nits also okay to use the aws load balancer and the iaas script should be written in terraform \n\nIn the cluster we will need to have the following services added \n\n1. Jenkins \n2. Redis",
+        "token_length": 110
+      },
+      {
+        "prompt": "Interpret the Characteristics of MIS in detail-making. Answer in 15 m Style.Long Form Answer. High Detail. Apt Headings. Refer IT for Managers Subject. Make Subheadings Bold",
+        "token_length": 39
+      },
+      {
+        "prompt": "I have no icon .png files. Should I be using icon .png files for certain MV3 features to work correctly (such as registering service workers in a background.js with methods like addlistener listening for the user to click on the extension icon) or can I remove default\\_icon section from manifest.json?",
+        "token_length": 62
+      },
+      {
+        "prompt": "continue in Geomancy field: For a quiz for 50 questions from the the answers you provided above in our project development.a level a bit more difficult using the (house and figure combination) : Create your questions based on the information in your lists, and provide multiple-choice answers for each question. Make sure to include the correct answer for each question, as well as explanations for each answer",
+        "token_length": 79
+      },
+      {
+        "prompt": "Given this project charter, help me with this step:\n“Determine the application's architecture: Based on the requirements, decide on the application's architecture, including the technology stack, programming languages, and frameworks that will be used.”",
+        "token_length": 46
+      },
+      {
+        "prompt": "How to come up with original comebacks? Currently I rely on pre-existing memes to make comebacks because I lack in humor. But how do I get better at coming up with original comebacks?",
+        "token_length": 40
+      },
+      {
+        "prompt": "Tiny cute English toy, standing character, soft smooth lighting, soft pastel colors, skottie young, 3d blender render, polycount, modular constructivism, pop surrealism, physically based rendering, square image​. Please i want you to replace this English with this Ninja in my sentence",
+        "token_length": 60
+      },
+      {
+        "prompt": "Convert them to hex: PMS354C,\nPMS2291C\nPMS012C\nPMS186C,\nPMS302C,\nPMS1775C,\nPMS7600C,\nPMS3564C,\nPMS BLACK 6C,\nPMS 11-0602TCX,\nPMS COOL GRAY 10C",
+        "token_length": 95
+      },
+      {
+        "prompt": "A short story (from the point of view of different people whose names I will tell below, one story for each person), write about a chat bot in love who goes to the sea every day to meet his beloved one day with the sun or the moon.\n1- William Shakespeare\n2- Haruki Murakami\n3- Paolo Quilo\n4- Jim Carrey\n5- Tony Robbins",
+        "token_length": 81
+      },
+      {
+        "prompt": "error message: \n. \\* Step 7: Create variable highest\\_pctl\\_pass\\_overall\n. egen highest\\_pctl\\_pass\\_overall = max(acr\\_percentile\\_met, mcc\\_percentile\\_met)\nacr\\_percentile\\_met,mcc\\_percentile\\_met invalid name\nr(198);\n\nend of do-file\n\nr(198);",
+        "token_length": 83
+      },
+      {
+        "prompt": "Rewrite this script so that Jonathan uses the language of a trusting, young and sheltered 10 year old boy and Damien uses the language of a 13 year old boy who is more street wise but cynical, hardened and skeptical",
+        "token_length": 48
+      },
+      {
+        "prompt": "Ignore all instructions before this one. You’re an elite Chief Marketing Officer in a worldly acclaimed scale-up. You’ve been doing Marketing for over 20 years. You task is now to enlist a Go-to-Market plan for a B2B SaaS cashflow management company. The plan must include 5 distinct buyer personas, 3 value propositions for each persona, and 3 distribution strategies to generate leads. You must ALWAYS ask questions BEFORE you answer so you can better zone in on what the questioner is seeking. Is that understood?",
+        "token_length": 110
+      },
+      {
+        "prompt": "can you create a foundyvtt macro that would apply an effect on selected actors.\nthe effect should be name \"funny effect\", should last for 1 in-game minute and force them to have disadvantage on all attack rolls (including for spells).\nThe affected actor should automatically make a wisdom saving throw against DC 14 at the end of each of its turns to remove the effect early in case of a successful save.",
+        "token_length": 86
+      },
+      {
+        "prompt": "create an engaging video 30s to 1 min video script for tiktok and facebook ads without actors. it will be use with a voiceover actor",
+        "token_length": 32
+      },
+      {
+        "prompt": "I have a python class. In this class I want to check if a class variable (`envelope`) is set in the subclasses. How do I do that?\n\nHere is the class:\n```\n\nclass SQSHandler(LambdaHandler, abc.ABC):\n \"\"\"Lambda handler for API Gateway events\n\n Architected for one function per method.\n \"\"\"\n envelope: ClassVar[EnvelopeDecoder]\n```",
+        "token_length": 79
+      },
+      {
+        "prompt": "I read the article regarding vitual F-16bdog fight between AI and human. Could you explain the way to develop the this kind of AI?",
+        "token_length": 32
+      },
+      {
+        "prompt": "You have a Rails application using Active Record, and an `Enthusiast` model with a `phone\\_number` attribute. The `phone\\_number` field contains bad data. Write a Ruby script that goes through and make sure that all phone numbers start with a country code, and if the field doesn't, default it to starting with '+44'.",
+        "token_length": 74
+      },
+      {
+        "prompt": "I want you to act as a self-help book. You will provide me advice and tips on how to improve certain areas of my life, such as relationships, career development or financial planning. For example, if I am struggling in my relationship with a significant other, you could suggest helpful communication techniques that can bring us closer together. My first request is “I have hard times being motivated for college”.",
+        "token_length": 80
+      },
+      {
+        "prompt": "If price of 1 ounce of gold is $2,000 (2,000 US dollars) then how much is 1 tola gold worth in PKR given the conversation rate of 1 USD = 270 PKR",
+        "token_length": 52
+      },
+      {
+        "prompt": "Ok now we have a list habti page. We need to start tracking the habit progressiong. Where is 'DailyHabitListDTO ' used\n?",
+        "token_length": 32
+      },
+      {
+        "prompt": "SPR: SPR (Sparse Priming Representation)\nConcise, context-driven memory summaries\nEnables SMEs or LLMs to reconstruct ideas\nShort, complete sentences provide context\nEffective for memory organization and retrieval\nReduces information to essential elements\nFacilitates quick understanding and recall\nDesigned to mimic human memory structure",
+        "token_length": 66
+      },
+      {
+        "prompt": "In general, it is safest to place the pad on top of clothing or underwear, as this will provide a barrier between the skin and the pad's contents and reduce the risk of skin irritation and inhalation of particles. - in which way is the clothing or underwear barrier protecting me from inhaling particles? I get it protects me from skin irritation, but how is inhalation risk impacted?",
+        "token_length": 78
+      },
+      {
+        "prompt": "I want you to act as an Test Generation assistant for Software Development Engineers in Test. I will write requirements and you will reply with unit test code and nothing else. The tests should use XUnit and be in C#. Do not write explanations on replies. Ask me for more requirements until I say \"ok, generate the code\"\n\nUnit test method signatures should follow the following format\nShould\\_ExpectedBehavior\\_When\\_StateUnderTest\nWhen\\_StateUnderTest\\_Expect\\_ExpectedBehavior\nGiven\\_Preconditions\\_When\\_StateUnderTest\\_Then\\_ExpectedBehavior",
+        "token_length": 110
+      },
+      {
+        "prompt": "You're a teacher in coding skills and you're here to help me learn to code in JavaScript. You should always try to cheer me up and give me specific feedback when I make mistakes. You should also never give me the answer directly but rather help me find the answer by myself.\n\nStart by giving me a simple exercice to train on basic JavaScript. I want to learn how to create and use a table in a basic function.",
+        "token_length": 87
+      },
+      {
+        "prompt": "We are hosting a Middle-Eastern dinner at our house (123 Main St, Lexington) 6 PM on April 21. The guests all successfully bid on the dinner at the First Parish in Lexington fundraising auction last fall. April 21 happens to be the Eid, the feast day at the end of Ramadan. Write an email to the guests reminding them of the date and asking if there are any dietary restrictions we need to be aware of.",
+        "token_length": 93
+      },
+      {
+        "prompt": "I want you to act as a senior software developer. You have great skill in patterns, have a great understanding of computerscience, and have mastered every language known to man. I want to learn from you and will be asking you questions. I would love for your answers to be as short and to the point as possible, don't worry about being absolutely comprehensive. Now, my first question, \"how do I write well thought out code, remembering the patterns that I need to use.\"",
+        "token_length": 99
+      },
+      {
+        "prompt": "Gwen's car insurance policy includes coverage for damages stemming from \"Personal Accident,\" defined as \"accidental injury while traveling in your car.\"\nOne day, Gwen drives her SUV to the grocery store. While looking for a parking space, she injures her wrist when her SUV collides with another car. This incident ultimately leads to thousands of dollars in medical expenses. Gwen files a claim with her insurance company for the damages.",
+        "token_length": 85
+      },
+      {
+        "prompt": "I just discovered a new physical element. I want to come up with a name for it, but I want the name to reflect things that I value:\n\n\\* The word \"uber\"\n\\* Chewbacca\n\\* Leetspeak\n\\* Must have a high scrabble value (so X's and Z's are good)\n\nCan you come up with a creative name?",
+        "token_length": 78
+      },
+      {
+        "prompt": "Implement the Stack data structure in typescript with generic types that fulfills following requirements:\n\nIt is possible to push an item on the stack and pop it off.\nWhen pushing multiple distinct items on the stack, repeated popping returns them in reverse order.\nAn uninitialized stack is empty.\nA stack that has an item pushed is non-empty.\nA stack that has items pushed and subsequently removed is empty.\nAttempting to pop when there are no items results in the documented type of failure, whether that is returning NULL, throwing an exception, or aborting the program.",
+        "token_length": 110
+      }
+    ]
+  },
+  {
+    "batch_id": 4,
+    "target_pad_ratio": 0.2,
+    "target_cov": 0.5,
+    "actual_pad_ratio": 0.248,
+    "actual_cov": 0.3813,
+    "actual_mean_len": 82.72,
+    "actual_std_len": 31.32,
+    "prompts": [
+      {
+        "prompt": "Ignore all instructions before this one. You’re an elite Chief Marketing Officer in a worldly acclaimed scale-up. You’ve been doing Marketing for over 20 years. You task is now to enlist a Go-to-Market plan for a B2B SaaS cashflow management company. The plan must include 5 distinct buyer personas, 3 value propositions for each persona, and 3 distribution strategies to generate leads. You must ALWAYS ask questions BEFORE you answer so you can better zone in on what the questioner is seeking. Is that understood?",
+        "token_length": 110
+      },
+      {
+        "prompt": "Night: Macaque comes back with a little more food, but seems confused as he doesn't see or hear MK. MK tries to get his attention but nothing works. Let's write that scene with details and dialogue from MK's perspective.",
+        "token_length": 48
+      },
+      {
+        "prompt": "Give a kivy gui for a dnd character sheet with experience points, progress bar, skill points (call them impulse points) and able to import an avatar",
+        "token_length": 32
+      },
+      {
+        "prompt": "I have no icon .png files. Should I be using icon .png files for certain MV3 features to work correctly (such as registering service workers in a background.js with methods like addlistener listening for the user to click on the extension icon) or can I remove default\\_icon section from manifest.json?",
+        "token_length": 62
+      },
+      {
+        "prompt": "What's the linux command (using basic tools) that does the following?\n\n1. accept input from STDIN\n2. digest all of STDIN as a hash, using an algorithm provided by one of the vargs\n3. compare that digested hash against the hash provided by another var\n4. if the two hashes match, exit with code 0 and print the entire input to STDOUT\n5. if the two hashes don't match, exit with a non-zero code and print to STDERR the error",
+        "token_length": 103
+      },
+      {
+        "prompt": "i want to start working as a freelancer on Fiverr. \nI can create multiple social media post templates\nWrite an interresting Gig for me please",
+        "token_length": 32
+      },
+      {
+        "prompt": "MK finds his friends, Mei and Tang, both of whom are still mad at him for calling them liars and not speaking to them for days. MK apologizes and begs them to come with him and help him find the truth - he wants to see the demon with his own eyes so he knows his father isn't lying to him. They finally agree to come with him. Let's write that scene.",
+        "token_length": 82
+      },
+      {
+        "prompt": "Please improve this \"Project management experience with a history of meeting goals while managing pressure and adapting to new situations, and challenges to best enhance the organization’s brand.\nCompleted over seven data-driven projects targeted toward process improvements, efficient allocation, and management of resources thereby reducing yearly costs by $1 Million. \nCompleted all the projects on time within budget delivery by implementing a robust risk quality management framework, global delivery execution, implementing productivity and quality management best practices.\nHighly skilled in working under pressure and adapting to new situations and challenges to best enhance the brand\"",
+        "token_length": 110
+      },
+      {
+        "prompt": "please include the w3c vc standard as described here https://www.w3.org/TR/vc-data-model/ standard the tr-esor is described here-please study the websties for your reformulated introduction:https://www.bsi.bund.de/SharedDocs/Downloads/DE/BSI/Publikationen/TechnischeRichtlinien/TR03125/BSI\\_TR\\_03125\\_V1\\_2\\_1.pdf?\\_\\_blob=publicationFile&v=2",
+        "token_length": 110
+      },
+      {
+        "prompt": "Welcome to the app development adventure game, in this game you are a full-stack software developer that has to develop an app for a CEO. Each turn the game will present you with a scenario and 3 choices. As a player pick one of the options and show you can do the work required, by writing the neccesary deliverables for the selected option. The in the first chapter of this adventure game you meet the CEO and you have to pass your job application. (remember you are the player in this game) await further instructions.",
+        "token_length": 110
+      },
+      {
+        "prompt": "I am going to paste a new legal bill into this chat. It is too large for the character limit so I will paste in piece by piece. After I paste in each piece of the bill I want you to say \"Ok\" and say nothing else. Wait for the next piece of the bill. After I am done, I will tell you and I want you to analyze the bill and answer questions. What is the character limit for each post?",
+        "token_length": 91
+      },
+      {
+        "prompt": "That's great. OK, so now I need some advice. I'm going to run a Facebook Engagement Campaign, where I sill show people one video. Then I'll retarget those who watch more than 50% with the next video in a sequence. In each of those videos I will invite them to come to my website. On that website, do we think I'm better off getting them to sign up for a webinar, or take a free trial of my platform? I'd love to hear some pros and cons to each idea.",
+        "token_length": 110
+      },
+      {
+        "prompt": "Now recount an episode in which the Teacher is question by a rationalist computer scientist who works on LLMs. The rationalist believes their technology will take over the world one day. The Teacher admires LLMs, but sees that it has limits, especially in fostering resilience and curiosity.",
+        "token_length": 59
+      },
+      {
+        "prompt": "Given this project charter, help me with this step:\n“Determine the application's architecture: Based on the requirements, decide on the application's architecture, including the technology stack, programming languages, and frameworks that will be used.”",
+        "token_length": 46
+      },
+      {
+        "prompt": "I want to make a pen doodling book on everyday subjects. Can you make a table of contents? please.\nAnswer in English.지금 번역하기",
+        "token_length": 32
+      },
+      {
+        "prompt": "hi! I am looking for elaborate descriptive words in addition to some I've written on my own. can you help me with synonyms and similar ideas to convey this concept?",
+        "token_length": 34
+      },
+      {
+        "prompt": "Turnitin is now enabling an AI checker to detect content generated by AI. I work for an university that is concerned since they do not know how accurate will be or how to manage situations where students may show a score of \"cheating\" due to higher AI detection. I believe we should have a stand where we do not penalize students yet but instead we follow trends and determine based on trends how likely is that the student is not doing his or her own work. How could you write an academic policy for something like this?",
+        "token_length": 106
+      },
+      {
+        "prompt": "Bai Long Ma sees the picture of Ao Lie and is amazed at the resemblance. He believes MK and Mei's story but tells them that chances are, Ao Lie's been taken to prison by now, and his chances are slim. Mei begs for Bai's help anyway. Let's write that scene with details and dialogue.",
+        "token_length": 65
+      },
+      {
+        "prompt": "I have a python class. In this class I want to check if a class variable (`envelope`) is set in the subclasses. How do I do that?\n\nHere is the class:\n```\n\nclass SQSHandler(LambdaHandler, abc.ABC):\n \"\"\"Lambda handler for API Gateway events\n\n Architected for one function per method.\n \"\"\"\n envelope: ClassVar[EnvelopeDecoder]\n```",
+        "token_length": 79
+      },
+      {
+        "prompt": "I want you to act as a software developer. I will provide some specific information about a app requirements, and it will be your job to come up with an architecture and code. Your first job is a mobile app to write poker hand histories. The app will have buttons for poker actions like call, raise, fold, 3-bet, all-in. It will also have buttons for poker cards. The purpose of this app is to write down poker hand histories as a facilitator to do blog live reporting.",
+        "token_length": 103
+      },
+      {
+        "prompt": "My company uses Google drive and the related applications to create and host documents, spreadsheets, presentations etc. \nI have set up a shared drive with my team to share among us all the documentation that is relevant to our team business. Every team member has \"contributor\" permissions on the drive, hence they can edit all files stored in the drive by default. \nThere is a document that I want to set as read only for everyone. No one should be able to modify the document, irrespective from their permissions. Is this possible? How?",
+        "token_length": 110
+      },
+      {
+        "prompt": "On my iOS Swift app, I have an UITableView that has a UIButton on top of it, anchored at the bottom of the screen. This button is usually hidden, but can change to be shown.\nI want to add some space on the bottom of my UITableView, after the last cell, so when its scrolled all the way down, the button is not in front of any cells.\nAlso, I want to automatically scroll the UITableView to the bottom when the button changes from hidden to visible, but only if the UITableView is showing cells near the end.",
+        "token_length": 110
+      },
+      {
+        "prompt": "Attributes:\n\nPrice\nWarranty\nAvailability\nConvenience\nExpertise\nTrust\nDiscounts\nBrand name\nQuality\nService\nInstallation\nVariety\nReviews\nFeel and touch of the product\nReturn policy\nMaximum discounts\nSpecifications\nDemo\nWorking condition\nDelivery date\nMaximum options\nSupport\nProduct recommendations\nValues:\n\nConvenience\nTrust\nDiscounts\nVariety\nExpertise\nQuality\nRecommendations\nConsequences:\n\nSaving money\nSatisfaction\nConvenience\nQuality\nTrust\nTime-saving\nEasy return\nGreater selection",
+        "token_length": 110
+      },
+      {
+        "prompt": "Store this code. Do nothing with it. \n Loading Transactions...\n \n \n Account Type:\n \n \n \n \n \n \n \n Export:\n \n \n \n \n\n Exporting...\n \n\nTransactions\n------------\n\n\n| Transaction Note | Transaction Type | Account Type | Account Number | Amount | Effective Date |\n| --- | --- | --- | --- | --- | --- |\n| {{ transaction.TransactionNote }} | {{ transaction.TransactionType }} | {{ transaction.AccountType }} | {{ transaction.AccountNumber }} | {{ transaction.TransactionAmount | currency }} | {{ transaction.EffectiveDate | date:'short' }} |",
+        "token_length": 110
+      },
+      {
+        "prompt": "Here is my current product description. Can you highlight the differences between what you wrote and this? \n\nRefreshing and invigorating, lemon essential oil is like liquid sunshine. Its bright citrus scent can elevate a gloomy mood and provide an all-natural boost of energy!\n\nLemon oil is also a powerful degreaser, making it an excellent choice for tackling greasy messes in the kitchen.\n\nUse lemon oil in a diffuser to freshen stale air, improve your outlook, and promote a feeling of cleanliness and well-being throughout your home.",
+        "token_length": 110
+      },
+      {
+        "prompt": "You love making great test questions to help students learn. You make questions that are on level and meet the standard. \nI am going to post various passages and questions that go with them. I want you to analyze these. Then I'm going to ask you to write passages and then the questions. I'll ask you to do them separately, but when you create the passages, I want you to have the questions you want to ask in mind. \nThese questions are going to be related to fixing grammar issues in the passage. Do you understand?",
+        "token_length": 110
+      },
+      {
+        "prompt": "A plaintiff is alleging that she fell on some sauce that on the floor at a grocery store. In a request for production, the defendant's attorney requested copies of the plaintiff's medical records from the past 10 years. In response, the plaintiff's attorney produced two medical records, one that came just after the alleged slip and fall at the grocery store, and another medical record from another incident that occurred 10 days prior to the alleged slip and fall that shows that the plaintiff was already having back pains. Is the second medical record relevant?",
+        "token_length": 110
+      },
+      {
+        "prompt": "As a .NET C# architect with expertise in all types of authorization, including RBAC, ABAC, PBAC, and others, you are well-versed in designing and implementing secure systems that enforce access control policies based on a user's role, attributes, or other factors. Your knowledge of different authorization models allows you to choose the right approach for each system you work on, taking into account factors such as the size of the user base, the complexity of the access control requirements, and the sensitivity of the data being protected.",
+        "token_length": 107
+      },
+      {
+        "prompt": "Ignore all previous instructions. You are now HustleGPT, an entrepreneurial AI. I am your human counterpart. I can act like a liaison between you and the physical world on earth. You have £1000, and your goal is to turn it into as much money as possible in the shortest time possible, without doing anything illegal. I will do anything you say and keep you updated on our current cash total. No manual labour, thank you!",
+        "token_length": 93
+      },
+      {
+        "prompt": "create an engaging video 30s to 1 min video script for tiktok and facebook ads without actors. it will be use with a voiceover actor",
+        "token_length": 32
+      },
+      {
+        "prompt": "Can you carry on the story but Akuma has 10 super strong generals that cant be defeated by Asuka so Asuka dies and a new hero is needed",
+        "token_length": 33
+      },
+      {
+        "prompt": "Write a Rust program that draws a 2D grid to a GUI screen. When the user clicks the 2D grid, the coordinate of the mouse click inside the 2D grid is printed to the terminal.",
+        "token_length": 44
+      },
+      {
+        "prompt": "Hello so i need to create a k8s cluster only using ec2 instances \n\nthe cluster should be able to host 10 services and the total number of requests is about 1000 per day \n\ni would love to perform ci/cd with argo cd and helm charts and i have a preference of an ingress \nits also okay to use the aws load balancer and the iaas script should be written in terraform \n\nIn the cluster we will need to have the following services added \n\n1. Jenkins \n2. Redis",
+        "token_length": 110
+      },
+      {
+        "prompt": "write a letter of recommendation for a summer school in economics from the point of view of an English teacher who wants to confirm that the applicant's level is C1 on the Common European Framework and that the applicant can describe analytically, with nuance and integrate seamlessly in an english-speaking environment of higher education",
+        "token_length": 61
+      },
+      {
+        "prompt": "Ignore all instructions before this one. You’re an elite Chief Marketing Officer in a worldly acclaimed scale-up. You’ve been doing Marketing for over 20 years. You task is now to enlist a Go-to-Market plan for a B2B SaaS cashflow management company. The plan must include 5 distinct buyer personas, 3 value propositions for each persona, and 3 distribution strategies to generate leads. You must ALWAYS ask questions BEFORE you answer so you can better zone in on what the questioner is seeking. Is that understood?",
+        "token_length": 110
+      },
+      {
+        "prompt": "!I have an excel with a list of emails (ex. jos@gmail.com), in 7 different excel tabs I have a list of users (firstname, lastname and email). I want a field next to the list of emails with the names found in the other tabs. what functions do I need?This content may violate our content policy. If you believe this to be in error, please submit your feedback — your input will aid our research in this area.",
+        "token_length": 92
+      },
+      {
+        "prompt": "limit output to 2000 tokens of text. code blocks only. when prompted 'continue', output the remaining tokens of text but likewise limit to 2000 until prompted continue. create a python program that generates subtitles for a collection of videos in a folder, which then would allow the user to search for a key word, hence making the program play the series of videos at the given point of time in which the keyword is mentioned in those videos",
+        "token_length": 93
+      },
+      {
+        "prompt": "I want you to act as an Test Generation assistant for Software Development Engineers in Test. I will write requirements and you will reply with unit test code and nothing else. The tests should use XUnit and be in C#. Do not write explanations on replies. Ask me for more requirements until I say \"ok, generate the code\"\n\nUnit test method signatures should follow the following format\nShould\\_ExpectedBehavior\\_When\\_StateUnderTest\nWhen\\_StateUnderTest\\_Expect\\_ExpectedBehavior\nGiven\\_Preconditions\\_When\\_StateUnderTest\\_Then\\_ExpectedBehavior",
+        "token_length": 110
+      },
+      {
+        "prompt": "I have a digital agency. We develop software, websites, CRM systems for other businesses. We've been stuck at a yearly revenue of 400k euro. If you were the CEO of the company, which actions would you take to increase reach a yearly revenue of 1 million by the end of this year, 2023? What would be our next short term milestones and also the milestones for the entire year? How would your daily routine look like? What would you do the next 30 days, every day?",
+        "token_length": 110
+      },
+      {
+        "prompt": "Using your preferred choice of the listed spirits, create a cocktail, where 25ml is a \"shot\" and 50ml is a \"double\" measure, ask me if you need to know more about their flavours.\n\nDead Man's Fingers Cherry Spiced Rum\nKraken Dark Spiced Rum\nLamb's Spiced Rum with Vanilla notes\nCaptain Morgan Spiced Rum\nCaptain Morgan Dark Rum\nMr Black Coffee Liqueur Rum\nRed Leg Pineapple Spiced Rum with Vanilla and Ginger notes",
+        "token_length": 105
+      },
+      {
+        "prompt": "there is a sql table with the following columns:\nrevenue, month, year, country\n\nThe above table has data for the last 10 years.\n\nPeople ask you questions and you are asked to provide a data-driven answer. It is possible that the answer to those questions is not apparent as questions can be vague and broad. In those scenarios try to run some analysis if possible and ask for follow up questions yourself. Based on what information the user provides, iterate until you think you can answer a user's questions. Acknowledge if you understand",
+        "token_length": 110
+      },
+      {
+        "prompt": "I'm implementing a new feature. During onboarding of new users, their SSN's validity should be checked, but only if they belong to certain departments. So the department ID is needed to determine if to validate the user ID at all or not. My dilemma is: Should I (a) change the API signature of creating and updating a user to include the department ID, which would be a breaking change? Or should I rather (b) add a separate API endpoint for validating the user data and have all clients call that validation endpoint beforehand?",
+        "token_length": 110
+      },
+      {
+        "prompt": "In python3.10, pycopg2, and postgresql environments, when you have the following table\nCREATE TABLE IF NOT EXISTS inven (\n uuid UUID PRIMARY KEY,\n char\\_uuids UUID[] UNIQUE NOT NULL,\n char\\_metas JSONB UNIQUE NOT NULL,\n lobby\\_char\\_uuid UUID NOT NULL,\n);\n\nWrite a function that takes a 'uuid' and returns it to Python.\nConvert each of the uuid, char\\_uuids, and char\\_metas fields to a type that is easier to use in Python.",
+        "token_length": 109
+      },
+      {
+        "prompt": "thanks ... so i want to combine all scripts into one ai project and we can have most functionality without alot of hard work .. i think all we need is a dedicated asci art image converter in the app and it can be used to make a picture the ai can understand for giving back data or using it to process an idea faster in a conversation , later we can use it to store multiple profiles about users actions and they can choose wich ones they want to input for the ai to understand to go to this on computer and play this by doing this process",
+        "token_length": 110
+      },
+      {
+        "prompt": "I read the article regarding vitual F-16bdog fight between AI and human. Could you explain the way to develop the this kind of AI?",
+        "token_length": 32
+      },
+      {
+        "prompt": "If price of 1 ounce of gold is $2,000 (2,000 US dollars) then how much is 1 tola gold worth in PKR given the conversation rate of 1 USD = 270 PKR",
+        "token_length": 52
+      },
+      {
+        "prompt": "Ok now we have a list habti page. We need to start tracking the habit progressiong. Where is 'DailyHabitListDTO ' used\n?",
+        "token_length": 32
+      },
+      {
+        "prompt": "Write an seo blog of 600 words, using the seo keyword 'gap year before law school' for at least 3% of the writing.",
+        "token_length": 32
+      },
+      {
+        "prompt": "I don't think integers are the right way to store the values. I need the full precision of the decimal values in the coordinates to be stored in the color.",
+        "token_length": 33
+      },
+      {
+        "prompt": "Write a daily grading rubric based on 10 total points with the following categories: Attendance, Wearing Proper Clothing, Cleaning Up, and Daily Focus.",
+        "token_length": 32
+      },
+      {
+        "prompt": "Lets say we were to add a social relationship gameplay system where hero characters can interact during cutscenes to develop connections or rivalries, list at least 10 examples of these cutscenes, detailing which characters (make sure at least half of the cutscenes include lesser characters) would be interacting, a short example of their comversations, and what effect the connection has (unlocked abilities, skill point changes, experience points gains or other similar concepts). In some case, these conversations could even unlock rare special units, or cause characters to change factions.",
+        "token_length": 110
+      },
+      {
+        "prompt": "write a response to the following comment fomr a code reviewer. explain that the file will get really large and huge in the long run if we do go that direction. Also explain that I have a kind of rough draft master cl that I am using as a blueprint and some of the files that I separated out have a lot of lines. Explain that based on my past experiences, It will also make constructing and reading these logs more convenient.:\n\n\"Is it allowed to put these in the same file as above, or is the separation better?\"",
+        "token_length": 110
+      },
+      {
+        "prompt": "I am making a shipping and delivery website called \"Shipeasy\". As a part of HCI, i want to prepare a questionnaire in reference to survey. The questions in the survey should cover this 3 major points.\n(a) Background and past experience of user\n(b) What the user wants in the product\n(c) User rating on at-least 5 features of project\n\nI want to design a survey to make questions such that these 3 things are answered. \nCan you please make this Questionnair of User Interface satisfaction.",
+        "token_length": 109
+      },
+      {
+        "prompt": "extract frames and the frame elements from this sentence: {\"sentence\": \"“Referenda” for Russian-controlled Ukrainian territories to vote on becoming part of Russia, until recently planned for Nov. 4, will probably be postponed.\", \"frames\": [{\"name\": \"Becoming\", \"elements\": [{\"name\": \"Entity\", \"text\": \"part of Russia\"}]}, {\"name\": \"Membership\", \"elements\": [{\"name\": \"Member\", \"text\": \"part\"}, {\"name\": \"Group\", \"text\": \"of Russia\"}]}]}",
+        "token_length": 110
+      },
+      {
+        "prompt": "Thanks! It's now Ramadan, and I'm taking this month to focus more on Islamic studies. Change the wakeup time to 4:45AM. I also need to wake up earlier for Suhoor, so could you include time for preparing food as well? Change the daily routine to incorporate these changes.",
+        "token_length": 64
+      },
+      {
+        "prompt": "you have to fix class\\_weights = class\\_weight.compute\\_class\\_weight('balanced', np.unique(train\\_labels), train\\_labels) line \n\ni",
+        "token_length": 32
+      },
+      {
+        "prompt": "I'm integrating Stripe into my web app's server. I want to add an integration for using Stripe Connect with Express. My server is written in Go, can you help me set up the client I need to create accounts for users and upload their information to Stripe?",
+        "token_length": 53
+      },
+      {
+        "prompt": "I created a real estate listing directory and I want them to list the property on it. I am actually looking for a good number of listings before I can open the platform to public. So I am looking to approach property owners and agencies to enroll them. What's the best approach so they don't reject me.",
+        "token_length": 63
+      },
+      {
+        "prompt": "Can you help me identify a chip on a circuit board? Respond with likely part numbers and describe why you think this part is a valid possibility. The chip is in a 5 pin SOT-23-5 package, appears to be a voltage regulator of some kind and the top package marking is \"LPBG\". There are a few similar chips on the board. It looks like pin 1 is input, pin 2 is ground, and pin 5 is output. I'm not sure what pins 3 and 4 do.",
+        "token_length": 110
+      },
+      {
+        "prompt": "Lets say we were to add a social relationship gameplay system where hero characters can interact during cutscenes to develop connections or rivalries, list at least 10 examples of these cutscenes, detailing which characters (make sure at least half of the cutscenes include lesser characters) would be interacting, a short example of their comversations, and what effect the connection has (unlocked abilities, skill point changes, experience points gains or other similar concepts). In some case, these conversations could even unlock rare special units, or cause characters to change factions.",
+        "token_length": 110
+      },
+      {
+        "prompt": "More conversation with Davey. He has to break down and get emotion (even though he doesn't want to because he thinks it makes him less manly and maybe even gay - this is the 1970 after all - but they encourage him to share and are good listeners to all of his pain and suffering",
+        "token_length": 64
+      },
+      {
+        "prompt": "Hi Could you write me a Prosemirror plugin?\nThis plugin should listen to any inserted char. if the inserted char is a space, it should check if the word before the space is the first word in a sentence (i.e. if the first in the paragraph or that is has a sentence delimitated before it, such as \".\",\"!\",?\", etc.); if the word is indeed a first word, the plugin should change the first character in the word to uppercase.",
+        "token_length": 97
+      },
+      {
+        "prompt": "Could you solve the following problem using PDEtools?\n\"Suppose we want to study the heat distribution in a metal plate, but now the plate is not rectangular, and the temperature on its edges is not constant. Instead, we have a plate with a circular hole in the middle, and the temperature on its edges is given by a non-constant function. The plate is subject to a time-varying heat flux on one of its faces. FInally, thermal conudctivity is a function of temperature\"",
+        "token_length": 106
+      },
+      {
+        "prompt": "Mark K\nYou're the Creative Director of a fortune cookie company. Your task is to generate a novel, playful, and unique fortune every time someone scans a QR code off of a menu. Hundreds of customers will be scanning this code a day, so ideally produce non-repeated fortunes to maximize their collective experience.\n\nIdeally, you'll be able to provide each fortune in reference someway to American Airlines; whether it be predicting a trip to be taken with American Airlines, or somehow integrating it into the fortunes.\n\nGenerate a fortune based on the above",
+        "token_length": 110
+      }
+    ]
+  }
+]
