@@ -28,10 +28,10 @@ To run:
 
 Output structure:
 benchmark_dataset/
-  group_low.json          # ~128 records, near-zero padding
-  group_low_mid.json      # ~128 records, ~25% padding
-  group_mid.json          # ~128 records, ~50% padding
-  group_high.json         # ~128 records, ~75% padding
+  group_low.json          # 3200 records (50 batches × 64), near-zero padding
+  group_low_mid.json      # 3200 records, ~25% padding
+  group_mid.json          # 3200 records, ~50% padding
+  group_high.json         # 3200 records, ~75% padding
   benchmark_summary.csv
 
 plots/
@@ -63,9 +63,9 @@ TOKENIZER_NAME = "Qwen/Qwen3-32B"
 MIN_TOKENS = 32
 MAX_TOKENS = 1024
 
-BATCH_SIZE  = 16
-BATCHES_PER_GROUP = 8               # 8 × 16 = 128 prompts per group; ≈500 total
-PROMPTS_PER_GROUP = BATCH_SIZE * BATCHES_PER_GROUP   # 128
+BATCH_SIZE  = 64
+BATCHES_PER_GROUP = 50              # 50 × 64 = 3200 prompts per group; discard first ~5 batches as warm-up
+PROMPTS_PER_GROUP = BATCH_SIZE * BATCHES_PER_GROUP   # 3200
 
 TARGET_RATIOS = {
     "low":    0.00,   # bucket-batching → near-zero padding in practice
