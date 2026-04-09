@@ -1,52 +1,63 @@
 """
 preprocess_dataset.py
 
-Prepares the ShareGPT dataset for controlled padding ratio experiments.
+Prepares the ShareGPT dataset for the 4×4 controlled padding experiment.
 
-Pipeline:
-  1. Load ShareGPT from HuggingFace, extract first conversational turn.
-  2. Tokenize every prompt with the Qwen3-32B tokenizer.
+Experiment design (from project proposal)
+------------------------------------------
+The full experiment is a grid of N × 4 × 4 trials, where N is the number of
+parallelism configurations (TP/PP combos).  The two padding dimensions are:
+
+  pad_ratio  — fraction of token slots in a batch that are padding:
+                  pad% = (bs × max_len − Σ lengths) / (bs × max_len)
+               Four levels: 10%, 30%, 50%, 70%  (proposal §2.2)
+
+  CoV        — coefficient of variation of sequence lengths within a batch:
+                  CoV = std(lengths) / mean(lengths)
+               Controls how spread-out lengths are for a fixed pad%.
+               Two batches with identical pad% can differ substantially
+               in how that padding is distributed across sequences.
+               Four levels: 0.05, 0.20, 0.40, 0.65
+
+Budget note
+-----------
+3 parallelism configs × 16 cells × 5 batches × ~37 s/batch ≈ 2.47 h ≈ 474 SU.
+This fits within the 480 SU (2.5 h) requested in the proposal.
+N_BATCHES_PER_CELL = 5 matches the "~5 batches per trial" in the proposal.
+
+Pipeline
+--------
+  1. Load ShareGPT from HuggingFace, extract first human turn.
+  2. Tokenize with the Qwen3-32B tokenizer.
   3. Analyse and plot the length distribution.
   4. Filter to [32, 1024] tokens.
-  5. Build four prompt groups (targeting ~0%, 25%, 50%, 75% padding) by
-     batching the *same* pool of prompts with different grouping strategies.
-  6. Save per-group JSON files and a summary CSV.
-  7. Print a summary table and produce plots.
+  5. Build 16-cell benchmark with joint pad% + CoV control.
+  6. Save one JSON per cell + summary CSV.
+  7. Produce 4×4 heatmap plots and print a summary pivot table.
 
-Key design note
----------------
-The prompts themselves are NOT modified.  Padding arises solely from grouping
-sequences of unequal length into fixed-size batches and padding each batch to
-its longest sequence.  The four groups use the same underlying prompt pool —
-only the batching strategy differs, which is the experimental manipulation.
-
-To run: 
-#Dependencies: 
+To run:
     pip install transformers datasets matplotlib numpy pandas
-#Script:
-    python preprocess_dataset.py
+    python scripts/preprocess_dataset.py 2>&1 | tee run.log
 
 Output structure:
-benchmark_dataset/
-  group_low.json          # 3200 records (50 batches × 64), near-zero padding
-  group_low_mid.json      # 3200 records, ~25% padding
-  group_mid.json          # 3200 records, ~50% padding
-  group_high.json         # 3200 records, ~75% padding
-  benchmark_summary.csv
+    benchmark_dataset/
+      pad10_cov005.json   # cell: 10% padding, CoV=0.05  (5 batches of 64)
+      pad10_cov020.json
+      ...                 # 16 files total
+      benchmark_summary.csv
 
-plots/
-  length_distribution.png
-  padding_ratio_by_group.png
+    plots/
+      length_distribution.png
+      benchmark_grid.png
 """
 
 import json
 import os
 import random
-from collections import defaultdict
 from typing import List, Tuple
 
 import matplotlib
-matplotlib.use("Agg")          # headless — safe on GPU servers with no display
+matplotlib.use("Agg")          # headless — safe on GPU servers without a display
 import matplotlib.pyplot as plt
 import numpy as np
 import pandas as pd
@@ -63,20 +74,25 @@ TOKENIZER_NAME = "Qwen/Qwen3-32B"
 MIN_TOKENS = 32
 MAX_TOKENS = 1024
 
-BATCH_SIZE  = 64
-BATCHES_PER_GROUP = 50              # 50 × 64 = 3200 prompts per group; discard first ~5 batches as warm-up
-PROMPTS_PER_GROUP = BATCH_SIZE * BATCHES_PER_GROUP   # 3200
+BATCH_SIZE = 64
 
-TARGET_RATIOS = {
-    "low":    0.00,   # bucket-batching → near-zero padding in practice
-    "low_mid": 0.25,
-    "mid":    0.50,
-    "high":   0.75,
-}
+# Padding ratio levels (proposal §2.2: "10%, 30%, 50%, 70%")
+PAD_LEVELS = [0.10, 0.30, 0.50, 0.70]
+
+# Intra-batch CoV levels: std(fill_lengths) / mean(fill_lengths).
+# Chosen to be achievable across all pad levels given ShareGPT's distribution.
+#   0.05 → near-uniform lengths (all sequences similar length)
+#   0.20 → mild spread
+#   0.40 → moderate spread
+#   0.65 → high spread (mix of short and longer fills)
+COV_LEVELS = [0.05, 0.20, 0.40, 0.65]
+
+# Batches per (pad, CoV) cell.
+# Budget: 3 configs × 16 cells × 5 batches × ~37 s ≈ 474 SU  (within 480 SU)
+N_BATCHES_PER_CELL = 5
 
 OUTPUT_DIR = "benchmark_dataset"
 PLOTS_DIR  = "plots"
-
 SEED = 42
 
 
@@ -89,12 +105,16 @@ def load_sharegpt_prompts(dataset_name: str) -> List[str]:
     Download ShareGPT and return the first human turn of every conversation.
 
     ShareGPT conversations are stored as a list of dicts under the key
-    "conversations" (or "items" depending on the snapshot).  Each dict has
-    a "from" field ("human" / "gpt") and a "value" field with the text.
-    We keep only the very first human utterance — this is our inference prompt.
+    "conversations".  Each dict has a "from" field ("human" / "gpt") and a
+    "value" field with the text.  We keep only the first human utterance —
+    this is the inference prompt.
+
+    The HuggingFace repo stores raw JSON files rather than a structured
+    dataset, so we point the loader at the file explicitly.
     """
     print(f"Loading dataset '{dataset_name}' …")
-    ds = load_dataset(dataset_name, split="train")
+    data_file = f"hf://datasets/{dataset_name}/ShareGPT_V3_unfiltered_cleaned_split.json"
+    ds = load_dataset("json", data_files=data_file, split="train")
 
     prompts = []
     for row in ds:
@@ -105,7 +125,7 @@ def load_sharegpt_prompts(dataset_name: str) -> List[str]:
                 text = (turn.get("value") or turn.get("content") or "").strip()
                 if text:
                     prompts.append(text)
-                break   # only the first human turn per conversation
+                break   # first human turn only
 
     print(f"  Extracted {len(prompts):,} first-turn prompts.")
     return prompts
@@ -120,17 +140,15 @@ def tokenize_prompts(
     tokenizer_name: str,
 ) -> List[Tuple[str, int]]:
     """
-    Return (prompt_text, token_count) pairs using the specified tokenizer.
+    Return (prompt_text, token_count) pairs using the Qwen3-32B tokenizer.
 
-    We use `add_special_tokens=False` so that the length reflects only the
-    prompt body — special tokens (BOS/EOS) are typically added by the
-    inference framework at run time.
+    add_special_tokens=False: lengths reflect the prompt body only.
+    Special tokens (BOS/EOS) are added by the inference framework at run time.
     """
     print(f"\nLoading tokenizer '{tokenizer_name}' …")
     tokenizer = AutoTokenizer.from_pretrained(tokenizer_name, trust_remote_code=True)
 
-    print(f"Tokenizing {len(prompts):,} prompts (batch mode) …")
-    # Batch encoding without padding/truncation — we want true lengths.
+    print(f"Tokenizing {len(prompts):,} prompts …")
     encodings = tokenizer(
         prompts,
         add_special_tokens=False,
@@ -138,10 +156,8 @@ def tokenize_prompts(
         padding=False,
     )
     lengths = [len(ids) for ids in encodings["input_ids"]]
-
-    result = list(zip(prompts, lengths))
     print(f"  Done.  Length range: {min(lengths)}–{max(lengths)} tokens.")
-    return result
+    return list(zip(prompts, lengths))
 
 
 # ---------------------------------------------------------------------------
@@ -166,13 +182,11 @@ def analyse_lengths(
     os.makedirs(plots_dir, exist_ok=True)
     fig, axes = plt.subplots(1, 2, figsize=(14, 5))
 
-    # Full distribution (clipped to 2 000 for readability)
     axes[0].hist(np.clip(arr, 0, 2000), bins=80, color="steelblue", edgecolor="white")
     axes[0].set_xlabel("Token length (clipped at 2 000)")
     axes[0].set_ylabel("Count")
     axes[0].set_title("ShareGPT prompt length distribution (unfiltered)")
 
-    # Filtered range
     filtered = arr[(arr >= MIN_TOKENS) & (arr <= MAX_TOKENS)]
     axes[1].hist(filtered, bins=60, color="darkorange", edgecolor="white")
     axes[1].set_xlabel("Token length")
@@ -203,244 +217,273 @@ def filter_prompts(
 
 
 # ---------------------------------------------------------------------------
-# 5. Batching strategies
+# 5. Batching with joint pad% + CoV control
 # ---------------------------------------------------------------------------
 
 def compute_padding_ratio(lengths: List[int]) -> float:
     """
-    Padding ratio for a single batch:
+    pad_ratio = (bs × max_len − Σ lengths) / (bs × max_len)
 
-        (batch_size × max_len − Σ actual_lengths) / (batch_size × max_len)
-
-    A ratio of 0.0 means every sequence is as long as the longest one
-    (zero wasted tokens).  A ratio of 0.75 means 75 % of token slots are
-    padding.
+    0.0 → no wasted tokens (all sequences same length as max).
+    0.70 → 70% of token slots are padding.
     """
     if not lengths:
         return 0.0
     max_len = max(lengths)
-    total_slots = len(lengths) * max_len
-    padding_tokens = total_slots - sum(lengths)
-    return padding_tokens / total_slots
+    return (len(lengths) * max_len - sum(lengths)) / (len(lengths) * max_len)
 
 
-def make_batches_low_padding(
+def compute_cov(lengths: List[int]) -> float:
+    """Coefficient of variation: std / mean of sequence lengths in a batch."""
+    if len(lengths) < 2:
+        return 0.0
+    arr = np.array(lengths, dtype=float)
+    mean = arr.mean()
+    return float(arr.std() / mean) if mean > 0 else 0.0
+
+
+def find_closest_available(
+    sorted_lengths: np.ndarray,
+    target: float,
+    available: np.ndarray,
+) -> int:
+    """
+    Return the index (into sorted_lengths / sorted_pool) of the available
+    sequence whose length is closest to `target`.
+
+    Uses binary search to find the insertion point, then expands outward
+    in both directions, always picking the closer of the two candidates.
+    Returns -1 if no available sequence exists (should not happen in practice).
+    """
+    n = len(sorted_lengths)
+    pos = int(np.searchsorted(sorted_lengths, target))
+    lo, hi = pos - 1, pos
+
+    while lo >= 0 or hi < n:
+        d_lo = abs(sorted_lengths[lo] - target) if lo >= 0 else float("inf")
+        d_hi = abs(sorted_lengths[hi] - target) if hi < n else float("inf")
+
+        if d_lo <= d_hi:
+            if lo >= 0 and available[lo]:
+                return lo
+            lo -= 1
+        else:
+            if hi < n and available[hi]:
+                return hi
+            hi += 1
+
+    return -1
+
+
+def make_batches_joint(
     pool: List[Tuple[str, int]],
     batch_size: int,
     n_batches: int,
+    target_pad_ratio: float,
+    target_cov: float,
+    rng: np.random.Generator,
 ) -> List[List[Tuple[str, int]]]:
     """
-    Low-padding strategy (bucket / sort batching).
+    Build batches that jointly target a padding ratio AND an intra-batch CoV.
 
-    Sort all prompts by token length and slice contiguous windows.
-    Sequences that land in the same batch have very similar lengths, so
-    the longest sequence in the batch is only marginally longer than the
-    others — minimising wasted padding tokens.
+    The two dimensions are controlled independently:
+
+    Padding ratio → fixes the relationship between anchor length and mean
+    fill length.  Derived from the padding formula:
+
+        pad_ratio = (bs × L_anchor − L_anchor − (bs−1) × mean_fill) / (bs × L_anchor)
+
+    Solving for mean_fill:
+
+        mean_fill = L_anchor × fill_factor
+        fill_factor = (bs × (1 − pad_ratio) − 1) / (bs − 1)
+
+    CoV → fixes the spread of fill lengths around their mean:
+
+        fill_std = target_cov × fill_mean
+
+    For each batch:
+      1. Select one anchor sequence (the longest in its batch; sets max_len).
+         The ideal anchor length is chosen so that fill_mean lands near the
+         pool median — the densest region of the distribution, ensuring there
+         are always plenty of fill candidates nearby.
+      2. Sample (batch_size − 1) target fill lengths from:
+            N(fill_mean, fill_std²)  clamped to [MIN_TOKENS, L_anchor]
+         Gaussian sampling decouples the fill selection from ShareGPT's skew:
+         whatever the distribution shape, the mean and std of the selected
+         fills will converge to (fill_mean, fill_std).
+      3. For each sampled target length, pick the closest sequence in the
+         pool (without replacement within a batch; WITH replacement across
+         batches, so the same prompt can appear in multiple batches).
+
+    Reuse policy
+    ------------
+    Fills are drawn without replacement within a single batch (each sequence
+    appears at most once per batch), but the pool is reset between batches.
+    This avoids the "pool exhaustion" problem that caused high variance in the
+    previous version, and is valid because the batching strategy — not prompt
+    content — is the experimental variable.
     """
-    sorted_pool = sorted(pool, key=lambda x: x[1])
+    # Sort pool by length for efficient binary-search-based nearest-neighbour.
+    sort_order    = np.argsort([item[1] for item in pool])
+    sorted_pool   = [pool[i] for i in sort_order]
+    sorted_lengths = np.array([item[1] for item in sorted_pool], dtype=float)
+
+    # fill_factor: fraction of L_anchor that gives the desired mean_fill.
+    fill_factor = (batch_size * (1.0 - target_pad_ratio) - 1.0) / (batch_size - 1)
+    fill_factor = max(fill_factor, 0.01)   # guard: don't allow near-zero fill mean
+
+    # Ideal anchor length: the value of L such that fill_factor × L equals
+    # the pool median.  This ensures fill targets land in the densest part of
+    # the distribution for any pad level.
+    pool_median   = float(np.median(sorted_lengths))
+    ideal_anchor  = np.clip(pool_median / fill_factor,
+                            sorted_lengths[0], sorted_lengths[-1])
+
+    # Select n_batches anchors: sequences closest to ideal_anchor, no replacement.
+    anchor_dists  = np.abs(sorted_lengths - ideal_anchor)
+    anchor_positions = np.argsort(anchor_dists)[:n_batches]   # indices in sorted array
+
     batches = []
-    for i in range(n_batches):
-        start = i * batch_size
-        batch = sorted_pool[start : start + batch_size]
-        if len(batch) == batch_size:
-            batches.append(batch)
+    for anchor_pos in anchor_positions:
+        L_anchor    = float(sorted_lengths[anchor_pos])
+        anchor_item = sorted_pool[anchor_pos]
+
+        fill_mean = L_anchor * fill_factor
+        fill_std  = target_cov * fill_mean
+
+        # Sample target fill lengths from N(fill_mean, fill_std²).
+        # Clamp to [MIN_TOKENS, L_anchor] so no fill exceeds the anchor
+        # (which would change which sequence is actually the max in the batch).
+        n_fills = batch_size - 1
+        raw     = rng.normal(fill_mean, fill_std, size=n_fills * 4)
+        clamped = np.clip(raw, MIN_TOKENS, L_anchor)
+        rng.shuffle(clamped)
+        target_lens = clamped[:n_fills]
+
+        # Reset availability for this batch (fills are reused across batches).
+        available = np.ones(len(sorted_pool), dtype=bool)
+        available[anchor_pos] = False   # anchor cannot also be a fill
+
+        fills = []
+        for tlen in target_lens:
+            idx = find_closest_available(sorted_lengths, tlen, available)
+            if idx < 0:
+                break
+            fills.append(sorted_pool[idx])
+            available[idx] = False
+
+        if len(fills) < n_fills:
+            continue   # couldn't fill batch; skip (rare edge case)
+
+        batches.append(fills + [anchor_item])
+
     return batches
 
 
-def make_batches_high_padding(
-    pool: List[Tuple[str, int]],
-    batch_size: int,
-    n_batches: int,
-) -> List[List[Tuple[str, int]]]:
-    """
-    High-padding strategy (shortest + longest interleaving).
-
-    Sort by length, then pair the shortest half with the longest half so
-    that each batch contains the maximum possible length variance.  Within
-    each batch the max_len is dictated by a very long sequence while most
-    other sequences are much shorter — creating a large padding ratio.
-
-    Concretely: given sorted indices [0 … N-1], batch k is formed by
-    taking stride-spaced elements from the bottom and top of the sorted
-    list simultaneously.
-    """
-    sorted_pool = sorted(pool, key=lambda x: x[1])
-    n = len(sorted_pool)
-    half = n // 2
-
-    short_half = sorted_pool[:half]
-    long_half  = sorted_pool[half:]
-
-    # Take (batch_size // 2) from the short end and (batch_size // 2) from
-    # the long end for each batch.  This pairs short and long sequences.
-    shorts_per_batch = batch_size // 2
-    longs_per_batch  = batch_size - shorts_per_batch
-
-    batches = []
-    for i in range(n_batches):
-        s_start = i * shorts_per_batch
-        l_start = i * longs_per_batch
-        short_slice = short_half[s_start : s_start + shorts_per_batch]
-        long_slice  = long_half [l_start : l_start + longs_per_batch]
-        batch = short_slice + long_slice
-        if len(batch) == batch_size:
-            batches.append(batch)
-    return batches
-
-
-def make_batches_mid_padding(
-    pool: List[Tuple[str, int]],
-    batch_size: int,
-    n_batches: int,
-) -> List[List[Tuple[str, int]]]:
-    """
-    Mid-padding strategy (interleaved stride batching).
-
-    Sort by length and then use a stride of `n_batches` when assigning
-    prompts to batches.  Each batch therefore contains sequences spread
-    evenly across the sorted order — e.g. one very short, one short-mid,
-    one mid-long, one long — producing moderate within-batch length
-    variance and intermediate padding ratios.
-
-    The stride width controls how spread out the lengths are:
-      - stride = 1  →  contiguous windows  (low padding, like bucket)
-      - stride = n_batches  →  maximally spread  (higher padding)
-    We use stride = n_batches as the mid-point between the two extremes.
-    """
-    sorted_pool = sorted(pool, key=lambda x: x[1])
-    batches: List[List] = [[] for _ in range(n_batches)]
-    for idx, item in enumerate(sorted_pool[: n_batches * batch_size]):
-        # Round-robin assignment across batches based on sorted position
-        batches[idx % n_batches].append(item)
-    return [b for b in batches if len(b) == batch_size][:n_batches]
-
-
 # ---------------------------------------------------------------------------
-# Dispatcher: choose strategy by target ratio
-# ---------------------------------------------------------------------------
-
-STRATEGY_THRESHOLDS = {
-    # target_ratio → batching function
-    0.00: make_batches_low_padding,
-    0.25: make_batches_mid_padding,
-    0.50: make_batches_high_padding,
-    0.75: make_batches_high_padding,
-}
-
-def build_batches_for_group(
-    pool: List[Tuple[str, int]],
-    target_ratio: float,
-    batch_size: int,
-    n_batches: int,
-) -> List[List[Tuple[str, int]]]:
-    """Select and run the batching strategy closest to the target ratio."""
-    # Pick the strategy whose key is nearest to the target ratio.
-    key = min(STRATEGY_THRESHOLDS.keys(), key=lambda k: abs(k - target_ratio))
-    strategy_fn = STRATEGY_THRESHOLDS[key]
-    return strategy_fn(pool, batch_size, n_batches)
-
-
-# ---------------------------------------------------------------------------
-# 6. Construct benchmark dataset
+# 6. Build 4×4 benchmark dataset
 # ---------------------------------------------------------------------------
 
 def build_benchmark_dataset(
-    prompt_lengths: List[Tuple[str, int]],
-    target_ratios: dict,
+    pool: List[Tuple[str, int]],
+    pad_levels: List[float],
+    cov_levels: List[float],
     batch_size: int,
-    batches_per_group: int,
+    n_batches_per_cell: int,
     output_dir: str,
-    plots_dir: str,
     seed: int,
 ) -> pd.DataFrame:
     """
-    Build the full benchmark dataset.
+    Construct the full 4×4 benchmark grid.
 
-    All groups share the *same* pool of prompts — only the batching differs.
-    This is the key experimental control: any throughput differences between
-    groups cannot be attributed to prompt content, only to padding structure.
+    For every (pad_level, cov_level) cell, build n_batches_per_cell batches
+    and save them as a JSON file.  All 16 cells draw from the same prompt
+    pool — the pool content is held constant; only the batching differs.
+
+    JSON format per cell:
+    [
+      {
+        "batch_id": 0,
+        "target_pad_ratio": 0.10,
+        "target_cov": 0.05,
+        "actual_pad_ratio": 0.097,
+        "actual_cov": 0.048,
+        "actual_mean_len": 87.3,
+        "actual_std_len": 4.2,
+        "prompts": [
+          {"prompt": "...", "token_length": 85},
+          ...   // batch_size entries
+        ]
+      },
+      ...   // n_batches_per_cell entries
+    ]
     """
-    rng = random.Random(seed)
-
-    # How many prompts do we need in total for one group?
-    prompts_needed = batch_size * batches_per_group
-
-    # Shuffle deterministically, then take the first `prompts_needed` entries
-    # as the shared pool.  All four groups will use this same pool.
-    shuffled = list(prompt_lengths)
-    rng.shuffle(shuffled)
-    shared_pool = shuffled[:prompts_needed]
-
-    print(f"\nShared pool size: {len(shared_pool)} prompts "
-          f"({batches_per_group} batches × {batch_size} prompts/batch)")
-
+    rng = np.random.default_rng(seed)
     os.makedirs(output_dir, exist_ok=True)
-    os.makedirs(plots_dir, exist_ok=True)
 
-    records = []           # for the summary CSV
-    group_achieved = {}    # group_name → list of achieved padding ratios
+    summary_rows = []
 
-    for group_name, target in target_ratios.items():
-        print(f"\n--- Group '{group_name}' (target={target:.0%}) ---")
+    for pad in pad_levels:
+        for cov in cov_levels:
+            pad_tag   = f"pad{int(pad * 100):02d}"
+            cov_tag   = f"cov{int(cov * 100):02d}"
+            cell_name = f"{pad_tag}_{cov_tag}"
 
-        batches = build_batches_for_group(
-            pool=shared_pool,
-            target_ratio=target,
-            batch_size=batch_size,
-            n_batches=batches_per_group,
-        )
+            print(f"\n--- Cell {cell_name}  (pad={pad:.0%}, CoV={cov:.2f}) ---")
 
-        group_records = []
-        achieved_ratios = []
-        prompt_id_counter = 0
+            batches = make_batches_joint(
+                pool, batch_size, n_batches_per_cell, pad, cov, rng
+            )
 
-        for batch_id, batch in enumerate(batches):
-            lengths_in_batch = [l for _, l in batch]
-            achieved_ratio   = compute_padding_ratio(lengths_in_batch)
-            achieved_ratios.append(achieved_ratio)
+            cell_data = []
+            for batch_id, batch in enumerate(batches):
+                lengths      = [l for _, l in batch]
+                fill_lengths = lengths[:-1]   # last item is the anchor
 
-            for prompt_text, token_len in batch:
-                group_records.append({
-                    "prompt":               prompt_text,
-                    "token_length":         token_len,
-                    "batch_id":             batch_id,
-                    "actual_padding_ratio": round(achieved_ratio, 4),
+                actual_pad = compute_padding_ratio(lengths)
+                actual_cov = compute_cov(fill_lengths)
+                mean_len   = float(np.mean(lengths))
+                std_len    = float(np.std(lengths))
+
+                cell_data.append({
+                    "batch_id":         batch_id,
+                    "target_pad_ratio": pad,
+                    "target_cov":       cov,
+                    "actual_pad_ratio": round(actual_pad, 4),
+                    "actual_cov":       round(actual_cov, 4),
+                    "actual_mean_len":  round(mean_len, 2),
+                    "actual_std_len":   round(std_len, 2),
+                    "prompts": [
+                        {"prompt": text, "token_length": length}
+                        for text, length in batch
+                    ],
                 })
-                records.append({
-                    "prompt_id":            prompt_id_counter,
-                    "token_length":         token_len,
-                    "padding_group":        group_name,
-                    "batch_id":             batch_id,
-                    "actual_padding_ratio": round(achieved_ratio, 4),
+
+                summary_rows.append({
+                    "cell":             cell_name,
+                    "pad_level":        pad,
+                    "cov_level":        cov,
+                    "batch_id":         batch_id,
+                    "actual_pad_ratio": round(actual_pad, 4),
+                    "actual_cov":       round(actual_cov, 4),
+                    "actual_mean_len":  round(mean_len, 2),
+                    "actual_std_len":   round(std_len, 2),
                 })
-                prompt_id_counter += 1
 
-        group_achieved[group_name] = achieved_ratios
+                print(f"  batch {batch_id}: pad={actual_pad:.3f} "
+                      f"(Δ={actual_pad - pad:+.3f}), "
+                      f"CoV={actual_cov:.3f} (Δ={actual_cov - cov:+.3f})")
 
-        mean_r = np.mean(achieved_ratios)
-        std_r  = np.std(achieved_ratios)
-        print(f"  Batches formed : {len(batches)}")
-        print(f"  Achieved ratio : {mean_r:.3f} ± {std_r:.3f}  "
-              f"(target was {target:.2f})")
+            out_path = os.path.join(output_dir, f"{cell_name}.json")
+            with open(out_path, "w", encoding="utf-8") as f:
+                json.dump(cell_data, f, ensure_ascii=False, indent=2)
+            print(f"  Saved → {out_path}")
 
-        out_path = os.path.join(output_dir, f"group_{group_name}.json")
-        with open(out_path, "w", encoding="utf-8") as f:
-            json.dump(group_records, f, ensure_ascii=False, indent=2)
-        print(f"  Saved → {out_path}")
-
-    # ------------------------------------------------------------------
-    # Summary CSV
-    # ------------------------------------------------------------------
-    df = pd.DataFrame(records)
+    df = pd.DataFrame(summary_rows)
     csv_path = os.path.join(output_dir, "benchmark_summary.csv")
     df.to_csv(csv_path, index=False)
     print(f"\nSummary CSV saved → {csv_path}")
-
-    # ------------------------------------------------------------------
-    # Plot: achieved vs target padding ratio per group
-    # ------------------------------------------------------------------
-    plot_padding_ratios(group_achieved, target_ratios, plots_dir)
-
     return df
 
 
@@ -448,74 +491,117 @@ def build_benchmark_dataset(
 # 7. Plots and summary table
 # ---------------------------------------------------------------------------
 
-def plot_padding_ratios(
-    group_achieved: dict,
-    target_ratios: dict,
+def plot_benchmark_grid(
+    df: pd.DataFrame,
+    pad_levels: List[float],
+    cov_levels: List[float],
     plots_dir: str,
 ) -> None:
-    """Box-plot of achieved padding ratios with target lines overlaid."""
-    fig, ax = plt.subplots(figsize=(10, 6))
+    """
+    Two side-by-side 4×4 heatmaps:
+      Left  — mean achieved padding ratio per cell (target: x-axis)
+      Right — mean achieved CoV per cell (target: y-axis)
 
-    group_names = list(group_achieved.keys())
-    data = [group_achieved[g] for g in group_names]
-    targets = [target_ratios[g] for g in group_names]
+    Cell annotations show both the achieved value and the signed error
+    relative to the target, so it is immediately obvious which cells
+    hit their targets and which drift.
+    """
+    os.makedirs(plots_dir, exist_ok=True)
 
-    bp = ax.boxplot(data, patch_artist=True, notch=False)
-    colours = ["#4CAF50", "#2196F3", "#FF9800", "#F44336"]
-    for patch, colour in zip(bp["boxes"], colours):
-        patch.set_facecolor(colour)
-        patch.set_alpha(0.7)
+    cell_means = df.groupby(["pad_level", "cov_level"])[
+        ["actual_pad_ratio", "actual_cov"]
+    ].mean()
 
-    # Overlay target lines
-    for i, target in enumerate(targets, start=1):
-        ax.hlines(target, i - 0.4, i + 0.4,
-                  colors="black", linestyles="--", linewidths=1.5,
-                  label="Target" if i == 1 else "")
+    # Build 2-D grids  (rows = CoV levels, columns = pad levels)
+    pad_grid = np.full((len(cov_levels), len(pad_levels)), np.nan)
+    cov_grid = np.full((len(cov_levels), len(pad_levels)), np.nan)
 
-    ax.set_xticks(range(1, len(group_names) + 1))
-    ax.set_xticklabels(
-        [f"{g}\n(target={target_ratios[g]:.0%})" for g in group_names],
-        fontsize=10,
-    )
-    ax.set_ylabel("Achieved padding ratio")
-    ax.set_title("Achieved vs target padding ratio per benchmark group")
-    ax.legend()
-    ax.set_ylim(-0.05, 1.05)
-    ax.yaxis.set_major_formatter(plt.FuncFormatter(lambda y, _: f"{y:.0%}"))
+    for ci, pad in enumerate(pad_levels):
+        for ri, cov in enumerate(cov_levels):
+            try:
+                row = cell_means.loc[(pad, cov)]
+                pad_grid[ri, ci] = row["actual_pad_ratio"]
+                cov_grid[ri, ci] = row["actual_cov"]
+            except KeyError:
+                pass
 
+    fig, axes = plt.subplots(1, 2, figsize=(15, 5))
+
+    configs = [
+        (axes[0], pad_grid, "Achieved padding ratio",
+         np.array([[p] * len(cov_levels) for p in pad_levels]).T, "RdYlGn_r", 0.0, 1.0),
+        (axes[1], cov_grid, "Achieved CoV",
+         np.array([[c] * len(pad_levels) for c in cov_levels]),   "RdYlGn_r", 0.0, 1.0),
+    ]
+
+    pad_labels = [f"{int(p * 100)}%" for p in pad_levels]
+    cov_labels = [f"{c:.2f}" for c in cov_levels]
+
+    for ax, grid, title, target_grid, cmap, vmin, vmax in configs:
+        im = ax.imshow(grid, aspect="auto", cmap=cmap, vmin=vmin, vmax=vmax)
+        ax.set_xticks(range(len(pad_levels)))
+        ax.set_xticklabels(pad_labels, fontsize=10)
+        ax.set_yticks(range(len(cov_levels)))
+        ax.set_yticklabels(cov_labels, fontsize=10)
+        ax.set_xlabel("Target pad%", fontsize=11)
+        ax.set_ylabel("Target CoV", fontsize=11)
+        ax.set_title(title, fontsize=12)
+        plt.colorbar(im, ax=ax, fraction=0.046, pad=0.04)
+
+        # Annotate: "achieved\n(Δerror)"
+        for ri in range(len(cov_levels)):
+            for ci in range(len(pad_levels)):
+                achieved = grid[ri, ci]
+                target   = target_grid[ri, ci]
+                if not np.isnan(achieved):
+                    ax.text(ci, ri,
+                            f"{achieved:.2f}\n({achieved - target:+.2f})",
+                            ha="center", va="center", fontsize=7.5,
+                            color="black")
+
+    plt.suptitle("Achieved vs target values across the 4×4 benchmark grid",
+                 fontsize=13, y=1.02)
     plt.tight_layout()
-    path = os.path.join(plots_dir, "padding_ratio_by_group.png")
-    plt.savefig(path, dpi=150)
+    path = os.path.join(plots_dir, "benchmark_grid.png")
+    plt.savefig(path, dpi=150, bbox_inches="tight")
     plt.close()
-    print(f"Padding-ratio plot saved → {path}")
+    print(f"Benchmark grid plot saved → {path}")
 
 
-def print_summary_table(df: pd.DataFrame) -> None:
-    print("\n" + "=" * 60)
-    print("SUMMARY: achieved padding ratio per group")
-    print("=" * 60)
+def print_summary_table(
+    df: pd.DataFrame,
+    pad_levels: List[float],
+    cov_levels: List[float],
+) -> None:
+    print("\n" + "=" * 76)
+    print("SUMMARY  —  mean achieved values per cell  [rows=CoV target, cols=pad target]")
+    print("=" * 76)
 
-    table = (
-        df.groupby("padding_group")["actual_padding_ratio"]
-        .agg(["mean", "std", "min", "max", "count"])
-        .rename(columns={
-            "mean":  "Mean",
-            "std":   "Std",
-            "min":   "Min",
-            "max":   "Max",
-            "count": "N prompts",
-        })
-    )
-    # Reorder rows to match TARGET_RATIOS insertion order
-    order = list(TARGET_RATIOS.keys())
-    table = table.reindex([g for g in order if g in table.index])
+    pivot_pad = df.pivot_table(
+        values="actual_pad_ratio",
+        index="cov_level",
+        columns="pad_level",
+        aggfunc="mean",
+    ).reindex(index=cov_levels, columns=pad_levels)
 
-    fmt_cols = ["Mean", "Std", "Min", "Max"]
-    for col in fmt_cols:
-        table[col] = table[col].map("{:.3f}".format)
+    pivot_cov = df.pivot_table(
+        values="actual_cov",
+        index="cov_level",
+        columns="pad_level",
+        aggfunc="mean",
+    ).reindex(index=cov_levels, columns=pad_levels)
 
-    print(table.to_string())
-    print("=" * 60)
+    pivot_pad.columns = [f"pad={int(p*100)}%" for p in pivot_pad.columns]
+    pivot_pad.index   = [f"CoV={c:.2f}" for c in pivot_pad.index]
+    pivot_cov.columns = [f"pad={int(p*100)}%" for p in pivot_cov.columns]
+    pivot_cov.index   = [f"CoV={c:.2f}" for c in pivot_cov.index]
+
+    print("\nMean achieved padding ratio (target col headers):")
+    print(pivot_pad.to_string(float_format="{:.3f}".format))
+
+    print("\nMean achieved CoV (target row index):")
+    print(pivot_cov.to_string(float_format="{:.3f}".format))
+    print("=" * 76)
 
 
 # ---------------------------------------------------------------------------
@@ -532,31 +618,26 @@ def main() -> None:
     # 2. Tokenize
     prompt_lengths = tokenize_prompts(prompts, TOKENIZER_NAME)
 
-    # 3. Analyse (plots unfiltered + filtered length distribution)
+    # 3. Analyse
     analyse_lengths(prompt_lengths, PLOTS_DIR)
 
     # 4. Filter
     filtered = filter_prompts(prompt_lengths, MIN_TOKENS, MAX_TOKENS)
 
-    if len(filtered) < PROMPTS_PER_GROUP:
-        raise ValueError(
-            f"Not enough prompts after filtering: need {PROMPTS_PER_GROUP}, "
-            f"got {len(filtered)}.  Relax MIN/MAX_TOKENS or reduce BATCHES_PER_GROUP."
-        )
-
-    # 5–6. Build groups and save
+    # 5–6. Build 4×4 grid and save
     df = build_benchmark_dataset(
-        prompt_lengths   = filtered,
-        target_ratios    = TARGET_RATIOS,
-        batch_size       = BATCH_SIZE,
-        batches_per_group= BATCHES_PER_GROUP,
-        output_dir       = OUTPUT_DIR,
-        plots_dir        = PLOTS_DIR,
-        seed             = SEED,
+        pool               = filtered,
+        pad_levels         = PAD_LEVELS,
+        cov_levels         = COV_LEVELS,
+        batch_size         = BATCH_SIZE,
+        n_batches_per_cell = N_BATCHES_PER_CELL,
+        output_dir         = OUTPUT_DIR,
+        seed               = SEED,
     )
 
-    # 7. Summary table
-    print_summary_table(df)
+    # 7. Plots and table
+    plot_benchmark_grid(df, PAD_LEVELS, COV_LEVELS, PLOTS_DIR)
+    print_summary_table(df, PAD_LEVELS, COV_LEVELS)
 
     print(f"\nAll outputs written to ./{OUTPUT_DIR}/  and  ./{PLOTS_DIR}/")
     print("Done.")

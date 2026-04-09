@@ -1,0 +1,172 @@
+Token indices sequence length is longer than the specified maximum sequence length for this model (221043 > 131072). Running this sequence through the model will result in indexing errors
+Loading dataset 'anon8231489123/ShareGPT_Vicuna_unfiltered' …
+  Extracted 92,792 first-turn prompts.
+
+Loading tokenizer 'Qwen/Qwen3-32B' …
+Tokenizing 92,792 prompts …
+  Done.  Length range: 1–221043 tokens.
+
+=== Length distribution (unfiltered) ===
+  Count  : 92,792
+  Mean   : 182.9
+  Median : 24.0
+  P90    : 416.9
+  P95    : 994.0
+  Max    : 221043
+
+  Length distribution plot saved → plots/length_distribution.png
+
+Filtering [32, 1024] tokens: 92,792 → 34,757 prompts retained.
+
+--- Cell pad10_cov05  (pad=10%, CoV=0.05) ---
+  batch 0: pad=0.106 (Δ=+0.006), CoV=0.042 (Δ=-0.008)
+  batch 1: pad=0.102 (Δ=+0.002), CoV=0.050 (Δ=+0.000)
+  batch 2: pad=0.099 (Δ=-0.001), CoV=0.044 (Δ=-0.006)
+  batch 3: pad=0.097 (Δ=-0.003), CoV=0.053 (Δ=+0.003)
+  batch 4: pad=0.111 (Δ=+0.011), CoV=0.055 (Δ=+0.005)
+  Saved → benchmark_dataset/pad10_cov05.json
+
+--- Cell pad10_cov20  (pad=10%, CoV=0.20) ---
+  batch 0: pad=0.110 (Δ=+0.010), CoV=0.145 (Δ=-0.055)
+  batch 1: pad=0.127 (Δ=+0.027), CoV=0.151 (Δ=-0.049)
+  batch 2: pad=0.124 (Δ=+0.024), CoV=0.160 (Δ=-0.040)
+  batch 3: pad=0.136 (Δ=+0.036), CoV=0.167 (Δ=-0.033)
+  batch 4: pad=0.147 (Δ=+0.047), CoV=0.166 (Δ=-0.034)
+  Saved → benchmark_dataset/pad10_cov20.json
+
+--- Cell pad10_cov40  (pad=10%, CoV=0.40) ---
+  batch 0: pad=0.163 (Δ=+0.063), CoV=0.253 (Δ=-0.147)
+  batch 1: pad=0.235 (Δ=+0.135), CoV=0.280 (Δ=-0.120)
+  batch 2: pad=0.211 (Δ=+0.111), CoV=0.273 (Δ=-0.127)
+  batch 3: pad=0.198 (Δ=+0.098), CoV=0.274 (Δ=-0.126)
+  batch 4: pad=0.164 (Δ=+0.064), CoV=0.248 (Δ=-0.152)
+  Saved → benchmark_dataset/pad10_cov40.json
+
+--- Cell pad10_cov65  (pad=10%, CoV=0.65) ---
+  batch 0: pad=0.195 (Δ=+0.095), CoV=0.327 (Δ=-0.323)
+  batch 1: pad=0.248 (Δ=+0.148), CoV=0.345 (Δ=-0.305)
+  batch 2: pad=0.277 (Δ=+0.177), CoV=0.377 (Δ=-0.273)
+  batch 3: pad=0.266 (Δ=+0.166), CoV=0.351 (Δ=-0.299)
+  batch 4: pad=0.231 (Δ=+0.131), CoV=0.380 (Δ=-0.270)
+  Saved → benchmark_dataset/pad10_cov65.json
+
+--- Cell pad30_cov05  (pad=30%, CoV=0.05) ---
+  batch 0: pad=0.299 (Δ=-0.001), CoV=0.049 (Δ=-0.001)
+  batch 1: pad=0.298 (Δ=-0.002), CoV=0.060 (Δ=+0.010)
+  batch 2: pad=0.304 (Δ=+0.004), CoV=0.047 (Δ=-0.003)
+  batch 3: pad=0.305 (Δ=+0.005), CoV=0.053 (Δ=+0.003)
+  batch 4: pad=0.307 (Δ=+0.007), CoV=0.050 (Δ=+0.000)
+  Saved → benchmark_dataset/pad30_cov05.json
+
+--- Cell pad30_cov20  (pad=30%, CoV=0.20) ---
+  batch 0: pad=0.307 (Δ=+0.007), CoV=0.184 (Δ=-0.016)
+  batch 1: pad=0.308 (Δ=+0.008), CoV=0.174 (Δ=-0.026)
+  batch 2: pad=0.287 (Δ=-0.013), CoV=0.198 (Δ=-0.002)
+  batch 3: pad=0.289 (Δ=-0.011), CoV=0.188 (Δ=-0.012)
+  batch 4: pad=0.308 (Δ=+0.008), CoV=0.176 (Δ=-0.024)
+  Saved → benchmark_dataset/pad30_cov20.json
+
+--- Cell pad30_cov40  (pad=30%, CoV=0.40) ---
+  batch 0: pad=0.314 (Δ=+0.014), CoV=0.314 (Δ=-0.086)
+  batch 1: pad=0.324 (Δ=+0.024), CoV=0.329 (Δ=-0.071)
+  batch 2: pad=0.307 (Δ=+0.007), CoV=0.382 (Δ=-0.018)
+  batch 3: pad=0.295 (Δ=-0.005), CoV=0.273 (Δ=-0.127)
+  batch 4: pad=0.307 (Δ=+0.007), CoV=0.342 (Δ=-0.058)
+  Saved → benchmark_dataset/pad30_cov40.json
+
+--- Cell pad30_cov65  (pad=30%, CoV=0.65) ---
+  batch 0: pad=0.399 (Δ=+0.099), CoV=0.468 (Δ=-0.182)
+  batch 1: pad=0.338 (Δ=+0.038), CoV=0.424 (Δ=-0.226)
+  batch 2: pad=0.346 (Δ=+0.046), CoV=0.449 (Δ=-0.201)
+  batch 3: pad=0.332 (Δ=+0.032), CoV=0.408 (Δ=-0.242)
+  batch 4: pad=0.365 (Δ=+0.065), CoV=0.425 (Δ=-0.225)
+  Saved → benchmark_dataset/pad30_cov65.json
+
+--- Cell pad50_cov05  (pad=50%, CoV=0.05) ---
+  batch 0: pad=0.501 (Δ=+0.001), CoV=0.051 (Δ=+0.001)
+  batch 1: pad=0.502 (Δ=+0.002), CoV=0.047 (Δ=-0.003)
+  batch 2: pad=0.500 (Δ=+0.000), CoV=0.045 (Δ=-0.005)
+  batch 3: pad=0.502 (Δ=+0.002), CoV=0.049 (Δ=-0.001)
+  batch 4: pad=0.502 (Δ=+0.002), CoV=0.044 (Δ=-0.006)
+  Saved → benchmark_dataset/pad50_cov05.json
+
+--- Cell pad50_cov20  (pad=50%, CoV=0.20) ---
+  batch 0: pad=0.509 (Δ=+0.009), CoV=0.210 (Δ=+0.010)
+  batch 1: pad=0.497 (Δ=-0.003), CoV=0.204 (Δ=+0.004)
+  batch 2: pad=0.494 (Δ=-0.006), CoV=0.200 (Δ=+0.000)
+  batch 3: pad=0.492 (Δ=-0.008), CoV=0.194 (Δ=-0.006)
+  batch 4: pad=0.494 (Δ=-0.006), CoV=0.181 (Δ=-0.019)
+  Saved → benchmark_dataset/pad50_cov20.json
+
+--- Cell pad50_cov40  (pad=50%, CoV=0.40) ---
+  batch 0: pad=0.486 (Δ=-0.014), CoV=0.367 (Δ=-0.033)
+  batch 1: pad=0.465 (Δ=-0.035), CoV=0.328 (Δ=-0.072)
+  batch 2: pad=0.494 (Δ=-0.006), CoV=0.349 (Δ=-0.051)
+  batch 3: pad=0.487 (Δ=-0.013), CoV=0.357 (Δ=-0.043)
+  batch 4: pad=0.485 (Δ=-0.015), CoV=0.355 (Δ=-0.045)
+  Saved → benchmark_dataset/pad50_cov40.json
+
+--- Cell pad50_cov65  (pad=50%, CoV=0.65) ---
+  batch 0: pad=0.399 (Δ=-0.101), CoV=0.453 (Δ=-0.197)
+  batch 1: pad=0.509 (Δ=+0.009), CoV=0.511 (Δ=-0.139)
+  batch 2: pad=0.459 (Δ=-0.041), CoV=0.500 (Δ=-0.150)
+  batch 3: pad=0.480 (Δ=-0.020), CoV=0.491 (Δ=-0.159)
+  batch 4: pad=0.521 (Δ=+0.021), CoV=0.470 (Δ=-0.180)
+  Saved → benchmark_dataset/pad50_cov65.json
+
+--- Cell pad70_cov05  (pad=70%, CoV=0.05) ---
+  batch 0: pad=0.701 (Δ=+0.001), CoV=0.047 (Δ=-0.003)
+  batch 1: pad=0.698 (Δ=-0.002), CoV=0.057 (Δ=+0.007)
+  batch 2: pad=0.699 (Δ=-0.001), CoV=0.046 (Δ=-0.004)
+  batch 3: pad=0.700 (Δ=+0.000), CoV=0.054 (Δ=+0.004)
+  batch 4: pad=0.701 (Δ=+0.001), CoV=0.050 (Δ=-0.000)
+  Saved → benchmark_dataset/pad70_cov05.json
+
+--- Cell pad70_cov20  (pad=70%, CoV=0.20) ---
+  batch 0: pad=0.698 (Δ=-0.002), CoV=0.176 (Δ=-0.024)
+  batch 1: pad=0.695 (Δ=-0.005), CoV=0.216 (Δ=+0.016)
+  batch 2: pad=0.694 (Δ=-0.006), CoV=0.187 (Δ=-0.013)
+  batch 3: pad=0.707 (Δ=+0.007), CoV=0.192 (Δ=-0.008)
+  batch 4: pad=0.700 (Δ=+0.000), CoV=0.192 (Δ=-0.008)
+  Saved → benchmark_dataset/pad70_cov20.json
+
+--- Cell pad70_cov40  (pad=70%, CoV=0.40) ---
+  batch 0: pad=0.701 (Δ=+0.001), CoV=0.351 (Δ=-0.049)
+  batch 1: pad=0.685 (Δ=-0.015), CoV=0.370 (Δ=-0.030)
+  batch 2: pad=0.679 (Δ=-0.021), CoV=0.342 (Δ=-0.058)
+  batch 3: pad=0.703 (Δ=+0.003), CoV=0.389 (Δ=-0.011)
+  batch 4: pad=0.708 (Δ=+0.008), CoV=0.379 (Δ=-0.021)
+  Saved → benchmark_dataset/pad70_cov40.json
+
+--- Cell pad70_cov65  (pad=70%, CoV=0.65) ---
+  batch 0: pad=0.716 (Δ=+0.016), CoV=0.598 (Δ=-0.052)
+  batch 1: pad=0.676 (Δ=-0.024), CoV=0.559 (Δ=-0.091)
+  batch 2: pad=0.673 (Δ=-0.027), CoV=0.572 (Δ=-0.078)
+  batch 3: pad=0.713 (Δ=+0.013), CoV=0.576 (Δ=-0.074)
+  batch 4: pad=0.725 (Δ=+0.025), CoV=0.633 (Δ=-0.017)
+  Saved → benchmark_dataset/pad70_cov65.json
+
+Summary CSV saved → benchmark_dataset/benchmark_summary.csv
+Benchmark grid plot saved → plots/benchmark_grid.png
+
+============================================================================
+SUMMARY  —  mean achieved values per cell  [rows=CoV target, cols=pad target]
+============================================================================
+
+Mean achieved padding ratio (target col headers):
+          pad=10%  pad=30%  pad=50%  pad=70%
+CoV=0.05    0.103    0.303    0.501    0.700
+CoV=0.20    0.129    0.300    0.497    0.699
+CoV=0.40    0.194    0.309    0.483    0.695
+CoV=0.65    0.243    0.356    0.474    0.701
+
+Mean achieved CoV (target row index):
+          pad=10%  pad=30%  pad=50%  pad=70%
+CoV=0.05    0.049    0.052    0.047    0.051
+CoV=0.20    0.158    0.184    0.198    0.193
+CoV=0.40    0.265    0.328    0.351    0.366
+CoV=0.65    0.356    0.435    0.485    0.588
+============================================================================
+
+All outputs written to ./benchmark_dataset/  and  ./plots/
+Done.
