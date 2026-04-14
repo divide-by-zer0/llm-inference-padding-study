@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
-# Config C: TP=4, PP=1 + Sequence Parallel
-# 4 GPUs, single pipeline stage, sequence dimension split across TP ranks.
+# Config C: TP=1, PP=4
+# 4 GPUs, 4 pipeline stages, no tensor parallelism.
 # Run from the study root (llm-inference-padding-study/):
 #   cd /path/to/llm-inference-padding-study
 #   bash scripts/launch_config_c.sh
@@ -10,7 +10,7 @@ set -euo pipefail
 # ---------------------------------------------------------------------------
 # Paths — edit these before running
 # ---------------------------------------------------------------------------
-CHECKPOINT="${CHECKPOINT:-/path/to/qwen3-32b-mcore-tp4}"
+CHECKPOINT="${CHECKPOINT:-/path/to/qwen3-32b-mcore-tp1pp4}"
 TOKENIZER_MODEL="${TOKENIZER_MODEL:-/path/to/Qwen3-32B}"
 BENCHMARK_DATASET_DIR="${BENCHMARK_DATASET_DIR:-../benchmark_dataset}"
 RESULTS_DIR="${RESULTS_DIR:-../results}"
@@ -18,8 +18,8 @@ RESULTS_DIR="${RESULTS_DIR:-../results}"
 # ---------------------------------------------------------------------------
 # Parallelism
 # ---------------------------------------------------------------------------
-TP=4
-PP=1
+TP=1
+PP=4
 N_GPUS=4
 
 # ---------------------------------------------------------------------------
@@ -56,7 +56,6 @@ torchrun "${DISTRIBUTED_ARGS[@]}" \
     \
     --tensor-model-parallel-size   ${TP} \
     --pipeline-model-parallel-size ${PP} \
-    --sequence-parallel \
     \
     --num-layers          ${NUM_LAYERS} \
     --hidden-size         ${HIDDEN_SIZE} \
