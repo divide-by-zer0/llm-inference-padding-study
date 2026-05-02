@@ -74,7 +74,6 @@ for spec in "${CONFIGS[@]}"; do
         --load-dir "${HF_QWEN_DIR}" \
         --save-dir "${OUT_DIR}" \
         --tokenizer-model "${HF_QWEN_DIR}" \
-        --transformer-impl local \
         --bf16
 
     echo "[convert] ${TAG} done."
