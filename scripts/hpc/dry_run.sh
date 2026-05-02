@@ -32,6 +32,7 @@ PROJECT_ROOT="${PROJECT_ROOT:-$HOME/llm-inference-padding-study}"
 MEGATRON_DIR="${MEGATRON_DIR:-$HOME/Megatron-LM}"
 CKPT_ROOT="${CKPT_ROOT:-$SCRATCH/qwen-checkpoints}"
 HF_QWEN_DIR="${HF_QWEN_DIR:-$SCRATCH/qwen2.5-32b-hf}"
+VENV_DIR="${VENV_DIR:-$HOME/padding-bench-venv}"
 
 export CHECKPOINT="${CKPT_ROOT}/qwen2.5-32b-mcore-${CKPT_TAG}"
 export TOKENIZER_MODEL="${HF_QWEN_DIR}"
@@ -41,6 +42,10 @@ export RESULTS_DIR="${PROJECT_ROOT}/results_dryrun"
 # Reset PYTHONPATH (Spack leak), then add Megatron-LM as the only entry.
 unset PYTHONPATH
 export PYTHONPATH="${MEGATRON_DIR}"
+
+# Bundled libcudnn.so.9 path for transformer-engine 1.13 runtime.
+export LD_LIBRARY_PATH=$(find "${VENV_DIR}/lib/python3.10/site-packages/nvidia" \
+    -name "lib" -type d 2>/dev/null | tr '\n' ':')${LD_LIBRARY_PATH:-}
 
 echo "Dry run:"
 echo "  CONFIG       = ${CONFIG}"

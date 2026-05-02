@@ -61,6 +61,9 @@ VENV_DIR="${VENV_DIR:-$HOME/padding-bench-venv}"
 
 module purge
 module load "${PY_MODULE}"
+module load cuda/12.3.0/gcc/11.3.0/zen2
+module load cudnn/8.9.7.29-12/gcc/11.3.0/zen2
+module load nccl/2.18.1-1/gcc/11.3.0/zen2
 # shellcheck disable=SC1091
 source "${VENV_DIR}/bin/activate"
 # Spack module sets PYTHONPATH; unset it so the venv's site-packages wins.
@@ -69,6 +72,12 @@ unset PYTHONPATH
 # Make Megatron importable for run_padding_benchmark.py.
 # (PYTHONPATH was just unset above; this becomes the only entry.)
 export PYTHONPATH="${MEGATRON_DIR}"
+
+# Transformer-engine 1.13 needs cuDNN 9.x at runtime, but Zaratan only ships
+# cuDNN 8.x as a module.  PyTorch's wheel bundles libcudnn.so.9 inside the
+# venv's nvidia/ directory; expose every nvidia/*/lib path so TE finds it.
+export LD_LIBRARY_PATH=$(find "${VENV_DIR}/lib/python3.10/site-packages/nvidia" \
+    -name "lib" -type d 2>/dev/null | tr '\n' ':')${LD_LIBRARY_PATH:-}
 
 # Distributed defaults (NCCL on a single node)
 export NCCL_IB_DISABLE=0
