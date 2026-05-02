@@ -68,6 +68,7 @@ for spec in "${CONFIGS[@]}"; do
         --saver  mcore \
         --model-size qwen2.5 \
         --checkpoint-type hf \
+        --megatron-path "${MEGATRON_DIR}" \
         --target-tensor-parallel-size  "${TP}" \
         --target-pipeline-parallel-size "${PP}" \
         --load-dir "${HF_QWEN_DIR}" \
