@@ -37,7 +37,8 @@ VENV_DIR="${VENV_DIR:-$HOME/padding-bench-venv}"
 export CHECKPOINT="${CKPT_ROOT}/qwen2.5-32b-mcore-${CKPT_TAG}"
 export TOKENIZER_MODEL="${HF_QWEN_DIR}"
 export BENCHMARK_DATASET_DIR="${PROJECT_ROOT}/benchmark_dataset"
-export RESULTS_DIR="${PROJECT_ROOT}/results_dryrun"
+# Dry-run results land in $HOME (separate quota from over-full project scratch).
+export RESULTS_DIR="${RESULTS_DIR:-$HOME/padding-results-dryrun}"
 
 # Reset PYTHONPATH (Spack leak), then add Megatron-LM as the only entry.
 unset PYTHONPATH

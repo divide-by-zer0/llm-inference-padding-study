@@ -12,8 +12,10 @@
 #SBATCH --mem=200G
 #SBATCH --time=01:00:00
 #SBATCH --partition=gpu
-#SBATCH --output=logs/%x-%j.out
-#SBATCH --error=logs/%x-%j.err
+# Logs go to $HOME (NOT scratch) because the project's scratch quota is full.
+# /home/cadwani is hard-coded because SBATCH directives don't expand env vars.
+#SBATCH --output=/home/cadwani/padding-results/logs/%x-%j.out
+#SBATCH --error=/home/cadwani/padding-results/logs/%x-%j.err
 #SBATCH --mail-type=BEGIN,END,FAIL
 #SBATCH --mail-user=cadwani@umd.edu
 
@@ -43,7 +45,8 @@ export HF_QWEN_DIR="${HF_QWEN_DIR:-$SCRATCH/qwen2.5-32b-hf}"
 export CHECKPOINT="${CKPT_ROOT}/qwen2.5-32b-mcore-${CKPT_TAG}"
 export TOKENIZER_MODEL="${HF_QWEN_DIR}"
 export BENCHMARK_DATASET_DIR="${PROJECT_ROOT}/benchmark_dataset"
-export RESULTS_DIR="${PROJECT_ROOT}/results"
+# Results land in $HOME (separate quota from over-full project scratch).
+export RESULTS_DIR="${RESULTS_DIR:-$HOME/padding-results}"
 
 # ---------------------------------------------------------------------------
 # Sanity checks before burning SUs

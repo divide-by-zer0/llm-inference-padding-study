@@ -22,8 +22,9 @@
 #SBATCH --mem=400G
 #SBATCH --time=00:30:00
 #SBATCH --partition=gpu
-#SBATCH --output=logs/%x-%j.out
-#SBATCH --error=logs/%x-%j.err
+# Logs go to $HOME (NOT scratch) because the project's scratch quota is full.
+#SBATCH --output=/home/cadwani/padding-results/logs/%x-%j.out
+#SBATCH --error=/home/cadwani/padding-results/logs/%x-%j.err
 #SBATCH --mail-type=BEGIN,END,FAIL
 #SBATCH --mail-user=cadwani@umd.edu
 
