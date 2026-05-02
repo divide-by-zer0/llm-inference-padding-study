@@ -1,0 +1,29 @@
+diff --git a/tools/checkpoint/loader_llama_mistral.py b/tools/checkpoint/loader_llama_mistral.py
+index 994abd056..6f5bb8dd6 100644
+--- a/tools/checkpoint/loader_llama_mistral.py
++++ b/tools/checkpoint/loader_llama_mistral.py
+@@ -437,6 +437,10 @@ def _load_checkpoint(queue, args):
+                 '--no-masked-softmax-fusion',
+                 '--no-bias-gelu-fusion',
+                 '--no-bias-dropout-fusion',
++                '--no-rope-fusion',
++                '--no-persist-layer-norm',
++                '--no-bias-swiglu-fusion',
++                '--no-gradient-accumulation-fusion',
+                 '--use-cpu-initialization',
+                 '--micro-batch-size', '1',
+                 '--no-load-optim',
+diff --git a/tools/checkpoint/saver_base.py b/tools/checkpoint/saver_base.py
+index 8f60d0515..c43fd68f9 100644
+--- a/tools/checkpoint/saver_base.py
++++ b/tools/checkpoint/saver_base.py
+@@ -40,9 +40,6 @@ class MegatronCheckpointSaverBase:
+         Check for an appropriate installation of transformer engine and add megatron to sys path.
+         """
+         # Transformer engine >= 0.12.0, for CPU initialization.
+-        te_version = PkgVersion(version("transformer-engine"))
+-        assert te_version >= PkgVersion("0.12.0"), \
+-            "transformer engine version: %s (>=0.12.0 required)." % te_version
+ 
+         # Search in directory above this
+         sys.path.append(os.path.abspath(
