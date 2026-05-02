@@ -54,14 +54,15 @@ export RESULTS_DIR="${PROJECT_ROOT}/results"
 mkdir -p "${RESULTS_DIR}"
 
 # ---------------------------------------------------------------------------
-# Modules + conda env  (verify exact module names on Zaratan)
+# Modules + venv
 # ---------------------------------------------------------------------------
+PY_MODULE="${PY_MODULE:-python/3.10.10/gcc/11.3.0/cuda/12.3.0/linux-rhel8-zen2}"
+VENV_DIR="${VENV_DIR:-$HOME/padding-bench-venv}"
+
 module purge
-module load cuda/12.4
-module load gcc
-module load anaconda
+module load "${PY_MODULE}"
 # shellcheck disable=SC1091
-source activate padding-bench
+source "${VENV_DIR}/bin/activate"
 
 # Make Megatron importable for run_padding_benchmark.py
 export PYTHONPATH="${MEGATRON_DIR}:${PYTHONPATH:-}"
