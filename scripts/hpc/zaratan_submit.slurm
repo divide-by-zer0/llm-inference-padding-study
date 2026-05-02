@@ -63,9 +63,12 @@ module purge
 module load "${PY_MODULE}"
 # shellcheck disable=SC1091
 source "${VENV_DIR}/bin/activate"
+# Spack module sets PYTHONPATH; unset it so the venv's site-packages wins.
+unset PYTHONPATH
 
-# Make Megatron importable for run_padding_benchmark.py
-export PYTHONPATH="${MEGATRON_DIR}:${PYTHONPATH:-}"
+# Make Megatron importable for run_padding_benchmark.py.
+# (PYTHONPATH was just unset above; this becomes the only entry.)
+export PYTHONPATH="${MEGATRON_DIR}"
 
 # Distributed defaults (NCCL on a single node)
 export NCCL_IB_DISABLE=0

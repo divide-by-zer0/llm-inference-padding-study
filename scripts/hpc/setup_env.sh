@@ -51,13 +51,22 @@ fi
 
 # shellcheck disable=SC1091
 source "${VENV_DIR}/bin/activate"
+
+# Spack's Python module exposes its own site-packages via PYTHONPATH, which
+# leaks into the venv and causes pip to think pre-installed (often outdated)
+# packages like torch are "already satisfied".  Clear it so the venv stays
+# isolated and we always pull fresh wheels.
+unset PYTHONPATH
+
 python -m pip install --upgrade pip wheel setuptools
 
 # ---------------------------------------------------------------------------
 # Python dependencies
 # ---------------------------------------------------------------------------
 echo "[setup_env] Installing PyTorch (${PYTORCH_CUDA_TAG}) …"
-pip install torch torchvision \
+# --upgrade --force-reinstall: force a fresh install into the venv even if
+#   pip thinks a system-leaked torch is already satisfying the requirement.
+pip install --upgrade --force-reinstall torch torchvision \
     --index-url "https://download.pytorch.org/whl/${PYTORCH_CUDA_TAG}"
 
 echo "[setup_env] Installing benchmark dependencies …"
@@ -89,8 +98,11 @@ echo "[setup_env] Verifying imports …"
 python - <<PY
 import sys, os
 import torch
-print(f"  torch              {torch.__version__}")
+print(f"  torch              {torch.__version__}  ({torch.__file__})")
 print(f"  CUDA available?    {torch.cuda.is_available()} (no GPU on login node is OK)")
+if torch.__version__.startswith("2.0"):
+    print("  WARNING: torch 2.0.x is too old.  System install is shadowing the venv.")
+    print("           Re-run with PYTHONPATH unset and --force-reinstall.")
 
 megatron_dir = os.environ.get("MEGATRON_DIR", "${MEGATRON_DIR}")
 if os.path.isdir(megatron_dir):
@@ -112,3 +124,4 @@ echo ""
 echo "To activate this env in future sessions, run:"
 echo "    module load ${PY_MODULE}"
 echo "    source ${VENV_DIR}/bin/activate"
+echo "    unset PYTHONPATH       # required to keep Spack site-packages from leaking in"

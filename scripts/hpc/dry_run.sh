@@ -37,7 +37,10 @@ export CHECKPOINT="${CKPT_ROOT}/qwen2.5-32b-mcore-${CKPT_TAG}"
 export TOKENIZER_MODEL="${HF_QWEN_DIR}"
 export BENCHMARK_DATASET_DIR="${PROJECT_ROOT}/benchmark_dataset"
 export RESULTS_DIR="${PROJECT_ROOT}/results_dryrun"
-export PYTHONPATH="${MEGATRON_DIR}:${PYTHONPATH:-}"
+
+# Reset PYTHONPATH (Spack leak), then add Megatron-LM as the only entry.
+unset PYTHONPATH
+export PYTHONPATH="${MEGATRON_DIR}"
 
 echo "Dry run:"
 echo "  CONFIG       = ${CONFIG}"
