@@ -20,7 +20,7 @@
 #   bash scripts/hpc/convert_checkpoints.sh
 
 set -euo pipefail
-
+export CUDA_DEVICE_MAX_CONNECTIONS=1
 # ---------------------------------------------------------------------------
 # USER CONFIG — fill in for Zaratan
 # ---------------------------------------------------------------------------
