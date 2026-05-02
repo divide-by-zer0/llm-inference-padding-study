@@ -22,10 +22,10 @@ Usage (run from Megatron-LM repo root so gpt_builders / model_provider are impor
     torchrun --nproc_per_node=4 scripts/run_padding_benchmark.py \\
         --tensor-model-parallel-size 4 \\
         --pipeline-model-parallel-size 1 \\
-        ... <Qwen3-32B arch flags> ... \\
-        --load /path/to/qwen3-32b-mcore-tp4 \\
+        ... <Qwen2.5-32B arch flags> ... \\
+        --load /path/to/qwen2.5-32b-mcore-tp4 \\
         --tokenizer-type HuggingFaceTokenizer \\
-        --tokenizer-model /path/to/Qwen3-32B \\
+        --tokenizer-model /path/to/Qwen2.5-32B \\
         --benchmark-dataset-dir /path/to/benchmark_dataset \\
         --results-dir /path/to/results \\
         --config-name config_a \\

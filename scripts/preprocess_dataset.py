@@ -28,7 +28,7 @@ N_BATCHES_PER_CELL = 5 matches the "~5 batches per trial" in the proposal.
 Pipeline
 --------
   1. Load ShareGPT from HuggingFace, extract first human turn.
-  2. Tokenize with the Qwen3-32B tokenizer.
+  2. Tokenize with the Qwen2.5-32B tokenizer.
   3. Analyse and plot the length distribution.
   4. Filter to [32, 1024] tokens.
   5. Build 16-cell benchmark with joint pad% + CoV control.
@@ -69,7 +69,7 @@ from transformers import AutoTokenizer
 # ---------------------------------------------------------------------------
 
 DATASET_NAME   = "anon8231489123/ShareGPT_Vicuna_unfiltered"
-TOKENIZER_NAME = "Qwen/Qwen3-32B"
+TOKENIZER_NAME = "Qwen/Qwen2.5-32B"
 
 MIN_TOKENS = 32
 MAX_TOKENS = 1024
@@ -140,7 +140,7 @@ def tokenize_prompts(
     tokenizer_name: str,
 ) -> List[Tuple[str, int]]:
     """
-    Return (prompt_text, token_count) pairs using the Qwen3-32B tokenizer.
+    Return (prompt_text, token_count) pairs using the Qwen2.5-32B tokenizer.
 
     add_special_tokens=False: lengths reflect the prompt body only.
     Special tokens (BOS/EOS) are added by the inference framework at run time.

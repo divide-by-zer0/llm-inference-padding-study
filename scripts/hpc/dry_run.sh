@@ -30,11 +30,11 @@ esac
 
 PROJECT_ROOT="${PROJECT_ROOT:-$HOME/llm-inference-padding-study}"
 MEGATRON_DIR="${MEGATRON_DIR:-$HOME/Megatron-LM}"
-CKPT_ROOT="${CKPT_ROOT:-$SCRATCH/qwen3-checkpoints}"
-HF_QWEN3_DIR="${HF_QWEN3_DIR:-$SCRATCH/qwen3-32b-hf}"
+CKPT_ROOT="${CKPT_ROOT:-$SCRATCH/qwen-checkpoints}"
+HF_QWEN_DIR="${HF_QWEN_DIR:-$SCRATCH/qwen2.5-32b-hf}"
 
-export CHECKPOINT="${CKPT_ROOT}/qwen3-32b-mcore-${CKPT_TAG}"
-export TOKENIZER_MODEL="${HF_QWEN3_DIR}"
+export CHECKPOINT="${CKPT_ROOT}/qwen2.5-32b-mcore-${CKPT_TAG}"
+export TOKENIZER_MODEL="${HF_QWEN_DIR}"
 export BENCHMARK_DATASET_DIR="${PROJECT_ROOT}/benchmark_dataset"
 export RESULTS_DIR="${PROJECT_ROOT}/results_dryrun"
 export PYTHONPATH="${MEGATRON_DIR}:${PYTHONPATH:-}"

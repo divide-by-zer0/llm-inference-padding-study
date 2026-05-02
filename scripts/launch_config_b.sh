@@ -10,8 +10,8 @@ set -euo pipefail
 # ---------------------------------------------------------------------------
 # Paths — edit these before running
 # ---------------------------------------------------------------------------
-CHECKPOINT="${CHECKPOINT:-/path/to/qwen3-32b-mcore-tp2pp2}"
-TOKENIZER_MODEL="${TOKENIZER_MODEL:-/path/to/Qwen3-32B}"
+CHECKPOINT="${CHECKPOINT:-/path/to/qwen2.5-32b-mcore-tp2pp2}"
+TOKENIZER_MODEL="${TOKENIZER_MODEL:-/path/to/Qwen2.5-32B}"
 BENCHMARK_DATASET_DIR="${BENCHMARK_DATASET_DIR:-../benchmark_dataset}"
 RESULTS_DIR="${RESULTS_DIR:-../results}"
 
@@ -23,14 +23,15 @@ PP=2
 N_GPUS=4   # TP × PP
 
 # ---------------------------------------------------------------------------
-# Qwen3-32B architecture (same for all configs)
+# Qwen2.5-32B architecture (same for all configs)
 # ---------------------------------------------------------------------------
 NUM_LAYERS=64
 HIDDEN_SIZE=5120
-NUM_ATTN_HEADS=64
+NUM_ATTN_HEADS=40
 NUM_QUERY_GROUPS=8
-FFN_HIDDEN_SIZE=25600
+FFN_HIDDEN_SIZE=27648
 MAX_SEQ_LEN=4096
+VOCAB_SIZE=152064
 ROTARY_BASE=1000000
 
 # ---------------------------------------------------------------------------
@@ -69,6 +70,7 @@ torchrun "${DISTRIBUTED_ARGS[@]}" \
     --swiglu \
     --normalization RMSNorm \
     --disable-bias-linear \
+    --add-qkv-bias \
     --untie-embeddings-and-output-weights \
     --position-embedding-type rope \
     --rotary-base ${ROTARY_BASE} \

@@ -34,12 +34,12 @@ esac
 # ---------------------------------------------------------------------------
 export PROJECT_ROOT="${PROJECT_ROOT:-$HOME/llm-inference-padding-study}"
 export MEGATRON_DIR="${MEGATRON_DIR:-$HOME/Megatron-LM}"
-export CKPT_ROOT="${CKPT_ROOT:-$SCRATCH/qwen3-checkpoints}"
-export HF_QWEN3_DIR="${HF_QWEN3_DIR:-$SCRATCH/qwen3-32b-hf}"
+export CKPT_ROOT="${CKPT_ROOT:-$SCRATCH/qwen-checkpoints}"
+export HF_QWEN_DIR="${HF_QWEN_DIR:-$SCRATCH/qwen2.5-32b-hf}"
 
 # Env vars consumed by launch_config_${CONFIG}.sh
-export CHECKPOINT="${CKPT_ROOT}/qwen3-32b-mcore-${CKPT_TAG}"
-export TOKENIZER_MODEL="${HF_QWEN3_DIR}"
+export CHECKPOINT="${CKPT_ROOT}/qwen2.5-32b-mcore-${CKPT_TAG}"
+export TOKENIZER_MODEL="${HF_QWEN_DIR}"
 export BENCHMARK_DATASET_DIR="${PROJECT_ROOT}/benchmark_dataset"
 export RESULTS_DIR="${PROJECT_ROOT}/results"
 
