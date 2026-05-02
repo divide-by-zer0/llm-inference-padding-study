@@ -79,6 +79,10 @@ torchrun "${DISTRIBUTED_ARGS[@]}" \
     --transformer-impl transformer_engine \
     --attention-softmax-in-fp32 \
     --no-masked-softmax-fusion \
+    --no-rope-fusion \
+    --no-bias-swiglu-fusion \
+    --no-gradient-accumulation-fusion \
+    --no-persist-layer-norm \
     \
     --bf16 \
     --load "${CHECKPOINT}" \

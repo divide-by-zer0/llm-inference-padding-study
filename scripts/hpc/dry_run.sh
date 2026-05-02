@@ -29,9 +29,9 @@ case "${CONFIG}" in
 esac
 
 PROJECT_ROOT="${PROJECT_ROOT:-$HOME/llm-inference-padding-study}"
-MEGATRON_DIR="${MEGATRON_DIR:-$HOME/Megatron-LM}"
-CKPT_ROOT="${CKPT_ROOT:-$SCRATCH/qwen-checkpoints}"
-HF_QWEN_DIR="${HF_QWEN_DIR:-$SCRATCH/qwen2.5-32b-hf}"
+MEGATRON_DIR="${MEGATRON_DIR:-$HOME/scratch.cmsc828/Megatron-LM}"
+CKPT_ROOT="${CKPT_ROOT:-$HOME/scratch.cmsc828/qwen-checkpoints}"
+HF_QWEN_DIR="${HF_QWEN_DIR:-$HOME/scratch.cmsc828/qwen2.5-32b-hf}"
 VENV_DIR="${VENV_DIR:-$HOME/padding-bench-venv}"
 
 export CHECKPOINT="${CKPT_ROOT}/qwen2.5-32b-mcore-${CKPT_TAG}"

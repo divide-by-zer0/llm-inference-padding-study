@@ -39,11 +39,12 @@ CELL="${CELL:-pad20_cov05}"
 # ---------------------------------------------------------------------------
 # Paths
 # ---------------------------------------------------------------------------
-export PROJECT_BASE="${PROJECT_BASE:-$HOME/scratch.cmsc828}"
-export PROJECT_ROOT="${PROJECT_ROOT:-$PROJECT_BASE/llm-inference-padding-study}"
-export MEGATRON_DIR="${MEGATRON_DIR:-$PROJECT_BASE/Megatron-LM}"
-export HF_QWEN_DIR="${HF_QWEN_DIR:-$PROJECT_BASE/qwen2.5-32b-hf}"
-export CKPT_ROOT="${CKPT_ROOT:-$PROJECT_BASE/qwen-checkpoints}"
+# Repo lives in $HOME (we moved it because scratch.cmsc828 is over quota).
+# Megatron clone, checkpoints, HF dir all stay in scratch — read-only at job time.
+export PROJECT_ROOT="${PROJECT_ROOT:-$HOME/llm-inference-padding-study}"
+export MEGATRON_DIR="${MEGATRON_DIR:-$HOME/scratch.cmsc828/Megatron-LM}"
+export HF_QWEN_DIR="${HF_QWEN_DIR:-$HOME/scratch.cmsc828/qwen2.5-32b-hf}"
+export CKPT_ROOT="${CKPT_ROOT:-$HOME/scratch.cmsc828/qwen-checkpoints}"
 export VENV_DIR="${VENV_DIR:-$HOME/padding-bench-venv}"
 
 # ---------------------------------------------------------------------------

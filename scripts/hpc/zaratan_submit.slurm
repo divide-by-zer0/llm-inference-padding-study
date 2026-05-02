@@ -36,10 +36,12 @@ esac
 # ---------------------------------------------------------------------------
 # Paths — verify these match your Zaratan layout
 # ---------------------------------------------------------------------------
+# Defaults match the Zaratan layout under ~/scratch.cmsc828.  Override via
+# `--export` at sbatch time if your paths differ.
 export PROJECT_ROOT="${PROJECT_ROOT:-$HOME/llm-inference-padding-study}"
-export MEGATRON_DIR="${MEGATRON_DIR:-$HOME/Megatron-LM}"
-export CKPT_ROOT="${CKPT_ROOT:-$SCRATCH/qwen-checkpoints}"
-export HF_QWEN_DIR="${HF_QWEN_DIR:-$SCRATCH/qwen2.5-32b-hf}"
+export MEGATRON_DIR="${MEGATRON_DIR:-$HOME/scratch.cmsc828/Megatron-LM}"
+export CKPT_ROOT="${CKPT_ROOT:-$HOME/scratch.cmsc828/qwen-checkpoints}"
+export HF_QWEN_DIR="${HF_QWEN_DIR:-$HOME/scratch.cmsc828/qwen2.5-32b-hf}"
 
 # Env vars consumed by launch_config_${CONFIG}.sh
 export CHECKPOINT="${CKPT_ROOT}/qwen2.5-32b-mcore-${CKPT_TAG}"
