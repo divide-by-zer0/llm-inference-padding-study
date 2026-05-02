@@ -14,6 +14,8 @@
 #SBATCH --partition=gpu
 #SBATCH --output=logs/%x-%j.out
 #SBATCH --error=logs/%x-%j.err
+#SBATCH --mail-type=BEGIN,END,FAIL
+#SBATCH --mail-user=cadwani@umd.edu
 
 set -euo pipefail
 
