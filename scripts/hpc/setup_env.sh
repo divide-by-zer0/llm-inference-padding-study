@@ -68,7 +68,9 @@ pip install \
     numpy \
     pyyaml \
     pybind11 \
-    six
+    six \
+    "huggingface_hub[cli]" \
+    hf_transfer
 
 # Megatron-LM may also need flash-attn / transformer-engine.
 # These are heavy and CUDA-specific; install only if your launch scripts use
