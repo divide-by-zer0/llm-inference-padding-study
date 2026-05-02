@@ -71,7 +71,7 @@ pip install --upgrade --force-reinstall torch torchvision \
 
 echo "[setup_env] Installing benchmark dependencies …"
 pip install \
-    transformers \
+    "transformers>=4.40,<5" \
     datasets \
     accelerate \
     sentencepiece \
@@ -82,7 +82,9 @@ pip install \
     pybind11 \
     six \
     "huggingface_hub[cli]" \
-    hf_transfer
+    hf_transfer \
+    omegaconf \
+    absl-py
 
 # Megatron-LM uses transformer_engine (per the launch scripts' --transformer-impl flag).
 # It's CUDA-specific and large.  The pip install can fail if no GPU is visible;
