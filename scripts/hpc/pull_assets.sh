@@ -75,21 +75,23 @@ mkdir -p "${HF_QWEN_DIR}"
 if compgen -G "${HF_QWEN_DIR}/*.safetensors" > /dev/null; then
     echo "[hf] ${HF_QWEN_DIR} already contains safetensors; skipping download."
 else
-    # huggingface-cli must be on PATH (installed by setup_env.sh).
-    if ! command -v huggingface-cli >/dev/null 2>&1; then
-        echo "ERROR: huggingface-cli not found.  Run setup_env.sh first to install it."
+    # The HuggingFace CLI is `hf` in huggingface_hub 1.x (formerly
+    # `huggingface-cli`).  Try the new name first, fall back to the old one.
+    if command -v hf >/dev/null 2>&1; then
+        HF_CLI="hf"
+    elif command -v huggingface-cli >/dev/null 2>&1; then
+        HF_CLI="huggingface-cli"
+    else
+        echo "ERROR: neither 'hf' nor 'huggingface-cli' found on PATH."
+        echo "       Run setup_env.sh first (and make sure the venv is active)."
         exit 1
     fi
 
-    # Use hf_transfer for fast parallel download (~3-5x faster on HPC networks).
-    # Falls back to default downloader if the package isn't installed.
+    # hf_transfer = parallel chunked downloads (~3-5x faster on HPC).
     export HF_HUB_ENABLE_HF_TRANSFER="${HF_HUB_ENABLE_HF_TRANSFER:-1}"
 
-    echo "[hf] Downloading (this is ~65 GB; may take 10-30 min depending on link)…"
-    huggingface-cli download "${HF_MODEL_ID}" \
-        --local-dir "${HF_QWEN_DIR}" \
-        --local-dir-use-symlinks False \
-        --resume-download
+    echo "[hf] Downloading via ${HF_CLI} (~65 GB; expect 10-30 min)…"
+    "${HF_CLI}" download "${HF_MODEL_ID}" --local-dir "${HF_QWEN_DIR}"
 fi
 
 # Sanity check: tokenizer + at least one safetensor shard
