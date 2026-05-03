@@ -5,7 +5,8 @@
 # have to babysit an `salloc`.
 #
 # Usage:
-#   sbatch --export=ALL,CONVERT_SCRIPT=scripts/hpc/convert_checkpoints_tp4.sh \
+#   sbatch --mem=240G \
+#       --export=ALL,CONVERT_SCRIPT=scripts/hpc/convert_checkpoints_tp4.sh \
 #       --job-name=qwen-convert-tp4 scripts/hpc/convert_submit.slurm
 #
 # Tail progress:
@@ -16,7 +17,7 @@
 #SBATCH --ntasks-per-node=1
 #SBATCH --cpus-per-task=8
 #SBATCH --gres=gpu:a100:1
-#SBATCH --mem=128G
+#SBATCH --mem=240G
 #SBATCH --time=02:00:00
 #SBATCH --partition=gpu
 #SBATCH --output=logs/%x-%j.out
