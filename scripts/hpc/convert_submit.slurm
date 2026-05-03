@@ -42,7 +42,7 @@ unset PYTHONPATH
 # Project paths
 # ---------------------------------------------------------------------------
 export PROJECT_BASE="${PROJECT_BASE:-$HOME/scratch.cmsc828}"
-export PROJECT_ROOT="${PROJECT_ROOT:-$PROJECT_BASE/llm-inference-padding-study}"
+export PROJECT_ROOT="${PROJECT_ROOT:-$HOME/llm-inference-padding-study}"
 export MEGATRON_DIR="${MEGATRON_DIR:-$PROJECT_BASE/Megatron-LM}"
 export HF_QWEN_DIR="${HF_QWEN_DIR:-$PROJECT_BASE/qwen2.5-32b-hf}"
 export CKPT_ROOT="${CKPT_ROOT:-$PROJECT_BASE/qwen-checkpoints}"
