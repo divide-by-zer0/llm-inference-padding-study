@@ -1,11 +1,12 @@
 #!/usr/bin/env bash
-# convert_submit.slurm — Slurm wrapper for convert_checkpoints.sh.
+# convert_submit.slurm — Slurm wrapper for one convert_checkpoints_*.sh script.
 #
-# Submits the HF→Megatron checkpoint conversion as a batch job, so you don't
-# have to babysit an `salloc` for ~75 min while three shardings are produced.
+# Submits one HF→Megatron checkpoint conversion as a batch job, so you don't
+# have to babysit an `salloc`.
 #
 # Usage:
-#   sbatch scripts/hpc/convert_submit.slurm
+#   sbatch --export=ALL,CONVERT_SCRIPT=scripts/hpc/convert_checkpoints_tp4.sh \
+#       --job-name=qwen-convert-tp4 scripts/hpc/convert_submit.slurm
 #
 # Tail progress:
 #   tail -f logs/qwen-convert-<jobid>.out
@@ -45,6 +46,7 @@ export PROJECT_ROOT="${PROJECT_ROOT:-$PROJECT_BASE/llm-inference-padding-study}"
 export MEGATRON_DIR="${MEGATRON_DIR:-$PROJECT_BASE/Megatron-LM}"
 export HF_QWEN_DIR="${HF_QWEN_DIR:-$PROJECT_BASE/qwen2.5-32b-hf}"
 export CKPT_ROOT="${CKPT_ROOT:-$PROJECT_BASE/qwen-checkpoints}"
+export CONVERT_SCRIPT="${CONVERT_SCRIPT:-}"
 
 # ---------------------------------------------------------------------------
 # Sanity checks before the GPU clock starts ticking
@@ -52,6 +54,20 @@ export CKPT_ROOT="${CKPT_ROOT:-$PROJECT_BASE/qwen-checkpoints}"
 [[ -d "${PROJECT_ROOT}" ]]   || { echo "PROJECT_ROOT missing: ${PROJECT_ROOT}"; exit 1; }
 [[ -d "${MEGATRON_DIR}" ]]   || { echo "MEGATRON_DIR missing: ${MEGATRON_DIR}"; exit 1; }
 [[ -d "${HF_QWEN_DIR}" ]]    || { echo "HF_QWEN_DIR missing: ${HF_QWEN_DIR}"; exit 1; }
+[[ -n "${CONVERT_SCRIPT}" ]] || {
+    echo "CONVERT_SCRIPT must be set to one of:"
+    echo "  scripts/hpc/convert_checkpoints_tp4.sh"
+    echo "  scripts/hpc/convert_checkpoints_tp2pp2.sh"
+    echo "  scripts/hpc/convert_checkpoints_tp1pp4.sh"
+    exit 1
+}
+
+if [[ "${CONVERT_SCRIPT}" = /* ]]; then
+    CONVERT_SCRIPT_PATH="${CONVERT_SCRIPT}"
+else
+    CONVERT_SCRIPT_PATH="${PROJECT_ROOT}/${CONVERT_SCRIPT}"
+fi
+[[ -f "${CONVERT_SCRIPT_PATH}" ]] || { echo "CONVERT_SCRIPT missing: ${CONVERT_SCRIPT_PATH}"; exit 1; }
 
 mkdir -p "${CKPT_ROOT}"
 
@@ -61,10 +77,11 @@ echo "  Started:    $(date)"
 echo "  Megatron:   ${MEGATRON_DIR}"
 echo "  HF model:   ${HF_QWEN_DIR}"
 echo "  Output:     ${CKPT_ROOT}"
+echo "  Script:     ${CONVERT_SCRIPT}"
 echo "==========================================================="
 
 cd "${PROJECT_ROOT}"
-bash scripts/hpc/convert_checkpoints.sh
+bash "${CONVERT_SCRIPT_PATH}"
 
 echo ""
 echo "==========================================================="
