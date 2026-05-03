@@ -34,9 +34,48 @@ VENV_DIR="${VENV_DIR:-$HOME/padding-bench-venv}"
 
 module purge
 module load "${PY_MODULE}"
+module load cuda/12.3.0/gcc/11.3.0/zen2
+module load cudnn/8.9.7.29-12/gcc/11.3.0/zen2
+module load nccl/2.18.1-1/gcc/11.3.0/zen2
 # shellcheck disable=SC1091
 source "${VENV_DIR}/bin/activate"
 unset PYTHONPATH
+
+# Transformer Engine imports during checkpoint conversion.  On Zaratan, NVRTC
+# may be available through modules or pip wheel paths without being listed by
+# `ldconfig -p`, which TE 1.13 queries directly.  Add the venv's bundled NVIDIA
+# libs to LD_LIBRARY_PATH, then provide a job-local ldconfig shim that appends
+# the NVRTC entry TE expects.
+NVIDIA_LIB_DIRS="$(find "${VENV_DIR}/lib/python3.10/site-packages/nvidia" \
+    -name "lib" -type d 2>/dev/null | tr '\n' ':')"
+export LD_LIBRARY_PATH="${NVIDIA_LIB_DIRS}${LD_LIBRARY_PATH:-}"
+
+NVRTC_LIB="$(find "${VENV_DIR}/lib/python3.10/site-packages/nvidia" \
+    -name "libnvrtc.so*" -type f 2>/dev/null | sort -V | tail -n 1 || true)"
+if [[ -z "${NVRTC_LIB}" && -n "${CUDA_HOME:-}" ]]; then
+    NVRTC_LIB="$(find "${CUDA_HOME}" -name "libnvrtc.so*" -type f 2>/dev/null | sort -V | tail -n 1 || true)"
+fi
+
+if [[ -n "${NVRTC_LIB}" ]]; then
+    NVRTC_DIR="$(dirname "${NVRTC_LIB}")"
+    export LD_LIBRARY_PATH="${NVRTC_DIR}:${LD_LIBRARY_PATH:-}"
+
+    LDCONFIG_SHIM_DIR="${TMPDIR:-/tmp}/te-ldconfig-${SLURM_JOB_ID:-$$}"
+    mkdir -p "${LDCONFIG_SHIM_DIR}"
+    REAL_LDCONFIG="$(command -v ldconfig || true)"
+    cat > "${LDCONFIG_SHIM_DIR}/ldconfig" <<EOF
+#!/usr/bin/env bash
+if [[ "\${1:-}" == "-p" ]]; then
+    [[ -n "${REAL_LDCONFIG}" ]] && "${REAL_LDCONFIG}" -p 2>/dev/null || true
+    echo "libnvrtc.so.12 (libc6,x86-64) => ${NVRTC_LIB}"
+else
+    [[ -n "${REAL_LDCONFIG}" ]] && exec "${REAL_LDCONFIG}" "\$@"
+    exit 0
+fi
+EOF
+    chmod +x "${LDCONFIG_SHIM_DIR}/ldconfig"
+    export PATH="${LDCONFIG_SHIM_DIR}:${PATH}"
+fi
 
 # ---------------------------------------------------------------------------
 # Project paths
@@ -78,6 +117,7 @@ echo "  Megatron:   ${MEGATRON_DIR}"
 echo "  HF model:   ${HF_QWEN_DIR}"
 echo "  Output:     ${CKPT_ROOT}"
 echo "  Script:     ${CONVERT_SCRIPT}"
+echo "  NVRTC:      ${NVRTC_LIB:-not found}"
 echo "==========================================================="
 
 cd "${PROJECT_ROOT}"

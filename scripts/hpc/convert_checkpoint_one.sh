@@ -28,10 +28,17 @@ mkdir -p "${CKPT_ROOT}"
 CONVERT_TOOL="${MEGATRON_DIR}/tools/checkpoint/convert.py"
 [[ -f "${CONVERT_TOOL}" ]] || { echo "convert.py not found at ${CONVERT_TOOL}"; exit 1; }
 
-if [[ -d "${OUT_DIR}" && -n "$(ls -A "${OUT_DIR}" 2>/dev/null)" ]]; then
-    echo "[convert] ${OUT_DIR} already exists and is populated."
+if [[ -f "${OUT_DIR}/latest_checkpointed_iteration.txt" ]]; then
+    echo "[convert] ${OUT_DIR} already has latest_checkpointed_iteration.txt."
     echo "[convert] Delete or move it first if you want to rebuild this checkpoint."
     exit 0
+fi
+
+if [[ -d "${OUT_DIR}" && -n "$(ls -A "${OUT_DIR}" 2>/dev/null)" ]]; then
+    echo "[convert] ${OUT_DIR} exists but does not look complete."
+    echo "[convert] Remove the partial checkpoint before retrying:"
+    echo "          rm -rf \"${OUT_DIR}\""
+    exit 1
 fi
 
 echo ""
