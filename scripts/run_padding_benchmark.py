@@ -64,6 +64,7 @@ from megatron.core.inference.text_generation_controllers.text_generation_control
 from megatron.core.tokenizers.utils.build_tokenizer import build_tokenizer
 from megatron.inference.utils import add_inference_args, get_model_for_inference
 from megatron.training import get_args, get_tokenizer, print_rank_0
+from megatron.training.arguments import parse_and_validate_args
 from megatron.training.initialize import initialize_megatron
 
 
@@ -192,7 +193,7 @@ def run_batch(engine: StaticInferenceEngine, prompts: List[str]) -> float:
 
 @torch.inference_mode()
 def main():
-    initialize_megatron(
+    args = parse_and_validate_args(
         extra_args_provider=add_benchmark_args,
         args_defaults={
             "no_load_rng": True,
@@ -202,7 +203,7 @@ def main():
         },
     )
 
-    args = get_args()
+    initialize_megatron()
     is_rank0 = not torch.distributed.is_initialized() or torch.distributed.get_rank() == 0
 
     # Build model + engine.
