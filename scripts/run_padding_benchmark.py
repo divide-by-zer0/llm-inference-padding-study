@@ -9,12 +9,13 @@ inference engine, and records timing + throughput metrics.
 
 Key measurements per batch
 --------------------------
-  wall_clock_s         : seconds for one generate() call (prefill + 1 decode)
-  total_tokens         : batch_size × max_length (all slots including padding)
-  real_tokens          : sum of actual prompt lengths (non-padding)
-  pad_tokens           : total_tokens − real_tokens
-  raw_tps              : total_tokens / wall_clock_s
-  effective_tps        : real_tokens / wall_clock_s
+  wall_clock_s         : seconds for one generate() call (prefill + decode)
+  prompt_total_tokens  : batch_size x max_prompt_length (including padding)
+  prompt_real_tokens   : sum of actual prompt lengths (non-padding)
+  prompt_pad_tokens    : prompt_total_tokens - prompt_real_tokens
+  generated_tokens     : batch_size x num_decode_tokens
+  decode_tps           : generated_tokens / wall_clock_s
+  end_to_end_tps       : (prompt_real_tokens + generated_tokens) / wall_clock_s
   max_memory_gb        : peak GPU memory on this rank after the batch
 
 Usage (run from Megatron-LM repo root so gpt_builders / model_provider are importable):
@@ -106,6 +107,12 @@ def add_benchmark_args(parser):
         default=2,
         help="Number of warmup batches before timing starts (discarded).",
     )
+    grp.add_argument(
+        "--num-decode-tokens",
+        type=int,
+        default=512,
+        help="Number of new tokens to generate per prompt for decode throughput.",
+    )
     return parser
 
 
@@ -159,18 +166,22 @@ def compute_batch_stats(batch_dict: dict):
     return prompts, real_tokens, total_tokens, pad_tokens
 
 
-def run_batch(engine: StaticInferenceEngine, prompts: List[str]) -> float:
+def run_batch(
+    engine: StaticInferenceEngine,
+    prompts: List[str],
+    num_decode_tokens: int,
+) -> float:
     """
     Run one generate() call and return wall-clock seconds.
 
-    We request exactly 1 output token so the measurement is dominated by the
-    prefill forward pass (which is where padding overhead lives).
+    The timed call includes both prompt prefill and autoregressive decode.  The
+    decode throughput metric uses only generated tokens in the numerator.
     """
     sampling_params = SamplingParams(
         temperature=1.0,
         top_k=1,
         top_p=0.0,
-        num_tokens_to_generate=1,
+        num_tokens_to_generate=num_decode_tokens,
     )
 
     # Synchronize before timing to exclude any queued GPU work.
@@ -206,6 +217,9 @@ def main():
     initialize_megatron()
     is_rank0 = not torch.distributed.is_initialized() or torch.distributed.get_rank() == 0
 
+    if args.num_decode_tokens <= 0:
+        raise ValueError("--num-decode-tokens must be positive")
+
     # Build model + engine.
     model = get_model_for_inference()
     engine = build_engine(args, model)
@@ -240,7 +254,7 @@ def main():
         for wi, wbatch in enumerate(warmup_batches):
             prompts, *_ = compute_batch_stats(wbatch)
             print_rank_0(f"  [warmup {wi + 1}/{len(warmup_batches)}]")
-            run_batch(engine, prompts)
+            run_batch(engine, prompts, args.num_decode_tokens)
 
         # Reset peak memory counter before timed batches.
         if torch.cuda.is_available():
@@ -255,7 +269,7 @@ def main():
         for batch_dict in timed_batches:
             prompts, real_tokens, total_tokens, pad_tokens = compute_batch_stats(batch_dict)
 
-            wall_clock_s = run_batch(engine, prompts)
+            wall_clock_s = run_batch(engine, prompts, args.num_decode_tokens)
 
             max_mem_bytes = (
                 torch.cuda.max_memory_allocated() if torch.cuda.is_available() else 0
@@ -263,6 +277,13 @@ def main():
             max_mem_gb = max_mem_bytes / 1e9
             torch.cuda.reset_peak_memory_stats()
 
+            generated_tokens = len(prompts) * args.num_decode_tokens
+            decode_tps = generated_tokens / wall_clock_s
+            end_to_end_tps = (real_tokens + generated_tokens) / wall_clock_s
+
+            # Preserve the original prompt-token fields for compatibility with
+            # older analysis scripts. These now use the longer decode-inclusive
+            # wall time, so prefer decode_tps for generated-token throughput.
             raw_tps = total_tokens / wall_clock_s
             effective_tps = real_tokens / wall_clock_s
 
@@ -277,10 +298,14 @@ def main():
                 "actual_mean_len": batch_dict["actual_mean_len"],
                 "actual_std_len": batch_dict["actual_std_len"],
                 "num_prompts": len(prompts),
+                "num_decode_tokens": args.num_decode_tokens,
                 "real_tokens": real_tokens,
                 "total_tokens": total_tokens,
                 "pad_tokens": pad_tokens,
+                "generated_tokens": generated_tokens,
                 "wall_clock_s": round(wall_clock_s, 6),
+                "decode_tps": round(decode_tps, 2),
+                "end_to_end_tps": round(end_to_end_tps, 2),
                 "raw_tps": round(raw_tps, 2),
                 "effective_tps": round(effective_tps, 2),
                 "max_memory_gb": round(max_mem_gb, 3),
@@ -291,9 +316,10 @@ def main():
                 f"  batch {batch_dict['batch_id']:02d} | "
                 f"pad={batch_dict['actual_pad_ratio']:.3f} "
                 f"cov={batch_dict['actual_cov']:.3f} | "
-                f"real={real_tokens} total={total_tokens} | "
+                f"prompt_real={real_tokens} prompt_total={total_tokens} "
+                f"gen={generated_tokens} | "
                 f"time={wall_clock_s:.3f}s | "
-                f"eff_tps={effective_tps:.1f} raw_tps={raw_tps:.1f} | "
+                f"decode_tps={decode_tps:.1f} e2e_tps={end_to_end_tps:.1f} | "
                 f"mem={max_mem_gb:.2f}GB"
             )
 

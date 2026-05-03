@@ -14,7 +14,7 @@
 #   bash scripts/hpc/dry_run.sh
 #
 # Override defaults via env vars:
-#   CONFIG=b CELL=pad50_cov20 bash scripts/hpc/dry_run.sh
+#   CONFIG=b CELL=pad50_cov20 NUM_DECODE_TOKENS=64 bash scripts/hpc/dry_run.sh
 
 set -euo pipefail
 
@@ -33,6 +33,7 @@ MEGATRON_DIR="${MEGATRON_DIR:-$HOME/scratch.cmsc828/Megatron-LM}"
 CKPT_ROOT="${CKPT_ROOT:-$HOME/scratch.cmsc828/qwen-checkpoints}"
 HF_QWEN_DIR="${HF_QWEN_DIR:-$HOME/scratch.cmsc828/qwen2.5-32b-hf}"
 VENV_DIR="${VENV_DIR:-$HOME/padding-bench-venv}"
+export NUM_DECODE_TOKENS="${NUM_DECODE_TOKENS:-512}"
 
 export CHECKPOINT="${CKPT_ROOT}/qwen2.5-32b-mcore-${CKPT_TAG}"
 export TOKENIZER_MODEL="${HF_QWEN_DIR}"
@@ -53,6 +54,7 @@ echo "  CONFIG       = ${CONFIG}"
 echo "  CELL         = ${CELL}"
 echo "  CHECKPOINT   = ${CHECKPOINT}"
 echo "  RESULTS_DIR  = ${RESULTS_DIR}"
+echo "  DECODE TOKENS= ${NUM_DECODE_TOKENS}"
 echo ""
 
 cd "${PROJECT_ROOT}"

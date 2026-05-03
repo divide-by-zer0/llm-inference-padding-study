@@ -5,8 +5,8 @@ Aggregates results from run_padding_benchmark.py (JSON files in results/)
 and produces:
 
   1. A summary CSV with mean metrics per (config, pad%, CoV) cell.
-  2. A 4×4 heatmap of effective throughput (tokens/sec) for each config.
-  3. A line plot: effective MFU proxy vs. pad% faceted by config.
+  2. A 4×4 heatmap of decode throughput (tokens/sec) for each config.
+  3. A line plot: decode throughput vs. pad% faceted by config.
 
 Usage:
     python scripts/analyze_results.py --results-dir results --plots-dir plots
@@ -46,23 +46,33 @@ def load_all_results(results_dir: str) -> pd.DataFrame:
 
 
 def make_summary(df: pd.DataFrame) -> pd.DataFrame:
-    agg = (
+    metrics = {
+        "mean_wall_clock_s": ("wall_clock_s", "mean"),
+        "mean_raw_tps": ("raw_tps", "mean"),
+        "mean_effective_tps": ("effective_tps", "mean"),
+        "mean_max_memory_gb": ("max_memory_gb", "mean"),
+        "n_batches": ("batch_id", "count"),
+    }
+    if "decode_tps" in df.columns:
+        metrics["mean_decode_tps"] = ("decode_tps", "mean")
+    if "end_to_end_tps" in df.columns:
+        metrics["mean_end_to_end_tps"] = ("end_to_end_tps", "mean")
+
+    return (
         df.groupby(["config", "target_pad_ratio", "target_cov"])
-        .agg(
-            mean_wall_clock_s=("wall_clock_s", "mean"),
-            mean_raw_tps=("raw_tps", "mean"),
-            mean_effective_tps=("effective_tps", "mean"),
-            mean_max_memory_gb=("max_memory_gb", "mean"),
-            n_batches=("batch_id", "count"),
-        )
+        .agg(**metrics)
         .reset_index()
     )
-    return agg
+
+
+def throughput_column(summary: pd.DataFrame) -> str:
+    return "mean_decode_tps" if "mean_decode_tps" in summary.columns else "mean_effective_tps"
 
 
 def plot_heatmaps(summary: pd.DataFrame, plots_dir: str):
     os.makedirs(plots_dir, exist_ok=True)
     configs = summary["config"].unique()
+    metric = throughput_column(summary)
 
     for config in configs:
         cfg_df = summary[summary["config"] == config]
@@ -75,7 +85,7 @@ def plot_heatmaps(summary: pd.DataFrame, plots_dir: str):
                     & (cfg_df["target_cov"].round(2) == round(cov, 2))
                 ]
                 if not row.empty:
-                    grid[ri, ci] = row["mean_effective_tps"].values[0]
+                    grid[ri, ci] = row[metric].values[0]
 
         fig, ax = plt.subplots(figsize=(8, 5))
         im = ax.imshow(grid, aspect="auto", cmap="viridis")
@@ -86,7 +96,8 @@ def plot_heatmaps(summary: pd.DataFrame, plots_dir: str):
         ax.set_xlabel("Target pad%", fontsize=11)
         ax.set_ylabel("Target CoV", fontsize=11)
         label = CONFIG_LABELS.get(config, config)
-        ax.set_title(f"Effective throughput (tokens/s)\n{label}", fontsize=12)
+        title = "Decode throughput" if metric == "mean_decode_tps" else "Effective throughput"
+        ax.set_title(f"{title} (tokens/s)\n{label}", fontsize=12)
         cbar = plt.colorbar(im, ax=ax)
         cbar.set_label("tok/s", fontsize=9)
 
@@ -107,27 +118,29 @@ def plot_heatmaps(summary: pd.DataFrame, plots_dir: str):
 def plot_pad_vs_throughput(summary: pd.DataFrame, plots_dir: str):
     os.makedirs(plots_dir, exist_ok=True)
     configs = sorted(summary["config"].unique())
+    metric = throughput_column(summary)
+    metric_label = "Decode throughput" if metric == "mean_decode_tps" else "Effective throughput"
 
     fig, axes = plt.subplots(1, 2, figsize=(14, 5))
 
-    # Left: effective tps vs pad%
+    # Left: primary throughput metric vs pad%
     for config in configs:
         cfg_df = summary[summary["config"] == config]
         pad_means = (
-            cfg_df.groupby("target_pad_ratio")["mean_effective_tps"]
+            cfg_df.groupby("target_pad_ratio")[metric]
             .mean()
             .reset_index()
             .sort_values("target_pad_ratio")
         )
         axes[0].plot(
             pad_means["target_pad_ratio"] * 100,
-            pad_means["mean_effective_tps"],
+            pad_means[metric],
             marker="o",
             label=CONFIG_LABELS.get(config, config),
         )
     axes[0].set_xlabel("Padding %", fontsize=11)
-    axes[0].set_ylabel("Effective throughput (tok/s)", fontsize=11)
-    axes[0].set_title("Effective throughput vs. padding %\n(averaged over CoV levels)", fontsize=11)
+    axes[0].set_ylabel(f"{metric_label} (tok/s)", fontsize=11)
+    axes[0].set_title(f"{metric_label} vs. padding %\n(averaged over CoV levels)", fontsize=11)
     axes[0].legend(fontsize=9)
     axes[0].grid(True, alpha=0.3)
 
@@ -161,13 +174,15 @@ def plot_pad_vs_throughput(summary: pd.DataFrame, plots_dir: str):
 
 
 def print_pivot_table(summary: pd.DataFrame):
+    metric = throughput_column(summary)
+    metric_label = "DECODE" if metric == "mean_decode_tps" else "EFFECTIVE"
     print("\n" + "=" * 72)
-    print("MEAN EFFECTIVE THROUGHPUT (tok/s) — rows=CoV target, cols=pad%")
+    print(f"MEAN {metric_label} THROUGHPUT (tok/s) - rows=CoV target, cols=pad%")
     print("=" * 72)
     for config in sorted(summary["config"].unique()):
         cfg_df = summary[summary["config"] == config]
         pivot = cfg_df.pivot_table(
-            values="mean_effective_tps",
+            values=metric,
             index="target_cov",
             columns="target_pad_ratio",
             aggfunc="mean",

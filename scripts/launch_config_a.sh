@@ -14,6 +14,7 @@ CHECKPOINT="${CHECKPOINT:-/path/to/qwen2.5-32b-mcore-tp4}"
 TOKENIZER_MODEL="${TOKENIZER_MODEL:-/path/to/Qwen2.5-32B}"
 BENCHMARK_DATASET_DIR="${BENCHMARK_DATASET_DIR:-../benchmark_dataset}"
 RESULTS_DIR="${RESULTS_DIR:-../results}"
+NUM_DECODE_TOKENS="${NUM_DECODE_TOKENS:-512}"
 
 # ---------------------------------------------------------------------------
 # Parallelism
@@ -97,6 +98,7 @@ torchrun "${DISTRIBUTED_ARGS[@]}" \
     --results-dir "${RESULTS_DIR}" \
     --config-name config_a \
     --n-warmup 2 \
+    --num-decode-tokens ${NUM_DECODE_TOKENS} \
     \
     --model-provider gpt \
     --micro-batch-size 1
