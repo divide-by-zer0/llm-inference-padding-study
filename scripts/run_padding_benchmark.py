@@ -166,36 +166,37 @@ def compute_batch_stats(batch_dict: dict):
     return prompts, real_tokens, total_tokens, pad_tokens
 
 
-def run_batch(
-    engine: StaticInferenceEngine,
-    prompts: List[str],
-    num_decode_tokens: int,
-) -> float:
-    """
-    Run one generate() call and return wall-clock seconds.
-
-    The timed call includes both prompt prefill and autoregressive decode.  The
-    decode throughput metric uses only generated tokens in the numerator.
-    """
+def _timed_generate(engine: StaticInferenceEngine, prompts: List[str], num_tokens: int) -> float:
     sampling_params = SamplingParams(
         temperature=1.0,
         top_k=1,
         top_p=0.0,
-        num_tokens_to_generate=num_decode_tokens,
+        num_tokens_to_generate=num_tokens,
     )
-
-    # Synchronize before timing to exclude any queued GPU work.
     if torch.cuda.is_available():
         torch.cuda.synchronize()
     t0 = time.perf_counter()
-
     engine.generate(prompts=prompts, sampling_params=sampling_params)
-
     if torch.cuda.is_available():
         torch.cuda.synchronize()
-    t1 = time.perf_counter()
+    return time.perf_counter() - t0
 
-    return t1 - t0
+
+def run_batch(
+    engine: StaticInferenceEngine,
+    prompts: List[str],
+    num_decode_tokens: int,
+) -> tuple:
+    """
+    Run two generate() calls and return (ttft_s, wall_clock_s).
+
+    ttft_s       : prefill + 1 decode step (proxy for time-to-first-token)
+    wall_clock_s : prefill + num_decode_tokens decode steps (total time)
+    generation_time_s is derived as wall_clock_s - ttft_s by the caller.
+    """
+    ttft_s = _timed_generate(engine, prompts, 1)
+    wall_clock_s = _timed_generate(engine, prompts, num_decode_tokens)
+    return ttft_s, wall_clock_s
 
 
 # ---------------------------------------------------------------------------
@@ -254,7 +255,7 @@ def main():
         for wi, wbatch in enumerate(warmup_batches):
             prompts, *_ = compute_batch_stats(wbatch)
             print_rank_0(f"  [warmup {wi + 1}/{len(warmup_batches)}]")
-            run_batch(engine, prompts, args.num_decode_tokens)
+            run_batch(engine, prompts, args.num_decode_tokens)  # results discarded
 
         # Reset peak memory counter before timed batches.
         if torch.cuda.is_available():
@@ -269,7 +270,8 @@ def main():
         for batch_dict in timed_batches:
             prompts, real_tokens, total_tokens, pad_tokens = compute_batch_stats(batch_dict)
 
-            wall_clock_s = run_batch(engine, prompts, args.num_decode_tokens)
+            ttft_s, wall_clock_s = run_batch(engine, prompts, args.num_decode_tokens)
+            generation_time_s = wall_clock_s - ttft_s
 
             max_mem_bytes = (
                 torch.cuda.max_memory_allocated() if torch.cuda.is_available() else 0
@@ -280,10 +282,6 @@ def main():
             generated_tokens = len(prompts) * args.num_decode_tokens
             decode_tps = generated_tokens / wall_clock_s
             end_to_end_tps = (real_tokens + generated_tokens) / wall_clock_s
-
-            # Preserve the original prompt-token fields for compatibility with
-            # older analysis scripts. These now use the longer decode-inclusive
-            # wall time, so prefer decode_tps for generated-token throughput.
             raw_tps = total_tokens / wall_clock_s
             effective_tps = real_tokens / wall_clock_s
 
@@ -303,6 +301,8 @@ def main():
                 "total_tokens": total_tokens,
                 "pad_tokens": pad_tokens,
                 "generated_tokens": generated_tokens,
+                "ttft_s": round(ttft_s, 6),
+                "generation_time_s": round(generation_time_s, 6),
                 "wall_clock_s": round(wall_clock_s, 6),
                 "decode_tps": round(decode_tps, 2),
                 "end_to_end_tps": round(end_to_end_tps, 2),
@@ -318,7 +318,7 @@ def main():
                 f"cov={batch_dict['actual_cov']:.3f} | "
                 f"prompt_real={real_tokens} prompt_total={total_tokens} "
                 f"gen={generated_tokens} | "
-                f"time={wall_clock_s:.3f}s | "
+                f"ttft={ttft_s:.3f}s gen={generation_time_s:.3f}s total={wall_clock_s:.3f}s | "
                 f"decode_tps={decode_tps:.1f} e2e_tps={end_to_end_tps:.1f} | "
                 f"mem={max_mem_gb:.2f}GB"
             )
