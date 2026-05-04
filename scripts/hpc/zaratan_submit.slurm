@@ -10,7 +10,7 @@
 #SBATCH --cpus-per-task=8
 #SBATCH --gres=gpu:a100:4
 #SBATCH --mem=200G
-#SBATCH --time=01:00:00
+#SBATCH --time=03:00:00
 #SBATCH --partition=gpu
 # Logs go to $HOME (NOT scratch) because the project's scratch quota is full.
 # /home/cadwani is hard-coded because SBATCH directives don't expand env vars.
