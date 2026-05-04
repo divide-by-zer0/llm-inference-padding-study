@@ -285,6 +285,8 @@ def main():
             end_to_end_tps = (real_tokens + generated_tokens) / wall_clock_s
             raw_tps = total_tokens / wall_clock_s
             effective_tps = real_tokens / wall_clock_s
+            prefill_raw_tps = total_tokens / ttft_s
+            prefill_effective_tps = real_tokens / ttft_s
 
             record = {
                 "config": args.config_name,
@@ -305,6 +307,8 @@ def main():
                 "ttft_s": round(ttft_s, 6),
                 "generation_time_s": round(generation_time_s, 6),
                 "wall_clock_s": round(wall_clock_s, 6),
+                "prefill_raw_tps": round(prefill_raw_tps, 2),
+                "prefill_effective_tps": round(prefill_effective_tps, 2),
                 "decode_tps": round(decode_tps, 2),
                 "end_to_end_tps": round(end_to_end_tps, 2),
                 "raw_tps": round(raw_tps, 2),
@@ -320,6 +324,7 @@ def main():
                 f"prompt_real={real_tokens} prompt_total={total_tokens} "
                 f"gen={generated_tokens} | "
                 f"ttft={ttft_s:.3f}s gen={generation_time_s:.3f}s total={wall_clock_s:.3f}s | "
+                f"prefill_raw_tps={prefill_raw_tps:.1f} prefill_eff_tps={prefill_effective_tps:.1f} | "
                 f"decode_tps={decode_tps:.1f} e2e_tps={end_to_end_tps:.1f} | "
                 f"mem={max_mem_gb:.2f}GB"
             )
