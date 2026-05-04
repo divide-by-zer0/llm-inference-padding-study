@@ -280,7 +280,7 @@ def main():
             torch.cuda.reset_peak_memory_stats()
 
             generated_tokens = len(prompts) * args.num_decode_tokens
-            decode_tps = generated_tokens / wall_clock_s
+            decode_tps = generated_tokens / generation_time_s
             end_to_end_tps = (real_tokens + generated_tokens) / wall_clock_s
             raw_tps = total_tokens / wall_clock_s
             effective_tps = real_tokens / wall_clock_s
