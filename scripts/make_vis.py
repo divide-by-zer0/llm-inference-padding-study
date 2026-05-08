@@ -84,14 +84,14 @@ def plot_experiment_metrics(file_paths, metric_name, legend_labels=None, y_axis_
     # Ensures labels fit cleanly within the window
     plt.tight_layout()
 
-    # Display the plot
-    plt.show()
+    plt.savefig(f"{metric_name}.png", dpi=150)
+    plt.close()
 
 
 
 if __name__ == "__main__":
     # Example input files
-    json_files = ["config_a_results.json", "config_b_results.json", "config_c_results.json"]
+    json_files = ["results_v2/config_a_results.json", "results_v2/config_b_results.json", "results_v2/config_c_results.json"]
     custom_labels = ["TP=4, PP=1", "TP=2, PP=2", "TP=1, PP=4"]
 
     # Run the function

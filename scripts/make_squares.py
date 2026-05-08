@@ -149,20 +149,21 @@ def plot_best_experiment_grid(
         metric_title = metric_name
     plt.title(f"Best Parallel Configuration\n{best} '{metric_title}'", pad=20)
     plt.tight_layout()
-    plt.show()
+    plt.savefig(f"best_{metric_name}.png", dpi=150, bbox_inches="tight")
+    plt.close()
 
 
 # ==========================================
 # Example Usage
 # ==========================================
 if __name__ == "__main__":
-    json_files = ["config_a_results.json", "config_b_results.json", "config_c_results.json"]
+    json_files = ["results_v2/config_a_results.json", "results_v2/config_b_results.json", "results_v2/config_c_results.json"]
     custom_labels = ["TP=4, PP=1", "TP=2, PP=2", "TP=1, PP=4"]
 
-    config_grid = [["pad20_cov05", "pad30_cov05", "pad50_cov05", "pad70_cov05"],
-                   ["pad20_cov20", "pad30_cov20", "pad50_cov20", "pad70_cov20"],
+    config_grid = [["pad20_cov15", "pad30_cov15", "pad50_cov15", "pad70_cov15"],
+                   ["pad20_cov25", "pad30_cov25", "pad50_cov25", "pad70_cov25"],
                    ["pad20_cov35", "pad30_cov35", "pad50_cov35", "pad70_cov35"],
-                   ["pad20_cov50", "pad30_cov50", "pad50_cov50", "pad70_cov50"]
+                   ["pad20_cov45", "pad30_cov45", "pad50_cov45", "pad70_cov45"]
                    ]
 
     # Run: Ask for the Highest Accuracy
