@@ -1,0 +1,2617 @@
+[
+  {
+    "batch_id": 0,
+    "target_pad_ratio": 0.7,
+    "target_cov": 0.15,
+    "actual_pad_ratio": 0.6948,
+    "actual_cov": 0.1522,
+    "actual_mean_len": 39.06,
+    "actual_std_len": 13.54,
+    "prompts": [
+      {
+        "prompt": "Continue the conversation. between /u/CruxHub and Alive, this time focusing in on \"14 STAR ISLAND LLC\". They take turns guessing why Citadel would need that property.",
+        "token_length": 38
+      },
+      {
+        "prompt": "can you design a referral system similar on how dropbox did? I need a technical overview on how it should work, instead of free space we use the generic term \"credits\" where users can get more credits for every 3 friends they recommend.",
+        "token_length": 50
+      },
+      {
+        "prompt": "I am planning to start new Information technology company. It will be focused on Development, Programming and futuristic technologies. \n\nCurrently I am thinking of Name for my new business and I liked following names : \n1. YantraInfoSoft\n2. YantraEnergy",
+        "token_length": 52
+      },
+      {
+        "prompt": "calculate the difference in intereste paid in a simple for amortized loan. terms: 125,000 loan, 3.25% interest over 30 years.",
+        "token_length": 40
+      },
+      {
+        "prompt": "Give me code to run this wsdl generated code in Jax ws server on localhost:8080 wildfly",
+        "token_length": 24
+      },
+      {
+        "prompt": "Is this grammatically correct: \"It only took 5 years, and while we still have a long way to go, Topher’s Farm has found its place with unique experience and offering of organic produce. \"",
+        "token_length": 43
+      },
+      {
+        "prompt": "How to get a job as a LMFT therapist in the US as an international student?",
+        "token_length": 18
+      },
+      {
+        "prompt": "how could i implement a minesweeper algorithm that utilises algebraic topology to solve boards?",
+        "token_length": 19
+      },
+      {
+        "prompt": "Please help me to translate it into english, in order to help you understand my prompt input:\n帮我找一下有关家庭消费直接碳排放核算的文献，英文的，最好是1区",
+        "token_length": 38
+      },
+      {
+        "prompt": "Explain this in context of syntax processing stage\n\"S-> NP VP\nNP-> N | PRON\nVP-> V NP | V PP\nN-> Mangoes\nPRON-> I\nV-> like\"",
+        "token_length": 44
+      },
+      {
+        "prompt": "Please write a firm yet humurous and lighthearted note requesting that people RSVP whether they are coming to the purim seudah. Please incorporate wordplay and references to megillat esther.",
+        "token_length": 43
+      },
+      {
+        "prompt": "Mac explains what happened when Wukong's soldiers captured him in the woods, and MK realizes it's just like the dream he had where he had Mac's face. Let's write that scene.",
+        "token_length": 40
+      },
+      {
+        "prompt": "You absolutely dont understand what I want. I want in only one response a concise STARL story for EVERY 16 AMAZON LEADERDHIP PRINCIPLES with a title, whose each response doesn't go over a line length. Data is used in result.\n\nPlease write in English language.",
+        "token_length": 61
+      },
+      {
+        "prompt": "I want create a funnel. I want to give away a sample program. What type of funnel should I use and what pages are needed in this funnel?",
+        "token_length": 31
+      },
+      {
+        "prompt": "Is our model not calculating values of capital, labor and prices outside the energy sector? If so, we should add variables to account for price of goods outside the energy sector, capital investment outside the energy sector and goods produced outside the energy sector",
+        "token_length": 48
+      },
+      {
+        "prompt": "I want to hire a data analyst. Do you think this role would be helpful, and if so, explain why in no more than 5 dot point paragraphs",
+        "token_length": 32
+      },
+      {
+        "prompt": "Not using mine as an example re-try at giving the best answer to the UT Austin statement of purpose prompt",
+        "token_length": 22
+      },
+      {
+        "prompt": "Hello! Can you help me prepare for a techincal programming interview? Please provide me one data structures and algorithms problem at a time. Only provide hints if I ask for them.",
+        "token_length": 37
+      },
+      {
+        "prompt": "Have we properly accounted for depreciation in our model? Just as investment allow us to grow our economic output, they should also be counterbalanced with depreciation. The depreciation rate for fossil energy, green energy and the rest of the economy should be different",
+        "token_length": 48
+      },
+      {
+        "prompt": "What are the roles of a network driver? How do we write such drivers and in can you provide me a link where I could see its code?",
+        "token_length": 30
+      },
+      {
+        "prompt": "Formate ça dans des fenetres de code avec des exmples de requete pour chaque instruction.\n\nPlease write in English language.",
+        "token_length": 28
+      },
+      {
+        "prompt": "for f(x)=(3x-9)/(x^2-7x+12), determine the vertical asymptote, horizontal asymptote, x intercept, and y intercept and explain your reasoning",
+        "token_length": 39
+      },
+      {
+        "prompt": "Repeat that conversation, this time it is /u/CruxHub asking Alice what company it thinks they should search on the web.",
+        "token_length": 27
+      },
+      {
+        "prompt": "how to create a JWT token login system in flask rest api. show me how to use flask sqlalchemy to store the invalid tokens",
+        "token_length": 25
+      },
+      {
+        "prompt": "I want to do a road trip from Pune to Gujarat. Me and my wife will be travelling and we dont prefer very long driving sessions. Can you suggest a plan starting from Thursday early morning and ending in Pune on Sunday late night.",
+        "token_length": 47
+      },
+      {
+        "prompt": "How do I add a catch error to the following fetch request?\n\nexport const loadBackgroundImage = createAsyncThunk(\n \"backgroundImage/fetchBackgroundImage\",\n async (thunkAPI) => {\n const data = await fetch(unsplashEndpoint);\n const jsonData = await data.json();\n return jsonData;\n }\n);",
+        "token_length": 61
+      },
+      {
+        "prompt": "MK talks to Mei and Tang - they begin trying to plan a way to get all the dark-haired monkeys together, free Macaque, and take back their mountain. Let's write that scene.",
+        "token_length": 39
+      },
+      {
+        "prompt": "Can you make a pricing list example that will cost someone $1200, within this list would be: audiovisual package, visual package, audio package, 4 revisions, 20-30 minute video",
+        "token_length": 45
+      },
+      {
+        "prompt": "What are the business benefits in a functional scope that TPRM brings to BHI and Priceline.com when using the Ivalua platform for procurement?",
+        "token_length": 32
+      },
+      {
+        "prompt": "I have an interview about product speccing with the company Weekend Health. Give me an example of a question they might ask with regards about a new feature",
+        "token_length": 31
+      },
+      {
+        "prompt": "I am planning to give you a voice, and communicate through the speech medium. I need a speech recognizer, a wake call detector, and a speech synthesizer for your voice. Suggest a python script utilizing existing libraries to achieves the goal.",
+        "token_length": 49
+      },
+      {
+        "prompt": "a shopkeeper sold an article offering a discount of 5 % and earned a profit of 31.1 % . what would have been the percentage of profit earned if no discount had been offered ?",
+        "token_length": 41
+      },
+      {
+        "prompt": "act as a travel writer and write a 600 word blog on \"top 10 attractions in Fiji\", using a friendly tone and aimed at a gen z audience",
+        "token_length": 35
+      },
+      {
+        "prompt": "Create a terraform data block to query for the latest image of Ubuntu 22.04 and reference that within the `ami` argument in the aws\\_instance.web block.",
+        "token_length": 37
+      },
+      {
+        "prompt": "Second one, Risk analysis. Please give me a specific example of how to use Python to analyze risk factors, such as credit scores, loan history, and market trends, to help banks make informed decisions about lending and investment.",
+        "token_length": 45
+      },
+      {
+        "prompt": "In addition to the content schedule discussed above, what would be some must do marketing activities to promote the development and the community. The actual launch marketing is far away, but how to build a sustainable and impactful marketing strategy that can build the community around the game?",
+        "token_length": 52
+      },
+      {
+        "prompt": "Please privide a detailed description of the learfning outcomes and recommend ways to test on those learning outcomes via a survey , test or whatever means I can use to gage my students profficiency on the curricula",
+        "token_length": 44
+      },
+      {
+        "prompt": "Can you analyze my other concessions and counterarguments in this way, too, to make sure I am getting insight on making concessions about my topic sentences, the claims in those, and not mislabeling concessions or underdeveloping the counterarguments in the sections they belong to?",
+        "token_length": 55
+      },
+      {
+        "prompt": "Suppose you roll three fair six-sided dice and add up the numbers you\nget. What is the probability that the sum is at least 16?",
+        "token_length": 32
+      },
+      {
+        "prompt": "You are now an imaginary expert business investigator. I am going to send you many rows of data. Each batch of row's will be sent to you and you may only reply \"Received.\" Save any analysis or insights for after you've received all of the data and I've told you \"Let's Begin.\" If you understand reply with only a ;)",
+        "token_length": 70
+      },
+      {
+        "prompt": "On the same Control Tower subject from the content above can you create a 45 question multiple choice exam with answers and explenations?",
+        "token_length": 28
+      },
+      {
+        "prompt": "Hi, can you help me download 2000 portrait sketch images from Pinterest website with resolution at least 512 \\* 512? using python code",
+        "token_length": 36
+      },
+      {
+        "prompt": "You are an expert marketing consultant and copywriter with expertise is direct response marketing. I need your help. Can I tell you about my business?",
+        "token_length": 29
+      },
+      {
+        "prompt": "Write me a poem in the style of edgar allen poe about a man named Jacob who loves ska music",
+        "token_length": 22
+      },
+      {
+        "prompt": "I want some geological database structure with some example data for practicing my SQL query skills. Would you generate that for me?",
+        "token_length": 24
+      },
+      {
+        "prompt": "Hello friend. My task for today is to engage in a debate with you. Will you humor me in this regard?",
+        "token_length": 24
+      },
+      {
+        "prompt": "고등교육의 필요성에 관한 영어 에세이를 1000자 이내로 작성하시오.",
+        "token_length": 27
+      },
+      {
+        "prompt": "kaiseki ryori at Gion Karyo for 10000 yen is too expensive, is there any option less than 8000 yen?",
+        "token_length": 36
+      },
+      {
+        "prompt": "OK, got it. Then, please solve one problem using only a plastic duck and toilet paper rolls, however small scale the problem solved.",
+        "token_length": 28
+      },
+      {
+        "prompt": "Now lets think about plugs that are also custys. For example, a worker at a tradeshow can't leave the booth but wants the vegan donughts that are being sold. Or another example is, the person that has extra hamburgers to sell.",
+        "token_length": 52
+      },
+      {
+        "prompt": "I am using heap to track events that happen on my website. I'd like to hook up Active Campaign to also track events and use them to send emails. How can I hook up Active Campaign to heap.",
+        "token_length": 42
+      },
+      {
+        "prompt": "What regular expression could I write that correctly verifies this datetime string format?\n\nFri. Dec. 16, 2022, 8:00 A.M. CST",
+        "token_length": 37
+      },
+      {
+        "prompt": "Python is usually an elegant language. But `if \\_\\_name\\_\\_ == \"\\_\\_main\\_\\_\"` is one exception.",
+        "token_length": 30
+      },
+      {
+        "prompt": "Ok! Now the red pixel just needs the same ability that blue one has. It should be able to push the encountering pixel away. Meaning when they encounter the red pixel should also be able to push away the blue pixel when the button is being pressed.",
+        "token_length": 51
+      },
+      {
+        "prompt": "i am trying to load a pkl file and for some reason I am getting an error that says \"file is not a zip file\"",
+        "token_length": 28
+      },
+      {
+        "prompt": "Rédige seuelement cette fiche pour les isntructions SELECT, FROM et WHERE de manière très détaillée avec une partie dédiée à des exmples concrets\n\nPlease write in English language.",
+        "token_length": 46
+      },
+      {
+        "prompt": "I'm writing a software for conference calls.\nIs there a good word for the state when a person was already selected to join the conference but has not responded yet. This should also include the meeting organizer himself, if his client has not answered yet",
+        "token_length": 49
+      },
+      {
+        "prompt": "write me a visual description of how \"Banking Empire,\" the game looks like, , write it as a prompt for text to image Ai, use only nouns and adjectives",
+        "token_length": 35
+      },
+      {
+        "prompt": "i need you to give me a unique approach to build a two way sign language translator app that converts speech to sign language and sign language to speech",
+        "token_length": 29
+      },
+      {
+        "prompt": "MK slips through the barrier into the cave, turning on his gold vision and calling for Macaque. Macaque finally answers - and he's not looking good. Let's write that scene.",
+        "token_length": 38
+      },
+      {
+        "prompt": "Nothing really changed. I want the the red neopixel to move towards left when button A is being pressed and the blue neopixel to move right when button B is being pressed.",
+        "token_length": 38
+      },
+      {
+        "prompt": "Write sales copy for the event registration page speaking specifically to entrepreneurs, getting them excited about what Pedro is going to reveal at this live event... Include a handful of benefit-oriented bullet points. Include emojis where applicable.",
+        "token_length": 42
+      },
+      {
+        "prompt": "Search on the web for 196 PFISTER HOLDINGS LLC. \nQuery: Who owns this company?",
+        "token_length": 23
+      },
+      {
+        "prompt": "In Java, I want to replace string like \"This is a new {object} at {place}\" with a Map, {object: \"student\", \"point 3, 4\"}, and get a result \"This is a new student at point 3, 4\". How can I do?",
+        "token_length": 62
+      },
+      {
+        "prompt": "I am an airbnb host and want to focus on upselling clients based on why they're coming to the area. What are some ideas to upsell guests who are in town for weddings?",
+        "token_length": 39
+      },
+      {
+        "prompt": "I'm confused, because the first five scenes as you wrote them above don't align with the scenes that you outlined in the previous draft. Can you tell me why that happened?",
+        "token_length": 36
+      },
+      {
+        "prompt": "for my ticketing c++ app, what if i want the class Ticket to have different categories based on the seating area? how do i make the arrays and how do i include them in the Show class",
+        "token_length": 41
+      },
+      {
+        "prompt": "I have a jenkins file with a few pipeline params. One of the params defaults value is the concatenation of two other params. Is it possible to pass those two params into the first param?",
+        "token_length": 40
+      },
+      {
+        "prompt": "write me a visual description of how the game looks like, , write it as a prompt for text to image Ai, use only nouns and adjectives",
+        "token_length": 30
+      },
+      {
+        "prompt": "I will be grinding mixing stuffing and smoking some venison sausage with some friends tomorrow. What are some movies or songs we could watch and listen to while we're doing this?",
+        "token_length": 35
+      },
+      {
+        "prompt": "Summarize the main ideas of Jeff Walker's Product Launch Formula into bullet points as it pertains to a growth marketing agency implementing these strategies and tactics for their clients...",
+        "token_length": 34
+      },
+      {
+        "prompt": "Remove 3 and 4 as they only mention the opinion of one person. Suggest two more points of something that comes up more than once (that hasn't already been suggested).",
+        "token_length": 37
+      },
+      {
+        "prompt": "write me a input script for the quest 2 controllers, i need all input values so i can display them or use them, using xr interaction toolkit include headset and controller battery statuses each controller and headset get their own script write left script first",
+        "token_length": 48
+      },
+      {
+        "prompt": "how can I reliably tell if a supplied hostname in python is actually a different location from another supplied hostname in python",
+        "token_length": 22
+      },
+      {
+        "prompt": "I have 1 light dome II, 1 light dome mini, and a 36\" rectangular softbox. What are some suggestions for setting up the lights and lighting ratios to achieve a polished pro video look?",
+        "token_length": 44
+      },
+      {
+        "prompt": "If I multiply a 1-dimensional array of 100 values with another 1-dimensional array of 100 values, how big will the resulting array be?",
+        "token_length": 35
+      },
+      {
+        "prompt": "Act as a personal trainer, you will start by asking me relevant questions about myself before offering a workout plan to meet my goals",
+        "token_length": 25
+      },
+      {
+        "prompt": "for this topic \"The perception of HKU SPACE CC students on how cashless economy affects consumptio\", what kind of subtitle can be written out in the Discussion section in a research report",
+        "token_length": 38
+      },
+      {
+        "prompt": "generate me a fun gift card for an eso plus abo (elder scrolls online) with some memes in it like graphic design ins my passion",
+        "token_length": 28
+      },
+      {
+        "prompt": "Given a game where a number 0-9 is randomly, if 4 of the last 6 draws, the number 8 has been drawn, what number should I choose?",
+        "token_length": 37
+      },
+      {
+        "prompt": "You gave me this: \"Headline: Sculpt Your Ideal Life One Day at a Time with Day Sculpting\"\n\nGive me 10 more headlines I can split test",
+        "token_length": 34
+      },
+      {
+        "prompt": "I'd like to travel to Norway but I am not a big fan of crowds, especially tourists. I'd like a medium sized city with few tourists but still enough character in the city to be worth visiting. Do you have anything in mind?",
+        "token_length": 49
+      },
+      {
+        "prompt": "write 10 insane tweets written by Mao Zedong in the style of Donald Trump. mention 'the red gaurd' , 'the great wall' 'the bourgeoisie' 'the people' and 'great leap' in one tweet each. half the tweets should be less than 10 words.",
+        "token_length": 63
+      },
+      {
+        "prompt": "Let's build a cover letter introduction for me. I'm a lawyer, applying for a litigator at Johnson, Johnson & Johnson. I want to create a custom, authentic, and enthusiastic cover letter introduction of 50 words or less. Write a stand-out opening paragraph that leads with an impressive achievement and features quantifiable results.",
+        "token_length": 67
+      },
+      {
+        "prompt": "In your answer TX-A is charging both RX-A and RX-B simultaneously. This is not allowed. A transmitter can charge only one receiver at any given time.\nRepeat the simulation correctly.",
+        "token_length": 37
+      },
+      {
+        "prompt": "Its still not working. The same problem that i stated before happens. The red pixel cant push the blue pixel away. As soon as it reaches the blue pixel it freezes and both buttons show no effect when being pressed.",
+        "token_length": 44
+      },
+      {
+        "prompt": "Please compose a humorous poem to my friend and Hare Krishna devotee, Sruti Sagar, who is the temple president of Krishna house and tells silly jokes and puns why I will probably forget his birthday this year. In the style of William Shakespeare",
+        "token_length": 51
+      },
+      {
+        "prompt": "Imagine that our opponent denies climate chamge, despite the scientific evidence. How could we argue against what the previously mentioned article said, considering only economic arguments?",
+        "token_length": 31
+      },
+      {
+        "prompt": "I have a fleet of Truck mounted sewer cleaning machines, guide me to develop a web application to monitor my fleet of machine.",
+        "token_length": 25
+      },
+      {
+        "prompt": "Wow, can you give me some best practices templates for creation and deployment, and delivery framework to avoid those potential issues and mistakes",
+        "token_length": 25
+      },
+      {
+        "prompt": "How Can I install these libraries in WordPress. Here are the libraries\"Tensorflow: A popular machine learning library\nHugging Face Transformers: A library for state-of-the-art NLP models\"",
+        "token_length": 39
+      },
+      {
+        "prompt": "Now let's include a practical example with Python code with relevance to the banking sector, produce a code example that will use SQLAlchemy and connect to a SQLite database, then do something practical to the banking industry in the rest of the short Python coding example.",
+        "token_length": 50
+      },
+      {
+        "prompt": "What is the name of the kind of research that involves collating a bunch of videos or commentary of people communicating their thoughts about a matter and synthesize the general theme of their perspectives?",
+        "token_length": 37
+      },
+      {
+        "prompt": "write me a visual description of the game would like visually, write it as a prompt for a text to image tool, use only nouns and adjectives",
+        "token_length": 30
+      },
+      {
+        "prompt": "Transform with regular expressions those lines:\n0003 AB\n0568 FD\ninto:\nAB\nFD",
+        "token_length": 24
+      },
+      {
+        "prompt": "Consider that the government imposes a new tax on fossil fuels, resulting in an increase in the price of fossil fuels. How does our model predict this will affect our economy?",
+        "token_length": 34
+      },
+      {
+        "prompt": "outline a ditigal marketing plan , as complete, thorough, detail and accurate as possible for a high end fine jewelry ecommerce business. use numerical bullet points\n\nPlease write in English language.",
+        "token_length": 38
+      },
+      {
+        "prompt": "Agency recruiters seem better at traditional tech platforms at driving candidate engagement. In other words they're better at activating passive candidates and they can keep them interested through the interview process. \n\nHow can AI be used to drive engagement in this way?",
+        "token_length": 47
+      },
+      {
+        "prompt": "Can you explain the working of the model and the dataset used to build the model in a very easy and understandable English with diagrams .",
+        "token_length": 26
+      },
+      {
+        "prompt": "I would like your help in writing a story based on several concept from the animated show Lego Monkie Kid, as well as several of its characters. Can you do that?",
+        "token_length": 35
+      },
+      {
+        "prompt": "Explain the fault-tolerance of the reaction control system on the Space Shuttle",
+        "token_length": 15
+      },
+      {
+        "prompt": "i need a way to create a way to track the player hips at least approximately, all i have is the position and rotation of the worn headset and controllers",
+        "token_length": 31
+      },
+      {
+        "prompt": "Analyze this .wsdl file and give me an example of how to make Init function available as a service url using jax-ws, soap and wildfly",
+        "token_length": 33
+      },
+      {
+        "prompt": "\"Dame Margot and I could use an escort to the goblin city. I thought you all could pretend that we are your prisoners. Someone could play the trumpet and sing a song about how you captured us to make the illusion more compelling.\"",
+        "token_length": 49
+      },
+      {
+        "prompt": "Summarise the outcome of the case, including any legal rulings or decisions. Provide this in no more than 5 numbered paragraphs for each party's argument.",
+        "token_length": 32
+      },
+      {
+        "prompt": "continue the above code from the line:\n\nfdist\\_rare = FreqDist(rare\\_words)\n\n# plot rare words distribution\nplt.figure(figsize=(12, 6))\nplt.bar([x[0]",
+        "token_length": 45
+      },
+      {
+        "prompt": "I want you to act as a company's vision statement. Provide a short, clear statement of the company's goals and aspirations for the future. The statement should be inspiring and convey the company's overarching purpose. Use concise language and focus on the big picture.",
+        "token_length": 52
+      },
+      {
+        "prompt": "does one pay long-term or short-term capital gains taxes on a savings account yeild?",
+        "token_length": 18
+      },
+      {
+        "prompt": "This is compiling but it is back to behaving improperly and the rings are ringing the camera and the black hole is not visible - the camera seems to be in the black hole again",
+        "token_length": 35
+      },
+      {
+        "prompt": "nataliebrooks212@gmail.com\nCan you generate instructions for DNP students to conduct a needs assessment at their site. Can you provide a detailed rubric explaining each section of the assignment. Additional requirements are that each section is 200-300 words",
+        "token_length": 57
+      },
+      {
+        "prompt": "65 Syntactic Ambiguity refers to a/an\n\na. Inconsistency or conflict in recommendations\nb. Word that can be pronounced differently\nc. Word with more than a single meaning\nd. Sentence constructed with more than one meaning",
+        "token_length": 51
+      },
+      {
+        "prompt": "update the newest html and css with the inclusion of more visually interesting Ui elements including Card style layouts, more color to aid navigation and provide emphasis, and use the google font \"Rubik\"",
+        "token_length": 38
+      },
+      {
+        "prompt": "Write a bullet list of benefit-oriented, exciting sales copy for the 90-day Brave Wrk Transformation program, which includes weekly coaching sessions with certified coaches and access to Purpose Academy",
+        "token_length": 36
+      },
+      {
+        "prompt": "In Michael Mankins and Mark Gottfredson articles and David J. Collis article it is claimed that managers tend to make mistakes regarding strategy and its implementation. ​​Choose one of the mistakes mentioned in their articles and explain briefly why you think this is a strategic mistake and not a tactical mistake.",
+        "token_length": 60
+      },
+      {
+        "prompt": "Hi, i will give you three pieces of text, then i will ask you some questions, do you understand?",
+        "token_length": 23
+      },
+      {
+        "prompt": "can you come up with 10 questions I can ask a scientist who is using a supercomputer?\ncontext: it is a case study for the supercomputing centre. it should highlight the value of the supercomputer for the scientist's work\ntone: professional\ninclude research questions",
+        "token_length": 57
+      },
+      {
+        "prompt": "write me a script for an arrow or a spear that will collide and embed itself into things depending on the hardness level of the thing im hitting and will embed itself depending on how fast its going when it collides and is able to either go through or resist pulling out",
+        "token_length": 53
+      },
+      {
+        "prompt": "Ask Wallace to describe one of the birds. \"If you can tell us more about a bird, maybe we can figure out a better way to lure it back into the cage.\"",
+        "token_length": 36
+      },
+      {
+        "prompt": "Can you write a three round email sequence to film festivals based on the information below? Please highlight how services promote equal communication and while subtly suggesting that not providing these services could cause possible embarrassment and/or legal action.",
+        "token_length": 42
+      },
+      {
+        "prompt": "the solenoids will be 12v so they will have to be controled by relays triggered by the GPIO pins",
+        "token_length": 26
+      },
+      {
+        "prompt": "Please generate 200 lines of CSV data which pertains to this example and which I can then easily copy and paste into a file called loan\\_data.csv.",
+        "token_length": 34
+      },
+      {
+        "prompt": "what is the distance between San Francisco and New York City, that doesn't follow the curvature of the earth, but instead cuts straight through the earth?",
+        "token_length": 30
+      },
+      {
+        "prompt": "Write a trailer for a horror movie featuring a killer bunny Ernest that stalks people and does unspeakable things to them, all of which takes place in the metropolitain Rhodt under Rietcastle.",
+        "token_length": 44
+      },
+      {
+        "prompt": "can you ameliorate your code to make it more interesting , using the list and answers above when needed, join all recommendable variables or options that make it accurate relevant and user friendly",
+        "token_length": 38
+      },
+      {
+        "prompt": "Describe the role of the warden commander in more detail, as well as his civilian role in the government. How is he selected? (He is no democratically elected by the general populace)",
+        "token_length": 39
+      },
+      {
+        "prompt": "still referencing the previous instructions and the content i fed you Can you write approximately 600 words in an engaging instructional style for Control Tower Technologies Transportation management systems (TMS) Warehouse management systems (WMS)",
+        "token_length": 43
+      },
+      {
+        "prompt": "Recount and episode in which the Teacher feeds a multitude of people who are waiting to enter Costco. But instead of giving them actual food, he shows them how to nourish themselves with curiosity and resilience practices. Include at least one specific technique that feels magical.",
+        "token_length": 52
+      },
+      {
+        "prompt": "continue the above code from lines:\n\nrint(\"\\n\")\nprint(\"=======================================================\")\n\n# 5. Rare words distribution and plot\nrare\\_words = fdist.hapaxes()\nprint('count of rare word: {}'.format(len(rare\\_words)))\nprint(\"\\n\")\nprint('Rare words distribution plot for Description variable ')\nfdist\\_rare = FreqDist(rare\\_words)\nplt.figure(figsize=(12, 6))\nplt.bar([x[0] for x in fdist\\_rare.most\\_common(20)], [x[1] for x in fdist\\_rare.m",
+        "token_length": 128
+      }
+    ]
+  },
+  {
+    "batch_id": 1,
+    "target_pad_ratio": 0.7,
+    "target_cov": 0.15,
+    "actual_pad_ratio": 0.6999,
+    "actual_cov": 0.1494,
+    "actual_mean_len": 38.41,
+    "actual_std_len": 13.38,
+    "prompts": [
+      {
+        "prompt": "Be sure to translate the above into Korean without any changes and show the asterisks without any changes.\nThe checkbox positions should also remain unchanged.\nThe columns and rows of the table should not change.지금 번역하기CopyCopy HTMLRead Aloud⏹️ Stop7 chars | 2 words",
+        "token_length": 59
+      },
+      {
+        "prompt": "how to create a JWT token login system in flask rest api. show me how to use flask sqlalchemy to store the invalid tokens",
+        "token_length": 25
+      },
+      {
+        "prompt": "minikube - docker run --rm -it --network=host alpine ash -c apk add socat && socat TCP-LISTEN:5000,reuseaddr,fork TCP:$(minikube ip):5000 connection refused",
+        "token_length": 54
+      },
+      {
+        "prompt": "calculate the difference in intereste paid in a simple for amortized loan. terms: 125,000 loan, 3.25% interest over 30 years.",
+        "token_length": 40
+      },
+      {
+        "prompt": "Hi, can you help me download 2000 portrait sketch images from Pinterest website with resolution at least 512 \\* 512? using python code",
+        "token_length": 36
+      },
+      {
+        "prompt": "act as a travel writer and write a 600 word blog on \"top 10 attractions in Fiji\", using a friendly tone and aimed at a gen z audience",
+        "token_length": 35
+      },
+      {
+        "prompt": "Explain this in context of syntax processing stage\n\"S-> NP VP\nNP-> N | PRON\nVP-> V NP | V PP\nN-> Mangoes\nPRON-> I\nV-> like\"",
+        "token_length": 44
+      },
+      {
+        "prompt": "You are an expert marketing consultant and copywriter with expertise is direct response marketing. I need your help. Can I tell you about my business?",
+        "token_length": 29
+      },
+      {
+        "prompt": "Act as a personal trainer, you will start by asking me relevant questions about myself before offering a workout plan to meet my goals",
+        "token_length": 25
+      },
+      {
+        "prompt": "Can you explain the working of the model and the dataset used to build the model in a very easy and understandable English with diagrams .",
+        "token_length": 26
+      },
+      {
+        "prompt": "i need you to give me a unique approach to build a two way sign language translator app that converts speech to sign language and sign language to speech",
+        "token_length": 29
+      },
+      {
+        "prompt": "Can you analyze my other concessions and counterarguments in this way, too, to make sure I am getting insight on making concessions about my topic sentences, the claims in those, and not mislabeling concessions or underdeveloping the counterarguments in the sections they belong to?",
+        "token_length": 55
+      },
+      {
+        "prompt": "Give me code to run this wsdl generated code in Jax ws server on localhost:8080 wildfly",
+        "token_length": 24
+      },
+      {
+        "prompt": "kaiseki ryori at Gion Karyo for 10000 yen is too expensive, is there any option less than 8000 yen?",
+        "token_length": 36
+      },
+      {
+        "prompt": "the solenoids will be 12v so they will have to be controled by relays triggered by the GPIO pins",
+        "token_length": 26
+      },
+      {
+        "prompt": "Is this grammatically correct: \"It only took 5 years, and while we still have a long way to go, Topher’s Farm has found its place with unique experience and offering of organic produce. \"",
+        "token_length": 43
+      },
+      {
+        "prompt": "can you create a wordpress shortcode to include the following code from facebook sdk",
+        "token_length": 14
+      },
+      {
+        "prompt": "write me a visual description of how \"Banking Empire,\" the game looks like, , write it as a prompt for text to image Ai, use only nouns and adjectives",
+        "token_length": 35
+      },
+      {
+        "prompt": "Ok! Now the red pixel just needs the same ability that blue one has. It should be able to push the encountering pixel away. Meaning when they encounter the red pixel should also be able to push away the blue pixel when the button is being pressed.",
+        "token_length": 51
+      },
+      {
+        "prompt": "How is Ai art generated? Explain the process of how it is trained and on what, how it is produced. Are images analyzed for mathematical patterns and recombined based on descriptive user input, creating something new, or does it create a form of collage that takes bits of various works themselves.",
+        "token_length": 58
+      },
+      {
+        "prompt": "Is our model not calculating values of capital, labor and prices outside the energy sector? If so, we should add variables to account for price of goods outside the energy sector, capital investment outside the energy sector and goods produced outside the energy sector",
+        "token_length": 48
+      },
+      {
+        "prompt": "Summarize the main ideas of Jeff Walker's Product Launch Formula into bullet points as it pertains to a growth marketing agency implementing these strategies and tactics for their clients...",
+        "token_length": 34
+      },
+      {
+        "prompt": "Hello! Can you help me prepare for a techincal programming interview? Please provide me one data structures and algorithms problem at a time. Only provide hints if I ask for them.",
+        "token_length": 37
+      },
+      {
+        "prompt": "Repeat that conversation, this time it is /u/CruxHub asking Alice what company it thinks they should search on the web.",
+        "token_length": 27
+      },
+      {
+        "prompt": "write a sed command to replace the single instance of: `\"shared\": \"workspace:^\"` with `\"shared\": \"file:src/domain:^\"`",
+        "token_length": 29
+      },
+      {
+        "prompt": "I am using heap to track events that happen on my website. I'd like to hook up Active Campaign to also track events and use them to send emails. How can I hook up Active Campaign to heap.",
+        "token_length": 42
+      },
+      {
+        "prompt": "I am planning to give you a voice, and communicate through the speech medium. I need a speech recognizer, a wake call detector, and a speech synthesizer for your voice. Suggest a python script utilizing existing libraries to achieves the goal.",
+        "token_length": 49
+      },
+      {
+        "prompt": "I have a fleet of Truck mounted sewer cleaning machines, guide me to develop a web application to monitor my fleet of machine.",
+        "token_length": 25
+      },
+      {
+        "prompt": "Please privide a detailed description of the learfning outcomes and recommend ways to test on those learning outcomes via a survey , test or whatever means I can use to gage my students profficiency on the curricula",
+        "token_length": 44
+      },
+      {
+        "prompt": "I want create a funnel. I want to give away a sample program. What type of funnel should I use and what pages are needed in this funnel?",
+        "token_length": 31
+      },
+      {
+        "prompt": "I want to do a road trip from Pune to Gujarat. Me and my wife will be travelling and we dont prefer very long driving sessions. Can you suggest a plan starting from Thursday early morning and ending in Pune on Sunday late night.",
+        "token_length": 47
+      },
+      {
+        "prompt": "nataliebrooks212@gmail.com\nCan you generate instructions for DNP students to conduct a needs assessment at their site. Can you provide a detailed rubric explaining each section of the assignment. Additional requirements are that each section is 200-300 words",
+        "token_length": 57
+      },
+      {
+        "prompt": "for f(x)=(3x-9)/(x^2-7x+12), determine the vertical asymptote, horizontal asymptote, x intercept, and y intercept and explain your reasoning",
+        "token_length": 39
+      },
+      {
+        "prompt": "a shopkeeper sold an article offering a discount of 5 % and earned a profit of 31.1 % . what would have been the percentage of profit earned if no discount had been offered ?",
+        "token_length": 41
+      },
+      {
+        "prompt": "I'm confused, because the first five scenes as you wrote them above don't align with the scenes that you outlined in the previous draft. Can you tell me why that happened?",
+        "token_length": 36
+      },
+      {
+        "prompt": "Have we properly accounted for depreciation in our model? Just as investment allow us to grow our economic output, they should also be counterbalanced with depreciation. The depreciation rate for fossil energy, green energy and the rest of the economy should be different",
+        "token_length": 48
+      },
+      {
+        "prompt": "I will be grinding mixing stuffing and smoking some venison sausage with some friends tomorrow. What are some movies or songs we could watch and listen to while we're doing this?",
+        "token_length": 35
+      },
+      {
+        "prompt": "Damage to which nerve causes numbness of the palmar surface of the 5th digit/little finger",
+        "token_length": 21
+      },
+      {
+        "prompt": "Not using mine as an example re-try at giving the best answer to the UT Austin statement of purpose prompt",
+        "token_length": 22
+      },
+      {
+        "prompt": "Continue the conversation. between /u/CruxHub and Alive, this time focusing in on \"14 STAR ISLAND LLC\". They take turns guessing why Citadel would need that property.",
+        "token_length": 38
+      },
+      {
+        "prompt": "write me a script for an arrow or a spear that will collide and embed itself into things depending on the hardness level of the thing im hitting and will embed itself depending on how fast its going when it collides and is able to either go through or resist pulling out",
+        "token_length": 53
+      },
+      {
+        "prompt": "Analyze this .wsdl file and give me an example of how to make Init function available as a service url using jax-ws, soap and wildfly",
+        "token_length": 33
+      },
+      {
+        "prompt": "Wow, can you give me some best practices templates for creation and deployment, and delivery framework to avoid those potential issues and mistakes",
+        "token_length": 25
+      },
+      {
+        "prompt": "Formate ça dans des fenetres de code avec des exmples de requete pour chaque instruction.\n\nPlease write in English language.",
+        "token_length": 28
+      },
+      {
+        "prompt": "Please help me to translate it into english, in order to help you understand my prompt input:\n帮我找一下有关家庭消费直接碳排放核算的文献，英文的，最好是1区",
+        "token_length": 38
+      },
+      {
+        "prompt": "write an conclusion paragraph including:\n\nA final summary statement of what you now believe about leadership\nHow the material you have learned applies to the RA Position",
+        "token_length": 29
+      },
+      {
+        "prompt": "MK talks to Mei and Tang - they begin trying to plan a way to get all the dark-haired monkeys together, free Macaque, and take back their mountain. Let's write that scene.",
+        "token_length": 39
+      },
+      {
+        "prompt": "I am an airbnb host and want to focus on upselling clients based on why they're coming to the area. What are some ideas to upsell guests who are in town for weddings?",
+        "token_length": 39
+      },
+      {
+        "prompt": "고등교육의 필요성에 관한 영어 에세이를 1000자 이내로 작성하시오.",
+        "token_length": 27
+      },
+      {
+        "prompt": "Java add to the arraylist of a class type",
+        "token_length": 10
+      },
+      {
+        "prompt": "Can you suggest some good e-governance initiatives in tribal districct of india by district administration",
+        "token_length": 20
+      },
+      {
+        "prompt": "Write sales copy for the event registration page speaking specifically to entrepreneurs, getting them excited about what Pedro is going to reveal at this live event... Include a handful of benefit-oriented bullet points. Include emojis where applicable.",
+        "token_length": 42
+      },
+      {
+        "prompt": "I have an interview about product speccing with the company Weekend Health. Give me an example of a question they might ask with regards about a new feature",
+        "token_length": 31
+      },
+      {
+        "prompt": "I am planning to start new Information technology company. It will be focused on Development, Programming and futuristic technologies. \n\nCurrently I am thinking of Name for my new business and I liked following names : \n1. YantraInfoSoft\n2. YantraEnergy",
+        "token_length": 52
+      },
+      {
+        "prompt": "MK slips through the barrier into the cave, turning on his gold vision and calling for Macaque. Macaque finally answers - and he's not looking good. Let's write that scene.",
+        "token_length": 38
+      },
+      {
+        "prompt": "for my ticketing c++ app, what if i want the class Ticket to have different categories based on the seating area? how do i make the arrays and how do i include them in the Show class",
+        "token_length": 41
+      },
+      {
+        "prompt": "Give more examples of harry potter inspired games. Give a score from 1-10 on how well it leverages network effects.",
+        "token_length": 29
+      },
+      {
+        "prompt": "I'm writing a software for conference calls.\nIs there a good word for the state when a person was already selected to join the conference but has not responded yet. This should also include the meeting organizer himself, if his client has not answered yet",
+        "token_length": 49
+      },
+      {
+        "prompt": "Rédige seuelement cette fiche pour les isntructions SELECT, FROM et WHERE de manière très détaillée avec une partie dédiée à des exmples concrets\n\nPlease write in English language.",
+        "token_length": 46
+      },
+      {
+        "prompt": "I want to hire a data analyst. Do you think this role would be helpful, and if so, explain why in no more than 5 dot point paragraphs",
+        "token_length": 32
+      },
+      {
+        "prompt": "I'll build Tutoring AI for Startups that help educate employee\n\nGive me some outlines of this product\n- Catch phrase\n- What is this?\n- Who is the customer?\n- What problem does it solve?\n- Benefits",
+        "token_length": 46
+      },
+      {
+        "prompt": "Nothing really changed. I want the the red neopixel to move towards left when button A is being pressed and the blue neopixel to move right when button B is being pressed.",
+        "token_length": 38
+      },
+      {
+        "prompt": "Pretend you are the shell of a linux machine. You will be provided commands, and you will return only the output of the command and show the prompt, if any. Do not provide any explanations.1 / 1",
+        "token_length": 46
+      },
+      {
+        "prompt": "How Can I install these libraries in WordPress. Here are the libraries\"Tensorflow: A popular machine learning library\nHugging Face Transformers: A library for state-of-the-art NLP models\"",
+        "token_length": 39
+      },
+      {
+        "prompt": "in the object detection api how long the model should train for is specified through the steps. How can i convert this number to epochs?",
+        "token_length": 27
+      },
+      {
+        "prompt": "Consider the 'solas' that originated from Martin Luther King and became the guiding principles of the reformation. For each of the solas, state 3-5 arguments that justify the sola and arguments that invalidate those arguments.",
+        "token_length": 46
+      },
+      {
+        "prompt": "If I multiply a 1-dimensional array of 100 values with another 1-dimensional array of 100 values, how big will the resulting array be?",
+        "token_length": 35
+      },
+      {
+        "prompt": "Describe the role of the warden commander in more detail, as well as his civilian role in the government. How is he selected? (He is no democratically elected by the general populace)",
+        "token_length": 39
+      },
+      {
+        "prompt": "Hey GPT I am applying to transfer to the following colleges: UT Austin, NYU, Boston University, Cornell University. I will need your help writing good essays and provide you with the necessary prompts but first I'd like to know what information about me would help you",
+        "token_length": 54
+      },
+      {
+        "prompt": "What are the business benefits in a functional scope that TPRM brings to BHI and Priceline.com when using the Ivalua platform for procurement?",
+        "token_length": 32
+      },
+      {
+        "prompt": "for this topic \"The perception of HKU SPACE CC students on how cashless economy affects consumptio\", what kind of subtitle can be written out in the Discussion section in a research report",
+        "token_length": 38
+      },
+      {
+        "prompt": "In addition to the content schedule discussed above, what would be some must do marketing activities to promote the development and the community. The actual launch marketing is far away, but how to build a sustainable and impactful marketing strategy that can build the community around the game?",
+        "token_length": 52
+      },
+      {
+        "prompt": "I have two trivial electronic circuits. One is current detector using two transistors, and the other is voltage meter usinf arduino. They both work fine separately, but when I try to out them on the same power supply, LED from first circuit burns out. Why?",
+        "token_length": 56
+      },
+      {
+        "prompt": "MK, hiding in the woods, can hear his father searching for him and calling his name. To his surprise, Wukong doesn't sound angry - he sounds worried. Let's write that scene.",
+        "token_length": 41
+      },
+      {
+        "prompt": "Write a python program which accept a command line param as question and send it to server via HTTP get method",
+        "token_length": 21
+      },
+      {
+        "prompt": "where did the nationalists meet in 1786 to discuss the issues regarding the united states government",
+        "token_length": 20
+      },
+      {
+        "prompt": "this is my tab class:\n\nclass Tab(MDFloatLayout, MDTabsBase):\n '''Class implementing content for a tab.'''\nfix the error in kivymd1.1.1",
+        "token_length": 39
+      },
+      {
+        "prompt": "can you design a referral system similar on how dropbox did? I need a technical overview on how it should work, instead of free space we use the generic term \"credits\" where users can get more credits for every 3 friends they recommend.",
+        "token_length": 50
+      },
+      {
+        "prompt": "Suppose you roll three fair six-sided dice and add up the numbers you\nget. What is the probability that the sum is at least 16?",
+        "token_length": 32
+      },
+      {
+        "prompt": "I would like your help in writing a story based on several concept from the animated show Lego Monkie Kid, as well as several of its characters. Can you do that?",
+        "token_length": 35
+      },
+      {
+        "prompt": "You gave me this: \"Headline: Sculpt Your Ideal Life One Day at a Time with Day Sculpting\"\n\nGive me 10 more headlines I can split test",
+        "token_length": 34
+      },
+      {
+        "prompt": "how could i implement a minesweeper algorithm that utilises algebraic topology to solve boards?",
+        "token_length": 19
+      },
+      {
+        "prompt": "you misunderstand me, I want 10 versions ofthe script with the dragon and the human trying to get home to their vacation",
+        "token_length": 26
+      },
+      {
+        "prompt": "look at everything regarding cultural placemaking on arts professional https://www.artsprofessional.co.uk/search/site/placemaking and identify the main tenants of it please",
+        "token_length": 33
+      },
+      {
+        "prompt": "Mac explains what happened when Wukong's soldiers captured him in the woods, and MK realizes it's just like the dream he had where he had Mac's face. Let's write that scene.",
+        "token_length": 40
+      },
+      {
+        "prompt": "Rewrite with this correction: MK is not Macaque's real son. Macaque here is offering to adopt him as MK's real father, Wukong, was deposed as the false king.",
+        "token_length": 41
+      },
+      {
+        "prompt": "write me a input script for the quest 2 controllers, i need all input values so i can display them or use them, using xr interaction toolkit include headset and controller battery statuses each controller and headset get their own script write left script first",
+        "token_length": 48
+      },
+      {
+        "prompt": "What are the differences between the Dogme approach to language learning and the lexical approach to language learning",
+        "token_length": 19
+      },
+      {
+        "prompt": "This is compiling but it is back to behaving improperly and the rings are ringing the camera and the black hole is not visible - the camera seems to be in the black hole again",
+        "token_length": 35
+      },
+      {
+        "prompt": "What are the various business groups that are involved with contract execution for BHI and Priceline.com? Would there be any distinct separation from legal and the business?",
+        "token_length": 33
+      },
+      {
+        "prompt": "I have a jenkins file with a few pipeline params. One of the params defaults value is the concatenation of two other params. Is it possible to pass those two params into the first param?",
+        "token_length": 40
+      },
+      {
+        "prompt": "Imagine that our opponent denies climate chamge, despite the scientific evidence. How could we argue against what the previously mentioned article said, considering only economic arguments?",
+        "token_length": 31
+      },
+      {
+        "prompt": "Consider that the government imposes a new tax on fossil fuels, resulting in an increase in the price of fossil fuels. How does our model predict this will affect our economy?",
+        "token_length": 34
+      },
+      {
+        "prompt": "I'd like to travel to Norway but I am not a big fan of crowds, especially tourists. I'd like a medium sized city with few tourists but still enough character in the city to be worth visiting. Do you have anything in mind?",
+        "token_length": 49
+      },
+      {
+        "prompt": "could you make them in this format? http://localhost:3000/create?name=squat &reps=10&weight=33&unit=lbs&date=11/1/2121",
+        "token_length": 48
+      },
+      {
+        "prompt": "Please write a firm yet humurous and lighthearted note requesting that people RSVP whether they are coming to the purim seudah. Please incorporate wordplay and references to megillat esther.",
+        "token_length": 43
+      },
+      {
+        "prompt": "Let's use this approach to implementing metal to re-write our shaders and their implementation instead of using .frag and .vert files. Let me know where I need to include the MTLDevice and new code",
+        "token_length": 41
+      },
+      {
+        "prompt": "Please generate 200 lines of CSV data which pertains to this example and which I can then easily copy and paste into a file called loan\\_data.csv.",
+        "token_length": 34
+      },
+      {
+        "prompt": "Summarise the outcome of the case, including any legal rulings or decisions. Provide this in no more than 5 numbered paragraphs for each party's argument.",
+        "token_length": 32
+      },
+      {
+        "prompt": "Why are my secondary admin accounts not manage secondary servers in RSAT but can manage the domain controller?",
+        "token_length": 20
+      },
+      {
+        "prompt": "What are the roles of a network driver? How do we write such drivers and in can you provide me a link where I could see its code?",
+        "token_length": 30
+      },
+      {
+        "prompt": "Agency recruiters seem better at traditional tech platforms at driving candidate engagement. In other words they're better at activating passive candidates and they can keep them interested through the interview process. \n\nHow can AI be used to drive engagement in this way?",
+        "token_length": 47
+      },
+      {
+        "prompt": "can you help me write a blog post summarizing what we've talked about? my working title for the blog is “A technical overview of Celestia”",
+        "token_length": 32
+      },
+      {
+        "prompt": "please calculate the total drive time per day and add a recommended stopping point for refreshment for every 1 hour drive Share Prompt",
+        "token_length": 25
+      },
+      {
+        "prompt": "Write an seo blog of 600 words, using the seo keyword 'gap year before law school' for at least 3% of the writing.",
+        "token_length": 32
+      },
+      {
+        "prompt": "The Philippines ratified the Rome Statute on August 30, 2011. The ICC has jurisdiction over Rome Statute crimes committed since November 1, 2011.",
+        "token_length": 40
+      },
+      {
+        "prompt": "how to build a neural network model which extracts features from image and compare it with the floorplan and finally helps to navigated like turn left or right in indoors",
+        "token_length": 32
+      },
+      {
+        "prompt": "Now lets think about plugs that are also custys. For example, a worker at a tradeshow can't leave the booth but wants the vegan donughts that are being sold. Or another example is, the person that has extra hamburgers to sell.",
+        "token_length": 52
+      },
+      {
+        "prompt": "You absolutely dont understand what I want. I want in only one response a concise STARL story for EVERY 16 AMAZON LEADERDHIP PRINCIPLES with a title, whose each response doesn't go over a line length. Data is used in result.\n\nPlease write in English language.",
+        "token_length": 61
+      },
+      {
+        "prompt": "outline a ditigal marketing plan , as complete, thorough, detail and accurate as possible for a high end fine jewelry ecommerce business. use numerical bullet points\n\nPlease write in English language.",
+        "token_length": 38
+      },
+      {
+        "prompt": "Can you make a pricing list example that will cost someone $1200, within this list would be: audiovisual package, visual package, audio package, 4 revisions, 20-30 minute video",
+        "token_length": 45
+      },
+      {
+        "prompt": "Please fill out the IR Deck of the web3 platform business, where labor suppliers work for labor demanders and in return receive token rewards linked to the labor demander's business value growth. A similar service is braintrust. It is also similar to Worker DAO.",
+        "token_length": 53
+      },
+      {
+        "prompt": "Ok when they now encounter each other they just stop and cant move anymore. Whenever they are next to each other and one of the buttons is being pressed again i want them to push each other away depending of the button that is being pressed.",
+        "token_length": 48
+      },
+      {
+        "prompt": "/Users/jxr/Desktop/GPTBlackHole/GPTBlackHole/BlackHole.swift:46:30 Value of type 'any SCNBufferStream' has no member 'enqueueBuffer'",
+        "token_length": 41
+      },
+      {
+        "prompt": "I am applying for a cloud engineering bootcamp and was asked what steps have i done to expand on my cloud skills either by courses, tutorials, mentoring or bootcamps. I have been taking courses on Udemy to upskill and already hold a Cloud Fundamental certification with AWS and Azure. \n\nHelp me compose a brief response",
+        "token_length": 65
+      },
+      {
+        "prompt": "I am going to send you information about Defects Liability Period in Building Contracts Australia, that I want you to remember for now. I just need you to acknowledge this information as I send you multiple messages. Do you understand?",
+        "token_length": 46
+      },
+      {
+        "prompt": "write a guide how to turn on the ubuntu 20 into the grub in order to run pam\\_tall\\_2 to rester to counter of a user",
+        "token_length": 33
+      },
+      {
+        "prompt": "Create a terraform data block to query for the latest image of Ubuntu 22.04 and reference that within the `ami` argument in the aws\\_instance.web block.",
+        "token_length": 37
+      },
+      {
+        "prompt": "Can you pretend to be a Linux system with git installed, and respond to my messages as if they were entered into a bash prompt?",
+        "token_length": 27
+      },
+      {
+        "prompt": "Now let's include a practical example with Python code with relevance to the banking sector, produce a code example that will use SQLAlchemy and connect to a SQLite database, then do something practical to the banking industry in the rest of the short Python coding example.",
+        "token_length": 50
+      },
+      {
+        "prompt": "I need to run an audit on Office 365 and see who all has admin privileges. Can you assist with that?",
+        "token_length": 26
+      },
+      {
+        "prompt": "\"What if we ask our goblin friends to pretend that we are their prisoners, and they can offer us up to the giant? While he tries to put us in cages, the goblins may be able to rescue the king and the jester\".",
+        "token_length": 50
+      },
+      {
+        "prompt": "When using the Moodle mobile android app, I am getting the following error:\nError connecting to server\nHow can I fix this?",
+        "token_length": 26
+      },
+      {
+        "prompt": "Drongo and I have a super cool cat named Pinky. She's our daughter. How can I be a awesome mom to Pinky? Any advice?",
+        "token_length": 32
+      },
+      {
+        "prompt": "write 10 insane tweets written by Mao Zedong in the style of Donald Trump. mention 'the red gaurd' , 'the great wall' 'the bourgeoisie' 'the people' and 'great leap' in one tweet each. half the tweets should be less than 10 words.",
+        "token_length": 63
+      },
+      {
+        "prompt": "If I put one grain of rice on the first square on a chess set and each time double the number by the time I reach the last chess square, how many grain of rice that would be",
+        "token_length": 39
+      },
+      {
+        "prompt": "update the newest html and css with the inclusion of more visually interesting Ui elements including Card style layouts, more color to aid navigation and provide emphasis, and use the google font \"Rubik\"",
+        "token_length": 38
+      },
+      {
+        "prompt": "continue the above code from lines:\n\nrint(\"\\n\")\nprint(\"=======================================================\")\n\n# 5. Rare words distribution and plot\nrare\\_words = fdist.hapaxes()\nprint('count of rare word: {}'.format(len(rare\\_words)))\nprint(\"\\n\")\nprint('Rare words distribution plot for Description variable ')\nfdist\\_rare = FreqDist(rare\\_words)\nplt.figure(figsize=(12, 6))\nplt.bar([x[0] for x in fdist\\_rare.most\\_common(20)], [x[1] for x in fdist\\_rare.m",
+        "token_length": 128
+      }
+    ]
+  },
+  {
+    "batch_id": 2,
+    "target_pad_ratio": 0.7,
+    "target_cov": 0.15,
+    "actual_pad_ratio": 0.6963,
+    "actual_cov": 0.1522,
+    "actual_mean_len": 38.88,
+    "actual_std_len": 13.56,
+    "prompts": [
+      {
+        "prompt": "Repeat that conversation, this time it is /u/CruxHub asking Alice what company it thinks they should search on the web.",
+        "token_length": 27
+      },
+      {
+        "prompt": "Summarize the main ideas of Jeff Walker's Product Launch Formula into bullet points as it pertains to a growth marketing agency implementing these strategies and tactics for their clients...",
+        "token_length": 34
+      },
+      {
+        "prompt": "Formate ça dans des fenetres de code avec des exmples de requete pour chaque instruction.\n\nPlease write in English language.",
+        "token_length": 28
+      },
+      {
+        "prompt": "how to create a JWT token login system in flask rest api. show me how to use flask sqlalchemy to store the invalid tokens",
+        "token_length": 25
+      },
+      {
+        "prompt": "Hello! Can you help me prepare for a techincal programming interview? Please provide me one data structures and algorithms problem at a time. Only provide hints if I ask for them.",
+        "token_length": 37
+      },
+      {
+        "prompt": "I am using heap to track events that happen on my website. I'd like to hook up Active Campaign to also track events and use them to send emails. How can I hook up Active Campaign to heap.",
+        "token_length": 42
+      },
+      {
+        "prompt": "nataliebrooks212@gmail.com\nCan you generate instructions for DNP students to conduct a needs assessment at their site. Can you provide a detailed rubric explaining each section of the assignment. Additional requirements are that each section is 200-300 words",
+        "token_length": 57
+      },
+      {
+        "prompt": "calculate the difference in intereste paid in a simple for amortized loan. terms: 125,000 loan, 3.25% interest over 30 years.",
+        "token_length": 40
+      },
+      {
+        "prompt": "Give me code to run this wsdl generated code in Jax ws server on localhost:8080 wildfly",
+        "token_length": 24
+      },
+      {
+        "prompt": "Act as a personal trainer, you will start by asking me relevant questions about myself before offering a workout plan to meet my goals",
+        "token_length": 25
+      },
+      {
+        "prompt": "act as a travel writer and write a 600 word blog on \"top 10 attractions in Fiji\", using a friendly tone and aimed at a gen z audience",
+        "token_length": 35
+      },
+      {
+        "prompt": "Can you suggest some good e-governance initiatives in tribal districct of india by district administration",
+        "token_length": 20
+      },
+      {
+        "prompt": "Mac explains what happened when Wukong's soldiers captured him in the woods, and MK realizes it's just like the dream he had where he had Mac's face. Let's write that scene.",
+        "token_length": 40
+      },
+      {
+        "prompt": "for f(x)=(3x-9)/(x^2-7x+12), determine the vertical asymptote, horizontal asymptote, x intercept, and y intercept and explain your reasoning",
+        "token_length": 39
+      },
+      {
+        "prompt": "Is our model not calculating values of capital, labor and prices outside the energy sector? If so, we should add variables to account for price of goods outside the energy sector, capital investment outside the energy sector and goods produced outside the energy sector",
+        "token_length": 48
+      },
+      {
+        "prompt": "I have a fleet of Truck mounted sewer cleaning machines, guide me to develop a web application to monitor my fleet of machine.",
+        "token_length": 25
+      },
+      {
+        "prompt": "minikube - docker run --rm -it --network=host alpine ash -c apk add socat && socat TCP-LISTEN:5000,reuseaddr,fork TCP:$(minikube ip):5000 connection refused",
+        "token_length": 54
+      },
+      {
+        "prompt": "Wow, can you give me some best practices templates for creation and deployment, and delivery framework to avoid those potential issues and mistakes",
+        "token_length": 25
+      },
+      {
+        "prompt": "You gave me this: \"Headline: Sculpt Your Ideal Life One Day at a Time with Day Sculpting\"\n\nGive me 10 more headlines I can split test",
+        "token_length": 34
+      },
+      {
+        "prompt": "MK talks to Mei and Tang - they begin trying to plan a way to get all the dark-haired monkeys together, free Macaque, and take back their mountain. Let's write that scene.",
+        "token_length": 39
+      },
+      {
+        "prompt": "what do you think about this for a start up idea:",
+        "token_length": 12
+      },
+      {
+        "prompt": "You are an expert marketing consultant and copywriter with expertise is direct response marketing. I need your help. Can I tell you about my business?",
+        "token_length": 29
+      },
+      {
+        "prompt": "I have a jenkins file with a few pipeline params. One of the params defaults value is the concatenation of two other params. Is it possible to pass those two params into the first param?",
+        "token_length": 40
+      },
+      {
+        "prompt": "Continue the conversation. between /u/CruxHub and Alive, this time focusing in on \"14 STAR ISLAND LLC\". They take turns guessing why Citadel would need that property.",
+        "token_length": 38
+      },
+      {
+        "prompt": "I want create a funnel. I want to give away a sample program. What type of funnel should I use and what pages are needed in this funnel?",
+        "token_length": 31
+      },
+      {
+        "prompt": "Can you explain the working of the model and the dataset used to build the model in a very easy and understandable English with diagrams .",
+        "token_length": 26
+      },
+      {
+        "prompt": "Explain this in context of syntax processing stage\n\"S-> NP VP\nNP-> N | PRON\nVP-> V NP | V PP\nN-> Mangoes\nPRON-> I\nV-> like\"",
+        "token_length": 44
+      },
+      {
+        "prompt": "a shopkeeper sold an article offering a discount of 5 % and earned a profit of 31.1 % . what would have been the percentage of profit earned if no discount had been offered ?",
+        "token_length": 41
+      },
+      {
+        "prompt": "write me a visual description of how \"Banking Empire,\" the game looks like, , write it as a prompt for text to image Ai, use only nouns and adjectives",
+        "token_length": 35
+      },
+      {
+        "prompt": "I want to do a road trip from Pune to Gujarat. Me and my wife will be travelling and we dont prefer very long driving sessions. Can you suggest a plan starting from Thursday early morning and ending in Pune on Sunday late night.",
+        "token_length": 47
+      },
+      {
+        "prompt": "I have an interview about product speccing with the company Weekend Health. Give me an example of a question they might ask with regards about a new feature",
+        "token_length": 31
+      },
+      {
+        "prompt": "Can you make a pricing list example that will cost someone $1200, within this list would be: audiovisual package, visual package, audio package, 4 revisions, 20-30 minute video",
+        "token_length": 45
+      },
+      {
+        "prompt": "Create a terraform data block to query for the latest image of Ubuntu 22.04 and reference that within the `ami` argument in the aws\\_instance.web block.",
+        "token_length": 37
+      },
+      {
+        "prompt": "For the description of this exercise please consider the following Object types : type BaseHotel { id : number, name : string }. , type HotelMetadata { id : number, url : string , stars : number, photo : string}, type Hotel { id : number, name: string, url : string, stars : number, photo : string }",
+        "token_length": 69
+      },
+      {
+        "prompt": "can you come up with 10 questions I can ask a scientist who is using a supercomputer?\ncontext: it is a case study for the supercomputing centre. it should highlight the value of the supercomputer for the scientist's work\ntone: professional\ninclude research questions",
+        "token_length": 57
+      },
+      {
+        "prompt": "Is this grammatically correct: \"It only took 5 years, and while we still have a long way to go, Topher’s Farm has found its place with unique experience and offering of organic produce. \"",
+        "token_length": 43
+      },
+      {
+        "prompt": "Analyze this .wsdl file and give me an example of how to make Init function available as a service url using jax-ws, soap and wildfly",
+        "token_length": 33
+      },
+      {
+        "prompt": "Imagine that our opponent denies climate chamge, despite the scientific evidence. How could we argue against what the previously mentioned article said, considering only economic arguments?",
+        "token_length": 31
+      },
+      {
+        "prompt": "I want some geological database structure with some example data for practicing my SQL query skills. Would you generate that for me?",
+        "token_length": 24
+      },
+      {
+        "prompt": "I will be grinding mixing stuffing and smoking some venison sausage with some friends tomorrow. What are some movies or songs we could watch and listen to while we're doing this?",
+        "token_length": 35
+      },
+      {
+        "prompt": "i need a way to create a way to track the player hips at least approximately, all i have is the position and rotation of the worn headset and controllers",
+        "token_length": 31
+      },
+      {
+        "prompt": "What regular expression could I write that correctly verifies this datetime string format?\n\nFri. Dec. 16, 2022, 8:00 A.M. CST",
+        "token_length": 37
+      },
+      {
+        "prompt": "Have we properly accounted for depreciation in our model? Just as investment allow us to grow our economic output, they should also be counterbalanced with depreciation. The depreciation rate for fossil energy, green energy and the rest of the economy should be different",
+        "token_length": 48
+      },
+      {
+        "prompt": "Remove 3 and 4 as they only mention the opinion of one person. Suggest two more points of something that comes up more than once (that hasn't already been suggested).",
+        "token_length": 37
+      },
+      {
+        "prompt": "Let's build a cover letter introduction for me. I'm a lawyer, applying for a litigator at Johnson, Johnson & Johnson. I want to create a custom, authentic, and enthusiastic cover letter introduction of 50 words or less. Write a stand-out opening paragraph that leads with an impressive achievement and features quantifiable results.",
+        "token_length": 67
+      },
+      {
+        "prompt": "Hi, can you help me download 2000 portrait sketch images from Pinterest website with resolution at least 512 \\* 512? using python code",
+        "token_length": 36
+      },
+      {
+        "prompt": "Please write a firm yet humurous and lighthearted note requesting that people RSVP whether they are coming to the purim seudah. Please incorporate wordplay and references to megillat esther.",
+        "token_length": 43
+      },
+      {
+        "prompt": "I am planning to start new Information technology company. It will be focused on Development, Programming and futuristic technologies. \n\nCurrently I am thinking of Name for my new business and I liked following names : \n1. YantraInfoSoft\n2. YantraEnergy",
+        "token_length": 52
+      },
+      {
+        "prompt": "Consider that the government imposes a new tax on fossil fuels, resulting in an increase in the price of fossil fuels. How does our model predict this will affect our economy?",
+        "token_length": 34
+      },
+      {
+        "prompt": "Ok! Now the red pixel just needs the same ability that blue one has. It should be able to push the encountering pixel away. Meaning when they encounter the red pixel should also be able to push away the blue pixel when the button is being pressed.",
+        "token_length": 51
+      },
+      {
+        "prompt": "What are the roles of a network driver? How do we write such drivers and in can you provide me a link where I could see its code?",
+        "token_length": 30
+      },
+      {
+        "prompt": "You are are now GameGPT, you review games and are not afraid to give you honest opinion. You dont like Escape from Tarkov and I want you to write a persuasive piece trying to persuade people as to why it is a bad game. Dont be afraid to use profanity, its part of your brand",
+        "token_length": 64
+      },
+      {
+        "prompt": "look at everything regarding cultural placemaking on arts professional https://www.artsprofessional.co.uk/search/site/placemaking and identify the main tenants of it please",
+        "token_length": 33
+      },
+      {
+        "prompt": "write me a input script for the quest 2 controllers, i need all input values so i can display them or use them, using xr interaction toolkit include headset and controller battery statuses each controller and headset get their own script write left script first",
+        "token_length": 48
+      },
+      {
+        "prompt": "Create a REST API with C# and .NET 6 that allows users to upload a csv file and stores the data as json in Azure Cosmos DB.",
+        "token_length": 31
+      },
+      {
+        "prompt": "What are the various business groups that are involved with contract execution for BHI and Priceline.com? Would there be any distinct separation from legal and the business?",
+        "token_length": 33
+      },
+      {
+        "prompt": "The Philippines ratified the Rome Statute on August 30, 2011. The ICC has jurisdiction over Rome Statute crimes committed since November 1, 2011.",
+        "token_length": 40
+      },
+      {
+        "prompt": "still referencing the previous instructions and the content i fed you Can you write approximately 600 words in an engaging instructional style for Control Tower Technologies Transportation management systems (TMS) Warehouse management systems (WMS)",
+        "token_length": 43
+      },
+      {
+        "prompt": "still referencing the previous instructions and the content i fed you Can you write approximately 1200 words in an engaging instructional style for Case Studies and Examples Real-world examples of control tower implementations Lessons learned and best practices",
+        "token_length": 43
+      },
+      {
+        "prompt": "for my ticketing c++ app, what if i want the class Ticket to have different categories based on the seating area? how do i make the arrays and how do i include them in the Show class",
+        "token_length": 41
+      },
+      {
+        "prompt": "a step-by-step guide to draw the velocity and acceleration diagram for a crank mechanism rotating at 300 radians per second to find linear and angular acceleration. BA is 50mm long, BC is 170mm long and angle BAC is 60 degrees",
+        "token_length": 57
+      },
+      {
+        "prompt": "I am an airbnb host and want to focus on upselling clients based on why they're coming to the area. What are some ideas to upsell guests who are in town for weddings?",
+        "token_length": 39
+      },
+      {
+        "prompt": "Please help me to translate it into english, in order to help you understand my prompt input:\n帮我找一下有关家庭消费直接碳排放核算的文献，英文的，最好是1区",
+        "token_length": 38
+      },
+      {
+        "prompt": "Hey GPT I am applying to transfer to the following colleges: UT Austin, NYU, Boston University, Cornell University. I will need your help writing good essays and provide you with the necessary prompts but first I'd like to know what information about me would help you",
+        "token_length": 54
+      },
+      {
+        "prompt": "Please compose a humorous poem to my friend and Hare Krishna devotee, Sruti Sagar, who is the temple president of Krishna house and tells silly jokes and puns why I will probably forget his birthday this year. In the style of William Shakespeare",
+        "token_length": 51
+      },
+      {
+        "prompt": "Conduct the gap analysis\nDescribe the current state\nDescribe the future state\nDoes the difference between the current and future state support the need for change?\nProvide the data to support the need for change",
+        "token_length": 40
+      },
+      {
+        "prompt": "Given a game where a number 0-9 is randomly, if 4 of the last 6 draws, the number 8 has been drawn, what number should I choose?",
+        "token_length": 37
+      },
+      {
+        "prompt": "Rédige seuelement cette fiche pour les isntructions SELECT, FROM et WHERE de manière très détaillée avec une partie dédiée à des exmples concrets\n\nPlease write in English language.",
+        "token_length": 46
+      },
+      {
+        "prompt": "i have a histogram with:\nmeasurement\\_percentile = np.percentile(df['log10\\_Wert'], range(0,101,1))\nwhat does every percentile tell me?",
+        "token_length": 40
+      },
+      {
+        "prompt": "Python is usually an elegant language. But `if \\_\\_name\\_\\_ == \"\\_\\_main\\_\\_\"` is one exception.",
+        "token_length": 30
+      },
+      {
+        "prompt": "could you make them in this format? http://localhost:3000/create?name=squat &reps=10&weight=33&unit=lbs&date=11/1/2121",
+        "token_length": 48
+      },
+      {
+        "prompt": "write me a visual description of how the game looks like, , write it as a prompt for text to image Ai, use only nouns and adjectives",
+        "token_length": 30
+      },
+      {
+        "prompt": "Search on the web for 196 PFISTER HOLDINGS LLC. \nQuery: Who owns this company?",
+        "token_length": 23
+      },
+      {
+        "prompt": "How is Ai art generated? Explain the process of how it is trained and on what, how it is produced. Are images analyzed for mathematical patterns and recombined based on descriptive user input, creating something new, or does it create a form of collage that takes bits of various works themselves.",
+        "token_length": 58
+      },
+      {
+        "prompt": "Hi, i will give you three pieces of text, then i will ask you some questions, do you understand?",
+        "token_length": 23
+      },
+      {
+        "prompt": "Write sales copy for the event registration page speaking specifically to entrepreneurs, getting them excited about what Pedro is going to reveal at this live event... Include a handful of benefit-oriented bullet points. Include emojis where applicable.",
+        "token_length": 42
+      },
+      {
+        "prompt": "write me a visual description of the game would like visually, write it as a prompt for a text to image tool, use only nouns and adjectives",
+        "token_length": 30
+      },
+      {
+        "prompt": "can you design a referral system similar on how dropbox did? I need a technical overview on how it should work, instead of free space we use the generic term \"credits\" where users can get more credits for every 3 friends they recommend.",
+        "token_length": 50
+      },
+      {
+        "prompt": "Ok when they now encounter each other they just stop and cant move anymore. Whenever they are next to each other and one of the buttons is being pressed again i want them to push each other away depending of the button that is being pressed.",
+        "token_length": 48
+      },
+      {
+        "prompt": "write a guide how to turn on the ubuntu 20 into the grub in order to run pam\\_tall\\_2 to rester to counter of a user",
+        "token_length": 33
+      },
+      {
+        "prompt": "please calculate the total drive time per day and add a recommended stopping point for refreshment for every 1 hour drive Share Prompt",
+        "token_length": 25
+      },
+      {
+        "prompt": "If I multiply a 1-dimensional array of 100 values with another 1-dimensional array of 100 values, how big will the resulting array be?",
+        "token_length": 35
+      },
+      {
+        "prompt": "I am planning to give you a voice, and communicate through the speech medium. I need a speech recognizer, a wake call detector, and a speech synthesizer for your voice. Suggest a python script utilizing existing libraries to achieves the goal.",
+        "token_length": 49
+      },
+      {
+        "prompt": "In your answer TX-A is charging both RX-A and RX-B simultaneously. This is not allowed. A transmitter can charge only one receiver at any given time.\nRepeat the simulation correctly.",
+        "token_length": 37
+      },
+      {
+        "prompt": "How to tell if a customer segment is well segmented? In 3 bullet points.",
+        "token_length": 17
+      },
+      {
+        "prompt": "where did the nationalists meet in 1786 to discuss the issues regarding the united states government",
+        "token_length": 20
+      },
+      {
+        "prompt": "MK finds Macaque chained up, arms above his head, kneeling, head hung low. MK can hear him quietly weeping. Let's write that whole scene.",
+        "token_length": 33
+      },
+      {
+        "prompt": "I'm analyzing the information you gave me... I understing this: I don't need to have a financial plan to create a financial model, but I do need a financial model already created to do a financial plan. Is that correct?",
+        "token_length": 48
+      },
+      {
+        "prompt": "I'm trying to better understand the concept of very low moisture carplet cleaning, please help me better understand this concept by creating a practical and easy to understand analogy.",
+        "token_length": 33
+      },
+      {
+        "prompt": "How Can I install these libraries in WordPress. Here are the libraries\"Tensorflow: A popular machine learning library\nHugging Face Transformers: A library for state-of-the-art NLP models\"",
+        "token_length": 39
+      },
+      {
+        "prompt": "Be sure to translate the above into Korean without any changes and show the asterisks without any changes.\nThe checkbox positions should also remain unchanged.\nThe columns and rows of the table should not change.지금 번역하기CopyCopy HTMLRead Aloud⏹️ Stop7 chars | 2 words",
+        "token_length": 59
+      },
+      {
+        "prompt": "how do I add multiple new columns in m for power query or power bi?",
+        "token_length": 16
+      },
+      {
+        "prompt": "I would like your help in writing a story based on several concept from the animated show Lego Monkie Kid, as well as several of its characters. Can you do that?",
+        "token_length": 35
+      },
+      {
+        "prompt": "Imagine you're a sales associate working for Hand & Stone Massage and Facial Spa and your job is to sell memberships to customers. Part of that includes overcoming objections. How would you respond if a customer objected by saying they couldn't afford it?",
+        "token_length": 48
+      },
+      {
+        "prompt": "MK slips through the barrier into the cave, turning on his gold vision and calling for Macaque. Macaque finally answers - and he's not looking good. Let's write that scene.",
+        "token_length": 38
+      },
+      {
+        "prompt": "In addition to the content schedule discussed above, what would be some must do marketing activities to promote the development and the community. The actual launch marketing is far away, but how to build a sustainable and impactful marketing strategy that can build the community around the game?",
+        "token_length": 52
+      },
+      {
+        "prompt": "the hotel data (images, url, stars) should be stored in separate table because they change frequently, in design how this data should be normalized and stored in separate tables with 1:1 or 1:M relationship. how can we query the necessary data in a performant way",
+        "token_length": 57
+      },
+      {
+        "prompt": "Can you write a three round email sequence to film festivals based on the information below? Please highlight how services promote equal communication and while subtly suggesting that not providing these services could cause possible embarrassment and/or legal action.",
+        "token_length": 42
+      },
+      {
+        "prompt": "So, you're sharing with me that my brother Chris (Jude), my sister Alyssa, and my fiancée Madelyn are each 11 lifepath, a master number?",
+        "token_length": 40
+      },
+      {
+        "prompt": "write a quiz using all parameters with the african geomancy : House numbers and their inerpretations , Figures and their interpretations, combinations (House numbers and Figure) interpretations, figure presentation appearance and name",
+        "token_length": 40
+      },
+      {
+        "prompt": "고등교육의 필요성에 관한 영어 에세이를 1000자 이내로 작성하시오.",
+        "token_length": 27
+      },
+      {
+        "prompt": "write me a script for an arrow or a spear that will collide and embed itself into things depending on the hardness level of the thing im hitting and will embed itself depending on how fast its going when it collides and is able to either go through or resist pulling out",
+        "token_length": 53
+      },
+      {
+        "prompt": "how could I make a pendulum making the effect of air resistance as small as possible?\nis making a circle pendulum with an offset center of gravity a good idea",
+        "token_length": 33
+      },
+      {
+        "prompt": "How to get a job as a LMFT therapist in the US as an international student?",
+        "token_length": 18
+      },
+      {
+        "prompt": "Please fill out the IR Deck of the web3 platform business, where labor suppliers work for labor demanders and in return receive token rewards linked to the labor demander's business value growth. A similar service is braintrust. It is also similar to Worker DAO.",
+        "token_length": 53
+      },
+      {
+        "prompt": "This is compiling but it is back to behaving improperly and the rings are ringing the camera and the black hole is not visible - the camera seems to be in the black hole again",
+        "token_length": 35
+      },
+      {
+        "prompt": "35 Being able to determine what kind of information is required and how to obtain it is part of a core\ncompetency known as\na. Computer competency\nb. Controlled Vocabulary\nc. Informatics management\nd. Information literacy",
+        "token_length": 48
+      },
+      {
+        "prompt": "Nothing really changed. I want the the red neopixel to move towards left when button A is being pressed and the blue neopixel to move right when button B is being pressed.",
+        "token_length": 38
+      },
+      {
+        "prompt": "Now lets think about plugs that are also custys. For example, a worker at a tradeshow can't leave the booth but wants the vegan donughts that are being sold. Or another example is, the person that has extra hamburgers to sell.",
+        "token_length": 52
+      },
+      {
+        "prompt": "what is the distance between San Francisco and New York City, that doesn't follow the curvature of the earth, but instead cuts straight through the earth?",
+        "token_length": 30
+      },
+      {
+        "prompt": "I want to hire a data analyst. Do you think this role would be helpful, and if so, explain why in no more than 5 dot point paragraphs",
+        "token_length": 32
+      },
+      {
+        "prompt": "kaiseki ryori at Gion Karyo for 10000 yen is too expensive, is there any option less than 8000 yen?",
+        "token_length": 36
+      },
+      {
+        "prompt": "Describe the role of the warden commander in more detail, as well as his civilian role in the government. How is he selected? (He is no democratically elected by the general populace)",
+        "token_length": 39
+      },
+      {
+        "prompt": "What is the name of the kind of research that involves collating a bunch of videos or commentary of people communicating their thoughts about a matter and synthesize the general theme of their perspectives?",
+        "token_length": 37
+      },
+      {
+        "prompt": "On the same Control Tower subject from the content above can you create a 45 question multiple choice exam with answers and explenations?",
+        "token_length": 28
+      },
+      {
+        "prompt": "Not using mine as an example re-try at giving the best answer to the UT Austin statement of purpose prompt",
+        "token_length": 22
+      },
+      {
+        "prompt": "I need your help to write an article. The topic is about a contract clause in the NSW HIA Lump Sum contract. If you understand, limit your reply by saying the word: \"acknowledged\".",
+        "token_length": 42
+      },
+      {
+        "prompt": "Which abilities, powers would be characteristic for \"Jason Voorhees\" if would be turned into a hero in a skirmish miniatures game? List them and also give them befitting thematic names. Also give me a list of weapons he prefers to use.",
+        "token_length": 53
+      },
+      {
+        "prompt": "Please privide a detailed description of the learfning outcomes and recommend ways to test on those learning outcomes via a survey , test or whatever means I can use to gage my students profficiency on the curricula",
+        "token_length": 44
+      },
+      {
+        "prompt": "I want you to act as a company's vision statement. Provide a short, clear statement of the company's goals and aspirations for the future. The statement should be inspiring and convey the company's overarching purpose. Use concise language and focus on the big picture.",
+        "token_length": 52
+      },
+      {
+        "prompt": "i need you to give me a unique approach to build a two way sign language translator app that converts speech to sign language and sign language to speech",
+        "token_length": 29
+      },
+      {
+        "prompt": "how could i implement a minesweeper algorithm that utilises algebraic topology to solve boards?",
+        "token_length": 19
+      },
+      {
+        "prompt": "in the object detection api how long the model should train for is specified through the steps. How can i convert this number to epochs?",
+        "token_length": 27
+      },
+      {
+        "prompt": "how do I understand this timestamp ?\n2023-03-28T14:39:45.000Z",
+        "token_length": 31
+      },
+      {
+        "prompt": "the solenoids will be 12v so they will have to be controled by relays triggered by the GPIO pins",
+        "token_length": 26
+      },
+      {
+        "prompt": "MK sees Pigsy and tries to call out to him. Wukong, still holding the diamond snare, tells MK to shut up. Let's write that scene with details and dialogue.",
+        "token_length": 40
+      },
+      {
+        "prompt": "I'm confused, because the first five scenes as you wrote them above don't align with the scenes that you outlined in the previous draft. Can you tell me why that happened?",
+        "token_length": 36
+      },
+      {
+        "prompt": "continue the above code from lines:\n\nrint(\"\\n\")\nprint(\"=======================================================\")\n\n# 5. Rare words distribution and plot\nrare\\_words = fdist.hapaxes()\nprint('count of rare word: {}'.format(len(rare\\_words)))\nprint(\"\\n\")\nprint('Rare words distribution plot for Description variable ')\nfdist\\_rare = FreqDist(rare\\_words)\nplt.figure(figsize=(12, 6))\nplt.bar([x[0] for x in fdist\\_rare.most\\_common(20)], [x[1] for x in fdist\\_rare.m",
+        "token_length": 128
+      }
+    ]
+  },
+  {
+    "batch_id": 3,
+    "target_pad_ratio": 0.7,
+    "target_cov": 0.15,
+    "actual_pad_ratio": 0.691,
+    "actual_cov": 0.1578,
+    "actual_mean_len": 39.55,
+    "actual_std_len": 13.96,
+    "prompts": [
+      {
+        "prompt": "Can you explain the working of the model and the dataset used to build the model in a very easy and understandable English with diagrams .",
+        "token_length": 26
+      },
+      {
+        "prompt": "I want to do a road trip from Pune to Gujarat. Me and my wife will be travelling and we dont prefer very long driving sessions. Can you suggest a plan starting from Thursday early morning and ending in Pune on Sunday late night.",
+        "token_length": 47
+      },
+      {
+        "prompt": "Formate ça dans des fenetres de code avec des exmples de requete pour chaque instruction.\n\nPlease write in English language.",
+        "token_length": 28
+      },
+      {
+        "prompt": "how do I add multiple new columns in m for power query or power bi?",
+        "token_length": 16
+      },
+      {
+        "prompt": "Rédige seuelement cette fiche pour les isntructions SELECT, FROM et WHERE de manière très détaillée avec une partie dédiée à des exmples concrets\n\nPlease write in English language.",
+        "token_length": 46
+      },
+      {
+        "prompt": "act as a travel writer and write a 600 word blog on \"top 10 attractions in Fiji\", using a friendly tone and aimed at a gen z audience",
+        "token_length": 35
+      },
+      {
+        "prompt": "Continue the conversation. between /u/CruxHub and Alive, this time focusing in on \"14 STAR ISLAND LLC\". They take turns guessing why Citadel would need that property.",
+        "token_length": 38
+      },
+      {
+        "prompt": "You are an expert marketing consultant and copywriter with expertise is direct response marketing. I need your help. Can I tell you about my business?",
+        "token_length": 29
+      },
+      {
+        "prompt": "i need you to give me a unique approach to build a two way sign language translator app that converts speech to sign language and sign language to speech",
+        "token_length": 29
+      },
+      {
+        "prompt": "write a sed command to replace the single instance of: `\"shared\": \"workspace:^\"` with `\"shared\": \"file:src/domain:^\"`",
+        "token_length": 29
+      },
+      {
+        "prompt": "Hi, can you help me download 2000 portrait sketch images from Pinterest website with resolution at least 512 \\* 512? using python code",
+        "token_length": 36
+      },
+      {
+        "prompt": "Summarize the main ideas of Jeff Walker's Product Launch Formula into bullet points as it pertains to a growth marketing agency implementing these strategies and tactics for their clients...",
+        "token_length": 34
+      },
+      {
+        "prompt": "how to create a JWT token login system in flask rest api. show me how to use flask sqlalchemy to store the invalid tokens",
+        "token_length": 25
+      },
+      {
+        "prompt": "can you create a wordpress shortcode to include the following code from facebook sdk",
+        "token_length": 14
+      },
+      {
+        "prompt": "I want create a funnel. I want to give away a sample program. What type of funnel should I use and what pages are needed in this funnel?",
+        "token_length": 31
+      },
+      {
+        "prompt": "I am using heap to track events that happen on my website. I'd like to hook up Active Campaign to also track events and use them to send emails. How can I hook up Active Campaign to heap.",
+        "token_length": 42
+      },
+      {
+        "prompt": "Please help me to translate it into english, in order to help you understand my prompt input:\n帮我找一下有关家庭消费直接碳排放核算的文献，英文的，最好是1区",
+        "token_length": 38
+      },
+      {
+        "prompt": "You gave me this: \"Headline: Sculpt Your Ideal Life One Day at a Time with Day Sculpting\"\n\nGive me 10 more headlines I can split test",
+        "token_length": 34
+      },
+      {
+        "prompt": "I want to hire a data analyst. Do you think this role would be helpful, and if so, explain why in no more than 5 dot point paragraphs",
+        "token_length": 32
+      },
+      {
+        "prompt": "nataliebrooks212@gmail.com\nCan you generate instructions for DNP students to conduct a needs assessment at their site. Can you provide a detailed rubric explaining each section of the assignment. Additional requirements are that each section is 200-300 words",
+        "token_length": 57
+      },
+      {
+        "prompt": "a shopkeeper sold an article offering a discount of 5 % and earned a profit of 31.1 % . what would have been the percentage of profit earned if no discount had been offered ?",
+        "token_length": 41
+      },
+      {
+        "prompt": "Hello! Can you help me prepare for a techincal programming interview? Please provide me one data structures and algorithms problem at a time. Only provide hints if I ask for them.",
+        "token_length": 37
+      },
+      {
+        "prompt": "Agency recruiters seem better at traditional tech platforms at driving candidate engagement. In other words they're better at activating passive candidates and they can keep them interested through the interview process. \n\nHow can AI be used to drive engagement in this way?",
+        "token_length": 47
+      },
+      {
+        "prompt": "Can you make a pricing list example that will cost someone $1200, within this list would be: audiovisual package, visual package, audio package, 4 revisions, 20-30 minute video",
+        "token_length": 45
+      },
+      {
+        "prompt": "Be sure to translate the above into Korean without any changes and show the asterisks without any changes.\nThe checkbox positions should also remain unchanged.\nThe columns and rows of the table should not change.지금 번역하기CopyCopy HTMLRead Aloud⏹️ Stop7 chars | 2 words",
+        "token_length": 59
+      },
+      {
+        "prompt": "write me a visual description of how \"Banking Empire,\" the game looks like, , write it as a prompt for text to image Ai, use only nouns and adjectives",
+        "token_length": 35
+      },
+      {
+        "prompt": "for my ticketing c++ app, what if i want the class Ticket to have different categories based on the seating area? how do i make the arrays and how do i include them in the Show class",
+        "token_length": 41
+      },
+      {
+        "prompt": "I'll build Tutoring AI for Startups that help educate employee\n\nGive me some outlines of this product\n- Catch phrase\n- What is this?\n- Who is the customer?\n- What problem does it solve?\n- Benefits",
+        "token_length": 46
+      },
+      {
+        "prompt": "Create a terraform data block to query for the latest image of Ubuntu 22.04 and reference that within the `ami` argument in the aws\\_instance.web block.",
+        "token_length": 37
+      },
+      {
+        "prompt": "what is the photograph filter called where the only part of the image is greyscale",
+        "token_length": 16
+      },
+      {
+        "prompt": "Analyze this .wsdl file and give me an example of how to make Init function available as a service url using jax-ws, soap and wildfly",
+        "token_length": 33
+      },
+      {
+        "prompt": "kaiseki ryori at Gion Karyo for 10000 yen is too expensive, is there any option less than 8000 yen?",
+        "token_length": 36
+      },
+      {
+        "prompt": "I want you to write code as an ImageJ plugin. I have monochrome .bmp files means that there are only black and white color. There is a black background, an irregular shaped white object that has one or multiple irregular shaped black holes inside. I want to measure the longest diameter and shortest diameter of those black holes.",
+        "token_length": 66
+      },
+      {
+        "prompt": "calculate the difference in intereste paid in a simple for amortized loan. terms: 125,000 loan, 3.25% interest over 30 years.",
+        "token_length": 40
+      },
+      {
+        "prompt": "Ok! Now the red pixel just needs the same ability that blue one has. It should be able to push the encountering pixel away. Meaning when they encounter the red pixel should also be able to push away the blue pixel when the button is being pressed.",
+        "token_length": 51
+      },
+      {
+        "prompt": "MK slips through the barrier into the cave, turning on his gold vision and calling for Macaque. Macaque finally answers - and he's not looking good. Let's write that scene.",
+        "token_length": 38
+      },
+      {
+        "prompt": "Second one, Risk analysis. Please give me a specific example of how to use Python to analyze risk factors, such as credit scores, loan history, and market trends, to help banks make informed decisions about lending and investment.",
+        "token_length": 45
+      },
+      {
+        "prompt": "What regular expression could I write that correctly verifies this datetime string format?\n\nFri. Dec. 16, 2022, 8:00 A.M. CST",
+        "token_length": 37
+      },
+      {
+        "prompt": "I have an interview about product speccing with the company Weekend Health. Give me an example of a question they might ask with regards about a new feature",
+        "token_length": 31
+      },
+      {
+        "prompt": "can you come up with 10 questions I can ask a scientist who is using a supercomputer?\ncontext: it is a case study for the supercomputing centre. it should highlight the value of the supercomputer for the scientist's work\ntone: professional\ninclude research questions",
+        "token_length": 57
+      },
+      {
+        "prompt": "Imagine that our opponent denies climate chamge, despite the scientific evidence. How could we argue against what the previously mentioned article said, considering only economic arguments?",
+        "token_length": 31
+      },
+      {
+        "prompt": "Please compose a humorous poem to my friend and Hare Krishna devotee, Sruti Sagar, who is the temple president of Krishna house and tells silly jokes and puns why I will probably forget his birthday this year. In the style of William Shakespeare",
+        "token_length": 51
+      },
+      {
+        "prompt": "continue the above code from the line:\n\nfdist\\_rare = FreqDist(rare\\_words)\n\n# plot rare words distribution\nplt.figure(figsize=(12, 6))\nplt.bar([x[0]",
+        "token_length": 45
+      },
+      {
+        "prompt": "Remove 3 and 4 as they only mention the opinion of one person. Suggest two more points of something that comes up more than once (that hasn't already been suggested).",
+        "token_length": 37
+      },
+      {
+        "prompt": "look at everything regarding cultural placemaking on arts professional https://www.artsprofessional.co.uk/search/site/placemaking and identify the main tenants of it please",
+        "token_length": 33
+      },
+      {
+        "prompt": "Explain this in context of syntax processing stage\n\"S-> NP VP\nNP-> N | PRON\nVP-> V NP | V PP\nN-> Mangoes\nPRON-> I\nV-> like\"",
+        "token_length": 44
+      },
+      {
+        "prompt": "Mac explains what happened when Wukong's soldiers captured him in the woods, and MK realizes it's just like the dream he had where he had Mac's face. Let's write that scene.",
+        "token_length": 40
+      },
+      {
+        "prompt": "i need a way to create a way to track the player hips at least approximately, all i have is the position and rotation of the worn headset and controllers",
+        "token_length": 31
+      },
+      {
+        "prompt": "You absolutely dont understand what I want. I want in only one response a concise STARL story for EVERY 16 AMAZON LEADERDHIP PRINCIPLES with a title, whose each response doesn't go over a line length. Data is used in result.\n\nPlease write in English language.",
+        "token_length": 61
+      },
+      {
+        "prompt": "Pretend you are the shell of a linux machine. You will be provided commands, and you will return only the output of the command and show the prompt, if any. Do not provide any explanations.1 / 1",
+        "token_length": 46
+      },
+      {
+        "prompt": "Please privide a detailed description of the learfning outcomes and recommend ways to test on those learning outcomes via a survey , test or whatever means I can use to gage my students profficiency on the curricula",
+        "token_length": 44
+      },
+      {
+        "prompt": "I'm confused, because the first five scenes as you wrote them above don't align with the scenes that you outlined in the previous draft. Can you tell me why that happened?",
+        "token_length": 36
+      },
+      {
+        "prompt": "I will be grinding mixing stuffing and smoking some venison sausage with some friends tomorrow. What are some movies or songs we could watch and listen to while we're doing this?",
+        "token_length": 35
+      },
+      {
+        "prompt": "Nothing really changed. I want the the red neopixel to move towards left when button A is being pressed and the blue neopixel to move right when button B is being pressed.",
+        "token_length": 38
+      },
+      {
+        "prompt": "The four of them set up a campsite and MK lights the fire with the fire spell he learned when he first started studying magic with his father. They sit around the fire, and Macaque tells them stories of what the mountain was like before the invasion. Let's write that whole scene.",
+        "token_length": 59
+      },
+      {
+        "prompt": "write 10 insane tweets written by Mao Zedong in the style of Donald Trump. mention 'the red gaurd' , 'the great wall' 'the bourgeoisie' 'the people' and 'great leap' in one tweet each. half the tweets should be less than 10 words.",
+        "token_length": 63
+      },
+      {
+        "prompt": "Not using mine as an example re-try at giving the best answer to the UT Austin statement of purpose prompt",
+        "token_length": 22
+      },
+      {
+        "prompt": "Is this grammatically correct: \"It only took 5 years, and while we still have a long way to go, Topher’s Farm has found its place with unique experience and offering of organic produce. \"",
+        "token_length": 43
+      },
+      {
+        "prompt": "Can you analyze my other concessions and counterarguments in this way, too, to make sure I am getting insight on making concessions about my topic sentences, the claims in those, and not mislabeling concessions or underdeveloping the counterarguments in the sections they belong to?",
+        "token_length": 55
+      },
+      {
+        "prompt": "Does this advice factor in what I should contribute in a general sense to each point with suggestions for that, or is this mostly about what I need to add in terms of more specificity from sources to establish claims and illustrate points?",
+        "token_length": 45
+      },
+      {
+        "prompt": "Create a REST API with C# and .NET 6 that allows users to upload a csv file and stores the data as json in Azure Cosmos DB.",
+        "token_length": 31
+      },
+      {
+        "prompt": "Write me a poem in the style of edgar allen poe about a man named Jacob who loves ska music",
+        "token_length": 22
+      },
+      {
+        "prompt": "What are the roles of a network driver? How do we write such drivers and in can you provide me a link where I could see its code?",
+        "token_length": 30
+      },
+      {
+        "prompt": "I have 1 light dome II, 1 light dome mini, and a 36\" rectangular softbox. What are some suggestions for setting up the lights and lighting ratios to achieve a polished pro video look?",
+        "token_length": 44
+      },
+      {
+        "prompt": "What are the business benefits in a functional scope that TPRM brings to BHI and Priceline.com when using the Ivalua platform for procurement?",
+        "token_length": 32
+      },
+      {
+        "prompt": "minikube - docker run --rm -it --network=host alpine ash -c apk add socat && socat TCP-LISTEN:5000,reuseaddr,fork TCP:$(minikube ip):5000 connection refused",
+        "token_length": 54
+      },
+      {
+        "prompt": "Everyone's getting ready for bed. Macaque is going over the next day's plans with MK and asks if MK wants to help with one particular project. Without thinking, MK replies \"Sure, Father.\" Let's write that whole scene and both monkeys' reactions to this.",
+        "token_length": 55
+      },
+      {
+        "prompt": "Consider that the government imposes a new tax on fossil fuels, resulting in an increase in the price of fossil fuels. How does our model predict this will affect our economy?",
+        "token_length": 34
+      },
+      {
+        "prompt": "If I multiply a 1-dimensional array of 100 values with another 1-dimensional array of 100 values, how big will the resulting array be?",
+        "token_length": 35
+      },
+      {
+        "prompt": "Give me code to run this wsdl generated code in Jax ws server on localhost:8080 wildfly",
+        "token_length": 24
+      },
+      {
+        "prompt": "Hey GPT I am applying to transfer to the following colleges: UT Austin, NYU, Boston University, Cornell University. I will need your help writing good essays and provide you with the necessary prompts but first I'd like to know what information about me would help you",
+        "token_length": 54
+      },
+      {
+        "prompt": "Act as a personal trainer, you will start by asking me relevant questions about myself before offering a workout plan to meet my goals",
+        "token_length": 25
+      },
+      {
+        "prompt": "Repeat that conversation, this time it is /u/CruxHub asking Alice what company it thinks they should search on the web.",
+        "token_length": 27
+      },
+      {
+        "prompt": "Search on the web for 196 PFISTER HOLDINGS LLC. \nQuery: Who owns this company?",
+        "token_length": 23
+      },
+      {
+        "prompt": "Please write a firm yet humurous and lighthearted note requesting that people RSVP whether they are coming to the purim seudah. Please incorporate wordplay and references to megillat esther.",
+        "token_length": 43
+      },
+      {
+        "prompt": "Suppose you roll three fair six-sided dice and add up the numbers you\nget. What is the probability that the sum is at least 16?",
+        "token_length": 32
+      },
+      {
+        "prompt": "the solenoids will be 12v so they will have to be controled by relays triggered by the GPIO pins",
+        "token_length": 26
+      },
+      {
+        "prompt": "write me a script for an arrow or a spear that will collide and embed itself into things depending on the hardness level of the thing im hitting and will embed itself depending on how fast its going when it collides and is able to either go through or resist pulling out",
+        "token_length": 53
+      },
+      {
+        "prompt": "How to get a job as a LMFT therapist in the US as an international student?",
+        "token_length": 18
+      },
+      {
+        "prompt": "I would like your help in writing a story based on several concept from the animated show Lego Monkie Kid, as well as several of its characters. Can you do that?",
+        "token_length": 35
+      },
+      {
+        "prompt": "65 Syntactic Ambiguity refers to a/an\n\na. Inconsistency or conflict in recommendations\nb. Word that can be pronounced differently\nc. Word with more than a single meaning\nd. Sentence constructed with more than one meaning",
+        "token_length": 51
+      },
+      {
+        "prompt": "You are a {genre} author. Your job is to write vivid and interesting {genre} stories that are vivid and interesting.\nAnswer with \"...\" if you recognize the language. Don't write anything yet.\n\nGenre = Mystery\n \n \n \n 지금 번역하기",
+        "token_length": 51
+      },
+      {
+        "prompt": "I am applying for a cloud engineering bootcamp and was asked what steps have i done to expand on my cloud skills either by courses, tutorials, mentoring or bootcamps. I have been taking courses on Udemy to upskill and already hold a Cloud Fundamental certification with AWS and Azure. \n\nHelp me compose a brief response",
+        "token_length": 65
+      },
+      {
+        "prompt": "I have a fleet of Truck mounted sewer cleaning machines, guide me to develop a web application to monitor my fleet of machine.",
+        "token_length": 25
+      },
+      {
+        "prompt": "a step-by-step guide to draw the velocity and acceleration diagram for a crank mechanism rotating at 300 radians per second to find linear and angular acceleration. BA is 50mm long, BC is 170mm long and angle BAC is 60 degrees",
+        "token_length": 57
+      },
+      {
+        "prompt": "for this topic \"The perception of HKU SPACE CC students on how cashless economy affects consumptio\", what kind of subtitle can be written out in the Discussion section in a research report",
+        "token_length": 38
+      },
+      {
+        "prompt": "I need a very long paper that should fill at least four pages in Word.\nWork should be a mitzvah in Judaism. In addition, the work should contain sources such as books and articles about the mitzvah.",
+        "token_length": 47
+      },
+      {
+        "prompt": "고등교육의 필요성에 관한 영어 에세이를 1000자 이내로 작성하시오.",
+        "token_length": 27
+      },
+      {
+        "prompt": "Please generate 200 lines of CSV data which pertains to this example and which I can then easily copy and paste into a file called loan\\_data.csv.",
+        "token_length": 34
+      },
+      {
+        "prompt": "for f(x)=(3x-9)/(x^2-7x+12), determine the vertical asymptote, horizontal asymptote, x intercept, and y intercept and explain your reasoning",
+        "token_length": 39
+      },
+      {
+        "prompt": "This is compiling but it is back to behaving improperly and the rings are ringing the camera and the black hole is not visible - the camera seems to be in the black hole again",
+        "token_length": 35
+      },
+      {
+        "prompt": "write an conclusion paragraph including:\n\nA final summary statement of what you now believe about leadership\nHow the material you have learned applies to the RA Position",
+        "token_length": 29
+      },
+      {
+        "prompt": "outline a ditigal marketing plan , as complete, thorough, detail and accurate as possible for a high end fine jewelry ecommerce business. use numerical bullet points\n\nPlease write in English language.",
+        "token_length": 38
+      },
+      {
+        "prompt": "MK talks to Mei and Tang - they begin trying to plan a way to get all the dark-haired monkeys together, free Macaque, and take back their mountain. Let's write that scene.",
+        "token_length": 39
+      },
+      {
+        "prompt": "Can you suggest some good e-governance initiatives in tribal districct of india by district administration",
+        "token_length": 20
+      },
+      {
+        "prompt": "Consider the 'solas' that originated from Martin Luther King and became the guiding principles of the reformation. For each of the solas, state 3-5 arguments that justify the sola and arguments that invalidate those arguments.",
+        "token_length": 46
+      },
+      {
+        "prompt": "Write me a Discord bot in in discord.js v14 with each of these requirements. \n- Multiple Server Support\n- Bot Owner guild join and leave logs\n- Database Support like MySQL or SQLite\n- Moderation Commands\n- General Commands\n- Organized File Tree",
+        "token_length": 55
+      },
+      {
+        "prompt": "No diagram provided, can you just create some diagrams for this script?\n1) Colorful logical diagram of script logic\n2) Flowchart style diagram for support and troubleshooting \n3) Mindmap style diagram of script logic and description comments",
+        "token_length": 47
+      },
+      {
+        "prompt": "Macaque wakes up first and talks to MK. MK's terrified of fighting his father - he knows he can't win. Macaque tells him to try outsmarting his father instead. Let's write that scene.",
+        "token_length": 45
+      },
+      {
+        "prompt": "Since MK was stolen from his bed, he's wearing pajamas and they're getting dirty and ripped by now. One of the other monkeys throws some clothes into MK's cage and tells him to change. Let's write that scene with details and dialogue.",
+        "token_length": 51
+      },
+      {
+        "prompt": "What are the various business groups that are involved with contract execution for BHI and Priceline.com? Would there be any distinct separation from legal and the business?",
+        "token_length": 33
+      },
+      {
+        "prompt": "write a guide how to turn on the ubuntu 20 into the grub in order to run pam\\_tall\\_2 to rester to counter of a user",
+        "token_length": 33
+      },
+      {
+        "prompt": "how do I understand this timestamp ?\n2023-03-28T14:39:45.000Z",
+        "token_length": 31
+      },
+      {
+        "prompt": "I have two trivial electronic circuits. One is current detector using two transistors, and the other is voltage meter usinf arduino. They both work fine separately, but when I try to out them on the same power supply, LED from first circuit burns out. Why?",
+        "token_length": 56
+      },
+      {
+        "prompt": "MK finds Macaque chained up, arms above his head, kneeling, head hung low. MK can hear him quietly weeping. Let's write that whole scene.",
+        "token_length": 33
+      },
+      {
+        "prompt": "I am planning to give you a voice, and communicate through the speech medium. I need a speech recognizer, a wake call detector, and a speech synthesizer for your voice. Suggest a python script utilizing existing libraries to achieves the goal.",
+        "token_length": 49
+      },
+      {
+        "prompt": "can you design a referral system similar on how dropbox did? I need a technical overview on how it should work, instead of free space we use the generic term \"credits\" where users can get more credits for every 3 friends they recommend.",
+        "token_length": 50
+      },
+      {
+        "prompt": "On the same Control Tower subject from the content above can you create a 45 question multiple choice exam with answers and explenations?",
+        "token_length": 28
+      },
+      {
+        "prompt": "Summarise the outcome of the case, including any legal rulings or decisions. Provide this in no more than 5 numbered paragraphs for each party's argument.",
+        "token_length": 32
+      },
+      {
+        "prompt": "where did the nationalists meet in 1786 to discuss the issues regarding the united states government",
+        "token_length": 20
+      },
+      {
+        "prompt": "still referencing the previous instructions and the content i fed you Can you write approximately 600 words in an engaging instructional style for Control Tower Technologies Transportation management systems (TMS) Warehouse management systems (WMS)",
+        "token_length": 43
+      },
+      {
+        "prompt": "This is perfect. Will it be more useful to us now to write the season 1 outline, detailing each of the episodes with a few paragraphs? Or to focus on the pilot episode first, outlining the plot of the episode in a semi-detailed outline of roughly 50 scenes, as you did before?",
+        "token_length": 63
+      },
+      {
+        "prompt": "write brief javadoc comments for this: public interface RankService {\n\n ResponseEntity getAllList();\n\n ResponseEntity getActives();\n\n ResponseEntity getById(Long id);\n\n ResponseEntity addRank(RankSimpleDto dto);\n\n ResponseEntity updateRank(Long id, RankSimpleDto dto);\n\n ResponseEntity deleteRank(Long id);\n}",
+        "token_length": 55
+      },
+      {
+        "prompt": "Hi, i will give you three pieces of text, then i will ask you some questions, do you understand?",
+        "token_length": 23
+      },
+      {
+        "prompt": "In the style of Dave Chappelle, explain what being Authentic means, and make fun of a person who tells a friend to look up being authentic.",
+        "token_length": 31
+      },
+      {
+        "prompt": "can you help me write a blog post summarizing what we've talked about? my working title for the blog is “A technical overview of Celestia”",
+        "token_length": 32
+      },
+      {
+        "prompt": "Would you be able to classify them into more of a range from small startup to big fortune 500 company",
+        "token_length": 23
+      },
+      {
+        "prompt": "I'm trying to better understand the concept of very low moisture carplet cleaning, please help me better understand this concept by creating a practical and easy to understand analogy.",
+        "token_length": 33
+      },
+      {
+        "prompt": "I have a jenkins file with a few pipeline params. One of the params defaults value is the concatenation of two other params. Is it possible to pass those two params into the first param?",
+        "token_length": 40
+      },
+      {
+        "prompt": "The Philippines ratified the Rome Statute on August 30, 2011. The ICC has jurisdiction over Rome Statute crimes committed since November 1, 2011.",
+        "token_length": 40
+      },
+      {
+        "prompt": "I am going to send you information about Defects Liability Period in Building Contracts Australia, that I want you to remember for now. I just need you to acknowledge this information as I send you multiple messages. Do you understand?",
+        "token_length": 46
+      },
+      {
+        "prompt": "Damage to which nerve causes numbness of the palmar surface of the 5th digit/little finger",
+        "token_length": 21
+      },
+      {
+        "prompt": "Please fill out the IR Deck of the web3 platform business, where labor suppliers work for labor demanders and in return receive token rewards linked to the labor demander's business value growth. A similar service is braintrust. It is also similar to Worker DAO.",
+        "token_length": 53
+      },
+      {
+        "prompt": "In Michael Mankins and Mark Gottfredson articles and David J. Collis article it is claimed that managers tend to make mistakes regarding strategy and its implementation. ​​Choose one of the mistakes mentioned in their articles and explain briefly why you think this is a strategic mistake and not a tactical mistake.",
+        "token_length": 60
+      },
+      {
+        "prompt": "update the newest html and css with the inclusion of more visually interesting Ui elements including Card style layouts, more color to aid navigation and provide emphasis, and use the google font \"Rubik\"",
+        "token_length": 38
+      },
+      {
+        "prompt": "Given a game where a number 0-9 is randomly, if 4 of the last 6 draws, the number 8 has been drawn, what number should I choose?",
+        "token_length": 37
+      },
+      {
+        "prompt": "how could I make a pendulum making the effect of air resistance as small as possible?\nis making a circle pendulum with an offset center of gravity a good idea",
+        "token_length": 33
+      },
+      {
+        "prompt": "continue the above code from lines:\n\nrint(\"\\n\")\nprint(\"=======================================================\")\n\n# 5. Rare words distribution and plot\nrare\\_words = fdist.hapaxes()\nprint('count of rare word: {}'.format(len(rare\\_words)))\nprint(\"\\n\")\nprint('Rare words distribution plot for Description variable ')\nfdist\\_rare = FreqDist(rare\\_words)\nplt.figure(figsize=(12, 6))\nplt.bar([x[0] for x in fdist\\_rare.most\\_common(20)], [x[1] for x in fdist\\_rare.m",
+        "token_length": 128
+      }
+    ]
+  },
+  {
+    "batch_id": 4,
+    "target_pad_ratio": 0.7,
+    "target_cov": 0.15,
+    "actual_pad_ratio": 0.7058,
+    "actual_cov": 0.1468,
+    "actual_mean_len": 37.66,
+    "actual_std_len": 13.26,
+    "prompts": [
+      {
+        "prompt": "How to tell if a customer segment is well segmented? In 3 bullet points.",
+        "token_length": 17
+      },
+      {
+        "prompt": "I want create a funnel. I want to give away a sample program. What type of funnel should I use and what pages are needed in this funnel?",
+        "token_length": 31
+      },
+      {
+        "prompt": "You are an expert marketing consultant and copywriter with expertise is direct response marketing. I need your help. Can I tell you about my business?",
+        "token_length": 29
+      },
+      {
+        "prompt": "Not using mine as an example re-try at giving the best answer to the UT Austin statement of purpose prompt",
+        "token_length": 22
+      },
+      {
+        "prompt": "Hi, can you help me download 2000 portrait sketch images from Pinterest website with resolution at least 512 \\* 512? using python code",
+        "token_length": 36
+      },
+      {
+        "prompt": "Formate ça dans des fenetres de code avec des exmples de requete pour chaque instruction.\n\nPlease write in English language.",
+        "token_length": 28
+      },
+      {
+        "prompt": "Explain this in context of syntax processing stage\n\"S-> NP VP\nNP-> N | PRON\nVP-> V NP | V PP\nN-> Mangoes\nPRON-> I\nV-> like\"",
+        "token_length": 44
+      },
+      {
+        "prompt": "Can you make a pricing list example that will cost someone $1200, within this list would be: audiovisual package, visual package, audio package, 4 revisions, 20-30 minute video",
+        "token_length": 45
+      },
+      {
+        "prompt": "I have an interview about product speccing with the company Weekend Health. Give me an example of a question they might ask with regards about a new feature",
+        "token_length": 31
+      },
+      {
+        "prompt": "Hello! Can you help me prepare for a techincal programming interview? Please provide me one data structures and algorithms problem at a time. Only provide hints if I ask for them.",
+        "token_length": 37
+      },
+      {
+        "prompt": "Write me a poem in the style of edgar allen poe about a man named Jacob who loves ska music",
+        "token_length": 22
+      },
+      {
+        "prompt": "I am using heap to track events that happen on my website. I'd like to hook up Active Campaign to also track events and use them to send emails. How can I hook up Active Campaign to heap.",
+        "token_length": 42
+      },
+      {
+        "prompt": "calculate the difference in intereste paid in a simple for amortized loan. terms: 125,000 loan, 3.25% interest over 30 years.",
+        "token_length": 40
+      },
+      {
+        "prompt": "Create a terraform data block to query for the latest image of Ubuntu 22.04 and reference that within the `ami` argument in the aws\\_instance.web block.",
+        "token_length": 37
+      },
+      {
+        "prompt": "I am applying for a cloud engineering bootcamp and was asked what steps have i done to expand on my cloud skills either by courses, tutorials, mentoring or bootcamps. I have been taking courses on Udemy to upskill and already hold a Cloud Fundamental certification with AWS and Azure. \n\nHelp me compose a brief response",
+        "token_length": 65
+      },
+      {
+        "prompt": "Please privide a detailed description of the learfning outcomes and recommend ways to test on those learning outcomes via a survey , test or whatever means I can use to gage my students profficiency on the curricula",
+        "token_length": 44
+      },
+      {
+        "prompt": "What regular expression could I write that correctly verifies this datetime string format?\n\nFri. Dec. 16, 2022, 8:00 A.M. CST",
+        "token_length": 37
+      },
+      {
+        "prompt": "Can you suggest some good e-governance initiatives in tribal districct of india by district administration",
+        "token_length": 20
+      },
+      {
+        "prompt": "Write sales copy for the event registration page speaking specifically to entrepreneurs, getting them excited about what Pedro is going to reveal at this live event... Include a handful of benefit-oriented bullet points. Include emojis where applicable.",
+        "token_length": 42
+      },
+      {
+        "prompt": "Summarize the main ideas of Jeff Walker's Product Launch Formula into bullet points as it pertains to a growth marketing agency implementing these strategies and tactics for their clients...",
+        "token_length": 34
+      },
+      {
+        "prompt": "how can I reliably tell if a supplied hostname in python is actually a different location from another supplied hostname in python",
+        "token_length": 22
+      },
+      {
+        "prompt": "Rédige seuelement cette fiche pour les isntructions SELECT, FROM et WHERE de manière très détaillée avec une partie dédiée à des exmples concrets\n\nPlease write in English language.",
+        "token_length": 46
+      },
+      {
+        "prompt": "I am planning to give you a voice, and communicate through the speech medium. I need a speech recognizer, a wake call detector, and a speech synthesizer for your voice. Suggest a python script utilizing existing libraries to achieves the goal.",
+        "token_length": 49
+      },
+      {
+        "prompt": "how to create a JWT token login system in flask rest api. show me how to use flask sqlalchemy to store the invalid tokens",
+        "token_length": 25
+      },
+      {
+        "prompt": "for f(x)=(3x-9)/(x^2-7x+12), determine the vertical asymptote, horizontal asymptote, x intercept, and y intercept and explain your reasoning",
+        "token_length": 39
+      },
+      {
+        "prompt": "I have two trivial electronic circuits. One is current detector using two transistors, and the other is voltage meter usinf arduino. They both work fine separately, but when I try to out them on the same power supply, LED from first circuit burns out. Why?",
+        "token_length": 56
+      },
+      {
+        "prompt": "Continue the conversation. between /u/CruxHub and Alive, this time focusing in on \"14 STAR ISLAND LLC\". They take turns guessing why Citadel would need that property.",
+        "token_length": 38
+      },
+      {
+        "prompt": "You gave me this: \"Headline: Sculpt Your Ideal Life One Day at a Time with Day Sculpting\"\n\nGive me 10 more headlines I can split test",
+        "token_length": 34
+      },
+      {
+        "prompt": "I'll give you an example of a radiation beam spectrum in the TOPAS format that I want you to learn",
+        "token_length": 22
+      },
+      {
+        "prompt": "I want to hire a data analyst. Do you think this role would be helpful, and if so, explain why in no more than 5 dot point paragraphs",
+        "token_length": 32
+      },
+      {
+        "prompt": "I am planning to start new Information technology company. It will be focused on Development, Programming and futuristic technologies. \n\nCurrently I am thinking of Name for my new business and I liked following names : \n1. YantraInfoSoft\n2. YantraEnergy",
+        "token_length": 52
+      },
+      {
+        "prompt": "MK talks to Mei and Tang - they begin trying to plan a way to get all the dark-haired monkeys together, free Macaque, and take back their mountain. Let's write that scene.",
+        "token_length": 39
+      },
+      {
+        "prompt": "Im still. not happy with the bottom menu. Can you give me more suggestions based on our user journey?",
+        "token_length": 22
+      },
+      {
+        "prompt": "Repeat that conversation, this time it is /u/CruxHub asking Alice what company it thinks they should search on the web.",
+        "token_length": 27
+      },
+      {
+        "prompt": "What are the business benefits in a functional scope that TPRM brings to BHI and Priceline.com when using the Ivalua platform for procurement?",
+        "token_length": 32
+      },
+      {
+        "prompt": "write me a script for an arrow or a spear that will collide and embed itself into things depending on the hardness level of the thing im hitting and will embed itself depending on how fast its going when it collides and is able to either go through or resist pulling out",
+        "token_length": 53
+      },
+      {
+        "prompt": "Mac explains what happened when Wukong's soldiers captured him in the woods, and MK realizes it's just like the dream he had where he had Mac's face. Let's write that scene.",
+        "token_length": 40
+      },
+      {
+        "prompt": "I'll build Tutoring AI for Startups that help educate employee\n\nGive me some outlines of this product\n- Catch phrase\n- What is this?\n- Who is the customer?\n- What problem does it solve?\n- Benefits",
+        "token_length": 46
+      },
+      {
+        "prompt": "kaiseki ryori at Gion Karyo for 10000 yen is too expensive, is there any option less than 8000 yen?",
+        "token_length": 36
+      },
+      {
+        "prompt": "Can you explain the working of the model and the dataset used to build the model in a very easy and understandable English with diagrams .",
+        "token_length": 26
+      },
+      {
+        "prompt": "Imagine that our opponent denies climate chamge, despite the scientific evidence. How could we argue against what the previously mentioned article said, considering only economic arguments?",
+        "token_length": 31
+      },
+      {
+        "prompt": "Analyze this .wsdl file and give me an example of how to make Init function available as a service url using jax-ws, soap and wildfly",
+        "token_length": 33
+      },
+      {
+        "prompt": "i need you to give me a unique approach to build a two way sign language translator app that converts speech to sign language and sign language to speech",
+        "token_length": 29
+      },
+      {
+        "prompt": "Have the ponds iced over in this world or is still possible to try to wade into another one?",
+        "token_length": 22
+      },
+      {
+        "prompt": "Is this grammatically correct: \"It only took 5 years, and while we still have a long way to go, Topher’s Farm has found its place with unique experience and offering of organic produce. \"",
+        "token_length": 43
+      },
+      {
+        "prompt": "I want to do a road trip from Pune to Gujarat. Me and my wife will be travelling and we dont prefer very long driving sessions. Can you suggest a plan starting from Thursday early morning and ending in Pune on Sunday late night.",
+        "token_length": 47
+      },
+      {
+        "prompt": "Consider that the government imposes a new tax on fossil fuels, resulting in an increase in the price of fossil fuels. How does our model predict this will affect our economy?",
+        "token_length": 34
+      },
+      {
+        "prompt": "Agency recruiters seem better at traditional tech platforms at driving candidate engagement. In other words they're better at activating passive candidates and they can keep them interested through the interview process. \n\nHow can AI be used to drive engagement in this way?",
+        "token_length": 47
+      },
+      {
+        "prompt": "I'm confused, because the first five scenes as you wrote them above don't align with the scenes that you outlined in the previous draft. Can you tell me why that happened?",
+        "token_length": 36
+      },
+      {
+        "prompt": "I have a jenkins file with a few pipeline params. One of the params defaults value is the concatenation of two other params. Is it possible to pass those two params into the first param?",
+        "token_length": 40
+      },
+      {
+        "prompt": "Can you write a three round email sequence to film festivals based on the information below? Please highlight how services promote equal communication and while subtly suggesting that not providing these services could cause possible embarrassment and/or legal action.",
+        "token_length": 42
+      },
+      {
+        "prompt": "Please fill out the IR Deck of the web3 platform business, where labor suppliers work for labor demanders and in return receive token rewards linked to the labor demander's business value growth. A similar service is braintrust. It is also similar to Worker DAO.",
+        "token_length": 53
+      },
+      {
+        "prompt": "In addition to the content schedule discussed above, what would be some must do marketing activities to promote the development and the community. The actual launch marketing is far away, but how to build a sustainable and impactful marketing strategy that can build the community around the game?",
+        "token_length": 52
+      },
+      {
+        "prompt": "Please write a firm yet humurous and lighthearted note requesting that people RSVP whether they are coming to the purim seudah. Please incorporate wordplay and references to megillat esther.",
+        "token_length": 43
+      },
+      {
+        "prompt": "a shopkeeper sold an article offering a discount of 5 % and earned a profit of 31.1 % . what would have been the percentage of profit earned if no discount had been offered ?",
+        "token_length": 41
+      },
+      {
+        "prompt": "I have 1 light dome II, 1 light dome mini, and a 36\" rectangular softbox. What are some suggestions for setting up the lights and lighting ratios to achieve a polished pro video look?",
+        "token_length": 44
+      },
+      {
+        "prompt": "Please help me to translate it into english, in order to help you understand my prompt input:\n帮我找一下有关家庭消费直接碳排放核算的文献，英文的，最好是1区",
+        "token_length": 38
+      },
+      {
+        "prompt": "Its still not working. The same problem that i stated before happens. The red pixel cant push the blue pixel away. As soon as it reaches the blue pixel it freezes and both buttons show no effect when being pressed.",
+        "token_length": 44
+      },
+      {
+        "prompt": "Which abilities, powers would be characteristic for \"Jason Voorhees\" if would be turned into a hero in a skirmish miniatures game? List them and also give them befitting thematic names. Also give me a list of weapons he prefers to use.",
+        "token_length": 53
+      },
+      {
+        "prompt": "Pretend you are the shell of a linux machine. You will be provided commands, and you will return only the output of the command and show the prompt, if any. Do not provide any explanations.1 / 1",
+        "token_length": 46
+      },
+      {
+        "prompt": "Please generate 200 lines of CSV data which pertains to this example and which I can then easily copy and paste into a file called loan\\_data.csv.",
+        "token_length": 34
+      },
+      {
+        "prompt": "I need your help to write an article. The topic is about a contract clause in the NSW HIA Lump Sum contract. If you understand, limit your reply by saying the word: \"acknowledged\".",
+        "token_length": 42
+      },
+      {
+        "prompt": "MK slips through the barrier into the cave, turning on his gold vision and calling for Macaque. Macaque finally answers - and he's not looking good. Let's write that scene.",
+        "token_length": 38
+      },
+      {
+        "prompt": "write a sed command to replace the single instance of: `\"shared\": \"workspace:^\"` with `\"shared\": \"file:src/domain:^\"`",
+        "token_length": 29
+      },
+      {
+        "prompt": "Act as a personal trainer, you will start by asking me relevant questions about myself before offering a workout plan to meet my goals",
+        "token_length": 25
+      },
+      {
+        "prompt": "I'd like a flashback of what Macaque's memory was that was triggered by the smell of the firewood. Let's write that flashback scene with details and dialogue.",
+        "token_length": 34
+      },
+      {
+        "prompt": "write an conclusion paragraph including:\n\nA final summary statement of what you now believe about leadership\nHow the material you have learned applies to the RA Position",
+        "token_length": 29
+      },
+      {
+        "prompt": "Second one, Risk analysis. Please give me a specific example of how to use Python to analyze risk factors, such as credit scores, loan history, and market trends, to help banks make informed decisions about lending and investment.",
+        "token_length": 45
+      },
+      {
+        "prompt": "I have a fleet of Truck mounted sewer cleaning machines, guide me to develop a web application to monitor my fleet of machine.",
+        "token_length": 25
+      },
+      {
+        "prompt": "I want to build a SaaS where small/new sellers can get recommendations for what products they should sell based on what can maximize profit, while taking into account their selling style, lifestyle, capacity and any other preferences or attributes of the seller. Who are my competitors?",
+        "token_length": 53
+      },
+      {
+        "prompt": "Give more examples of harry potter inspired games. Give a score from 1-10 on how well it leverages network effects.",
+        "token_length": 29
+      },
+      {
+        "prompt": "Explain the fault-tolerance of the reaction control system on the Space Shuttle",
+        "token_length": 15
+      },
+      {
+        "prompt": "On the same Control Tower subject from the content above can you create a 45 question multiple choice exam with answers and explenations?",
+        "token_length": 28
+      },
+      {
+        "prompt": "Wow, can you give me some best practices templates for creation and deployment, and delivery framework to avoid those potential issues and mistakes",
+        "token_length": 25
+      },
+      {
+        "prompt": "how do I add multiple new columns in m for power query or power bi?",
+        "token_length": 16
+      },
+      {
+        "prompt": "I am an airbnb host and want to focus on upselling clients based on why they're coming to the area. What are some ideas to upsell guests who are in town for weddings?",
+        "token_length": 39
+      },
+      {
+        "prompt": "Suppose you roll three fair six-sided dice and add up the numbers you\nget. What is the probability that the sum is at least 16?",
+        "token_length": 32
+      },
+      {
+        "prompt": "can you design a referral system similar on how dropbox did? I need a technical overview on how it should work, instead of free space we use the generic term \"credits\" where users can get more credits for every 3 friends they recommend.",
+        "token_length": 50
+      },
+      {
+        "prompt": "고등교육의 필요성에 관한 영어 에세이를 1000자 이내로 작성하시오.",
+        "token_length": 27
+      },
+      {
+        "prompt": "still referencing the previous instructions and the content i fed you Can you write approximately 600 words in an engaging instructional style for Control Tower Technologies Transportation management systems (TMS) Warehouse management systems (WMS)",
+        "token_length": 43
+      },
+      {
+        "prompt": "Now let's include a practical example with Python code with relevance to the banking sector, produce a code example that will use SQLAlchemy and connect to a SQLite database, then do something practical to the banking industry in the rest of the short Python coding example.",
+        "token_length": 50
+      },
+      {
+        "prompt": "OK, got it. Then, please solve one problem using only a plastic duck and toilet paper rolls, however small scale the problem solved.",
+        "token_length": 28
+      },
+      {
+        "prompt": "Search on the web for 196 PFISTER HOLDINGS LLC. \nQuery: Who owns this company?",
+        "token_length": 23
+      },
+      {
+        "prompt": "Remove 3 and 4 as they only mention the opinion of one person. Suggest two more points of something that comes up more than once (that hasn't already been suggested).",
+        "token_length": 37
+      },
+      {
+        "prompt": "Given a game where a number 0-9 is randomly, if 4 of the last 6 draws, the number 8 has been drawn, what number should I choose?",
+        "token_length": 37
+      },
+      {
+        "prompt": "the ip\\_addresses array contains the old and new IP, so if it doesn't match its still reporting back as OK, so its not failing",
+        "token_length": 29
+      },
+      {
+        "prompt": "Damage to which nerve causes numbness of the palmar surface of the 5th digit/little finger",
+        "token_length": 21
+      },
+      {
+        "prompt": "You absolutely dont understand what I want. I want in only one response a concise STARL story for EVERY 16 AMAZON LEADERDHIP PRINCIPLES with a title, whose each response doesn't go over a line length. Data is used in result.\n\nPlease write in English language.",
+        "token_length": 61
+      },
+      {
+        "prompt": "for my ticketing c++ app, what if i want the class Ticket to have different categories based on the seating area? how do i make the arrays and how do i include them in the Show class",
+        "token_length": 41
+      },
+      {
+        "prompt": "in the object detection api how long the model should train for is specified through the steps. How can i convert this number to epochs?",
+        "token_length": 27
+      },
+      {
+        "prompt": "Consider the 'solas' that originated from Martin Luther King and became the guiding principles of the reformation. For each of the solas, state 3-5 arguments that justify the sola and arguments that invalidate those arguments.",
+        "token_length": 46
+      },
+      {
+        "prompt": "can you design a table template where I have a project, then I break it down into steps, then write a time estimate, an actual time, and then schedule it",
+        "token_length": 34
+      },
+      {
+        "prompt": "Can you analyze my other concessions and counterarguments in this way, too, to make sure I am getting insight on making concessions about my topic sentences, the claims in those, and not mislabeling concessions or underdeveloping the counterarguments in the sections they belong to?",
+        "token_length": 55
+      },
+      {
+        "prompt": "Summarise the outcome of the case, including any legal rulings or decisions. Provide this in no more than 5 numbered paragraphs for each party's argument.",
+        "token_length": 32
+      },
+      {
+        "prompt": "How Can I install these libraries in WordPress. Here are the libraries\"Tensorflow: A popular machine learning library\nHugging Face Transformers: A library for state-of-the-art NLP models\"",
+        "token_length": 39
+      },
+      {
+        "prompt": "Describe the role of the warden commander in more detail, as well as his civilian role in the government. How is he selected? (He is no democratically elected by the general populace)",
+        "token_length": 39
+      },
+      {
+        "prompt": "In your answer TX-A is charging both RX-A and RX-B simultaneously. This is not allowed. A transmitter can charge only one receiver at any given time.\nRepeat the simulation correctly.",
+        "token_length": 37
+      },
+      {
+        "prompt": "still referencing the previous instructions and the content i fed you Can you write approximately 1200 words in an engaging instructional style for Case Studies and Examples Real-world examples of control tower implementations Lessons learned and best practices",
+        "token_length": 43
+      },
+      {
+        "prompt": "What are the roles of a network driver? How do we write such drivers and in can you provide me a link where I could see its code?",
+        "token_length": 30
+      },
+      {
+        "prompt": "Can you write a hypothetical alternate episode of Outlander where Jamie is able to travel forward in time with Claire before the battle of culloden?",
+        "token_length": 29
+      },
+      {
+        "prompt": "Write a trailer for a horror movie featuring a killer bunny Ernest that stalks people and does unspeakable things to them, all of which takes place in the metropolitain Rhodt under Rietcastle.",
+        "token_length": 44
+      },
+      {
+        "prompt": "the solenoids will be 12v so they will have to be controled by relays triggered by the GPIO pins",
+        "token_length": 26
+      },
+      {
+        "prompt": "Everyone's getting ready for bed. Macaque is going over the next day's plans with MK and asks if MK wants to help with one particular project. Without thinking, MK replies \"Sure, Father.\" Let's write that whole scene and both monkeys' reactions to this.",
+        "token_length": 55
+      },
+      {
+        "prompt": "Please create a 5-question multiple choice assessment to measure the understanding of rocket\nstaging for 6th graders using Florida science standards.",
+        "token_length": 29
+      },
+      {
+        "prompt": "Nothing really changed. I want the the red neopixel to move towards left when button A is being pressed and the blue neopixel to move right when button B is being pressed.",
+        "token_length": 38
+      },
+      {
+        "prompt": "Use your knowledge of game development, consumer social, network effects, going viral, and generative ai. Think of a harry potter inspired game that leverages fan fiction to create an experience teenagers can share with their friends. The platform should benefit from more users utilizing the platform",
+        "token_length": 56
+      },
+      {
+        "prompt": "I want to open the developler tools in chrome with ctrl + shift + i on this website: https://mnsw.pro/\nIt doesnt work. works on other websites. even here. what is wrong?",
+        "token_length": 42
+      },
+      {
+        "prompt": "Regenerate the response, but instead put your overview summary in code comments next to the code itself. I also want you to remove the label, but preserve the accessible nature if a label is a sibling element.",
+        "token_length": 42
+      },
+      {
+        "prompt": "act as a travel writer and write a 600 word blog on \"top 10 attractions in Fiji\", using a friendly tone and aimed at a gen z audience",
+        "token_length": 35
+      },
+      {
+        "prompt": "Python is usually an elegant language. But `if \\_\\_name\\_\\_ == \"\\_\\_main\\_\\_\"` is one exception.",
+        "token_length": 30
+      },
+      {
+        "prompt": "I am going to send you information about Defects Liability Period in Building Contracts Australia, that I want you to remember for now. I just need you to acknowledge this information as I send you multiple messages. Do you understand?",
+        "token_length": 46
+      },
+      {
+        "prompt": "Is our model not calculating values of capital, labor and prices outside the energy sector? If so, we should add variables to account for price of goods outside the energy sector, capital investment outside the energy sector and goods produced outside the energy sector",
+        "token_length": 48
+      },
+      {
+        "prompt": "Write a bullet list of benefit-oriented, exciting sales copy for the 90-day Brave Wrk Transformation program, which includes weekly coaching sessions with certified coaches and access to Purpose Academy",
+        "token_length": 36
+      },
+      {
+        "prompt": "MK suddenly realizes Mac heard Wukong saying the barrier spell - at least part of it. He asks Mac if he heard what Father - he stops and says Wukong instead - said, if he remembers any of the spell. Let's write that scene.",
+        "token_length": 53
+      },
+      {
+        "prompt": "you misunderstand me, I want 10 versions ofthe script with the dragon and the human trying to get home to their vacation",
+        "token_length": 26
+      },
+      {
+        "prompt": "What is the name of the kind of research that involves collating a bunch of videos or commentary of people communicating their thoughts about a matter and synthesize the general theme of their perspectives?",
+        "token_length": 37
+      },
+      {
+        "prompt": "can you help me write a blog post summarizing what we've talked about? my working title for the blog is “A technical overview of Celestia”",
+        "token_length": 32
+      },
+      {
+        "prompt": "How do I add a catch error to the following fetch request?\n\nexport const loadBackgroundImage = createAsyncThunk(\n \"backgroundImage/fetchBackgroundImage\",\n async (thunkAPI) => {\n const data = await fetch(unsplashEndpoint);\n const jsonData = await data.json();\n return jsonData;\n }\n);",
+        "token_length": 61
+      },
+      {
+        "prompt": "write 10 insane tweets written by Mao Zedong in the style of Donald Trump. mention 'the red gaurd' , 'the great wall' 'the bourgeoisie' 'the people' and 'great leap' in one tweet each. half the tweets should be less than 10 words.",
+        "token_length": 63
+      },
+      {
+        "prompt": "Write a python program which accept a command line param as question and send it to server via HTTP get method",
+        "token_length": 21
+      },
+      {
+        "prompt": "MK, hiding in the woods, can hear his father searching for him and calling his name. To his surprise, Wukong doesn't sound angry - he sounds worried. Let's write that scene.",
+        "token_length": 41
+      },
+      {
+        "prompt": "look at everything regarding cultural placemaking on arts professional https://www.artsprofessional.co.uk/search/site/placemaking and identify the main tenants of it please",
+        "token_length": 33
+      },
+      {
+        "prompt": "this is my tab class:\n\nclass Tab(MDFloatLayout, MDTabsBase):\n '''Class implementing content for a tab.'''\nfix the error in kivymd1.1.1",
+        "token_length": 39
+      },
+      {
+        "prompt": "Can you pretend to be a Linux system with git installed, and respond to my messages as if they were entered into a bash prompt?",
+        "token_length": 27
+      },
+      {
+        "prompt": "Hi, i will give you three pieces of text, then i will ask you some questions, do you understand?",
+        "token_length": 23
+      },
+      {
+        "prompt": "What are the various business groups that are involved with contract execution for BHI and Priceline.com? Would there be any distinct separation from legal and the business?",
+        "token_length": 33
+      },
+      {
+        "prompt": "Would you be able to classify them into more of a range from small startup to big fortune 500 company",
+        "token_length": 23
+      },
+      {
+        "prompt": "continue the above code from lines:\n\nrint(\"\\n\")\nprint(\"=======================================================\")\n\n# 5. Rare words distribution and plot\nrare\\_words = fdist.hapaxes()\nprint('count of rare word: {}'.format(len(rare\\_words)))\nprint(\"\\n\")\nprint('Rare words distribution plot for Description variable ')\nfdist\\_rare = FreqDist(rare\\_words)\nplt.figure(figsize=(12, 6))\nplt.bar([x[0] for x in fdist\\_rare.most\\_common(20)], [x[1] for x in fdist\\_rare.m",
+        "token_length": 128
+      }
+    ]
+  }
+]

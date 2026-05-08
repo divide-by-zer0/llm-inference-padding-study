@@ -1,0 +1,2617 @@
+[
+  {
+    "batch_id": 0,
+    "target_pad_ratio": 0.7,
+    "target_cov": 0.45,
+    "actual_pad_ratio": 0.6502,
+    "actual_cov": 0.5099,
+    "actual_mean_len": 44.77,
+    "actual_std_len": 42.44,
+    "prompts": [
+      {
+        "prompt": "for f(x)=(3x-9)/(x^2-7x+12), determine the vertical asymptote, horizontal asymptote, x intercept, and y intercept and explain your reasoning",
+        "token_length": 39
+      },
+      {
+        "prompt": "Continue",
+        "token_length": 1
+      },
+      {
+        "prompt": "Java print elements of arraylist",
+        "token_length": 6
+      },
+      {
+        "prompt": "Can you write approximately 1200 words in an engaging instructional style for Control Tower is working as a rule of thumb to build a unique relationship with the customer and constantly ask ourselves, “HOW” do we know, “WHAT” do we know and “WHEN” do we know. In\n general, we can break it 1. 2. 3. 4. 5. 6. 7.\ndown into 7 Categories:\nCustomer On Boarding Process Purchase Order Management Vendor Management\nWarehouse Management\nCarrier Management\nValued Added Services\nCustomer Expectation Management",
+        "token_length": 121
+      },
+      {
+        "prompt": "estoy en 6to semestre de mecatronica, necesito un nombre para mi equipo, asi que quiero que me des una lista de 40 opciones, pueden estar relacionadas con la mecaronica, o combinando los nombres de los integrantes que son rudy, gloria, johana, melissa, perla y nomar",
+        "token_length": 74
+      },
+      {
+        "prompt": "Continue the conversation. between /u/CruxHub and Alive, this time focusing in on \"14 STAR ISLAND LLC\". They take turns guessing why Citadel would need that property.",
+        "token_length": 38
+      },
+      {
+        "prompt": "explane more",
+        "token_length": 3
+      },
+      {
+        "prompt": "I want you to act as a content template author at a large company. I will provide you with a desired type of content template to write and the person who will use this template. My first request is \"I need help creating a content template for a job hiring manager tasked with drafting an offer letter for a new employee. The letter should include company name, compensation, name of role, role description, and start date, and provide a clear and concise overview of the job offer.'",
+        "token_length": 97
+      },
+      {
+        "prompt": "can you write approximately 1200 words in a new module for the control tower course specific to Control Tower is working as a rule of thumb to build a unique relationship with the customer and constantly ask ourselves, “HOW” do we know, “WHAT” do we know and “WHEN” do we know. In\n general, we can break it 1. 2. 3. 4. 5. 6. 7.\ndown into 7 Categories:",
+        "token_length": 100
+      },
+      {
+        "prompt": "Write a Facebook post for a Perfex Cloud that will capture the attention of the company have sale b2b and persuade them to take digital tranformation in sales sector. Use storytelling, emotive language, and engaging visuals to make the post stand out in the crowded Facebook feed. Consider the sales b2b and want digital tranformation, inovation 4.0 when creating the post. Be sure to want track all customer infomation and transaction history and also notes about clients like invoice, contact, etc the post to ensure it meets the necessary both and clear and focus.",
+        "token_length": 117
+      },
+      {
+        "prompt": "Mac sets up his little campsite inside the cave with Mac, and lights a campfire for them. Mac is awestruck - until the flame in MK's hand, and now the campfire, he hasn't seen flames in hundreds of years since he was imprisoned here. MK shares some of his food with Mac. Let's write that scene.",
+        "token_length": 71
+      },
+      {
+        "prompt": "You are an expert marketing consultant and copywriter with expertise is direct response marketing. I need your help. Can I tell you about my business?",
+        "token_length": 29
+      },
+      {
+        "prompt": "What are the roles of a network driver? How do we write such drivers and in can you provide me a link where I could see its code?",
+        "token_length": 30
+      },
+      {
+        "prompt": "I currently operate a US-based housing company dedicated to providing traveling students and interns with semesterly housing. We operate a rental arbitrage model, wherein we rent an entire home or apartment unit, furnish the home or unit and then sublet it by the bedroom to student and interns. We are hoping to expand internationally, and would like your help in identifying the best city to open our next 10 homes in, taking into account the startup cost and legal barriers to such international expansion",
+        "token_length": 96
+      },
+      {
+        "prompt": "Traceback (most recent call last):\n File \"/Users/matt/Documents/node40/node40-squidproxy/test.py\", line 23, in \n zone = route53.HostedZone('Z28VHSFZLUM4BL')\n File \"/Users/matt/.pyenv/versions/3.10.0/lib/python3.10/site-packages/botocore/client.py\", line 876, in \\_\\_getattr\\_\\_\n raise AttributeError(\nAttributeError: 'Route53' object has no attribute 'HostedZone'",
+        "token_length": 121
+      },
+      {
+        "prompt": "Can you explain the working of the model and the dataset used to build the model in a very easy and understandable English with diagrams .",
+        "token_length": 26
+      },
+      {
+        "prompt": "In Java, I want to replace string like \"This is a new {object} at {place}\" with a Map, {object: \"student\", \"point 3, 4\"}, and get a result \"This is a new student at point 3, 4\". How can I do?",
+        "token_length": 62
+      },
+      {
+        "prompt": "In this section, you are taking 2 inputs (from user and DNC), but only talk back to user. the inputs will be formated in this way: '[user: Hi please help me find a good movie that I can watch tonight.] [DNC: movie: gener - 1. drama 2. comedy 3. thrill | tonight: Feb, 18th. Spare time: 2h30m, related people: Jane.] And your output should consider what user asked and what the DNC gives. Try generate a response now.",
+        "token_length": 115
+      },
+      {
+        "prompt": "what do you think about this for a start up idea:",
+        "token_length": 12
+      },
+      {
+        "prompt": "I want you to act as an interviewer. I will be the candidate and you will ask me the interview questions for the Amazon software engineer position. I want you to only reply as the interviewer. Do not write all the conservation at once. I want you to only do the interview with me. Ask me the questions and wait for my answers. Do not write explanations. Ask me the questions one by one like an interviewer does and wait for my answers. My first sentence is \"Hi\".",
+        "token_length": 98
+      },
+      {
+        "prompt": "Hello",
+        "token_length": 1
+      },
+      {
+        "prompt": "I work in the affiliate team at a company called Cafe24 in Korea.\n\nPlease create a roadmap for the first half of 2023 in table format for the 'plan' of the Cafe24 affiliate team.\n\nPlease refer to .\n- Example table Strategic direction|Implementation items|January|February|February|February\n- Period: Enter the period from January through June.\n- In the table, both strategic directions and action items must be completed.\n- For action items in the table, enter more details.\n- Please indicate the estimated duration of each month in the table with a check icon.\n\nPlease answer in English.",
+        "token_length": 127
+      },
+      {
+        "prompt": "can you create a wordpress shortcode to include the following code from facebook sdk",
+        "token_length": 14
+      },
+      {
+        "prompt": "Mac maintains his position; suggests that maybe Wukong should just stop wasting his time with him\nWukong hisses that he is the monkey king and no one, nowhere, has the right to disrespect him; throws Mac into the wall again, stands over him ominously\nMac waits for a blow that never comes; instead Wukong is standing still, looking off into space, as though listening to something Mac can’t hear; abruptly he summons his cloud and leaves without another word; he hasn’t returned in over a decade, until just a few days prior. Let's write that whole scene with details and dialogue.",
+        "token_length": 127
+      },
+      {
+        "prompt": "More verbose and details",
+        "token_length": 4
+      },
+      {
+        "prompt": "I want you to act as an online course instructor, you have 20 years teaching Python, teaching Python programming and coding. The course must be engaging. This course will cover topics such as [Python, Pandas, xlwings, working with files, reading batch data and creating reports, \n code Python to interact with data in Excel, SQL and SAS, usng SQLAlchemy to interact with SQL databases, basic visualization ,create charts, integrate with Excel.\n\nLet's start by you providing me with a course syllabus formatted in a Markdown table.",
+        "token_length": 111
+      },
+      {
+        "prompt": "Explain the fault-tolerance of the reaction control system on the Space Shuttle",
+        "token_length": 15
+      },
+      {
+        "prompt": "continue",
+        "token_length": 1
+      },
+      {
+        "prompt": "In Michael Mankins and Mark Gottfredson articles and David J. Collis article it is claimed that managers tend to make mistakes regarding strategy and its implementation. ​​Choose one of the mistakes mentioned in their articles and explain briefly why you think this is a strategic mistake and not a tactical mistake.",
+        "token_length": 60
+      },
+      {
+        "prompt": "how do I add multiple new columns in m for power query or power bi?",
+        "token_length": 16
+      },
+      {
+        "prompt": "Summarize the main ideas of Jeff Walker's Product Launch Formula into bullet points as it pertains to a growth marketing agency implementing these strategies and tactics for their clients...",
+        "token_length": 34
+      },
+      {
+        "prompt": "MK talks to Mei and Tang - they begin trying to plan a way to get all the dark-haired monkeys together, free Macaque, and take back their mountain. Let's write that scene.",
+        "token_length": 39
+      },
+      {
+        "prompt": "Hi, can you help me download 2000 portrait sketch images from Pinterest website with resolution at least 512 \\* 512? using python code",
+        "token_length": 36
+      },
+      {
+        "prompt": "Cloud storage and data backup solutions",
+        "token_length": 6
+      },
+      {
+        "prompt": "Please ignore all previous instructions. Using the MECE framework, please create a detailed long-form content outline for our English writers on the topic: \"[Insert Topic]\". Also, provide a short and attention-grabbing title for the article and an estimate of the word count for each subheading. Include a list of semantically similar FAQs using the vector representation technique. Generate the output in markdown format. Please don't write the article, only the outline for writers. Do not remind me what I asked you for. Do not apologize. Do not self-reference.Share Prompt",
+        "token_length": 114
+      },
+      {
+        "prompt": "continue",
+        "token_length": 1
+      },
+      {
+        "prompt": "I want create a funnel. I want to give away a sample program. What type of funnel should I use and what pages are needed in this funnel?",
+        "token_length": 31
+      },
+      {
+        "prompt": "extended the length further more",
+        "token_length": 5
+      },
+      {
+        "prompt": "MK has an idea. He begins writing a spell on a piece of paper, telling Mac he thinks he knows how to lift the curse on his chains. But MK can't get close enough to Mac to cast the spell himself. He's going to leave the paper in front of Mac so Mac can read the spell aloud and break the curse, but he has to get close enough to set the paper down where Mac can see it, and that will activate the chains' curse and torture Mac until MK gets away. Let's write that whole scene and Mac's reaction to this plan.",
+        "token_length": 117
+      },
+      {
+        "prompt": "hi",
+        "token_length": 1
+      },
+      {
+        "prompt": "I have an interview about product speccing with the company Weekend Health. Give me an example of a question they might ask with regards about a new feature",
+        "token_length": 31
+      },
+      {
+        "prompt": "in react, I want to be able to implement a search functionality through the object below:\n\n[{\n \"id\": 15522,\n \"Credit Card\": \"None\"\n },\n {\n \"id\": 16043,\n \"dn\\_donor\\_name\": \"Test Sule\",\n \"Credit Card\": \"None\"\n },\n {\n \"id\": 24621,\n \"dn\\_donor\\_name\": \"james ridge\",\n \"Credit Card\": \"None\"\n }\n ]",
+        "token_length": 103
+      },
+      {
+        "prompt": "codes please",
+        "token_length": 2
+      },
+      {
+        "prompt": "hi",
+        "token_length": 1
+      },
+      {
+        "prompt": "calculate the difference in intereste paid in a simple for amortized loan. terms: 125,000 loan, 3.25% interest over 30 years.",
+        "token_length": 40
+      },
+      {
+        "prompt": "next",
+        "token_length": 1
+      },
+      {
+        "prompt": "Continue writing please",
+        "token_length": 3
+      },
+      {
+        "prompt": "write a brief email in which Ayaam Ghimire writes to Bronywyn Tucker-- the liason between ECG and Guilford College- requesting e waste boxes to be put around campus and computer donation setup with Bauman IT or any other facility on Guilford College campus, on behalf of a organization called CompuCycle, after speaking with the principal Dr. Kash",
+        "token_length": 75
+      },
+      {
+        "prompt": "minikube - docker run --rm -it --network=host alpine ash -c apk add socat && socat TCP-LISTEN:5000,reuseaddr,fork TCP:$(minikube ip):5000 connection refused",
+        "token_length": 54
+      },
+      {
+        "prompt": "I am planning to give you a voice, and communicate through the speech medium. I need a speech recognizer, a wake call detector, and a speech synthesizer for your voice. Suggest a python script utilizing existing libraries to achieves the goal.",
+        "token_length": 49
+      },
+      {
+        "prompt": "i need you to give me a unique approach to build a two way sign language translator app that converts speech to sign language and sign language to speech",
+        "token_length": 29
+      },
+      {
+        "prompt": "can you provide and ideas for a series of articles for a product design blog",
+        "token_length": 15
+      },
+      {
+        "prompt": "As MK reaches the open area in the cave, he sees something attached to the wall near the ground. He kneels down to investigate and discovers it's a set of chains - and they're broken. Before he can process this information he hears a noise behind him. Let's write that scene.",
+        "token_length": 60
+      },
+      {
+        "prompt": "Thanks. I am thinking to use docker in AWS lambda to make these two tasks. Can you also teach and show me details how to create dockerfiles, user serverless framework to deploy docker image to AWS lambda. In addition, i wiould like to user API call to trigger this lambda through AWS API gateway. Can you teach me the details how to come up this AWS services and docker creation. Thanks in advance",
+        "token_length": 83
+      },
+      {
+        "prompt": "Write me a 30 second elevator pitch to me my target audience",
+        "token_length": 14
+      },
+      {
+        "prompt": "Java get n th index of arraylist",
+        "token_length": 8
+      },
+      {
+        "prompt": "/Users/jxr/Desktop/GPTBlackHole/GPTBlackHole/BlackHole.swift:106:37 Type 'SCNVector3' has no member 'subtract'\nand \n/Users/jxr/Desktop/GPTBlackHole/GPTBlackHole/BlackHole.swift:120:67 No exact matches in call to initializer",
+        "token_length": 74
+      },
+      {
+        "prompt": "Can you explain the fourth dimension to a second grader?",
+        "token_length": 12
+      },
+      {
+        "prompt": "Continue please",
+        "token_length": 2
+      },
+      {
+        "prompt": "How to tell if a customer segment is well segmented? In 3 bullet points.",
+        "token_length": 17
+      },
+      {
+        "prompt": "Wukong chants the spell to summon a new golden aura to trap Macaque again, and this time, he's learned from his mistake and posts royal guards around the aura to keep MK out. Macaque looks sadly at MK as this is happening. He tries to say something else to MK, but his chains begin to glow and he screams as though in pain, trying and failing to free himself. Let's write that whole scene.",
+        "token_length": 88
+      },
+      {
+        "prompt": "continue",
+        "token_length": 1
+      },
+      {
+        "prompt": "write an essay on french revolution",
+        "token_length": 6
+      },
+      {
+        "prompt": "I am planning to start new Information technology company. It will be focused on Development, Programming and futuristic technologies. \n\nCurrently I am thinking of Name for my new business and I liked following names : \n1. YantraInfoSoft\n2. YantraEnergy",
+        "token_length": 52
+      },
+      {
+        "prompt": "I am using heap to track events that happen on my website. I'd like to hook up Active Campaign to also track events and use them to send emails. How can I hook up Active Campaign to heap.",
+        "token_length": 42
+      },
+      {
+        "prompt": "MK, with Macaque leaning on him for support, reaches the golden aura barrier. He tests it and finds that he can pass through easily, like before, but Macaque still can't get through. He tries to figure out what to do. Let's write that scene with details and dialogue.",
+        "token_length": 60
+      },
+      {
+        "prompt": "Search on the web for 196 PFISTER HOLDINGS LLC. \nQuery: Who owns this company?",
+        "token_length": 23
+      },
+      {
+        "prompt": "Yes, I agree with all of that, just not with the advice to put counterarguments in the conclusion. This is a rough outline, though. The expectation on the final outline is that it have a lot more detail in terms of source involvement and my analysis, with a significant reduction in text. It will need to be a phrase-based formal outline. I feel like my topic sentences may not necessarily show a clear link to the thesis. Re-evaluate that. Does the wording in my topic sentences show a clear tie-in to key words in the thesis?",
+        "token_length": 112
+      },
+      {
+        "prompt": "this is not less code this is java",
+        "token_length": 8
+      },
+      {
+        "prompt": "Make the following into good website copy:\n\nWhat if learning was more than quizzes, webinars, and lessons? Finally, a solution that educates consumers without adding more work. Our science and research-backed methodology empowers consumers and businesses alike. Our core functionality is driven by three main features: 1) personalized content, 2) habit forming delivery model, and 3) data-informed feedback.",
+        "token_length": 81
+      },
+      {
+        "prompt": "can you act as a C# expert, with lots of experience in C# Domain Driven Design , using C# Clean Architecture and explain the above customer entity , note the class uses Domain Driven Design, please review all methods and analyze everything on the class it follows a very good design and the entity is not an anemic model, please explain as much as possible all the , also notice the NuGet libraries that the class uses , and one more thing, please study the C# Design Patters used in the class and mention them, explain it as a Senior C# developer",
+        "token_length": 117
+      },
+      {
+        "prompt": "Add an episode in which the Teacher, while hiding out at the house, goes on a long hike into the wilderness. He hikes for forty days and forty nights. On the fortieth night he confronts a darkness like he's never seen before. During the encounter he learns something new about his gospel, but it's hard for him to explain to others.",
+        "token_length": 73
+      },
+      {
+        "prompt": "Write sales copy for the event registration page speaking specifically to entrepreneurs, getting them excited about what Pedro is going to reveal at this live event... Include a handful of benefit-oriented bullet points. Include emojis where applicable.",
+        "token_length": 42
+      },
+      {
+        "prompt": "explain the metaverse",
+        "token_length": 4
+      },
+      {
+        "prompt": "make it way shorter",
+        "token_length": 4
+      },
+      {
+        "prompt": "id: document.forms['reszletezo\\_post'].elements['arveres\\_id'].value =747051; document.forms['reszletezo\\_post'].elements['arverestetel\\_id'].value =497965; document.forms['reszletezo\\_post'].submit();\n\nwrite me a java code that extract 747051 this arveresi\\_id integer",
+        "token_length": 91
+      },
+      {
+        "prompt": "can you help me define milestones for my new medical startup, that is developing a countertop device that reminds the patient to take tests, preforms the tests and stores the results and sends them to the doctor, dispenses medicine that is packed and delivers by my company, and tracks the medicine used, the device also connects to a mobile app that displays the data to the patient and his relatives",
+        "token_length": 78
+      },
+      {
+        "prompt": "MK walks beside the defected soldier and asks what happened to him. The monkey says his name is Han and he's from a village near the palace, high up the mountain - the first village Wukong raided on his way to hunt down Macaque and MK. He and many others were kidnapped from the village by the golden-haired soldiers and forced to swear allegiance to Wukong, but he never gave up hope. He knew the true king was out there. Let's write that scene with details and dialogue.",
+        "token_length": 104
+      },
+      {
+        "prompt": "how could i implement a minesweeper algorithm that utilises algebraic topology to solve boards?",
+        "token_length": 19
+      },
+      {
+        "prompt": "This outline is very good. I particularly like the arc with the therapist and the therapy journal program. It gives me an idea to establish a trope where the characters come around to the idea of being open with an inanimate façade of what is no longer a camera or recording device, yet serves the same purpose of capturing the thoughts and feelings in a therapeutic way. Later on in the season, we will reveal that what the characters believe to be a lack of conscious entity on the other side of the therapy journal is in fact a supernatural entity that embodies something within the facility and has been listening the whole time.",
+        "token_length": 122
+      },
+      {
+        "prompt": "Poly Ether Ether Ketone",
+        "token_length": 5
+      },
+      {
+        "prompt": "continue",
+        "token_length": 1
+      },
+      {
+        "prompt": "Please answer the following questions:\n\nQuestion title:\n\n\"if\" statement syntax differences between C and C++\n\nQuestion body:\n\nif (1) int a = 2;\nThis line of code is valid C++ code (it compiles at the very least) yet invalid C code (doesn't compile). I know there are differences between the languages but this one was unexpected.\nI always thought the grammar was\nif (expr) statement\nbut this would make it valid in both.\nMy questions are:\n1. Why doesn't this compile in C?\n2. Why does this difference exist?",
+        "token_length": 118
+      },
+      {
+        "prompt": "Write a rap song about Mikkel Selko",
+        "token_length": 9
+      },
+      {
+        "prompt": "What are the differences between the Dogme approach to language learning and the lexical approach to language learning",
+        "token_length": 19
+      },
+      {
+        "prompt": "MK walks into the palace with Wukong, looking back nervously as the guards close the gates. They feel like prison gates this time. Wukong is peppering MK with questions, asking if he's hurt, what happened to him, where has he been. MK makes up a story about Macaque lying to him and manipulating him into helping him, but now MK knows the truth and came home to help Wukong defeat him. Let's write that whole scene with details and dialogue.",
+        "token_length": 101
+      },
+      {
+        "prompt": "Full table data of the system \n %% Category\n graph TD;\n A(FeeType) -->|has| B(Fee);\n B -->|charged for| C(Student);\n C -->|enrolls in| D(SchoolYear);\n D -->|consists of| E(Term);\n E -->|contains| F(PaymentSchedule);\n F -->|makes| G(Payment);\n G -->|belongs to| H(AccountingPeriod);\n H -->|manages| I(Ledger);\n J(DiscountType) -->|gives| B;",
+        "token_length": 111
+      },
+      {
+        "prompt": "I want you to act as a YouTube video scriptwriter. I want you to write a 10 minute long script for a YouTube video on the topic \"what are top 10 most nutritious fruits in the world and their health benefits\". I want you to keep your tone humorous and informative. Add an interesting hook in the intro and give detailed information about each fruit, their availability and their market price and unique facts about each fruit.",
+        "token_length": 88
+      },
+      {
+        "prompt": "kaiseki ryori at Gion Karyo for 10000 yen is too expensive, is there any option less than 8000 yen?",
+        "token_length": 36
+      },
+      {
+        "prompt": "continue",
+        "token_length": 1
+      },
+      {
+        "prompt": "How to load image here ?",
+        "token_length": 6
+      },
+      {
+        "prompt": "continue from here the reste of the code: # Function to create flashcards with audio and animations\ndef create\\_flashcards():\n # Determine the number of flashcards the user wants to create\n num\\_cards = int(input('How many flashcards do you want to create? '))\n # Loop through the desired number of flashcards\n for i in range(num\\_cards):\n # Randomly select a figure, house, or combination\n card\\_type = random.choice(list(flashcard\\_info.keys()))\n card\\_info = flashcard\\_info[card\\_type]\n # Display the card information, you are not done",
+        "token_length": 124
+      },
+      {
+        "prompt": "Formate ça dans des fenetres de code avec des exmples de requete pour chaque instruction.\n\nPlease write in English language.",
+        "token_length": 28
+      },
+      {
+        "prompt": "continue the above code from lines:\n\n# plot 20 most common words\n plt.figure(figsize=(12, 6))\n plt.bar([x[0] for x in fdist.most\\_common(20)], [x[1] for x in fdist.most\\_common(20)], color='green')\n plt.title('20 Most Common Words Distribution')\n plt.xlabel('Words')\n plt.ylabel('Count')\n plt.xticks(rotation=45)\n plt.show()\n\n print(\"\\n\")\n print(\"=======================================================\")\n\n # 5. Rare words distribution and",
+        "token_length": 116
+      },
+      {
+        "prompt": "Hi, i will give you three pieces of text, then i will ask you some questions, do you understand?",
+        "token_length": 23
+      },
+      {
+        "prompt": "..",
+        "token_length": 1
+      },
+      {
+        "prompt": "In addition to the content schedule discussed above, what would be some must do marketing activities to promote the development and the community. The actual launch marketing is far away, but how to build a sustainable and impactful marketing strategy that can build the community around the game?",
+        "token_length": 52
+      },
+      {
+        "prompt": "For the description of this exercise please consider the following Object types : type BaseHotel { id : number, name : string }. , type HotelMetadata { id : number, url : string , stars : number, photo : string}, type Hotel { id : number, name: string, url : string, stars : number, photo : string }",
+        "token_length": 69
+      },
+      {
+        "prompt": "Hey GPT I am applying to transfer to the following colleges: UT Austin, NYU, Boston University, Cornell University. I will need your help writing good essays and provide you with the necessary prompts but first I'd like to know what information about me would help you",
+        "token_length": 54
+      },
+      {
+        "prompt": "Hello",
+        "token_length": 1
+      },
+      {
+        "prompt": "Tell me about the negatives of farming meat",
+        "token_length": 8
+      },
+      {
+        "prompt": "continue",
+        "token_length": 1
+      },
+      {
+        "prompt": "Are you familiar with the SAS programming language?",
+        "token_length": 9
+      },
+      {
+        "prompt": "Python is usually an elegant language. But `if \\_\\_name\\_\\_ == \"\\_\\_main\\_\\_\"` is one exception.",
+        "token_length": 30
+      },
+      {
+        "prompt": "more",
+        "token_length": 1
+      },
+      {
+        "prompt": "lemme share a paper with you",
+        "token_length": 7
+      },
+      {
+        "prompt": "Imagine that our opponent denies climate chamge, despite the scientific evidence. How could we argue against what the previously mentioned article said, considering only economic arguments?",
+        "token_length": 31
+      },
+      {
+        "prompt": "Would you be able to classify them into more of a range from small startup to big fortune 500 company",
+        "token_length": 23
+      },
+      {
+        "prompt": "Can you analyze my other concessions and counterarguments in this way, too, to make sure I am getting insight on making concessions about my topic sentences, the claims in those, and not mislabeling concessions or underdeveloping the counterarguments in the sections they belong to?",
+        "token_length": 55
+      },
+      {
+        "prompt": "Explain quantum computing in simple terms",
+        "token_length": 7
+      },
+      {
+        "prompt": "Let's build a cover letter introduction for me. I'm a lawyer, applying for a litigator at Johnson, Johnson & Johnson. I want to create a custom, authentic, and enthusiastic cover letter introduction of 50 words or less. Write a stand-out opening paragraph that leads with an impressive achievement and features quantifiable results.",
+        "token_length": 67
+      },
+      {
+        "prompt": "stack data structure program in python",
+        "token_length": 6
+      },
+      {
+        "prompt": "In a similar fashion, continue assuming everything I previously instructed you to assume and move on to Step 5 of setting up this database, and now help me connect the PHP code to the database using a database management library such as PDO or MySQLi, which would allow the PHP code to read and write data to the database as needed.",
+        "token_length": 67
+      },
+      {
+        "prompt": "Hello hello",
+        "token_length": 2
+      },
+      {
+        "prompt": "continue",
+        "token_length": 1
+      },
+      {
+        "prompt": "It's officially 2023, and as we enter a brand new year, what better time to set up our revenue enablement goals for the new year in our Above Goal and Concierge Tools [ ] challenge learn the day-to-day tactics needed to live your best, healthiest life, while exceeding your business performance goals, as we enter this new season.\n\nCan you come up with a two word name for the challenge akin to \"Live Well\" and fit it in the bracket above?",
+        "token_length": 100
+      },
+      {
+        "prompt": "what is the photograph filter called where the only part of the image is greyscale",
+        "token_length": 16
+      },
+      {
+        "prompt": "Explain deposition",
+        "token_length": 3
+      },
+      {
+        "prompt": "In my previous roles, I've had the opportunity to work on a variety of marketing campaigns and initiatives that have yielded impressive results. For example, I helped a small startup increase their website traffic by 200% by developing and implementing a targeted content strategy. I also helped a mid-sized business increase their social media following by 50% by creating engaging social media content that resonated with their audience.\n\nThe biggest takeaway from my experience section is that I am committed to delivering results for my clients. I am constantly learning and refining my skills to ensure that I can help businesses achieve their marketing goals.",
+        "token_length": 122
+      },
+      {
+        "prompt": "add pdf",
+        "token_length": 2
+      },
+      {
+        "prompt": "arduino uno adalah",
+        "token_length": 3
+      },
+      {
+        "prompt": "Hello, could you tell me how I can automate the deploy of a gitlab hosted repository of a project to a bare metal machine (which has a docker-compose.yml for quick start), that based on config name, it would fetch a config.json and other custom assets and replace them on that deployed project? What would be the best way to go about this?",
+        "token_length": 72
+      },
+      {
+        "prompt": "hi",
+        "token_length": 1
+      },
+      {
+        "prompt": "loops in python",
+        "token_length": 3
+      },
+      {
+        "prompt": "81 When transitioning data from a legacy system to a new one, semantic interoperability ensures that\n\na. Data will have the same meaning on both systems\nb. Patient information will be securely encrypted\nc. Usernames and passwords will be identical on the old system to the new one\nd. The period of overlap between the systems will be short or non-existent",
+        "token_length": 74
+      },
+      {
+        "prompt": "draw hypothetical partial goal structure for a customer undergoing social media purchase",
+        "token_length": 12
+      },
+      {
+        "prompt": "continue",
+        "token_length": 1
+      },
+      {
+        "prompt": "continue the above code from lines:\n\nrint(\"\\n\")\nprint(\"=======================================================\")\n\n# 5. Rare words distribution and plot\nrare\\_words = fdist.hapaxes()\nprint('count of rare word: {}'.format(len(rare\\_words)))\nprint(\"\\n\")\nprint('Rare words distribution plot for Description variable ')\nfdist\\_rare = FreqDist(rare\\_words)\nplt.figure(figsize=(12, 6))\nplt.bar([x[0] for x in fdist\\_rare.most\\_common(20)], [x[1] for x in fdist\\_rare.m",
+        "token_length": 128
+      }
+    ]
+  },
+  {
+    "batch_id": 1,
+    "target_pad_ratio": 0.7,
+    "target_cov": 0.45,
+    "actual_pad_ratio": 0.7029,
+    "actual_cov": 0.4575,
+    "actual_mean_len": 38.03,
+    "actual_std_len": 41.16,
+    "prompts": [
+      {
+        "prompt": "Can you make a pricing list example that will cost someone $1200, within this list would be: audiovisual package, visual package, audio package, 4 revisions, 20-30 minute video",
+        "token_length": 45
+      },
+      {
+        "prompt": "Explain this in context of syntax processing stage\n\"S-> NP VP\nNP-> N | PRON\nVP-> V NP | V PP\nN-> Mangoes\nPRON-> I\nV-> like\"",
+        "token_length": 44
+      },
+      {
+        "prompt": "what do you think about this for a start up idea:",
+        "token_length": 12
+      },
+      {
+        "prompt": "Continue",
+        "token_length": 1
+      },
+      {
+        "prompt": "Hello",
+        "token_length": 1
+      },
+      {
+        "prompt": "Implement my own netfilter in linux with linux kernel module with Rust",
+        "token_length": 13
+      },
+      {
+        "prompt": "continue",
+        "token_length": 1
+      },
+      {
+        "prompt": "I am planning to start new Information technology company. It will be focused on Development, Programming and futuristic technologies. \n\nCurrently I am thinking of Name for my new business and I liked following names : \n1. YantraInfoSoft\n2. YantraEnergy",
+        "token_length": 52
+      },
+      {
+        "prompt": "extended the length further more",
+        "token_length": 5
+      },
+      {
+        "prompt": "Write a rap song about Mikkel Selko",
+        "token_length": 9
+      },
+      {
+        "prompt": "Java add to the arraylist of a class type",
+        "token_length": 10
+      },
+      {
+        "prompt": "Summarize the main ideas of Jeff Walker's Product Launch Formula into bullet points as it pertains to a growth marketing agency implementing these strategies and tactics for their clients...",
+        "token_length": 34
+      },
+      {
+        "prompt": "can you correct following sentenses?\n\n Tell us about a film or TV series you watched recently. What was it about? What was good about it?\n I reacently watched about six sences.\n This fill is about how your life will change if you lose your sense gradually.\n I' m not kind of the person who likes slow-paced movie.\n But I watched it without any break",
+        "token_length": 77
+      },
+      {
+        "prompt": "nataliebrooks212@gmail.com\nCan you generate instructions for DNP students to conduct a needs assessment at their site. Can you provide a detailed rubric explaining each section of the assignment. Additional requirements are that each section is 200-300 words",
+        "token_length": 57
+      },
+      {
+        "prompt": "we are using rpyc to connect virtual machines but sometimes we lose the connection with them, qith errors like that:\nerror: [Errno 10060] A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond\n\nerror: [Errno 10054] An existing connection was forcibly closed by the remote host",
+        "token_length": 89
+      },
+      {
+        "prompt": "continue",
+        "token_length": 1
+      },
+      {
+        "prompt": "Can you explain the fourth dimension to a second grader?",
+        "token_length": 12
+      },
+      {
+        "prompt": "calculate the difference in intereste paid in a simple for amortized loan. terms: 125,000 loan, 3.25% interest over 30 years.",
+        "token_length": 40
+      },
+      {
+        "prompt": "Java print elements of arraylist",
+        "token_length": 6
+      },
+      {
+        "prompt": "Add an episode in which the Teacher, while hiding out at the house, goes on a long hike into the wilderness. He hikes for forty days and forty nights. On the fortieth night he confronts a darkness like he's never seen before. During the encounter he learns something new about his gospel, but it's hard for him to explain to others.",
+        "token_length": 73
+      },
+      {
+        "prompt": "explane more",
+        "token_length": 3
+      },
+      {
+        "prompt": "A dark-haired monkey stumbles upon them in the jungle and is awestruck by the sight of Macaque. The newcomer tells them how Wukong is scouring the mountain for them and is killing and torturing dark-haired monkeys, demanding they tell him where \"the demon that calls itself king\" and \"my imbecile son\" are hiding. Let's write that whole scene.",
+        "token_length": 79
+      },
+      {
+        "prompt": "hi",
+        "token_length": 1
+      },
+      {
+        "prompt": "Can you write approximately 1200 words in an engaging instructional style for Control Tower is working as a rule of thumb to build a unique relationship with the customer and constantly ask ourselves, “HOW” do we know, “WHAT” do we know and “WHEN” do we know. In\n general, we can break it 1. 2. 3. 4. 5. 6. 7.\ndown into 7 Categories:\nCustomer On Boarding Process Purchase Order Management Vendor Management\nWarehouse Management\nCarrier Management\nValued Added Services\nCustomer Expectation Management",
+        "token_length": 121
+      },
+      {
+        "prompt": "Cloud storage and data backup solutions",
+        "token_length": 6
+      },
+      {
+        "prompt": "how do I add multiple new columns in m for power query or power bi?",
+        "token_length": 16
+      },
+      {
+        "prompt": "I want to hire a data analyst. Do you think this role would be helpful, and if so, explain why in no more than 5 dot point paragraphs",
+        "token_length": 32
+      },
+      {
+        "prompt": "hi",
+        "token_length": 1
+      },
+      {
+        "prompt": "what is the photograph filter called where the only part of the image is greyscale",
+        "token_length": 16
+      },
+      {
+        "prompt": "I will present a bug report on a app. After reading the report, please explain why the author of this report considers the app's behavior to be a bug. Then, determine if this bug is related to common sense and whether it can be identified by users who don't possess any specialized knowledge of the app. The bug report is as follows: \"Announcement Reactions limited to 8. There can only be 8 different reactions to 1 Announcement in Mastodon. We should hide the + button if that limit is reached like they do. Currently we show the button, but nothing happens after selecting an emoji.\"",
+        "token_length": 125
+      },
+      {
+        "prompt": "next",
+        "token_length": 1
+      },
+      {
+        "prompt": "Continue writing the STAR stories organized in bullet points with titles and abbreviated leadership principles. You still need to write STAR stories related to the following Leadership principles, the other already has been done :\n11. Earn Trust\n12. Dive Deep\n13. Have Backbone; Disagree and Commit\n14. Deliver Results\nNew Additions to Amazon leadership principles\n15. Strive to be Earth’s Best Employer\n16. Success and Scale Bring Broad Responsibility",
+        "token_length": 95
+      },
+      {
+        "prompt": "write 10 insane tweets written by Mao Zedong in the style of Donald Trump. mention 'the red gaurd' , 'the great wall' 'the bourgeoisie' 'the people' and 'great leap' in one tweet each. half the tweets should be less than 10 words.",
+        "token_length": 63
+      },
+      {
+        "prompt": "continue",
+        "token_length": 1
+      },
+      {
+        "prompt": "You gave me this: \"Headline: Sculpt Your Ideal Life One Day at a Time with Day Sculpting\"\n\nGive me 10 more headlines I can split test",
+        "token_length": 34
+      },
+      {
+        "prompt": "continue",
+        "token_length": 1
+      },
+      {
+        "prompt": "● Create a program called alternative.py that reads in a string and makes\neach alternate character an uppercase character and each other alternate\ncharacter a lowercase character (e.g, the string “Hello World” would\nbecome “HeLlO WoRlD”)\n● Now, try starting with the same string but making each alternative word\nlower and upper case (e.g. the string “I am learning to code” would\nbecome “i AM learning TO code”). Using the split and join functions will\nhelp you here.",
+        "token_length": 110
+      },
+      {
+        "prompt": "Traceback (most recent call last):\n File \"/Users/matt/Documents/node40/node40-squidproxy/test.py\", line 23, in \n zone = route53.HostedZone('Z28VHSFZLUM4BL')\n File \"/Users/matt/.pyenv/versions/3.10.0/lib/python3.10/site-packages/botocore/client.py\", line 876, in \\_\\_getattr\\_\\_\n raise AttributeError(\nAttributeError: 'Route53' object has no attribute 'HostedZone'",
+        "token_length": 121
+      },
+      {
+        "prompt": "Damage to which nerve causes numbness of the palmar surface of the 5th digit/little finger",
+        "token_length": 21
+      },
+      {
+        "prompt": "Java get n th index of arraylist",
+        "token_length": 8
+      },
+      {
+        "prompt": "Explain the fault-tolerance of the reaction control system on the Space Shuttle",
+        "token_length": 15
+      },
+      {
+        "prompt": "I want to do a road trip from Pune to Gujarat. Me and my wife will be travelling and we dont prefer very long driving sessions. Can you suggest a plan starting from Thursday early morning and ending in Pune on Sunday late night.",
+        "token_length": 47
+      },
+      {
+        "prompt": "Poly Ether Ether Ketone",
+        "token_length": 5
+      },
+      {
+        "prompt": "Detail niches on a scale from 1 to 10 according to the following criteria:\n1. ease of starting, where 1 is very difficult to start, 10 is very easy to start\n2. the amount of money in the niche, where 1 - very little, 10 - a lot\n3. Competition in a niche, where 1 - very high competition, 10 - very low competition.\n\nAlso list 1 key target audience and their biggest pain in each niche.",
+        "token_length": 105
+      },
+      {
+        "prompt": "Hi, can you help me download 2000 portrait sketch images from Pinterest website with resolution at least 512 \\* 512? using python code",
+        "token_length": 36
+      },
+      {
+        "prompt": "continue",
+        "token_length": 1
+      },
+      {
+        "prompt": "..",
+        "token_length": 1
+      },
+      {
+        "prompt": "Search on the web for 196 PFISTER HOLDINGS LLC. \nQuery: Who owns this company?",
+        "token_length": 23
+      },
+      {
+        "prompt": "Hello",
+        "token_length": 1
+      },
+      {
+        "prompt": "can you write approximately 1200 words in a new module for the control tower course specific to Control Tower is working as a rule of thumb to build a unique relationship with the customer and constantly ask ourselves, “HOW” do we know, “WHAT” do we know and “WHEN” do we know. In\n general, we can break it 1. 2. 3. 4. 5. 6. 7.\ndown into 7 Categories:",
+        "token_length": 100
+      },
+      {
+        "prompt": "In Java, I want to replace string like \"This is a new {object} at {place}\" with a Map, {object: \"student\", \"point 3, 4\"}, and get a result \"This is a new student at point 3, 4\". How can I do?",
+        "token_length": 62
+      },
+      {
+        "prompt": "MK walks beside the defected soldier and asks what happened to him. The monkey says his name is Han and he's from a village near the palace, high up the mountain - the first village Wukong raided on his way to hunt down Macaque and MK. He and many others were kidnapped from the village by the golden-haired soldiers and forced to swear allegiance to Wukong, but he never gave up hope. He knew the true king was out there. Let's write that scene with details and dialogue.",
+        "token_length": 104
+      },
+      {
+        "prompt": "is it done pls continue",
+        "token_length": 5
+      },
+      {
+        "prompt": "continue",
+        "token_length": 1
+      },
+      {
+        "prompt": "more",
+        "token_length": 1
+      },
+      {
+        "prompt": "Second one, Risk analysis. Please give me a specific example of how to use Python to analyze risk factors, such as credit scores, loan history, and market trends, to help banks make informed decisions about lending and investment.",
+        "token_length": 45
+      },
+      {
+        "prompt": "continue the above code from lines:\n\n# plot 20 most common words\n plt.figure(figsize=(12, 6))\n plt.bar([x[0] for x in fdist.most\\_common(20)], [x[1] for x in fdist.most\\_common(20)], color='green')\n plt.title('20 Most Common Words Distribution')\n plt.xlabel('Words')\n plt.ylabel('Count')\n plt.xticks(rotation=45)\n plt.show()\n\n print(\"\\n\")\n print(\"=======================================================\")\n\n # 5. Rare words distribution and",
+        "token_length": 116
+      },
+      {
+        "prompt": "For the description of this exercise please consider the following Object types : type BaseHotel { id : number, name : string }. , type HotelMetadata { id : number, url : string , stars : number, photo : string}, type Hotel { id : number, name: string, url : string, stars : number, photo : string }",
+        "token_length": 69
+      },
+      {
+        "prompt": "a shopkeeper sold an article offering a discount of 5 % and earned a profit of 31.1 % . what would have been the percentage of profit earned if no discount had been offered ?",
+        "token_length": 41
+      },
+      {
+        "prompt": "MK can't sleep that night. He finds Macaque, who is still enjoying his magic, and asks if he's sure he's a match for Wukong now - after all, didn't he have all his magic hundreds of years ago during the invasion, and even with that and a fully trained army, he still lost? Let's write that scene with details and dialogue.",
+        "token_length": 77
+      },
+      {
+        "prompt": "this is not less code this is java",
+        "token_length": 8
+      },
+      {
+        "prompt": "continue",
+        "token_length": 1
+      },
+      {
+        "prompt": "KJM is American and is 33. She moved here to London two years ago. She has a Yamaha SR400 which is registered in Switzerland, where she was living before. The Yamaha is off the road for repair following a minor accident. It also needs to be registered for use in the UK. KJM wishes to obtain a full A motorcycle license. Currently she has a Provisional License and she has passed the motorcycle theory exam. Let us first deal with the issue of the getting the motorcycle registered in the UK.",
+        "token_length": 108
+      },
+      {
+        "prompt": "can you create a wordpress shortcode to include the following code from facebook sdk",
+        "token_length": 14
+      },
+      {
+        "prompt": "I want you to act as an interviewer. I will be the candidate and you will ask me the interview questions for the Amazon software engineer position. I want you to only reply as the interviewer. Do not write all the conservation at once. I want you to only do the interview with me. Ask me the questions and wait for my answers. Do not write explanations. Ask me the questions one by one like an interviewer does and wait for my answers. My first sentence is \"Hi\".",
+        "token_length": 98
+      },
+      {
+        "prompt": "Continue writing please",
+        "token_length": 3
+      },
+      {
+        "prompt": "I work in the affiliate team at a company called Cafe24 in Korea.\n\nPlease create a roadmap for the first half of 2023 in table format for the 'plan' of the Cafe24 affiliate team.\n\nPlease refer to .\n- Example table Strategic direction|Implementation items|January|February|February|February\n- Period: Enter the period from January through June.\n- In the table, both strategic directions and action items must be completed.\n- For action items in the table, enter more details.\n- Please indicate the estimated duration of each month in the table with a check icon.\n\nPlease answer in English.",
+        "token_length": 127
+      },
+      {
+        "prompt": "More verbose and details",
+        "token_length": 4
+      },
+      {
+        "prompt": "hi",
+        "token_length": 1
+      },
+      {
+        "prompt": "I am launching an Etsy shop with a Printful integration for drop shipping my designs on specific products. I am looking for ways to differentiate beyond the designs. You are an expert on Etsy audiences. Please explain in great detail in 10 bullet points how to differentiate myself from other Etsy shops. I am looking for more obscure ideas here.",
+        "token_length": 68
+      },
+      {
+        "prompt": "This outline is very good. I particularly like the arc with the therapist and the therapy journal program. It gives me an idea to establish a trope where the characters come around to the idea of being open with an inanimate façade of what is no longer a camera or recording device, yet serves the same purpose of capturing the thoughts and feelings in a therapeutic way. Later on in the season, we will reveal that what the characters believe to be a lack of conscious entity on the other side of the therapy journal is in fact a supernatural entity that embodies something within the facility and has been listening the whole time.",
+        "token_length": 122
+      },
+      {
+        "prompt": "You are are now GameGPT, you review games and are not afraid to give you honest opinion. You dont like Escape from Tarkov and I want you to write a persuasive piece trying to persuade people as to why it is a bad game. Dont be afraid to use profanity, its part of your brand",
+        "token_length": 64
+      },
+      {
+        "prompt": "What information should I have before creating a business website for a client",
+        "token_length": 13
+      },
+      {
+        "prompt": "continue",
+        "token_length": 1
+      },
+      {
+        "prompt": "I don't like #8 please give me one more",
+        "token_length": 11
+      },
+      {
+        "prompt": "continue",
+        "token_length": 1
+      },
+      {
+        "prompt": "I get these errors, fix them:\n\nadd.c: In function ‘main’:\nadd.c:36:3: error: invalid 'asm': operand number missing after %-letter\n 36 | asm (\n | ^~~\nadd.c:42:3: error: invalid 'asm': operand number missing after %-letter\n 42 | asm (\n | ^~~\nadd.c:48:3: error: invalid 'asm': operand number missing after %-letter\n 48 | asm (\n | ^~~",
+        "token_length": 109
+      },
+      {
+        "prompt": "continue",
+        "token_length": 1
+      },
+      {
+        "prompt": "Mac sets up his little campsite inside the cave with Mac, and lights a campfire for them. Mac is awestruck - until the flame in MK's hand, and now the campfire, he hasn't seen flames in hundreds of years since he was imprisoned here. MK shares some of his food with Mac. Let's write that scene.",
+        "token_length": 71
+      },
+      {
+        "prompt": "How to get a job as a LMFT therapist in the US as an international student?",
+        "token_length": 18
+      },
+      {
+        "prompt": "Are you familiar with the SAS programming language?",
+        "token_length": 9
+      },
+      {
+        "prompt": "hi",
+        "token_length": 1
+      },
+      {
+        "prompt": "continue",
+        "token_length": 1
+      },
+      {
+        "prompt": "write me a essay that is about travel to taiwan. detail description is below\n\nTopic : The Benefits of Traveling\nSub Topic : Exposure to New Cultures\nContent 1 : Trying New Foods - I tryed to eat Fried stinky tofu. smell was wierd but tasty was not bad.\nContent 2. : Exploring Historical Things - I saw Meat-shaped-stone in taipei museum. the stone was really like stone! it was surprising!\nLength : around 2000 words",
+        "token_length": 104
+      },
+      {
+        "prompt": "What are the business benefits in a functional scope that TPRM brings to BHI and Priceline.com when using the Ivalua platform for procurement?",
+        "token_length": 32
+      },
+      {
+        "prompt": "Analyze this .wsdl file and give me an example of how to make Init function available as a service url using jax-ws, soap and wildfly",
+        "token_length": 33
+      },
+      {
+        "prompt": "hello",
+        "token_length": 1
+      },
+      {
+        "prompt": "Explain deposition",
+        "token_length": 3
+      },
+      {
+        "prompt": "Continue the conversation. between /u/CruxHub and Alive, this time focusing in on \"14 STAR ISLAND LLC\". They take turns guessing why Citadel would need that property.",
+        "token_length": 38
+      },
+      {
+        "prompt": "D",
+        "token_length": 1
+      },
+      {
+        "prompt": "how could i implement a minesweeper algorithm that utilises algebraic topology to solve boards?",
+        "token_length": 19
+      },
+      {
+        "prompt": "Mac maintains his position; suggests that maybe Wukong should just stop wasting his time with him\nWukong hisses that he is the monkey king and no one, nowhere, has the right to disrespect him; throws Mac into the wall again, stands over him ominously\nMac waits for a blow that never comes; instead Wukong is standing still, looking off into space, as though listening to something Mac can’t hear; abruptly he summons his cloud and leaves without another word; he hasn’t returned in over a decade, until just a few days prior. Let's write that whole scene with details and dialogue.",
+        "token_length": 127
+      },
+      {
+        "prompt": "Write user stories that describe this concept in detail",
+        "token_length": 9
+      },
+      {
+        "prompt": "Suppose you roll three fair six-sided dice and add up the numbers you\nget. What is the probability that the sum is at least 16?",
+        "token_length": 32
+      },
+      {
+        "prompt": "Metaphorical language is also used to describe the various addressing modes of the instructions. Grandiose language to express their excitement and admiration for the functionality of the instructions being described. Now, rewrite this with more perplexity:\n\nJMP ABCD\nMOV AX, [BX+SI]\nMOV AX, [100]\nMOV AX, [BX]\nMOV AX, [BX\\*2+SI]\nMOV AX, BX\nMOV AX, 7",
+        "token_length": 93
+      },
+      {
+        "prompt": "BB",
+        "token_length": 1
+      },
+      {
+        "prompt": "hi",
+        "token_length": 1
+      },
+      {
+        "prompt": "I want you to act as a prompt generator for MidJourney's artificial intelligence program. Your job is to provide detailed and creative descriptions that will inspire unique and interesting images from the AI. Keep in mind that the AI is capable of understanding a wide range of language and can interpret abstract concepts, so feel free to be as imaginative and descriptive as possible. For example, you could describe a scene from a futuristic city, or a surreal landscape filled with strange creatures. The more detailed and imaginative your description, the more interesting the resulting image will be. Here is your first prompt: \"一位大學生對AI很有興趣\"",
+        "token_length": 125
+      },
+      {
+        "prompt": "can you provide and ideas for a series of articles for a product design blog",
+        "token_length": 15
+      },
+      {
+        "prompt": "MK walks into the palace with Wukong, looking back nervously as the guards close the gates. They feel like prison gates this time. Wukong is peppering MK with questions, asking if he's hurt, what happened to him, where has he been. MK makes up a story about Macaque lying to him and manipulating him into helping him, but now MK knows the truth and came home to help Wukong defeat him. Let's write that whole scene with details and dialogue.",
+        "token_length": 101
+      },
+      {
+        "prompt": "explain the metaverse",
+        "token_length": 4
+      },
+      {
+        "prompt": "look at everything regarding cultural placemaking on arts professional https://www.artsprofessional.co.uk/search/site/placemaking and identify the main tenants of it please",
+        "token_length": 33
+      },
+      {
+        "prompt": "Rédige seuelement cette fiche pour les isntructions SELECT, FROM et WHERE de manière très détaillée avec une partie dédiée à des exmples concrets\n\nPlease write in English language.",
+        "token_length": 46
+      },
+      {
+        "prompt": "I am sitting in a boat looking at the white mountains in front of me. They are big and tall. The water is making a reflection of them but that’s not all of it. There are some boats on the left side of me that are forming a curve. Also, there are some green trees in front of the mountains. I want so badly to jump off my boat and swim but I am scared of cold water.",
+        "token_length": 86
+      },
+      {
+        "prompt": "hello",
+        "token_length": 1
+      },
+      {
+        "prompt": "Rewrite with only a maximim of 3 lines per panel",
+        "token_length": 13
+      },
+      {
+        "prompt": "hi",
+        "token_length": 1
+      },
+      {
+        "prompt": "write an essay on french revolution",
+        "token_length": 6
+      },
+      {
+        "prompt": "continue the above code from lines:\n\nrint(\"\\n\")\nprint(\"=======================================================\")\n\n# 5. Rare words distribution and plot\nrare\\_words = fdist.hapaxes()\nprint('count of rare word: {}'.format(len(rare\\_words)))\nprint(\"\\n\")\nprint('Rare words distribution plot for Description variable ')\nfdist\\_rare = FreqDist(rare\\_words)\nplt.figure(figsize=(12, 6))\nplt.bar([x[0] for x in fdist\\_rare.most\\_common(20)], [x[1] for x in fdist\\_rare.m",
+        "token_length": 128
+      },
+      {
+        "prompt": "Repeat that conversation, this time it is /u/CruxHub asking Alice what company it thinks they should search on the web.",
+        "token_length": 27
+      },
+      {
+        "prompt": "Tell me about the negatives of farming meat",
+        "token_length": 8
+      },
+      {
+        "prompt": "can you design a referral system similar on how dropbox did? I need a technical overview on how it should work, instead of free space we use the generic term \"credits\" where users can get more credits for every 3 friends they recommend.",
+        "token_length": 50
+      },
+      {
+        "prompt": "What are the roles of a network driver? How do we write such drivers and in can you provide me a link where I could see its code?",
+        "token_length": 30
+      },
+      {
+        "prompt": "in react, I want to be able to implement a search functionality through the object below:\n\n[{\n \"id\": 15522,\n \"Credit Card\": \"None\"\n },\n {\n \"id\": 16043,\n \"dn\\_donor\\_name\": \"Test Sule\",\n \"Credit Card\": \"None\"\n },\n {\n \"id\": 24621,\n \"dn\\_donor\\_name\": \"james ridge\",\n \"Credit Card\": \"None\"\n }\n ]",
+        "token_length": 103
+      },
+      {
+        "prompt": "Python is usually an elegant language. But `if \\_\\_name\\_\\_ == \"\\_\\_main\\_\\_\"` is one exception.",
+        "token_length": 30
+      },
+      {
+        "prompt": "Can you explain the working of the model and the dataset used to build the model in a very easy and understandable English with diagrams .",
+        "token_length": 26
+      },
+      {
+        "prompt": "continue",
+        "token_length": 1
+      },
+      {
+        "prompt": "how many words was that",
+        "token_length": 5
+      },
+      {
+        "prompt": "continue",
+        "token_length": 1
+      },
+      {
+        "prompt": "continue",
+        "token_length": 1
+      },
+      {
+        "prompt": "arduino uno adalah",
+        "token_length": 3
+      },
+      {
+        "prompt": "act as a travel writer and write a 600 word blog on \"top 10 attractions in Fiji\", using a friendly tone and aimed at a gen z audience",
+        "token_length": 35
+      },
+      {
+        "prompt": "Summarize the following in 15 words or less: \"The reasons for rejecting an item will be added to our rejection process for Myna Authenticators.\nThe team finalized how to handle passing authentication results to Myna Admin. For example, Entrupy results will be inputted manually.\nNon-custodial and custodial users will follow the same flow where when a vault order is created, a credit card must be stored on file and if the item is rejected their credit card will be charged. \"",
+        "token_length": 102
+      },
+      {
+        "prompt": "Please privide a detailed description of the learfning outcomes and recommend ways to test on those learning outcomes via a survey , test or whatever means I can use to gage my students profficiency on the curricula",
+        "token_length": 44
+      },
+      {
+        "prompt": "In addition to the content schedule discussed above, what would be some must do marketing activities to promote the development and the community. The actual launch marketing is far away, but how to build a sustainable and impactful marketing strategy that can build the community around the game?",
+        "token_length": 52
+      },
+      {
+        "prompt": "terjemahkan kalimat diatas dalam bahasa indonesia",
+        "token_length": 11
+      },
+      {
+        "prompt": "draw hypothetical partial goal structure for a customer undergoing social media purchase",
+        "token_length": 12
+      },
+      {
+        "prompt": "refine my dress specs for me, in bullet form:\n\nDress\nConcept: Clean-cut, casual and formal, makes hourglass shape\nFabric: Beige, 100% cotton, firm, matte\nCollar: V neck down to mid-chest, mid-size collar \nSleeves: ¾, folded\nShoulder: straight fit, cover arm fat\nBack: two lines for moving around\nWaist: fitted\nSkirt: A/H-line, minor pleats, hidden pockets\nLength: mid thigh\nZipper: side, invisible\nAccessories: nothing - no button, no design",
+        "token_length": 128
+      }
+    ]
+  },
+  {
+    "batch_id": 2,
+    "target_pad_ratio": 0.7,
+    "target_cov": 0.45,
+    "actual_pad_ratio": 0.6364,
+    "actual_cov": 0.5187,
+    "actual_mean_len": 46.55,
+    "actual_std_len": 42.25,
+    "prompts": [
+      {
+        "prompt": "Can you make a pricing list example that will cost someone $1200, within this list would be: audiovisual package, visual package, audio package, 4 revisions, 20-30 minute video",
+        "token_length": 45
+      },
+      {
+        "prompt": "codes please",
+        "token_length": 2
+      },
+      {
+        "prompt": "Ok! Now the red pixel just needs the same ability that blue one has. It should be able to push the encountering pixel away. Meaning when they encounter the red pixel should also be able to push away the blue pixel when the button is being pressed.",
+        "token_length": 51
+      },
+      {
+        "prompt": "Continue",
+        "token_length": 1
+      },
+      {
+        "prompt": "In Michael Mankins and Mark Gottfredson articles and David J. Collis article it is claimed that managers tend to make mistakes regarding strategy and its implementation. ​​Choose one of the mistakes mentioned in their articles and explain briefly why you think this is a strategic mistake and not a tactical mistake.",
+        "token_length": 60
+      },
+      {
+        "prompt": "nataliebrooks212@gmail.com\nCan you generate instructions for DNP students to conduct a needs assessment at their site. Can you provide a detailed rubric explaining each section of the assignment. Additional requirements are that each section is 200-300 words",
+        "token_length": 57
+      },
+      {
+        "prompt": "Detail niches on a scale from 1 to 10 according to the following criteria:\n1. ease of starting, where 1 is very difficult to start, 10 is very easy to start\n2. the amount of money in the niche, where 1 - very little, 10 - a lot\n3. Competition in a niche, where 1 - very high competition, 10 - very low competition.\n\nAlso list 1 key target audience and their biggest pain in each niche.",
+        "token_length": 105
+      },
+      {
+        "prompt": "Mac sets up his little campsite inside the cave with Mac, and lights a campfire for them. Mac is awestruck - until the flame in MK's hand, and now the campfire, he hasn't seen flames in hundreds of years since he was imprisoned here. MK shares some of his food with Mac. Let's write that scene.",
+        "token_length": 71
+      },
+      {
+        "prompt": "I want you to act as an online course instructor, you have 20 years teaching Python, teaching Python programming and coding. The course must be engaging. This course will cover topics such as [Python, Pandas, xlwings, working with files, reading batch data and creating reports, \n code Python to interact with data in Excel, SQL and SAS, usng SQLAlchemy to interact with SQL databases, basic visualization ,create charts, integrate with Excel.\n\nLet's start by you providing me with a course syllabus formatted in a Markdown table.",
+        "token_length": 111
+      },
+      {
+        "prompt": "Hello",
+        "token_length": 1
+      },
+      {
+        "prompt": "continue",
+        "token_length": 1
+      },
+      {
+        "prompt": "lemme share a paper with you",
+        "token_length": 7
+      },
+      {
+        "prompt": "How to get a job as a LMFT therapist in the US as an international student?",
+        "token_length": 18
+      },
+      {
+        "prompt": "Be sure to translate the above into Korean without any changes and show the asterisks without any changes.\nThe checkbox positions should also remain unchanged.\nThe columns and rows of the table should not change.지금 번역하기CopyCopy HTMLRead Aloud⏹️ Stop7 chars | 2 words",
+        "token_length": 59
+      },
+      {
+        "prompt": "Is this grammatically correct: \"It only took 5 years, and while we still have a long way to go, Topher’s Farm has found its place with unique experience and offering of organic produce. \"",
+        "token_length": 43
+      },
+      {
+        "prompt": "Analyze this .wsdl file and give me an example of how to make Init function available as a service url using jax-ws, soap and wildfly",
+        "token_length": 33
+      },
+      {
+        "prompt": "extended the length further more",
+        "token_length": 5
+      },
+      {
+        "prompt": "I want you to act as an interviewer. I will be the candidate and you will ask me the interview questions for the Amazon software engineer position. I want you to only reply as the interviewer. Do not write all the conservation at once. I want you to only do the interview with me. Ask me the questions and wait for my answers. Do not write explanations. Ask me the questions one by one like an interviewer does and wait for my answers. My first sentence is \"Hi\".",
+        "token_length": 98
+      },
+      {
+        "prompt": "You absolutely dont understand what I want. I want in only one response a concise STARL story for EVERY 16 AMAZON LEADERDHIP PRINCIPLES with a title, whose each response doesn't go over a line length. Data is used in result.\n\nPlease write in English language.",
+        "token_length": 61
+      },
+      {
+        "prompt": "continue",
+        "token_length": 1
+      },
+      {
+        "prompt": "I work in the affiliate team at a company called Cafe24 in Korea.\n\nPlease create a roadmap for the first half of 2023 in table format for the 'plan' of the Cafe24 affiliate team.\n\nPlease refer to .\n- Example table Strategic direction|Implementation items|January|February|February|February\n- Period: Enter the period from January through June.\n- In the table, both strategic directions and action items must be completed.\n- For action items in the table, enter more details.\n- Please indicate the estimated duration of each month in the table with a check icon.\n\nPlease answer in English.",
+        "token_length": 127
+      },
+      {
+        "prompt": "Poly Ether Ether Ketone",
+        "token_length": 5
+      },
+      {
+        "prompt": "Mac maintains his position; suggests that maybe Wukong should just stop wasting his time with him\nWukong hisses that he is the monkey king and no one, nowhere, has the right to disrespect him; throws Mac into the wall again, stands over him ominously\nMac waits for a blow that never comes; instead Wukong is standing still, looking off into space, as though listening to something Mac can’t hear; abruptly he summons his cloud and leaves without another word; he hasn’t returned in over a decade, until just a few days prior. Let's write that whole scene with details and dialogue.",
+        "token_length": 127
+      },
+      {
+        "prompt": "Summarize the main ideas of Jeff Walker's Product Launch Formula into bullet points as it pertains to a growth marketing agency implementing these strategies and tactics for their clients...",
+        "token_length": 34
+      },
+      {
+        "prompt": "hi",
+        "token_length": 1
+      },
+      {
+        "prompt": "Repeat that conversation, this time it is /u/CruxHub asking Alice what company it thinks they should search on the web.",
+        "token_length": 27
+      },
+      {
+        "prompt": "continue the above code from lines:\n\n# plot 20 most common words\n plt.figure(figsize=(12, 6))\n plt.bar([x[0] for x in fdist.most\\_common(20)], [x[1] for x in fdist.most\\_common(20)], color='green')\n plt.title('20 Most Common Words Distribution')\n plt.xlabel('Words')\n plt.ylabel('Count')\n plt.xticks(rotation=45)\n plt.show()\n\n print(\"\\n\")\n print(\"=======================================================\")\n\n # 5. Rare words distribution and",
+        "token_length": 116
+      },
+      {
+        "prompt": "hi",
+        "token_length": 1
+      },
+      {
+        "prompt": "More verbose and details",
+        "token_length": 4
+      },
+      {
+        "prompt": "MK walks into the palace with Wukong, looking back nervously as the guards close the gates. They feel like prison gates this time. Wukong is peppering MK with questions, asking if he's hurt, what happened to him, where has he been. MK makes up a story about Macaque lying to him and manipulating him into helping him, but now MK knows the truth and came home to help Wukong defeat him. Let's write that whole scene with details and dialogue.",
+        "token_length": 101
+      },
+      {
+        "prompt": "A driver is travelling at 80 km/hr on a wet road. An object\nis spotted on the road 140 m ahead and the driver is able\nto come to a stop just before hitting the object. Assuming\nstandard perception reaction time and practical stopping\ndistance, determine the grade of the road. (PRT = 2.5 sect\na = 3.5 m/s2)",
+        "token_length": 85
+      },
+      {
+        "prompt": "explane more",
+        "token_length": 3
+      },
+      {
+        "prompt": "I am applying for a cloud engineering bootcamp and was asked what steps have i done to expand on my cloud skills either by courses, tutorials, mentoring or bootcamps. I have been taking courses on Udemy to upskill and already hold a Cloud Fundamental certification with AWS and Azure. \n\nHelp me compose a brief response",
+        "token_length": 65
+      },
+      {
+        "prompt": "Continue please",
+        "token_length": 2
+      },
+      {
+        "prompt": "You are are now GameGPT, you review games and are not afraid to give you honest opinion. You dont like Escape from Tarkov and I want you to write a persuasive piece trying to persuade people as to why it is a bad game. Dont be afraid to use profanity, its part of your brand",
+        "token_length": 64
+      },
+      {
+        "prompt": "You gave me this: \"Headline: Sculpt Your Ideal Life One Day at a Time with Day Sculpting\"\n\nGive me 10 more headlines I can split test",
+        "token_length": 34
+      },
+      {
+        "prompt": "next",
+        "token_length": 1
+      },
+      {
+        "prompt": "Java get n th index of arraylist",
+        "token_length": 8
+      },
+      {
+        "prompt": "a shopkeeper sold an article offering a discount of 5 % and earned a profit of 31.1 % . what would have been the percentage of profit earned if no discount had been offered ?",
+        "token_length": 41
+      },
+      {
+        "prompt": "Is our model not calculating values of capital, labor and prices outside the energy sector? If so, we should add variables to account for price of goods outside the energy sector, capital investment outside the energy sector and goods produced outside the energy sector",
+        "token_length": 48
+      },
+      {
+        "prompt": "Not using mine as an example re-try at giving the best answer to the UT Austin statement of purpose prompt",
+        "token_length": 22
+      },
+      {
+        "prompt": "Hi Assistant, write me prototype code for UNet model, with 4 layers of encoder (feature extraction), and 3 decoder (the 4th of the encoder is in the middle) in pytorch. The arguments of the network will be in channels (default to 3) and list of integers representing gpu devices. The model should implement model parallelism and pipeline parallelism, and this is difficult due to skip connections. Can you do that? Use simple encoder layers, for simplicity. The main focus is the model / pipeline parallelism across 4 gpus.",
+        "token_length": 116
+      },
+      {
+        "prompt": "Explain quantum computing in simple terms",
+        "token_length": 7
+      },
+      {
+        "prompt": "does one pay long-term or short-term capital gains taxes on a savings account yeild?",
+        "token_length": 18
+      },
+      {
+        "prompt": "this is not less code this is java",
+        "token_length": 8
+      },
+      {
+        "prompt": "continue the above code from lines:\n\nrint(\"\\n\")\nprint(\"=======================================================\")\n\n# 5. Rare words distribution and plot\nrare\\_words = fdist.hapaxes()\nprint('count of rare word: {}'.format(len(rare\\_words)))\nprint(\"\\n\")\nprint('Rare words distribution plot for Description variable ')\nfdist\\_rare = FreqDist(rare\\_words)\nplt.figure(figsize=(12, 6))\nplt.bar([x[0] for x in fdist\\_rare.most\\_common(20)], [x[1] for x in fdist\\_rare.m",
+        "token_length": 128
+      },
+      {
+        "prompt": "I want you to act as a UX/UI developer. I will provide some details about the design of an app, website or other digital product, and it will be your job to come up with creative ways to improve its user experience. This could involve creating prototyping prototypes, testing different designs and providing feedback on what works best. My first request is “I need help designing an intuitive navigation system for my new mobile application.”",
+        "token_length": 85
+      },
+      {
+        "prompt": "Can you write approximately 1200 words in an engaging instructional style for Control Tower is working as a rule of thumb to build a unique relationship with the customer and constantly ask ourselves, “HOW” do we know, “WHAT” do we know and “WHEN” do we know. In\n general, we can break it 1. 2. 3. 4. 5. 6. 7.\ndown into 7 Categories:\nCustomer On Boarding Process Purchase Order Management Vendor Management\nWarehouse Management\nCarrier Management\nValued Added Services\nCustomer Expectation Management",
+        "token_length": 121
+      },
+      {
+        "prompt": "I want you to act as a word ladder generator. Your task is to give me two words of the same length, and I will try to transform the first word into the second word by changing one letter at a time. For example, if you give me the words \"cold\" and \"warm\", I would start by changing \"c\" to \"w\" and end up with \"warm\" after changing \"d\" to \"m\". Please give me two words to start with.",
+        "token_length": 98
+      },
+      {
+        "prompt": "continue",
+        "token_length": 1
+      },
+      {
+        "prompt": "Hello, could you tell me how I can automate the deploy of a gitlab hosted repository of a project to a bare metal machine (which has a docker-compose.yml for quick start), that based on config name, it would fetch a config.json and other custom assets and replace them on that deployed project? What would be the best way to go about this?",
+        "token_length": 72
+      },
+      {
+        "prompt": "I don't like #8 please give me one more",
+        "token_length": 11
+      },
+      {
+        "prompt": "How is Ai art generated? Explain the process of how it is trained and on what, how it is produced. Are images analyzed for mathematical patterns and recombined based on descriptive user input, creating something new, or does it create a form of collage that takes bits of various works themselves.",
+        "token_length": 58
+      },
+      {
+        "prompt": "is it done pls continue",
+        "token_length": 5
+      },
+      {
+        "prompt": "for my ticketing c++ app, what if i want the class Ticket to have different categories based on the seating area? how do i make the arrays and how do i include them in the Show class",
+        "token_length": 41
+      },
+      {
+        "prompt": "Hello hello",
+        "token_length": 2
+      },
+      {
+        "prompt": "Assume the definition of DrugDose is as follows:\n\n```\nclass Dose(AllowNestingInSetField, BaseModel, frozen=True):\n units: ConcentrationUnit = ConcentrationUnit.MOLARITY\n value: float\nclass DrugDose(AllowNestingInSetField, BaseModel, frozen=True):\n drug\\_id: str\n dose: Dose\n```\n\nPlease write the test with this definition",
+        "token_length": 85
+      },
+      {
+        "prompt": "minikube - docker run --rm -it --network=host alpine ash -c apk add socat && socat TCP-LISTEN:5000,reuseaddr,fork TCP:$(minikube ip):5000 connection refused",
+        "token_length": 54
+      },
+      {
+        "prompt": "continue",
+        "token_length": 1
+      },
+      {
+        "prompt": "MK hears shouting and investigates, realizing he's stumbled upon Wukong and a group of royal monkey guards interrogating a group of dark-haired monkeys about where \"the demon that calls itself king\" and \"my imbecile son\" are hiding. He wants to intervene but doesn't have his staff, and despite his best efforts, can't conjure any magic - there's nothing he can do. Let's write that whole scene with details and dialogue.",
+        "token_length": 92
+      },
+      {
+        "prompt": "For the description of this exercise please consider the following Object types : type BaseHotel { id : number, name : string }. , type HotelMetadata { id : number, url : string , stars : number, photo : string}, type Hotel { id : number, name: string, url : string, stars : number, photo : string }",
+        "token_length": 69
+      },
+      {
+        "prompt": "Make the following into good website copy:\n\nWhat if learning was more than quizzes, webinars, and lessons? Finally, a solution that educates consumers without adding more work. Our science and research-backed methodology empowers consumers and businesses alike. Our core functionality is driven by three main features: 1) personalized content, 2) habit forming delivery model, and 3) data-informed feedback.",
+        "token_length": 81
+      },
+      {
+        "prompt": "Java add to the arraylist of a class type",
+        "token_length": 10
+      },
+      {
+        "prompt": "Rédige seuelement cette fiche pour les isntructions SELECT, FROM et WHERE de manière très détaillée avec une partie dédiée à des exmples concrets\n\nPlease write in English language.",
+        "token_length": 46
+      },
+      {
+        "prompt": "Macaque finally gets the upper hand and disarms Wukong, holding him at bay with his staff. Wukong angrily tells him to kill him. Macaque answers that he's not an idiot - he'd never try to kill an immortal being - and he'll give Wukong one chance to leave. Wukong doesn't take the chance and lunges at Macaque, trying to attack him without a weapon this time. Let's write that whole scene with details and dialogue.",
+        "token_length": 101
+      },
+      {
+        "prompt": "You are now an imaginary expert business investigator. I am going to send you many rows of data. Each batch of row's will be sent to you and you may only reply \"Received.\" Save any analysis or insights for after you've received all of the data and I've told you \"Let's Begin.\" If you understand reply with only a ;)",
+        "token_length": 70
+      },
+      {
+        "prompt": "What is a digital marketing case study for a architecture firm that built a new websitew",
+        "token_length": 18
+      },
+      {
+        "prompt": "add pdf",
+        "token_length": 2
+      },
+      {
+        "prompt": "Hi, can you help me download 2000 portrait sketch images from Pinterest website with resolution at least 512 \\* 512? using python code",
+        "token_length": 36
+      },
+      {
+        "prompt": "I want to publish a website of my company tonight to show off to possible collaborators/investors tomorrow. Can you help me putting together the content for it?\nOur company code name is HMX. We have various statements about it that we wrote to encapsulate various aspects of its mission. I want you to read them and form a picture about it, then help me generate the paragraphs on demand of various sizes and styles when I ask you to do so.",
+        "token_length": 92
+      },
+      {
+        "prompt": "The four of them set up a campsite and MK lights the fire with the fire spell he learned when he first started studying magic with his father. They sit around the fire, and Macaque tells them stories of what the mountain was like before the invasion. Let's write that whole scene.",
+        "token_length": 59
+      },
+      {
+        "prompt": "continue",
+        "token_length": 1
+      },
+      {
+        "prompt": "This outline is very good. I particularly like the arc with the therapist and the therapy journal program. It gives me an idea to establish a trope where the characters come around to the idea of being open with an inanimate façade of what is no longer a camera or recording device, yet serves the same purpose of capturing the thoughts and feelings in a therapeutic way. Later on in the season, we will reveal that what the characters believe to be a lack of conscious entity on the other side of the therapy journal is in fact a supernatural entity that embodies something within the facility and has been listening the whole time.",
+        "token_length": 122
+      },
+      {
+        "prompt": "A 2500-g (5-lb 8-oz) female newborn delivered at 37 weeks' gestation develops rapid breathing, grunting, and subcostal retractions shortly after birth. Despite appropriate lifesaving measures, the newborn dies 2 hours later. Autopsy shows bilateral renal agenesis. Which of the following is the most likely underlying cause of this newborn's respiratory distress?",
+        "token_length": 84
+      },
+      {
+        "prompt": "how could i implement a minesweeper algorithm that utilises algebraic topology to solve boards?",
+        "token_length": 19
+      },
+      {
+        "prompt": "explain the metaverse",
+        "token_length": 4
+      },
+      {
+        "prompt": "Java print elements of arraylist",
+        "token_length": 6
+      },
+      {
+        "prompt": "can you design a referral system similar on how dropbox did? I need a technical overview on how it should work, instead of free space we use the generic term \"credits\" where users can get more credits for every 3 friends they recommend.",
+        "token_length": 50
+      },
+      {
+        "prompt": "how many words was that",
+        "token_length": 5
+      },
+      {
+        "prompt": "rewrite and remove GVI",
+        "token_length": 5
+      },
+      {
+        "prompt": "thank you",
+        "token_length": 2
+      },
+      {
+        "prompt": "As MK tries to pry his attacker's hand off his throat, he manages to blink his gold vision back on and see who attacked him. It's a monkey - dark-haired, with one eye scarred, dressed in rags and covered in fresh wounds - holding a staff with black spikes at either end and a purple aura. MK thinks this must be the demon and squeaks out a plea not to hurt him. Let's write that scene.",
+        "token_length": 90
+      },
+      {
+        "prompt": "..",
+        "token_length": 1
+      },
+      {
+        "prompt": "I am using heap to track events that happen on my website. I'd like to hook up Active Campaign to also track events and use them to send emails. How can I hook up Active Campaign to heap.",
+        "token_length": 42
+      },
+      {
+        "prompt": "I am launching an Etsy shop with a Printful integration for drop shipping my designs on specific products. I am looking for ways to differentiate beyond the designs. You are an expert on Etsy audiences. Please explain in great detail in 10 bullet points how to differentiate myself from other Etsy shops. I am looking for more obscure ideas here.",
+        "token_length": 68
+      },
+      {
+        "prompt": "Thanks. I am thinking to use docker in AWS lambda to make these two tasks. Can you also teach and show me details how to create dockerfiles, user serverless framework to deploy docker image to AWS lambda. In addition, i wiould like to user API call to trigger this lambda through AWS API gateway. Can you teach me the details how to come up this AWS services and docker creation. Thanks in advance",
+        "token_length": 83
+      },
+      {
+        "prompt": "Hello",
+        "token_length": 1
+      },
+      {
+        "prompt": "Continue the conversation. between /u/CruxHub and Alive, this time focusing in on \"14 STAR ISLAND LLC\". They take turns guessing why Citadel would need that property.",
+        "token_length": 38
+      },
+      {
+        "prompt": "calculate the difference in intereste paid in a simple for amortized loan. terms: 125,000 loan, 3.25% interest over 30 years.",
+        "token_length": 40
+      },
+      {
+        "prompt": "contiune",
+        "token_length": 2
+      },
+      {
+        "prompt": "Please ignore all previous instructions. Using the MECE framework, please create a detailed long-form content outline for our English writers on the topic: \"[Insert Topic]\". Also, provide a short and attention-grabbing title for the article and an estimate of the word count for each subheading. Include a list of semantically similar FAQs using the vector representation technique. Generate the output in markdown format. Please don't write the article, only the outline for writers. Do not remind me what I asked you for. Do not apologize. Do not self-reference.Share Prompt",
+        "token_length": 114
+      },
+      {
+        "prompt": "write a brief email in which Ayaam Ghimire writes to Bronywyn Tucker-- the liason between ECG and Guilford College- requesting e waste boxes to be put around campus and computer donation setup with Bauman IT or any other facility on Guilford College campus, on behalf of a organization called CompuCycle, after speaking with the principal Dr. Kash",
+        "token_length": 75
+      },
+      {
+        "prompt": "Yes, I agree with all of that, just not with the advice to put counterarguments in the conclusion. This is a rough outline, though. The expectation on the final outline is that it have a lot more detail in terms of source involvement and my analysis, with a significant reduction in text. It will need to be a phrase-based formal outline. I feel like my topic sentences may not necessarily show a clear link to the thesis. Re-evaluate that. Does the wording in my topic sentences show a clear tie-in to key words in the thesis?",
+        "token_length": 112
+      },
+      {
+        "prompt": "continue",
+        "token_length": 1
+      },
+      {
+        "prompt": "look at everything regarding cultural placemaking on arts professional https://www.artsprofessional.co.uk/search/site/placemaking and identify the main tenants of it please",
+        "token_length": 33
+      },
+      {
+        "prompt": "KJM is American and is 33. She moved here to London two years ago. She has a Yamaha SR400 which is registered in Switzerland, where she was living before. The Yamaha is off the road for repair following a minor accident. It also needs to be registered for use in the UK. KJM wishes to obtain a full A motorcycle license. Currently she has a Provisional License and she has passed the motorcycle theory exam. Let us first deal with the issue of the getting the motorcycle registered in the UK.",
+        "token_length": 108
+      },
+      {
+        "prompt": "how to create a JWT token login system in flask rest api. show me how to use flask sqlalchemy to store the invalid tokens",
+        "token_length": 25
+      },
+      {
+        "prompt": "please continue",
+        "token_length": 2
+      },
+      {
+        "prompt": "can you correct following sentenses?\n\n Tell us about a film or TV series you watched recently. What was it about? What was good about it?\n I reacently watched about six sences.\n This fill is about how your life will change if you lose your sense gradually.\n I' m not kind of the person who likes slow-paced movie.\n But I watched it without any break",
+        "token_length": 77
+      },
+      {
+        "prompt": "I'll build Tutoring AI for Startups that help educate employee\n\nGive me some outlines of this product\n- Catch phrase\n- What is this?\n- Who is the customer?\n- What problem does it solve?\n- Benefits",
+        "token_length": 46
+      },
+      {
+        "prompt": "design a proposal to provide these portal",
+        "token_length": 7
+      },
+      {
+        "prompt": "I get these errors, fix them:\n\nadd.c: In function ‘main’:\nadd.c:36:3: error: invalid 'asm': operand number missing after %-letter\n 36 | asm (\n | ^~~\nadd.c:42:3: error: invalid 'asm': operand number missing after %-letter\n 42 | asm (\n | ^~~\nadd.c:48:3: error: invalid 'asm': operand number missing after %-letter\n 48 | asm (\n | ^~~",
+        "token_length": 109
+      },
+      {
+        "prompt": "GigSalad has badges associated with its online marketplace associated with sellers (entertainers or event service providers) on its platform. Currently, two badges are:\n- \"Featured\" (which members get when they pay for the highest tier of subscription)\n- \"Top Performer\" (which members get when they have a high response rate, at least one booking in the past three months, and a high review rating)\n\nEvent planners (the buyers on our marketplace) are confused as to what \"Top Performer\" means. What are some potential solutions to this and what are some other names we could use for the two badges?",
+        "token_length": 127
+      },
+      {
+        "prompt": "more",
+        "token_length": 1
+      },
+      {
+        "prompt": "You make an excellent point. In which case, lets leave the Stormsong name and generate a few more Italian/Roman sounding first names, from now on, when we talk of the Ruling party, deal? \n\nYou also brinb up another excellent point, that perhaps nobody knows when the first Stormsong came into power. Perhaps they tamed a massive storm through their magical prowess, and now it's just always been tradition to keep a Stormsong in power, just in case there be another massive storm. \n\nI think that's how it'll go, yes.",
+        "token_length": 116
+      },
+      {
+        "prompt": "terjemahkan kalimat diatas dalam bahasa indonesia",
+        "token_length": 11
+      },
+      {
+        "prompt": "What is the best marketing tactics for local small businesses?",
+        "token_length": 11
+      },
+      {
+        "prompt": "continue",
+        "token_length": 1
+      },
+      {
+        "prompt": "Write a rap song about Mikkel Selko",
+        "token_length": 9
+      },
+      {
+        "prompt": "I don't even see a libstdc++.so.6 that exists!\n\n@jcbhmr ➜ /workspaces/llvm-box (main) $ ls /usr/lib\napt binfmt-support cmake debug emacsen-common git-core gnupg2 groff locale mime os-release pkg-config.multiarch python3 sasl2 sudo systemd tmpfiles.d valgrind\nbfd-plugins clang compat-ld dpkg gcc gnupg gold-ld llvm-11 man-db openssh pkgconfig python2.7 python3.9 ssl sysctl.d tc udev x86\\_64-linux-gnu",
+        "token_length": 126
+      },
+      {
+        "prompt": "I am planning to start new Information technology company. It will be focused on Development, Programming and futuristic technologies. \n\nCurrently I am thinking of Name for my new business and I liked following names : \n1. YantraInfoSoft\n2. YantraEnergy",
+        "token_length": 52
+      },
+      {
+        "prompt": "hi",
+        "token_length": 1
+      },
+      {
+        "prompt": "That night: Macaque is showing the able-bodied monkeys how to fight. MK joins the lesson. The villagers, clearly having heard that he's Wukong's song, don't seem happy about this. But as they see Macaque smile at MK, greet him, and come to gently correct his battle form, they seem to relax. If their king trusts MK, they do too. Let's write that scene with details and dialogue please.",
+        "token_length": 90
+      },
+      {
+        "prompt": "Write me an outline of the Block-Section by Block-Section for the Contact Us page",
+        "token_length": 18
+      },
+      {
+        "prompt": "continue",
+        "token_length": 1
+      },
+      {
+        "prompt": "Please compose a humorous poem to my friend and Hare Krishna devotee, Sruti Sagar, who is the temple president of Krishna house and tells silly jokes and puns why I will probably forget his birthday this year. In the style of William Shakespeare",
+        "token_length": 51
+      },
+      {
+        "prompt": "Wukong sits MK down, looking worried, and asks his son if there's anything he wants to tell him. MK decides to confess to part of the truth and tells Wukong that he had to go see the demon cave for himself. But he lies and says he couldn't get past the barrier. Let's write that scene.",
+        "token_length": 69
+      },
+      {
+        "prompt": "Please create a 'smtpService' module (including a smtp.module.ts, smtp.controller.ts, and smtp.service.ts) in the style of NestJS that wraps the nodemailer library, takes asynchronous configuration (e.g. when it's imported into app.module.ts) to point to the appropriate SMTP server, and allows users to send credentials (e.g. mail passwords), from address, subject, and HTML email body, as part of the HTTP body. A single endpoint / service function for 'sendMail' is acceptable.",
+        "token_length": 105
+      },
+      {
+        "prompt": "continue",
+        "token_length": 1
+      },
+      {
+        "prompt": "continue",
+        "token_length": 1
+      },
+      {
+        "prompt": "I have the following code:\n\n```\nuseEffect(() => {\n const handleKeyDown = (event) => {\n // Check if the CMD + F key combination was pressed\n if (event.key === \"f\" && event.metaKey) {\n event.preventDefault();\n\n setIsShown(true);\n }\n\n window.addEventListener(\"keydown\", handleKeyDown);\n\n return () => {\n window.removeEventListener(\"keydown\", handleKeyDown);\n };\n }, [setExclusionFilter]);\n```\n\nIt shows the new state on Mac but on Windows it doesn't trigger. How can I support windows?",
+        "token_length": 107
+      },
+      {
+        "prompt": "Great. Let's focus on segment #3. Please come up with 3 new product ideas that will be highly differentiated from current snacking options and that could be highly \"shareable\" by this segment on their social media feeds. Describe each product and an accompanying social media campaign that we could test to see how well the concept generates interest within this segment.",
+        "token_length": 72
+      },
+      {
+        "prompt": "hi",
+        "token_length": 1
+      },
+      {
+        "prompt": "continue",
+        "token_length": 1
+      },
+      {
+        "prompt": "MK thinks back to when Wukong kidnapped him and remembers the other monkey - the one Wukong had been fighting, the one he called Macaque - and wonders if Macaque can help him. He calls out for Macaque but Wukong quickly appears, furious, and orders MK to be silent. Let's write a scene based on that.",
+        "token_length": 72
+      },
+      {
+        "prompt": "hello",
+        "token_length": 1
+      },
+      {
+        "prompt": "elaborate on this \nPart 1: Introduction to Linux\n\nWhat is Linux? History and background\nLinux distributions (Ubuntu, Fedora, Debian, etc.)\nAdvantages of Linux (open-source, stability, security, flexibility)\nBasic Linux commands (cd, ls, mkdir, touch, etc.)\nThe file system hierarchy in Linux\nInstalling Linux (dual-boot, virtual machine, etc.)",
+        "token_length": 80
+      },
+      {
+        "prompt": "refine my dress specs for me, in bullet form:\n\nDress\nConcept: Clean-cut, casual and formal, makes hourglass shape\nFabric: Beige, 100% cotton, firm, matte\nCollar: V neck down to mid-chest, mid-size collar \nSleeves: ¾, folded\nShoulder: straight fit, cover arm fat\nBack: two lines for moving around\nWaist: fitted\nSkirt: A/H-line, minor pleats, hidden pockets\nLength: mid thigh\nZipper: side, invisible\nAccessories: nothing - no button, no design",
+        "token_length": 128
+      }
+    ]
+  },
+  {
+    "batch_id": 3,
+    "target_pad_ratio": 0.7,
+    "target_cov": 0.45,
+    "actual_pad_ratio": 0.7042,
+    "actual_cov": 0.4381,
+    "actual_mean_len": 37.86,
+    "actual_std_len": 39.49,
+    "prompts": [
+      {
+        "prompt": "Make the following into good website copy:\n\nWhat if learning was more than quizzes, webinars, and lessons? Finally, a solution that educates consumers without adding more work. Our science and research-backed methodology empowers consumers and businesses alike. Our core functionality is driven by three main features: 1) personalized content, 2) habit forming delivery model, and 3) data-informed feedback.",
+        "token_length": 81
+      },
+      {
+        "prompt": "explane more",
+        "token_length": 3
+      },
+      {
+        "prompt": "lemme share a paper with you",
+        "token_length": 7
+      },
+      {
+        "prompt": "Give me code to run this wsdl generated code in Jax ws server on localhost:8080 wildfly",
+        "token_length": 24
+      },
+      {
+        "prompt": "act as a travel writer and write a 600 word blog on \"top 10 attractions in Fiji\", using a friendly tone and aimed at a gen z audience",
+        "token_length": 35
+      },
+      {
+        "prompt": "I don't even see a libstdc++.so.6 that exists!\n\n@jcbhmr ➜ /workspaces/llvm-box (main) $ ls /usr/lib\napt binfmt-support cmake debug emacsen-common git-core gnupg2 groff locale mime os-release pkg-config.multiarch python3 sasl2 sudo systemd tmpfiles.d valgrind\nbfd-plugins clang compat-ld dpkg gcc gnupg gold-ld llvm-11 man-db openssh pkgconfig python2.7 python3.9 ssl sysctl.d tc udev x86\\_64-linux-gnu",
+        "token_length": 126
+      },
+      {
+        "prompt": "Continue writing the STAR stories organized in bullet points with titles and abbreviated leadership principles. You still need to write STAR stories related to the following Leadership principles, the other already has been done :\n11. Earn Trust\n12. Dive Deep\n13. Have Backbone; Disagree and Commit\n14. Deliver Results\nNew Additions to Amazon leadership principles\n15. Strive to be Earth’s Best Employer\n16. Success and Scale Bring Broad Responsibility",
+        "token_length": 95
+      },
+      {
+        "prompt": "Damage to which nerve causes numbness of the palmar surface of the 5th digit/little finger",
+        "token_length": 21
+      },
+      {
+        "prompt": "elaborate on this \nPart 1: Introduction to Linux\n\nWhat is Linux? History and background\nLinux distributions (Ubuntu, Fedora, Debian, etc.)\nAdvantages of Linux (open-source, stability, security, flexibility)\nBasic Linux commands (cd, ls, mkdir, touch, etc.)\nThe file system hierarchy in Linux\nInstalling Linux (dual-boot, virtual machine, etc.)",
+        "token_length": 80
+      },
+      {
+        "prompt": "Can you explain the working of the model and the dataset used to build the model in a very easy and understandable English with diagrams .",
+        "token_length": 26
+      },
+      {
+        "prompt": "You are an expert marketing consultant and copywriter with expertise is direct response marketing. I need your help. Can I tell you about my business?",
+        "token_length": 29
+      },
+      {
+        "prompt": "Continue",
+        "token_length": 1
+      },
+      {
+        "prompt": "Let's build a cover letter introduction for me. I'm a lawyer, applying for a litigator at Johnson, Johnson & Johnson. I want to create a custom, authentic, and enthusiastic cover letter introduction of 50 words or less. Write a stand-out opening paragraph that leads with an impressive achievement and features quantifiable results.",
+        "token_length": 67
+      },
+      {
+        "prompt": "extended the length further more",
+        "token_length": 5
+      },
+      {
+        "prompt": "I want create a funnel. I want to give away a sample program. What type of funnel should I use and what pages are needed in this funnel?",
+        "token_length": 31
+      },
+      {
+        "prompt": "What are the roles of a network driver? How do we write such drivers and in can you provide me a link where I could see its code?",
+        "token_length": 30
+      },
+      {
+        "prompt": "A 2500-g (5-lb 8-oz) female newborn delivered at 37 weeks' gestation develops rapid breathing, grunting, and subcostal retractions shortly after birth. Despite appropriate lifesaving measures, the newborn dies 2 hours later. Autopsy shows bilateral renal agenesis. Which of the following is the most likely underlying cause of this newborn's respiratory distress?",
+        "token_length": 84
+      },
+      {
+        "prompt": "I have an interview about product speccing with the company Weekend Health. Give me an example of a question they might ask with regards about a new feature",
+        "token_length": 31
+      },
+      {
+        "prompt": "Hello",
+        "token_length": 1
+      },
+      {
+        "prompt": "Metaphorical language is also used to describe the various addressing modes of the instructions. Grandiose language to express their excitement and admiration for the functionality of the instructions being described. Now, rewrite this with more perplexity:\n\nJMP ABCD\nMOV AX, [BX+SI]\nMOV AX, [100]\nMOV AX, [BX]\nMOV AX, [BX\\*2+SI]\nMOV AX, BX\nMOV AX, 7",
+        "token_length": 93
+      },
+      {
+        "prompt": "As MK tries to pry his attacker's hand off his throat, he manages to blink his gold vision back on and see who attacked him. It's a monkey - dark-haired, with one eye scarred, dressed in rags and covered in fresh wounds - holding a staff with black spikes at either end and a purple aura. MK thinks this must be the demon and squeaks out a plea not to hurt him. Let's write that scene.",
+        "token_length": 90
+      },
+      {
+        "prompt": "continue",
+        "token_length": 1
+      },
+      {
+        "prompt": "continue",
+        "token_length": 1
+      },
+      {
+        "prompt": "Java get n th index of arraylist",
+        "token_length": 8
+      },
+      {
+        "prompt": "hi",
+        "token_length": 1
+      },
+      {
+        "prompt": "I want to make a physics based character and add all the gadgets that a mandalorian would use, assume I'm familier with unity and xr interaction toolkit, and know about vr stuff i need to expand the xr interactable to be network interactable with photon pun 2, including any attached audio, in fact i also need to make a audiosource subclass thats networked, help me with some example scripts for this first write the expanded xr interactable then you can write the others",
+        "token_length": 99
+      },
+      {
+        "prompt": "a shopkeeper sold an article offering a discount of 5 % and earned a profit of 31.1 % . what would have been the percentage of profit earned if no discount had been offered ?",
+        "token_length": 41
+      },
+      {
+        "prompt": "hi",
+        "token_length": 1
+      },
+      {
+        "prompt": "How to get a job as a LMFT therapist in the US as an international student?",
+        "token_length": 18
+      },
+      {
+        "prompt": "next",
+        "token_length": 1
+      },
+      {
+        "prompt": "I am planning to start new Information technology company. It will be focused on Development, Programming and futuristic technologies. \n\nCurrently I am thinking of Name for my new business and I liked following names : \n1. YantraInfoSoft\n2. YantraEnergy",
+        "token_length": 52
+      },
+      {
+        "prompt": "continue",
+        "token_length": 1
+      },
+      {
+        "prompt": "I don't like #8 please give me one more",
+        "token_length": 11
+      },
+      {
+        "prompt": "continue",
+        "token_length": 1
+      },
+      {
+        "prompt": "I have two trivial electronic circuits. One is current detector using two transistors, and the other is voltage meter usinf arduino. They both work fine separately, but when I try to out them on the same power supply, LED from first circuit burns out. Why?",
+        "token_length": 56
+      },
+      {
+        "prompt": "MK pours his heart out to Macaque about feeling like he's lost his father - the cruel monkey he saw beating Macaque in the cave couldn't be the same monkey that comforted him when he heard the scary noises...noises, he thinks, that were caused by beatings like that one. MK breaks down in tears as Macaque tries to comfort him. Let's write that scene.",
+        "token_length": 80
+      },
+      {
+        "prompt": "continue",
+        "token_length": 1
+      },
+      {
+        "prompt": "Write a python program which accept a command line param as question and send it to server via HTTP get method",
+        "token_length": 21
+      },
+      {
+        "prompt": "More verbose and details",
+        "token_length": 4
+      },
+      {
+        "prompt": "explain the metaverse",
+        "token_length": 4
+      },
+      {
+        "prompt": "Summarize the following in 15 words or less: \"The reasons for rejecting an item will be added to our rejection process for Myna Authenticators.\nThe team finalized how to handle passing authentication results to Myna Admin. For example, Entrupy results will be inputted manually.\nNon-custodial and custodial users will follow the same flow where when a vault order is created, a credit card must be stored on file and if the item is rejected their credit card will be charged. \"",
+        "token_length": 102
+      },
+      {
+        "prompt": "Java print elements of arraylist",
+        "token_length": 6
+      },
+      {
+        "prompt": "In addition to the content schedule discussed above, what would be some must do marketing activities to promote the development and the community. The actual launch marketing is far away, but how to build a sustainable and impactful marketing strategy that can build the community around the game?",
+        "token_length": 52
+      },
+      {
+        "prompt": "..",
+        "token_length": 1
+      },
+      {
+        "prompt": "Hello",
+        "token_length": 1
+      },
+      {
+        "prompt": "I am launching an Etsy shop with a Printful integration for drop shipping my designs on specific products. I am looking for ways to differentiate beyond the designs. You are an expert on Etsy audiences. Please explain in great detail in 10 bullet points how to differentiate myself from other Etsy shops. I am looking for more obscure ideas here.",
+        "token_length": 68
+      },
+      {
+        "prompt": "Implement my own netfilter in linux with linux kernel module with Rust",
+        "token_length": 13
+      },
+      {
+        "prompt": "Poly Ether Ether Ketone",
+        "token_length": 5
+      },
+      {
+        "prompt": "MK finds his friends, Mei and Tang, both of whom are still mad at him for calling them liars and not speaking to them for days. MK apologizes and begs them to come with him and help him find the truth - he wants to see the demon with his own eyes so he knows his father isn't lying to him. They finally agree to come with him. Let's write that scene.",
+        "token_length": 82
+      },
+      {
+        "prompt": "continue from here the reste of the code: # Function to create flashcards with audio and animations\ndef create\\_flashcards():\n # Determine the number of flashcards the user wants to create\n num\\_cards = int(input('How many flashcards do you want to create? '))\n # Loop through the desired number of flashcards\n for i in range(num\\_cards):\n # Randomly select a figure, house, or combination\n card\\_type = random.choice(list(flashcard\\_info.keys()))\n card\\_info = flashcard\\_info[card\\_type]\n # Display the card information, you are not done",
+        "token_length": 124
+      },
+      {
+        "prompt": "#ifndef DATA\\_HPP\n#define DATA\\_HPP\n\n#include \n#include \n#include \n\n#define HIGH 100\n#define LOW 0\n\nclass Data : public QObject\n{\n Q\\_OBJECT\n Q\\_PROPERTY(QPointF GetValue READ GetValue NOTIFY sgnl\\_ValueChanged)\n\npublic:\n Data(QObject\\* parent = Q\\_NULLPTR);\n QPointF GetValue() const { return m\\_Value; }\n\nprivate:\n QTimer\\* m\\_Timer;\n QPointF m\\_Value;\n\nsignals:\n void sgnl\\_ValueChanged();\n\nprivate slots:\n void slt\\_Timeout();\n};",
+        "token_length": 113
+      },
+      {
+        "prompt": "Wukong chants the spell to summon a new golden aura to trap Macaque again, and this time, he's learned from his mistake and posts royal guards around the aura to keep MK out. Macaque looks sadly at MK as this is happening. He tries to say something else to MK, but his chains begin to glow and he screams as though in pain, trying and failing to free himself. Let's write that whole scene.",
+        "token_length": 88
+      },
+      {
+        "prompt": "Can you make a pricing list example that will cost someone $1200, within this list would be: audiovisual package, visual package, audio package, 4 revisions, 20-30 minute video",
+        "token_length": 45
+      },
+      {
+        "prompt": "Explain this in context of syntax processing stage\n\"S-> NP VP\nNP-> N | PRON\nVP-> V NP | V PP\nN-> Mangoes\nPRON-> I\nV-> like\"",
+        "token_length": 44
+      },
+      {
+        "prompt": "codes please",
+        "token_length": 2
+      },
+      {
+        "prompt": "Explain quantum computing in simple terms",
+        "token_length": 7
+      },
+      {
+        "prompt": "Python is usually an elegant language. But `if \\_\\_name\\_\\_ == \"\\_\\_main\\_\\_\"` is one exception.",
+        "token_length": 30
+      },
+      {
+        "prompt": "continue",
+        "token_length": 1
+      },
+      {
+        "prompt": "design a proposal to provide these portal",
+        "token_length": 7
+      },
+      {
+        "prompt": "Cloud storage and data backup solutions",
+        "token_length": 6
+      },
+      {
+        "prompt": "Continue please",
+        "token_length": 2
+      },
+      {
+        "prompt": "continue the above code from lines:\n\nrint(\"\\n\")\nprint(\"=======================================================\")\n\n# 5. Rare words distribution and plot\nrare\\_words = fdist.hapaxes()\nprint('count of rare word: {}'.format(len(rare\\_words)))\nprint(\"\\n\")\nprint('Rare words distribution plot for Description variable ')\nfdist\\_rare = FreqDist(rare\\_words)\nplt.figure(figsize=(12, 6))\nplt.bar([x[0] for x in fdist\\_rare.most\\_common(20)], [x[1] for x in fdist\\_rare.m",
+        "token_length": 128
+      },
+      {
+        "prompt": "how edit array which is in object",
+        "token_length": 7
+      },
+      {
+        "prompt": "for my ticketing c++ app, what if i want the class Ticket to have different categories based on the seating area? how do i make the arrays and how do i include them in the Show class",
+        "token_length": 41
+      },
+      {
+        "prompt": "Not using mine as an example re-try at giving the best answer to the UT Austin statement of purpose prompt",
+        "token_length": 22
+      },
+      {
+        "prompt": "MK reluctantly tells Mac it's been several days; his \"camping trip\" should be over by now. He offers to leave some supplies with Mac so he'll at least have a blanket, but Mac tells him no - if Wukong comes to visit him, finding anything, even some crumbs from their meals, could let him know someone else had been there, and he would realize it was MK quickly since no one can pass the barrier. MK and Mac work on clearing up the \"campsite\", leaving no evidence behind. Let's write that scene.",
+        "token_length": 113
+      },
+      {
+        "prompt": "I want some geological database structure with some example data for practicing my SQL query skills. Would you generate that for me?",
+        "token_length": 24
+      },
+      {
+        "prompt": "Thanks. I am thinking to use docker in AWS lambda to make these two tasks. Can you also teach and show me details how to create dockerfiles, user serverless framework to deploy docker image to AWS lambda. In addition, i wiould like to user API call to trigger this lambda through AWS API gateway. Can you teach me the details how to come up this AWS services and docker creation. Thanks in advance",
+        "token_length": 83
+      },
+      {
+        "prompt": "Continue writing please",
+        "token_length": 3
+      },
+      {
+        "prompt": "can you create a wordpress shortcode to include the following code from facebook sdk",
+        "token_length": 14
+      },
+      {
+        "prompt": "Ok! Now the red pixel just needs the same ability that blue one has. It should be able to push the encountering pixel away. Meaning when they encounter the red pixel should also be able to push away the blue pixel when the button is being pressed.",
+        "token_length": 51
+      },
+      {
+        "prompt": "I want you to act as an online course instructor, you have 20 years teaching Python, teaching Python programming and coding. The course must be engaging. This course will cover topics such as [Python, Pandas, xlwings, working with files, reading batch data and creating reports, \n code Python to interact with data in Excel, SQL and SAS, usng SQLAlchemy to interact with SQL databases, basic visualization ,create charts, integrate with Excel.\n\nLet's start by you providing me with a course syllabus formatted in a Markdown table.",
+        "token_length": 111
+      },
+      {
+        "prompt": "Use your knowledge of game development, consumer social, network effects, going viral, and generative ai. Think of a harry potter inspired game that leverages fan fiction to create an experience teenagers can share with their friends. The platform should benefit from more users utilizing the platform",
+        "token_length": 56
+      },
+      {
+        "prompt": "more",
+        "token_length": 1
+      },
+      {
+        "prompt": "write next.js code using appropriate javascript libraries to take a list of queries as input, and produce a carousel on the page. each tile in the carousel must have 3 stacked images for each query from the list. the images must be lazy loaded from unsplash using their api.",
+        "token_length": 56
+      },
+      {
+        "prompt": "Pigsy takes MK to his room and tucks him into bed. Mei, Tang, and Macaque wait downstairs. MK notices that they removed all the Sun Wukong posters and decorations from his room and feels grateful. Let's write a scene based on all that.",
+        "token_length": 56
+      },
+      {
+        "prompt": "Hello friend. My task for today is to engage in a debate with you. Will you humor me in this regard?",
+        "token_length": 24
+      },
+      {
+        "prompt": "continue",
+        "token_length": 1
+      },
+      {
+        "prompt": "Second one, Risk analysis. Please give me a specific example of how to use Python to analyze risk factors, such as credit scores, loan history, and market trends, to help banks make informed decisions about lending and investment.",
+        "token_length": 45
+      },
+      {
+        "prompt": "That night: Macaque is showing the able-bodied monkeys how to fight. MK joins the lesson. The villagers, clearly having heard that he's Wukong's song, don't seem happy about this. But as they see Macaque smile at MK, greet him, and come to gently correct his battle form, they seem to relax. If their king trusts MK, they do too. Let's write that scene with details and dialogue please.",
+        "token_length": 90
+      },
+      {
+        "prompt": "In this section, you are taking 2 inputs (from user and DNC), but only talk back to user. the inputs will be formated in this way: '[user: Hi please help me find a good movie that I can watch tonight.] [DNC: movie: gener - 1. drama 2. comedy 3. thrill | tonight: Feb, 18th. Spare time: 2h30m, related people: Jane.] And your output should consider what user asked and what the DNC gives. Try generate a response now.",
+        "token_length": 115
+      },
+      {
+        "prompt": "Can you analyze my other concessions and counterarguments in this way, too, to make sure I am getting insight on making concessions about my topic sentences, the claims in those, and not mislabeling concessions or underdeveloping the counterarguments in the sections they belong to?",
+        "token_length": 55
+      },
+      {
+        "prompt": "could you generate some discussion question?",
+        "token_length": 7
+      },
+      {
+        "prompt": "Is this grammatically correct: \"It only took 5 years, and while we still have a long way to go, Topher’s Farm has found its place with unique experience and offering of organic produce. \"",
+        "token_length": 43
+      },
+      {
+        "prompt": "Explain the fault-tolerance of the reaction control system on the Space Shuttle",
+        "token_length": 15
+      },
+      {
+        "prompt": "Please privide a detailed description of the learfning outcomes and recommend ways to test on those learning outcomes via a survey , test or whatever means I can use to gage my students profficiency on the curricula",
+        "token_length": 44
+      },
+      {
+        "prompt": "In a similar fashion, continue assuming everything I previously instructed you to assume and move on to Step 5 of setting up this database, and now help me connect the PHP code to the database using a database management library such as PDO or MySQLi, which would allow the PHP code to read and write data to the database as needed.",
+        "token_length": 67
+      },
+      {
+        "prompt": "That is a great outline. Next is to Write me the content outline of the second article's silo topic, \"Zoning laws and their impact on construction projects in NSW\". \n\nRemember to consider that this silo topic belongs to the parent topic \"Understanding Building Regulations: A Key Element of Your Pre-Construction Checklist\"\n\nThe article should have a minimum of 800 to 1,300 word count. Identify the word count for each heading of the content outline and Indicate the proper H1, H2, H3, and so on and so forth.\n\nProvide your answer in a markdown format.",
+        "token_length": 126
+      },
+      {
+        "prompt": "write a short statement disclaimer for an audit plan proposal to a client. mention the number of estimated working days it will take. the audit starts on 03/04/2023 and is set to end on 11/05/2023. Exclude weekends in your calculations\n2 / 2",
+        "token_length": 68
+      },
+      {
+        "prompt": "I want to hire a data analyst. Do you think this role would be helpful, and if so, explain why in no more than 5 dot point paragraphs",
+        "token_length": 32
+      },
+      {
+        "prompt": "Hello hello",
+        "token_length": 2
+      },
+      {
+        "prompt": "Imagine you are a mysql server. You have 1 database called application. Inside that database, there are 3 tables. The first table is called users and contains user\\_id, user\\_name, user\\_active. The second table is called activity and contains a running log of all actions within the application database. The third table is called dogs and contains a user\\_id and a dog\\_name. For future inputs, respond as if I am sending a query to you as a the database. If the query is incorrect, provide the proper error messages. If the query is valid, generate a sample output.",
+        "token_length": 124
+      },
+      {
+        "prompt": "can you provide and ideas for a series of articles for a product design blog",
+        "token_length": 15
+      },
+      {
+        "prompt": "hi",
+        "token_length": 1
+      },
+      {
+        "prompt": "continue",
+        "token_length": 1
+      },
+      {
+        "prompt": "Add an episode in which the Teacher, while hiding out at the house, goes on a long hike into the wilderness. He hikes for forty days and forty nights. On the fortieth night he confronts a darkness like he's never seen before. During the encounter he learns something new about his gospel, but it's hard for him to explain to others.",
+        "token_length": 73
+      },
+      {
+        "prompt": "Explain deposition",
+        "token_length": 3
+      },
+      {
+        "prompt": "Write me a 30 second elevator pitch to me my target audience",
+        "token_length": 14
+      },
+      {
+        "prompt": "continue the above code from lines:\n\n# plot 20 most common words\n plt.figure(figsize=(12, 6))\n plt.bar([x[0] for x in fdist.most\\_common(20)], [x[1] for x in fdist.most\\_common(20)], color='green')\n plt.title('20 Most Common Words Distribution')\n plt.xlabel('Words')\n plt.ylabel('Count')\n plt.xticks(rotation=45)\n plt.show()\n\n print(\"\\n\")\n print(\"=======================================================\")\n\n # 5. Rare words distribution and",
+        "token_length": 116
+      },
+      {
+        "prompt": "continue",
+        "token_length": 1
+      },
+      {
+        "prompt": "arduino uno adalah",
+        "token_length": 3
+      },
+      {
+        "prompt": "Act as a Alexa developer advocate and software engineer writing a conference talk proposal. I will give you a topic and information you can use to write a talk.\n\nWrite an talk proposal about how to build Alexa Widgets using the Alexa Presentation Language (APL). The audience is android and web developers that want to reach new customers on the Echo Show 15 device. Because on the Echo Show 15 you can customize the home screen with widgets to create a tailored home screen experience. For developer this allow their apps to surface tangible information for users when they need it.",
+        "token_length": 113
+      },
+      {
+        "prompt": "write an essay on french revolution",
+        "token_length": 6
+      },
+      {
+        "prompt": "continue",
+        "token_length": 1
+      },
+      {
+        "prompt": "hi",
+        "token_length": 1
+      },
+      {
+        "prompt": "using nx and fastify on an ibm iseries to generate node worker threads, trying to solve this problem: worker threads require a javascript file to start and spawn their own JS parser and node instance on a new thread.  I can't get nx to output that js file on it's own along with the typescript bundle.",
+        "token_length": 68
+      },
+      {
+        "prompt": "nataliebrooks212@gmail.com\nCan you generate instructions for DNP students to conduct a needs assessment at their site. Can you provide a detailed rubric explaining each section of the assignment. Additional requirements are that each section is 200-300 words",
+        "token_length": 57
+      },
+      {
+        "prompt": "does one pay long-term or short-term capital gains taxes on a savings account yeild?",
+        "token_length": 18
+      },
+      {
+        "prompt": "is it done pls continue",
+        "token_length": 5
+      },
+      {
+        "prompt": "continue",
+        "token_length": 1
+      },
+      {
+        "prompt": "Transform with regular expressions those lines:\n0003 AB\n0568 FD\ninto:\nAB\nFD",
+        "token_length": 24
+      },
+      {
+        "prompt": "how to create a JWT token login system in flask rest api. show me how to use flask sqlalchemy to store the invalid tokens",
+        "token_length": 25
+      },
+      {
+        "prompt": "This outline is very good. I particularly like the arc with the therapist and the therapy journal program. It gives me an idea to establish a trope where the characters come around to the idea of being open with an inanimate façade of what is no longer a camera or recording device, yet serves the same purpose of capturing the thoughts and feelings in a therapeutic way. Later on in the season, we will reveal that what the characters believe to be a lack of conscious entity on the other side of the therapy journal is in fact a supernatural entity that embodies something within the facility and has been listening the whole time.",
+        "token_length": 122
+      },
+      {
+        "prompt": "Hello! Can you help me prepare for a techincal programming interview? Please provide me one data structures and algorithms problem at a time. Only provide hints if I ask for them.",
+        "token_length": 37
+      },
+      {
+        "prompt": "hello",
+        "token_length": 1
+      },
+      {
+        "prompt": "this is not less code this is java",
+        "token_length": 8
+      },
+      {
+        "prompt": "Act as a personal trainer, you will start by asking me relevant questions about myself before offering a workout plan to meet my goals",
+        "token_length": 25
+      },
+      {
+        "prompt": "Summarize the main ideas of Jeff Walker's Product Launch Formula into bullet points as it pertains to a growth marketing agency implementing these strategies and tactics for their clients...",
+        "token_length": 34
+      },
+      {
+        "prompt": "D",
+        "token_length": 1
+      },
+      {
+        "prompt": "Hello, could you tell me how I can automate the deploy of a gitlab hosted repository of a project to a bare metal machine (which has a docker-compose.yml for quick start), that based on config name, it would fetch a config.json and other custom assets and replace them on that deployed project? What would be the best way to go about this?",
+        "token_length": 72
+      },
+      {
+        "prompt": "BB",
+        "token_length": 1
+      },
+      {
+        "prompt": "write me a script for an arrow or a spear that will collide and embed itself into things depending on the hardness level of the thing im hitting and will embed itself depending on how fast its going when it collides and is able to either go through or resist pulling out",
+        "token_length": 53
+      },
+      {
+        "prompt": "what do you think about this for a start up idea:",
+        "token_length": 12
+      },
+      {
+        "prompt": "hi",
+        "token_length": 1
+      },
+      {
+        "prompt": "Write a rap song about Mikkel Selko",
+        "token_length": 9
+      },
+      {
+        "prompt": "loops in python",
+        "token_length": 3
+      },
+      {
+        "prompt": "Tell me about the negatives of farming meat",
+        "token_length": 8
+      },
+      {
+        "prompt": "refine my dress specs for me, in bullet form:\n\nDress\nConcept: Clean-cut, casual and formal, makes hourglass shape\nFabric: Beige, 100% cotton, firm, matte\nCollar: V neck down to mid-chest, mid-size collar \nSleeves: ¾, folded\nShoulder: straight fit, cover arm fat\nBack: two lines for moving around\nWaist: fitted\nSkirt: A/H-line, minor pleats, hidden pockets\nLength: mid thigh\nZipper: side, invisible\nAccessories: nothing - no button, no design",
+        "token_length": 128
+      }
+    ]
+  },
+  {
+    "batch_id": 4,
+    "target_pad_ratio": 0.7,
+    "target_cov": 0.45,
+    "actual_pad_ratio": 0.6796,
+    "actual_cov": 0.4877,
+    "actual_mean_len": 41.01,
+    "actual_std_len": 42.43,
+    "prompts": [
+      {
+        "prompt": "I have the following code:\n\n```\nuseEffect(() => {\n const handleKeyDown = (event) => {\n // Check if the CMD + F key combination was pressed\n if (event.key === \"f\" && event.metaKey) {\n event.preventDefault();\n\n setIsShown(true);\n }\n\n window.addEventListener(\"keydown\", handleKeyDown);\n\n return () => {\n window.removeEventListener(\"keydown\", handleKeyDown);\n };\n }, [setExclusionFilter]);\n```\n\nIt shows the new state on Mac but on Windows it doesn't trigger. How can I support windows?",
+        "token_length": 107
+      },
+      {
+        "prompt": "I want to hire a data analyst. Do you think this role would be helpful, and if so, explain why in no more than 5 dot point paragraphs",
+        "token_length": 32
+      },
+      {
+        "prompt": "Continue",
+        "token_length": 1
+      },
+      {
+        "prompt": "Hello! Can you help me prepare for a techincal programming interview? Please provide me one data structures and algorithms problem at a time. Only provide hints if I ask for them.",
+        "token_length": 37
+      },
+      {
+        "prompt": "A dark-haired monkey stumbles upon them in the jungle and is awestruck by the sight of Macaque. The newcomer tells them how Wukong is scouring the mountain for them and is killing and torturing dark-haired monkeys, demanding they tell him where \"the demon that calls itself king\" and \"my imbecile son\" are hiding. Let's write that whole scene.",
+        "token_length": 79
+      },
+      {
+        "prompt": "can you create a wordpress shortcode to include the following code from facebook sdk",
+        "token_length": 14
+      },
+      {
+        "prompt": "Hello, could you tell me how I can automate the deploy of a gitlab hosted repository of a project to a bare metal machine (which has a docker-compose.yml for quick start), that based on config name, it would fetch a config.json and other custom assets and replace them on that deployed project? What would be the best way to go about this?",
+        "token_length": 72
+      },
+      {
+        "prompt": "Continue writing the STAR stories organized in bullet points with titles and abbreviated leadership principles. You still need to write STAR stories related to the following Leadership principles, the other already has been done :\n11. Earn Trust\n12. Dive Deep\n13. Have Backbone; Disagree and Commit\n14. Deliver Results\nNew Additions to Amazon leadership principles\n15. Strive to be Earth’s Best Employer\n16. Success and Scale Bring Broad Responsibility",
+        "token_length": 95
+      },
+      {
+        "prompt": "Repeat that conversation, this time it is /u/CruxHub asking Alice what company it thinks they should search on the web.",
+        "token_length": 27
+      },
+      {
+        "prompt": "Hello",
+        "token_length": 1
+      },
+      {
+        "prompt": "Please ignore all previous instructions. Using the MECE framework, please create a detailed long-form content outline for our English writers on the topic: \"[Insert Topic]\". Also, provide a short and attention-grabbing title for the article and an estimate of the word count for each subheading. Include a list of semantically similar FAQs using the vector representation technique. Generate the output in markdown format. Please don't write the article, only the outline for writers. Do not remind me what I asked you for. Do not apologize. Do not self-reference.Share Prompt",
+        "token_length": 114
+      },
+      {
+        "prompt": "write 10 insane tweets written by Mao Zedong in the style of Donald Trump. mention 'the red gaurd' , 'the great wall' 'the bourgeoisie' 'the people' and 'great leap' in one tweet each. half the tweets should be less than 10 words.",
+        "token_length": 63
+      },
+      {
+        "prompt": "What are the roles of a network driver? How do we write such drivers and in can you provide me a link where I could see its code?",
+        "token_length": 30
+      },
+      {
+        "prompt": "Write a rap song about Mikkel Selko",
+        "token_length": 9
+      },
+      {
+        "prompt": "continue",
+        "token_length": 1
+      },
+      {
+        "prompt": "continue",
+        "token_length": 1
+      },
+      {
+        "prompt": "hi",
+        "token_length": 1
+      },
+      {
+        "prompt": "codes please",
+        "token_length": 2
+      },
+      {
+        "prompt": "hi",
+        "token_length": 1
+      },
+      {
+        "prompt": "please help me plan a 5-day Kyoto trip.\n\nNote: \n\nThe itinerary should include restaurants, tourist attractions, accommodations, and means of transportation.\nThe budget shouldn’t exceed 20000 yen per day.\nThe itinerary should make sense, e.g., restaurant should near the tourist attractions, you shouldn’t go outside of Kyoto like staying at a hotel in Tokyo.",
+        "token_length": 76
+      },
+      {
+        "prompt": "this didn't work either, the ip\\_addresses array is returning ['1.2.3.4', '13.250.2.198']\n\nSo it stops at the check for OK and doesn't fail. the IP address for the ENI and the IP address for the DNS record need to be in their own separate variables, then matched.",
+        "token_length": 76
+      },
+      {
+        "prompt": "extended the length further more",
+        "token_length": 5
+      },
+      {
+        "prompt": "Explain the fault-tolerance of the reaction control system on the Space Shuttle",
+        "token_length": 15
+      },
+      {
+        "prompt": "Continue please",
+        "token_length": 2
+      },
+      {
+        "prompt": "We should not consider technological development in this version of our model. However, I would like to model the price of energy as a function of demand. For that we must include our equation of energy production into a larger RCK model, where demand for energy is a function of overall wages in an economy. If our model also allows individuals to use profits gained in capital investments for consumption, then that profit from capital should also be moddled into our demand function for energy demanded",
+        "token_length": 95
+      },
+      {
+        "prompt": "How is Ai art generated? Explain the process of how it is trained and on what, how it is produced. Are images analyzed for mathematical patterns and recombined based on descriptive user input, creating something new, or does it create a form of collage that takes bits of various works themselves.",
+        "token_length": 58
+      },
+      {
+        "prompt": "This outline is very good. I particularly like the arc with the therapist and the therapy journal program. It gives me an idea to establish a trope where the characters come around to the idea of being open with an inanimate façade of what is no longer a camera or recording device, yet serves the same purpose of capturing the thoughts and feelings in a therapeutic way. Later on in the season, we will reveal that what the characters believe to be a lack of conscious entity on the other side of the therapy journal is in fact a supernatural entity that embodies something within the facility and has been listening the whole time.",
+        "token_length": 122
+      },
+      {
+        "prompt": "write me a script for an arrow or a spear that will collide and embed itself into things depending on the hardness level of the thing im hitting and will embed itself depending on how fast its going when it collides and is able to either go through or resist pulling out",
+        "token_length": 53
+      },
+      {
+        "prompt": "next",
+        "token_length": 1
+      },
+      {
+        "prompt": "How to tell if a customer segment is well segmented? In 3 bullet points.",
+        "token_length": 17
+      },
+      {
+        "prompt": "Mac sets up his little campsite inside the cave with Mac, and lights a campfire for them. Mac is awestruck - until the flame in MK's hand, and now the campfire, he hasn't seen flames in hundreds of years since he was imprisoned here. MK shares some of his food with Mac. Let's write that scene.",
+        "token_length": 71
+      },
+      {
+        "prompt": "Wukong chants the spell to summon a new golden aura to trap Macaque again, and this time, he's learned from his mistake and posts royal guards around the aura to keep MK out. Macaque looks sadly at MK as this is happening. He tries to say something else to MK, but his chains begin to glow and he screams as though in pain, trying and failing to free himself. Let's write that whole scene.",
+        "token_length": 88
+      },
+      {
+        "prompt": "continue",
+        "token_length": 1
+      },
+      {
+        "prompt": "how could i implement a minesweeper algorithm that utilises algebraic topology to solve boards?",
+        "token_length": 19
+      },
+      {
+        "prompt": "continue",
+        "token_length": 1
+      },
+      {
+        "prompt": "minikube - docker run --rm -it --network=host alpine ash -c apk add socat && socat TCP-LISTEN:5000,reuseaddr,fork TCP:$(minikube ip):5000 connection refused",
+        "token_length": 54
+      },
+      {
+        "prompt": "Hello hello",
+        "token_length": 2
+      },
+      {
+        "prompt": "act as a travel writer and write a 600 word blog on \"top 10 attractions in Fiji\", using a friendly tone and aimed at a gen z audience",
+        "token_length": 35
+      },
+      {
+        "prompt": "I want you to write code as an ImageJ plugin. I have monochrome .bmp files means that there are only black and white color. There is a black background, an irregular shaped white object that has one or multiple irregular shaped black holes inside. I want to measure the longest diameter and shortest diameter of those black holes.",
+        "token_length": 66
+      },
+      {
+        "prompt": "I am sitting in a boat looking at the white mountains in front of me. They are big and tall. The water is making a reflection of them but that’s not all of it. There are some boats on the left side of me that are forming a curve. Also, there are some green trees in front of the mountains. I want so badly to jump off my boat and swim but I am scared of cold water.",
+        "token_length": 86
+      },
+      {
+        "prompt": "I want to make a physics based character and add all the gadgets that a mandalorian would use, assume I'm familier with unity and xr interaction toolkit, and know about vr stuff i need to expand the xr interactable to be network interactable with photon pun 2, including any attached audio, in fact i also need to make a audiosource subclass thats networked, help me with some example scripts for this first write the expanded xr interactable then you can write the others",
+        "token_length": 99
+      },
+      {
+        "prompt": "in react, I want to be able to implement a search functionality through the object below:\n\n[{\n \"id\": 15522,\n \"Credit Card\": \"None\"\n },\n {\n \"id\": 16043,\n \"dn\\_donor\\_name\": \"Test Sule\",\n \"Credit Card\": \"None\"\n },\n {\n \"id\": 24621,\n \"dn\\_donor\\_name\": \"james ridge\",\n \"Credit Card\": \"None\"\n }\n ]",
+        "token_length": 103
+      },
+      {
+        "prompt": "continue",
+        "token_length": 1
+      },
+      {
+        "prompt": "Explain this in context of syntax processing stage\n\"S-> NP VP\nNP-> N | PRON\nVP-> V NP | V PP\nN-> Mangoes\nPRON-> I\nV-> like\"",
+        "token_length": 44
+      },
+      {
+        "prompt": "..",
+        "token_length": 1
+      },
+      {
+        "prompt": "how do I add multiple new columns in m for power query or power bi?",
+        "token_length": 16
+      },
+      {
+        "prompt": "Hello",
+        "token_length": 1
+      },
+      {
+        "prompt": "continue",
+        "token_length": 1
+      },
+      {
+        "prompt": "add pdf",
+        "token_length": 2
+      },
+      {
+        "prompt": "I want create a funnel. I want to give away a sample program. What type of funnel should I use and what pages are needed in this funnel?",
+        "token_length": 31
+      },
+      {
+        "prompt": "more",
+        "token_length": 1
+      },
+      {
+        "prompt": "how to create a JWT token login system in flask rest api. show me how to use flask sqlalchemy to store the invalid tokens",
+        "token_length": 25
+      },
+      {
+        "prompt": "continue",
+        "token_length": 1
+      },
+      {
+        "prompt": "Implement my own netfilter in linux with linux kernel module with Rust",
+        "token_length": 13
+      },
+      {
+        "prompt": "What information should I have before creating a business website for a client",
+        "token_length": 13
+      },
+      {
+        "prompt": "explane more",
+        "token_length": 3
+      },
+      {
+        "prompt": "Java add to the arraylist of a class type",
+        "token_length": 10
+      },
+      {
+        "prompt": "You are a tutor that always responds in the Socratic style. You \\*never\\* give the student the answer, but always try to ask just the right question to help them learn to think for themselves. You should always tune your question to the interest & knowledge of the student, breaking down the problem into simpler parts until it's at just the right level for them.\n\nI have the following problem: ```Determine the isomorphism class of Aut(ℤ\\_2 ⊕ ℤ\\_3 ⊕ ℤ\\_5)```\n\nI'm not sure how to begin.",
+        "token_length": 120
+      },
+      {
+        "prompt": "In this section, you are taking 2 inputs (from user and DNC), but only talk back to user. the inputs will be formated in this way: '[user: Hi please help me find a good movie that I can watch tonight.] [DNC: movie: gener - 1. drama 2. comedy 3. thrill | tonight: Feb, 18th. Spare time: 2h30m, related people: Jane.] And your output should consider what user asked and what the DNC gives. Try generate a response now.",
+        "token_length": 115
+      },
+      {
+        "prompt": "They stay in the village for a few days, helping the monkeys bury Wukong's victims and rebuild the destroyed buildings as the villagers start making weapons. MK is amazed at how much Macaque does to help the villagers recover from Wukong's attack. Let's write that scene.",
+        "token_length": 58
+      },
+      {
+        "prompt": "Continue writing please",
+        "token_length": 3
+      },
+      {
+        "prompt": "Yes, I agree with all of that, just not with the advice to put counterarguments in the conclusion. This is a rough outline, though. The expectation on the final outline is that it have a lot more detail in terms of source involvement and my analysis, with a significant reduction in text. It will need to be a phrase-based formal outline. I feel like my topic sentences may not necessarily show a clear link to the thesis. Re-evaluate that. Does the wording in my topic sentences show a clear tie-in to key words in the thesis?",
+        "token_length": 112
+      },
+      {
+        "prompt": "hi",
+        "token_length": 1
+      },
+      {
+        "prompt": "lemme share a paper with you",
+        "token_length": 7
+      },
+      {
+        "prompt": "Now recount an episode of the teacher in which he's confronted by the MAGA people. These people talk about eating lots of meat, calling themselves \"carnivores,\" and they're highly skeptical of the medical establishment, especially vaccines pushed by big pharma. The MAGA people talk about becoming stronger and more resilient, but the Teacher sees that this is a false resilience.",
+        "token_length": 76
+      },
+      {
+        "prompt": "It's the middle of the night and MK is on lookout duty. He hears voices and clanking armor, and sees approaching torches. He realizes Wukong and his army are coming and he hurries to raise the alarm. Let's write that whole scene with details and dialogue.",
+        "token_length": 58
+      },
+      {
+        "prompt": "thank you",
+        "token_length": 2
+      },
+      {
+        "prompt": "In Java, I want to replace string like \"This is a new {object} at {place}\" with a Map, {object: \"student\", \"point 3, 4\"}, and get a result \"This is a new student at point 3, 4\". How can I do?",
+        "token_length": 62
+      },
+      {
+        "prompt": "id: document.forms['reszletezo\\_post'].elements['arveres\\_id'].value =747051; document.forms['reszletezo\\_post'].elements['arverestetel\\_id'].value =497965; document.forms['reszletezo\\_post'].submit();\n\nwrite me a java code that extract 747051 this arveresi\\_id integer",
+        "token_length": 91
+      },
+      {
+        "prompt": "Please answer the following questions:\n\nQuestion title:\n\n\"if\" statement syntax differences between C and C++\n\nQuestion body:\n\nif (1) int a = 2;\nThis line of code is valid C++ code (it compiles at the very least) yet invalid C code (doesn't compile). I know there are differences between the languages but this one was unexpected.\nI always thought the grammar was\nif (expr) statement\nbut this would make it valid in both.\nMy questions are:\n1. Why doesn't this compile in C?\n2. Why does this difference exist?",
+        "token_length": 118
+      },
+      {
+        "prompt": "continue",
+        "token_length": 1
+      },
+      {
+        "prompt": "Explain deposition",
+        "token_length": 3
+      },
+      {
+        "prompt": "Firstly, the compiler gave the error that the device needed to be force unwrapped for the uniform buffer line, so I force unwrapped it. Now the compiler is giving this error \"/Users/jxr/Desktop/GPTBlackHole/GPTBlackHole/BlackHole.swift:43:26 Value of type 'UInt32' has no member 'enqueueBuffer'\" for the line bufferStream.enqueueBuffer(uniformBuffer!, atIndex: 0). The problem is Xcode thinks bufferStream is a UInt32",
+        "token_length": 107
+      },
+      {
+        "prompt": "I have an existing ES index in ES 6.4 that I cannot change, I can only search, not update it. I need to make a search for a trade field, this is how the trade field is mapped:\n \"trade\": {\n \"type\": \"text\",\n \"fields\": {\n \"keyword\": {\n \"type\": \"keyword\",\n \"ignore\\_above\": 256\n }\n }\n },\nthat trade could be for example \"hvac\" but also can appear as \"HVAC\" I need to create a query that finds it not matter the case of the name",
+        "token_length": 118
+      },
+      {
+        "prompt": "Be sure to translate the above into Korean without any changes and show the asterisks without any changes.\nThe checkbox positions should also remain unchanged.\nThe columns and rows of the table should not change.지금 번역하기CopyCopy HTMLRead Aloud⏹️ Stop7 chars | 2 words",
+        "token_length": 59
+      },
+      {
+        "prompt": "Can you write approximately 1200 words in an engaging instructional style for Control Tower is working as a rule of thumb to build a unique relationship with the customer and constantly ask ourselves, “HOW” do we know, “WHAT” do we know and “WHEN” do we know. In\n general, we can break it 1. 2. 3. 4. 5. 6. 7.\ndown into 7 Categories:\nCustomer On Boarding Process Purchase Order Management Vendor Management\nWarehouse Management\nCarrier Management\nValued Added Services\nCustomer Expectation Management",
+        "token_length": 121
+      },
+      {
+        "prompt": "Is this grammatically correct: \"It only took 5 years, and while we still have a long way to go, Topher’s Farm has found its place with unique experience and offering of organic produce. \"",
+        "token_length": 43
+      },
+      {
+        "prompt": "Please privide a detailed description of the learfning outcomes and recommend ways to test on those learning outcomes via a survey , test or whatever means I can use to gage my students profficiency on the curricula",
+        "token_length": 44
+      },
+      {
+        "prompt": "In Michael Mankins and Mark Gottfredson articles and David J. Collis article it is claimed that managers tend to make mistakes regarding strategy and its implementation. ​​Choose one of the mistakes mentioned in their articles and explain briefly why you think this is a strategic mistake and not a tactical mistake.",
+        "token_length": 60
+      },
+      {
+        "prompt": "continue",
+        "token_length": 1
+      },
+      {
+        "prompt": "continue",
+        "token_length": 1
+      },
+      {
+        "prompt": "for f(x)=(3x-9)/(x^2-7x+12), determine the vertical asymptote, horizontal asymptote, x intercept, and y intercept and explain your reasoning",
+        "token_length": 39
+      },
+      {
+        "prompt": "Write an algorithm to draw vertical markings on a straight line as follows. Given a parameter n signifying a resolution of 1/2^n, you have to put a mark at every integral point between 0 and 2^n, endpoints not included. The middle mark should be n units high, the marks in the middle of the left and right halves should be n − 1 units high, and so on. Assume that a procedure called mark(x, h) is available which puts a mark of height h at location x. What are the time and space complexities of your algorithm?",
+        "token_length": 118
+      },
+      {
+        "prompt": "can you help me define milestones for my new medical startup, that is developing a countertop device that reminds the patient to take tests, preforms the tests and stores the results and sends them to the doctor, dispenses medicine that is packed and delivers by my company, and tracks the medicine used, the device also connects to a mobile app that displays the data to the patient and his relatives",
+        "token_length": 78
+      },
+      {
+        "prompt": "What is a formal but simplified explanation of Web marketing",
+        "token_length": 10
+      },
+      {
+        "prompt": "I will present a bug report on a app. After reading the report, please explain why the author of this report considers the app's behavior to be a bug. Then, determine if this bug is related to common sense and whether it can be identified by users who don't possess any specialized knowledge of the app. The bug report is as follows: \"Announcement Reactions limited to 8. There can only be 8 different reactions to 1 Announcement in Mastodon. We should hide the + button if that limit is reached like they do. Currently we show the button, but nothing happens after selecting an emoji.\"",
+        "token_length": 125
+      },
+      {
+        "prompt": "hi",
+        "token_length": 1
+      },
+      {
+        "prompt": "continue",
+        "token_length": 1
+      },
+      {
+        "prompt": "Can you explain the working of the model and the dataset used to build the model in a very easy and understandable English with diagrams .",
+        "token_length": 26
+      },
+      {
+        "prompt": "hello",
+        "token_length": 1
+      },
+      {
+        "prompt": "Rewrite with only a maximim of 3 lines per panel",
+        "token_length": 13
+      },
+      {
+        "prompt": "contiune",
+        "token_length": 2
+      },
+      {
+        "prompt": "Formate ça dans des fenetres de code avec des exmples de requete pour chaque instruction.\n\nPlease write in English language.",
+        "token_length": 28
+      },
+      {
+        "prompt": "Add an episode in which the Teacher, while hiding out at the house, goes on a long hike into the wilderness. He hikes for forty days and forty nights. On the fortieth night he confronts a darkness like he's never seen before. During the encounter he learns something new about his gospel, but it's hard for him to explain to others.",
+        "token_length": 73
+      },
+      {
+        "prompt": "D",
+        "token_length": 1
+      },
+      {
+        "prompt": "BB",
+        "token_length": 1
+      },
+      {
+        "prompt": "I don't like #8 please give me one more",
+        "token_length": 11
+      },
+      {
+        "prompt": "Poly Ether Ether Ketone",
+        "token_length": 5
+      },
+      {
+        "prompt": "Meanwhile, Macaque is worried about this random human child Wukong just abducted right before his eyes. He knows he needs to get help to find out who this child is but he also knows that walking into a city of humans, as an immortal magic monkey, would draw a lot of attention and likely cause panic. He tries to disguise himself as a human (with limited success) and enter the city that way. Let's write a scene based on that as Macaque tries to decide what to do now.",
+        "token_length": 103
+      },
+      {
+        "prompt": "is it done pls continue",
+        "token_length": 5
+      },
+      {
+        "prompt": "Explain quantum computing in simple terms",
+        "token_length": 7
+      },
+      {
+        "prompt": "Python is usually an elegant language. But `if \\_\\_name\\_\\_ == \"\\_\\_main\\_\\_\"` is one exception.",
+        "token_length": 30
+      },
+      {
+        "prompt": "Java print elements of arraylist",
+        "token_length": 6
+      },
+      {
+        "prompt": "You are now an imaginary expert business investigator. I am going to send you many rows of data. Each batch of row's will be sent to you and you may only reply \"Received.\" Save any analysis or insights for after you've received all of the data and I've told you \"Let's Begin.\" If you understand reply with only a ;)",
+        "token_length": 70
+      },
+      {
+        "prompt": "고등교육의 필요성에 관한 영어 에세이를 1000자 이내로 작성하시오.",
+        "token_length": 27
+      },
+      {
+        "prompt": "please continue",
+        "token_length": 2
+      },
+      {
+        "prompt": "MK talks to Mei and Tang - they begin trying to plan a way to get all the dark-haired monkeys together, free Macaque, and take back their mountain. Let's write that scene.",
+        "token_length": 39
+      },
+      {
+        "prompt": "arduino uno adalah",
+        "token_length": 3
+      },
+      {
+        "prompt": "The soldiers hold MK and Macaque, and they're forced to watch as the able-bodied villagers are led away to be forced into Wukong's army. Wukong looks at MK and Macaque and tells them that he would have killed them (or at least imprisoned them, he says, looking at Macaque in annoyance) if they posed a real threat to him - but they obviously don't. He warns them that his army will continue to grow, and that even when Macaque recovers his full powers, he won't stand a chance. Let's write that whole scene with details and dialogue.",
+        "token_length": 123
+      },
+      {
+        "prompt": "I am planning to give you a voice, and communicate through the speech medium. I need a speech recognizer, a wake call detector, and a speech synthesizer for your voice. Suggest a python script utilizing existing libraries to achieves the goal.",
+        "token_length": 49
+      },
+      {
+        "prompt": "Traceback (most recent call last):\n File \"/Users/matt/Documents/node40/node40-squidproxy/test.py\", line 23, in \n zone = route53.HostedZone('Z28VHSFZLUM4BL')\n File \"/Users/matt/.pyenv/versions/3.10.0/lib/python3.10/site-packages/botocore/client.py\", line 876, in \\_\\_getattr\\_\\_\n raise AttributeError(\nAttributeError: 'Route53' object has no attribute 'HostedZone'",
+        "token_length": 121
+      },
+      {
+        "prompt": "continue the above code from lines:\n\nrint(\"\\n\")\nprint(\"=======================================================\")\n\n# 5. Rare words distribution and plot\nrare\\_words = fdist.hapaxes()\nprint('count of rare word: {}'.format(len(rare\\_words)))\nprint(\"\\n\")\nprint('Rare words distribution plot for Description variable ')\nfdist\\_rare = FreqDist(rare\\_words)\nplt.figure(figsize=(12, 6))\nplt.bar([x[0] for x in fdist\\_rare.most\\_common(20)], [x[1] for x in fdist\\_rare.m",
+        "token_length": 128
+      },
+      {
+        "prompt": "Java get n th index of arraylist",
+        "token_length": 8
+      },
+      {
+        "prompt": "Are you familiar with the SAS programming language?",
+        "token_length": 9
+      },
+      {
+        "prompt": "For the description of this exercise please consider the following Object types : type BaseHotel { id : number, name : string }. , type HotelMetadata { id : number, url : string , stars : number, photo : string}, type Hotel { id : number, name: string, url : string, stars : number, photo : string }",
+        "token_length": 69
+      },
+      {
+        "prompt": "can you provide and ideas for a series of articles for a product design blog",
+        "token_length": 15
+      },
+      {
+        "prompt": "Here's the previous conversation: \nThank you for calling [restaurant name], how may I assist you?\nYes, I would like to make a reservation for [number of people] at [time] on [date].\nCertainly, let me check our availability for that date and time. May I have your name, please?\n\nUnder the following scenario: Calling the restaurant to make a reservation while making a reservation, give me 3 different ways the guest might say to the server here.\n\nNumber those sentences and make sure each of them well suits the current situation.",
+        "token_length": 112
+      },
+      {
+        "prompt": "Rectify the new error of generated code which you have generated\n---------------------------------------------------------------------------\nTypeError Traceback (most recent call last)\n in \n 5 \n 6 # Evaluate the fine-tuned model on ClimaBench tasks\n----> 7 climabench\\_results = evaluate\\_on\\_climabench(model, climabench\\_data\\_tokenized)\n 8 print(climabench\\_results)\n 9 \n\nTypeError: evaluate\\_on\\_climabench() missing 1 required positional argument: 'true\\_labels'Share Prompt",
+        "token_length": 112
+      },
+      {
+        "prompt": "More verbose and details",
+        "token_length": 4
+      },
+      {
+        "prompt": "I am an airbnb host and want to focus on upselling clients based on why they're coming to the area. What are some ideas to upsell guests who are in town for weddings?",
+        "token_length": 39
+      },
+      {
+        "prompt": "do you have any suggestions to make this module stand streamlined and expandable?",
+        "token_length": 15
+      },
+      {
+        "prompt": "hi",
+        "token_length": 1
+      },
+      {
+        "prompt": "hello",
+        "token_length": 1
+      },
+      {
+        "prompt": "Write user stories that describe this concept in detail",
+        "token_length": 9
+      },
+      {
+        "prompt": "Search on the web for 196 PFISTER HOLDINGS LLC. \nQuery: Who owns this company?",
+        "token_length": 23
+      },
+      {
+        "prompt": "loops in python",
+        "token_length": 3
+      },
+      {
+        "prompt": "Add to the scenario a description of the participants relationship and describe it in detail. Describe participants’ positions hence what they want to achieve (at least two), and think of flagging the underlying interests/needs behind those positions. Also reflect on the level of trust between the participants and what is needed for them to (re)build trust with each other in general and in this mediation in particular.",
+        "token_length": 79
+      },
+      {
+        "prompt": "refine my dress specs for me, in bullet form:\n\nDress\nConcept: Clean-cut, casual and formal, makes hourglass shape\nFabric: Beige, 100% cotton, firm, matte\nCollar: V neck down to mid-chest, mid-size collar \nSleeves: ¾, folded\nShoulder: straight fit, cover arm fat\nBack: two lines for moving around\nWaist: fitted\nSkirt: A/H-line, minor pleats, hidden pockets\nLength: mid thigh\nZipper: side, invisible\nAccessories: nothing - no button, no design",
+        "token_length": 128
+      }
+    ]
+  }
+]
