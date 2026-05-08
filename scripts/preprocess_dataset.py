@@ -61,6 +61,7 @@ matplotlib.use("Agg")          # headless — safe on GPU servers without a disp
 import matplotlib.pyplot as plt
 import numpy as np
 import pandas as pd
+import copy
 from datasets import load_dataset
 from transformers import AutoTokenizer
 
@@ -71,10 +72,10 @@ from transformers import AutoTokenizer
 DATASET_NAME   = "anon8231489123/ShareGPT_Vicuna_unfiltered"
 TOKENIZER_NAME = "Qwen/Qwen2.5-32B"
 
-MIN_TOKENS = 32
-MAX_TOKENS = 1024
+MIN_TOKENS = 1
+MAX_TOKENS = 128
 
-BATCH_SIZE = 64
+BATCH_SIZE = 128
 
 # Padding ratio levels (proposal §2.2: "10%, 30%, 50%, 70%")
 PAD_LEVELS = [0.20, 0.30, 0.50, 0.70]
@@ -85,11 +86,13 @@ PAD_LEVELS = [0.20, 0.30, 0.50, 0.70]
 #   0.20 → mild spread
 #   0.35 → moderate spread
 #   0.50 → high spread; upper bound chosen to stay within ShareGPT's range
-COV_LEVELS = [0.05, 0.20, 0.35, 0.50]
+COV_LEVELS = [0.15, 0.25, 0.35, 0.45]
 
 # Batches per (pad, CoV) cell.
 # Budget: 3 configs × 16 cells × 5 batches × ~37 s ≈ 474 SU  (within 480 SU)
 N_BATCHES_PER_CELL = 5
+
+MAX_SEQ_LEN = 128
 
 OUTPUT_DIR = "benchmark_dataset"
 PLOTS_DIR  = "plots"
@@ -238,6 +241,8 @@ def compute_cov(lengths: List[int]) -> float:
     if len(lengths) < 2:
         return 0.0
     arr = np.array(lengths, dtype=float)
+    arr = 1 - arr / np.max(arr)
+
     mean = arr.mean()
     return float(arr.std() / mean) if mean > 0 else 0.0
 
@@ -279,104 +284,43 @@ def make_batches_joint(
     pool: List[Tuple[str, int]],
     batch_size: int,
     n_batches: int,
+    max_seq_length: int,
     target_pad_ratio: float,
     target_cov: float,
     rng: np.random.Generator,
+    use_debiased: bool = True,
 ) -> List[List[Tuple[str, int]]]:
-    """
-    Build batches that jointly target a padding ratio AND an intra-batch CoV.
+    target_variance = (target_pad_ratio * target_cov) ** 2
 
-    The two dimensions are controlled independently:
+    if use_debiased:
+        target_pad_ratio = (batch_size * target_pad_ratio) / (batch_size - 1)
+        target_variance = (batch_size * target_variance - target_pad_ratio ** 2) / (batch_size - 1)
 
-    Padding ratio → fixes the relationship between anchor length and mean
-    fill length.  Derived from the padding formula:
+        print("stats, ", target_pad_ratio, target_variance)
 
-        pad_ratio = (bs × L_anchor − L_anchor − (bs−1) × mean_fill) / (bs × L_anchor)
+    sample_count = batch_size - 1
 
-    Solving for mean_fill:
+    nu = target_pad_ratio * (1 - target_pad_ratio) / target_variance - 1
 
-        mean_fill = L_anchor × fill_factor
-        fill_factor = (bs × (1 − pad_ratio) − 1) / (bs − 1)
+    alpha = target_pad_ratio * nu
+    beta = (1 - target_pad_ratio) * nu
 
-    CoV → fixes the spread of fill lengths around their mean:
+    samples = rng.beta(alpha, beta, size=(n_batches, sample_count))
 
-        fill_std = target_cov × fill_mean
+    samples = np.insert(samples, samples.shape[1], 0, axis=1)
 
-    For each batch:
-      1. Select one anchor sequence (the longest in its batch; sets max_len).
-         The ideal anchor length is chosen so that fill_mean lands near the
-         pool median — the densest region of the distribution, ensuring there
-         are always plenty of fill candidates nearby.
-      2. Sample (batch_size − 1) target fill lengths from:
-            N(fill_mean, fill_std²)  clamped to [MIN_TOKENS, L_anchor]
-         Gaussian sampling decouples the fill selection from ShareGPT's skew:
-         whatever the distribution shape, the mean and std of the selected
-         fills will converge to (fill_mean, fill_std).
-      3. For each sampled target length, pick the closest sequence in the
-         pool (without replacement within a batch; WITH replacement across
-         batches, so the same prompt can appear in multiple batches).
-
-    Reuse policy
-    ------------
-    Fills are drawn without replacement within a single batch (each sequence
-    appears at most once per batch), but the pool is reset between batches.
-    This avoids the "pool exhaustion" problem that caused high variance in the
-    previous version, and is valid because the batching strategy — not prompt
-    content — is the experimental variable.
-    """
-    # Sort pool by length for efficient binary-search-based nearest-neighbour.
-    sort_order    = np.argsort([item[1] for item in pool])
-    sorted_pool   = [pool[i] for i in sort_order]
-    sorted_lengths = np.array([item[1] for item in sorted_pool], dtype=float)
-
-    # fill_factor: fraction of L_anchor that gives the desired mean_fill.
-    fill_factor = (batch_size * (1.0 - target_pad_ratio) - 1.0) / (batch_size - 1)
-    fill_factor = max(fill_factor, 0.01)   # guard: don't allow near-zero fill mean
-
-    # Ideal anchor length: the value of L such that fill_factor × L equals
-    # the pool median.  This ensures fill targets land in the densest part of
-    # the distribution for any pad level.
-    pool_median   = float(np.median(sorted_lengths))
-    ideal_anchor  = np.clip(pool_median / fill_factor,
-                            sorted_lengths[0], sorted_lengths[-1])
-
-    # Select n_batches anchors: sequences closest to ideal_anchor, no replacement.
-    anchor_dists  = np.abs(sorted_lengths - ideal_anchor)
-    anchor_positions = np.argsort(anchor_dists)[:n_batches]   # indices in sorted array
+    samples = (1 - samples) * max_seq_length
 
     batches = []
-    for anchor_pos in anchor_positions:
-        L_anchor    = float(sorted_lengths[anchor_pos])
-        anchor_item = sorted_pool[anchor_pos]
+    for i in range(n_batches):
+        p = copy.deepcopy(pool)
+        batch = []
 
-        fill_mean = L_anchor * fill_factor
-        fill_std  = target_cov * fill_mean
+        for j in range(batch_size):
+            idx = np.argmin(np.abs(np.array([item[1] for item in p]) - samples[i, j]))
+            batch.append(p.pop(idx))
 
-        # Sample target fill lengths from N(fill_mean, fill_std²).
-        # Clamp to [MIN_TOKENS, L_anchor] so no fill exceeds the anchor
-        # (which would change which sequence is actually the max in the batch).
-        n_fills = batch_size - 1
-        raw     = rng.normal(fill_mean, fill_std, size=n_fills * 4)
-        clamped = np.clip(raw, MIN_TOKENS, L_anchor)
-        rng.shuffle(clamped)
-        target_lens = clamped[:n_fills]
-
-        # Reset availability for this batch (fills are reused across batches).
-        available = np.ones(len(sorted_pool), dtype=bool)
-        available[anchor_pos] = False   # anchor cannot also be a fill
-
-        fills = []
-        for tlen in target_lens:
-            idx = find_closest_available(sorted_lengths, tlen, available)
-            if idx < 0:
-                break
-            fills.append(sorted_pool[idx])
-            available[idx] = False
-
-        if len(fills) < n_fills:
-            continue   # couldn't fill batch; skip (rare edge case)
-
-        batches.append(fills + [anchor_item])
+        batches.append(batch)
 
     return batches
 
@@ -391,6 +335,7 @@ def build_benchmark_dataset(
     cov_levels: List[float],
     batch_size: int,
     n_batches_per_cell: int,
+    max_seq_len: int,
     output_dir: str,
     seed: int,
 ) -> pd.DataFrame:
@@ -433,16 +378,16 @@ def build_benchmark_dataset(
             print(f"\n--- Cell {cell_name}  (pad={pad:.0%}, CoV={cov:.2f}) ---")
 
             batches = make_batches_joint(
-                pool, batch_size, n_batches_per_cell, pad, cov, rng
+                pool, batch_size, n_batches_per_cell, max_seq_len, pad, cov, rng,
+                use_debiased=True
             )
 
             cell_data = []
             for batch_id, batch in enumerate(batches):
                 lengths      = [l for _, l in batch]
-                fill_lengths = lengths[:-1]   # last item is the anchor
 
                 actual_pad = compute_padding_ratio(lengths)
-                actual_cov = compute_cov(fill_lengths)
+                actual_cov = compute_cov(lengths)
                 mean_len   = float(np.mean(lengths))
                 std_len    = float(np.std(lengths))
 
@@ -648,6 +593,7 @@ def main() -> None:
         cov_levels         = COV_LEVELS,
         batch_size         = BATCH_SIZE,
         n_batches_per_cell = N_BATCHES_PER_CELL,
+        max_seq_len        = MAX_SEQ_LEN,
         output_dir         = OUTPUT_DIR,
         seed               = SEED,
     )
